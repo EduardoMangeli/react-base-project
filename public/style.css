@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  /* CSS HSL */
+  /* https://coolors.co/ */
+
+  --primaria: hsla(210, 67%, 43%, 1);
+  --background: hsla(108, 22%, 87%, 1);
+  --secundaria: hsla(34, 100%, 50%, 1);
+  --destaque: hsla(355, 78%, 56%, 1);
+  --detalhe: hsla(9, 63%, 45%, 1);
+
+
+/*  --primaria: hsla(0, 1%, 20%, 1);
+  --background: hsla(81, 21%, 74%, 1);
+  --secundaria: hsla(135, 7%, 64%, 1);
+  --destaque: hsla(8, 34%, 54%, 1);
+  --detalhe:hsla(241, 96%, 72%, 1);*/
+}
+
+/* borda vermelha em todos os elementos para debug */
+/*
+* {
+  outline: red solid 1px;
+}
+*/
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: var(--background);
+  color:var(--primaria);
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+div.container {
+  padding: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
