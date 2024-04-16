@@ -1,3 +1,4 @@
+import Banner from "../components/Banner/Banner";
 import Base from "./Base"
 
 const Gameficacao = () => {

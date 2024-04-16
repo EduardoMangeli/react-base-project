@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Base from "./Base";
+import Base from "../Base";
 
 const Protegida = (props) => {
   const Conteudo = () => (

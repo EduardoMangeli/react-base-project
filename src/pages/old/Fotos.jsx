@@ -1,6 +1,6 @@
-import FotoCard from "../components/FotoCard/FotoCard";
-import ListContainer from "../components/ListContainer/ListContainer";
-import dados from "../data/computadores.json";
+import FotoCard from "../../components/FotoCard/FotoCard";
+import ListContainer from "../../components/ListContainer/ListContainer";
+import dados from "../../data/computadores.json";
 import Protegida from "./Protegida";
 
 const Fotos = () => {
