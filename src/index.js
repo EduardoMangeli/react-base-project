@@ -2,7 +2,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Fotos from "./pages/Fotos";
 import Login from "./pages/Login";
@@ -26,7 +26,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Dashboard/>} />
         <Route path="/fotos" element={<Fotos/>} />
         <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />

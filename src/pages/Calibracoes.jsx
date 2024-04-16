@@ -3,7 +3,7 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 
-const Home = () => {
+const Calibracoes = () => {
 
   /* useEffect(()=> {
     onAuthStateChanged(auth, (user)=> {
@@ -14,7 +14,7 @@ const Home = () => {
       }
     })
   },[]) */
-  
+
 
   return (
     <Base>
@@ -25,4 +25,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Calibracoes
