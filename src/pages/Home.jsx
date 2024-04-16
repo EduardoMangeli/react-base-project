@@ -19,10 +19,10 @@ const Home = () => {
   return (
     <Base>
       <h1>
-     Aplicação React Base
+     Passeio Carioca
       </h1>
     </Base>
   )
 }
 
-export default Home
+export default Home;

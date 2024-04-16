@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Top = styled.header`
-  padding: .5em 2em;
+  padding: 2em 5em;
   background-color: var(--secundaria);
   display: flex;
   flex-direction: row;
@@ -11,15 +11,15 @@ const Top = styled.header`
     padding: .3em;
     margin: 0 .7em;
     min-width: 5em;
-    background-color: var(--background);
+    background-color: var(--secundaria);
     text-decoration: none;
     font-weight: bold;
-    color: var(--detalhe);
+    color: var(--destaque);
     text-transform: uppercase;
-    /*border-radius: .3em;*/
+    border-radius: 1em;
     &:hover{
-      background-color: var(--destaque);
-      color: var(--secundaria);
+      background-color: var(--terciaria);
+      color: var(--destaque);
     }
   }
 `
