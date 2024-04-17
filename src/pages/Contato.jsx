@@ -5,6 +5,7 @@ const Contato = () => {
 
     return (
         <Base>
+        <h1>Entre em contato</h1>
         </Base>
       
     )

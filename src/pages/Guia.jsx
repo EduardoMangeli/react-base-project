@@ -5,6 +5,7 @@ const Guia = () => {
 
     return (
         <Base>
+        <h1>Guia Turistico!!</h1>
         </Base>
       
     )

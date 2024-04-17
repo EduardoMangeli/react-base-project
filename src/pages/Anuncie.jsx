@@ -5,6 +5,7 @@ const Anuncie = () => {
 
     return (
         <Base>
+        <h1>Fale Conosco</h1>
         </Base>
       
     )

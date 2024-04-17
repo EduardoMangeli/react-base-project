@@ -1,12 +1,24 @@
 import styled from "styled-components";
 
-const BaixeAqui = styled.article`
+const CenteredContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh; /* Defina a altura desejada para centralizar verticalmente */
+`;
 
-  button {
-    color: var(--secundaria);
-    width: 15em;
-    height: 3em;
-  }
-`
+const BaixeButton = styled.button`
+  background-color: var(--detalhe);
+  color: var(--destaque);
+  width: 15em;
+  height: 4em;
+  border-radius: 1em;
+`;
 
-export {BaixeAqui}
+const CenteredButton = () => (
+  <CenteredContainer>
+    <BaixeButton>Baixe o App</BaixeButton>
+  </CenteredContainer>
+);
+
+export default CenteredButton;

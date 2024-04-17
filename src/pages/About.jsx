@@ -5,8 +5,8 @@ const About = () => {
 
     return (
         <Base>
+            <h1>Quem Somos</h1>
         </Base>
-      
     )
   }
   

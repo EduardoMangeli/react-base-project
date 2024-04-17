@@ -14,7 +14,7 @@
 
 
   --primaria: #000000;
-  --background: #def0ff;
+  --background: #d1eaff;
   --secundaria: #3c73da;
   --destaque: #ffffff;
   --detalhe:#013dac;
@@ -44,6 +44,14 @@ div.container {
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
   margin: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+div.adTexto{
+  text-align: center;
 }

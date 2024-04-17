@@ -1,7 +1,11 @@
-const MeuBotao = function(){
-    return (
-        <button>Baixe o app</button>
-    )
-}
+import CenteredButton from "./Style";
 
-export default MeuBotao;
+const MeuBotao = () => {
+    return (
+      <>
+        <CenteredButton>Baixe o app</CenteredButton>
+      </>
+    );
+  };
+  
+  export default MeuBotao;
