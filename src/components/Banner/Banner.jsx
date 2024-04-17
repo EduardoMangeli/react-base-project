@@ -1,6 +1,8 @@
+import { Destaque } from "./Style";
+
 const Banner = () => {
     return(
-        <div>teste banner</div>
+        <Destaque></Destaque>
     )
 }
 
