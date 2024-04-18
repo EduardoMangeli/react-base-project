@@ -9,6 +9,7 @@ const Gameficacao = () => {
 
   return (
     <Base>
+    <Banner/>
     <h1>GAMEFICACAO</h1>
     <div className="adTexto">
         <h3>Descubra o turismo de uma maneira nova com o nosso aplicativo!</h3>
