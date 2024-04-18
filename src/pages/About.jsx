@@ -6,6 +6,7 @@ const About = () => {
 
     return (
         <Base>
+            <Banner></Banner>
             <div id="cabeçalho_about">
                 <h1>Quem Somos</h1>
             </div>

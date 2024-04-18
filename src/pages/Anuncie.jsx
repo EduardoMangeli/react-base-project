@@ -6,6 +6,7 @@ const Anuncie = () => {
 
     return (
         <Base>
+            <Banner></Banner>
             <div id="cabeçalho_about">
                 <h1>Fale Conosco</h1>
             </div>
