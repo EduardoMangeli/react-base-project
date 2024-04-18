@@ -14,6 +14,8 @@ import Freddie from "./pages/FreddieMercury";
 import Clinica from "./pages/Clinica";
 import Modelagem from "./pages/Modelagem";
 import Radiosinoviortese from "./pages/Radiosinoviortese";
+import SegmentacaoeQuantificacao from "./pages/SegmentacaoeQuantificacao";
+import DosimetriaPreClinica from "./pages/DosimetriaPreClinica";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -39,6 +41,8 @@ root.render(
         <Route path="/clinica" element={<Clinica/>} />
         <Route path="/modelagem" element={<Modelagem/>} />
         <Route path="/radiosinoviortese" element={<Radiosinoviortese/>} />
+        <Route path="/SegmentacaoeQuantificacao" element={<SegmentacaoeQuantificacao/>} />
+        <Route path="/dosimetriapreclinica" element={<DosimetriaPreClinica/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
