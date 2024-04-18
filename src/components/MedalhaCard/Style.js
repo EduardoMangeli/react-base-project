@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 const MedalhaArticle = styled.article`
   width: 20%;
-  background-color: var(--cinza);
+  background-color: var(--secundaria);
   position: relative;
   display: flex;
+  row-gap: 1rem;
+  gap:-5rem;
   flex-direction: column;
   align-items: center;
+  border-radius: 3em;
+  
   figure {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -24,9 +28,9 @@ const MedalhaArticle = styled.article`
 
   h3 {
     margin: 1em;
-    text-align: end;
+    text-align: center;
     text-transform: uppercase;
-    color: var(--secundaria);
+    color: var(--destaque);
   }
 
   ul {

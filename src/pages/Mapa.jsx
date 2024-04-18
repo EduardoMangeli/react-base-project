@@ -6,13 +6,12 @@ const Mapa = () => {
 
   return (
     <Base>
-      <Banner/>
-      <div><Botao texto="Baixe o app"/></div>
+      <h1>MAPA</h1>
       <div className="containerMapa">
-        <h1>
-            Aqui vai ficar o mapa
-        </h1>
+        <Banner/>
       </div>
+
+      <div><Botao texto="Baixe o app"/></div>
     </Base>
   )
 }

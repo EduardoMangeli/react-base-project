@@ -1,15 +1,13 @@
 import { MedalhaArticle } from "./Style"
 
-const MedalhaCard = (props) => {
+const MedalhaCard = ({nome, imagem}) => {
 
   return(
     <MedalhaArticle>
     <figure>
-        <img src={props.src} />
-        <figcaption dangerouslySetInnerHTML={{__html:props.agradecimento}}/>
+        <img src={`${process.env.PUBLIC_URL}${imagem}`} />
     </figure>
-
-    <h3>Medalha</h3>
+    <h3>{nome}</h3>
     </MedalhaArticle>
   )
 }

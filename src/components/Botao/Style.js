@@ -13,6 +13,11 @@ const BaixeButton = styled.button`
   width: 15em;
   height: 4em;
   border-radius: 1em;
+  border: none;
+  outline:none;
+  &:hover{
+      background-color: var(--terciaria);
+    }
 `;
 
 const CenteredButton = ({ children }) => (

@@ -3,6 +3,7 @@ import Base from "./Base"
 import Botao from "../components/Botao/Botao";
 import ListContainer from "../components/ListContainer/ListContainer";
 import MedalhaCard from "../components/MedalhaCard/MedalhaCard";
+import medalha from "../data/medalhas.json"
 
 const Gameficacao = () => {
 
@@ -15,19 +16,23 @@ const Gameficacao = () => {
         <h3>Baixe agora e comece a sua jornada de turismo com uma dose extra de diversão e recompensas!</h3>
     </div>
     <div><Botao texto="Baixe o app"/></div>
+
     <div className="containermedalhas">
         <h3>Algumas Medalhas disponiveis</h3>
     </div>
     <ListContainer>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-      <MedalhaCard src=""/>
-    </ListContainer>
+      {medalha.map(
+               (e, index) => (
+               <MedalhaCard 
+                  key={index}
+                  nome={e.nome}
+                  imagem={e.imagem}
+               />
+               )
+            )
+            }
+   </ListContainer>
+
     <div><Botao texto="Saiba Mais"/></div>
     </Base>
   )
