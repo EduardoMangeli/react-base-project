@@ -23,7 +23,7 @@ const Home = () => {
     <Banner/>
       <h1>
      Passeio Carioca
-     <div><Botao/></div>
+     <div><Botao texto="Baixe o app"/></div>
       </h1>
       <h2>Conheca o app!</h2>
 

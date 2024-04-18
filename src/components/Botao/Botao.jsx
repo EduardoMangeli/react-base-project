@@ -1,11 +1,11 @@
 import CenteredButton from "./Style";
 
-const MeuBotao = () => {
+const MeuBotao = ({ texto }) => {
     return (
       <>
-        <CenteredButton>Baixe o app</CenteredButton>
+        <CenteredButton>{ texto }</CenteredButton>
       </>
     );
-  };
+};
   
   export default MeuBotao;

@@ -1,4 +1,5 @@
 import Banner from "../components/Banner/Banner";
+import Botao from "../components/Botao/Botao";
 import Base from "./Base"
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
 
                 <p>Consulte valores e tire duvidas</p>
 
-                <button>Saiba Mais</button>
+                <Botao texto="Saiba Mais"></Botao>
             </div>
         </Base>
     )

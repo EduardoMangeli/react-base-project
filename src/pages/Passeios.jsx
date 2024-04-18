@@ -10,7 +10,7 @@ const Passeios = () => {
     return (
         <Base>
         <Banner></Banner>
-        <div><Botao /></div>
+        <div><Botao texto="Baixe o app"/></div>
         <ListContainer>
             <PasseioCard></PasseioCard>
             <PasseioCard></PasseioCard>
@@ -21,7 +21,7 @@ const Passeios = () => {
             <PasseioCard></PasseioCard>
             <PasseioCard></PasseioCard>
         </ListContainer>
-        <Botao></Botao>
+        <Botao texto="Baixe o app"></Botao>
         </Base>
     )
   }

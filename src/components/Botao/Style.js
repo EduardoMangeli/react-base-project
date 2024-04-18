@@ -15,9 +15,9 @@ const BaixeButton = styled.button`
   border-radius: 1em;
 `;
 
-const CenteredButton = () => (
+const CenteredButton = ({ children }) => (
   <CenteredContainer>
-    <BaixeButton>Baixe o App</BaixeButton>
+    <BaixeButton>{ children }</BaixeButton>
   </CenteredContainer>
 );
 
