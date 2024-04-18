@@ -1,4 +1,4 @@
-import styled from "styled-components"
+    import styled from "styled-components"
 
 const Top = styled.header`
   padding: .5em 2em;

@@ -1,29 +1,37 @@
 import styled from "styled-components";
 
 const Bloco = styled.article`
-  width: 15rem;
-  background-color: var(--detalhe);
-  padding: .5em;
-  position: relative;
+    background-color: var(--detalhe);
+    padding: 20px;
+    position: relative;
+    margin: 25px;
+    border-radius: 100px;
+    height: 400px;
   
-  div.nome{
-    background-color: var(--destaque);
-    color: var(--secundaria);
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  figure {
-    margin: .5rem 0 0 0;
-  }
-
-  img {
-    object-fit: contain;
-    width: 100%;
-    height: 22rem;
-  }
+    div.secao{
+        color: var(--secundaria);
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    
+    div.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    div header h1{
+        display: flex;
+    }
+    
+    div.content {
+        display: flex;
+    }
+    
 
 `;
 

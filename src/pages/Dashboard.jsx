@@ -24,42 +24,42 @@ const Dashboard = () => {
       </h1>
 
       <Secao nome="Solicitações" conteudo={
-        <div>
+        <>
           <button>Clinic Dosimetries</button>
           <button>Preclinic Dosimetris</button>
           <button>Radiosynoviorthesis</button>
           <button>Segmentation</button>
 
-          <div>
+          <span>
             <p>ID: 1</p>
             <p>User: Clinica dosimetria</p>
             <p>Data de Solicitações: 01/01/2021</p>
-          </div>
+          </span>
 
-          <div>
+          <span>
             <p>ID: 1</p>
             <p>User: Clinica dosimetria</p>
             <p>Data de Solicitações: 01/01/2021</p>
-          </div>
+          </span>
 
-          <div>
+          <span>
             <p>ID: 1</p>
             <p>User: Clinica dosimetria</p>
             <p>Data de Solicitações: 01/01/2021</p>
-          </div>
+          </span>
 
-          <div>
+          <span>
             <p>ID: 1</p>
             <p>User: Clinica dosimetria</p>
             <p>Data de Solicitações: 01/01/2021</p>
-          </div>
+          </span>
 
-          <div>
+          <span>
             <p>ID: 1</p>
             <p>User: Clinica dosimetria</p>
             <p>Data de Solicitações: 01/01/2021</p>
-          </div>
-        </div>
+          </span>
+        </>
       }/>
 
         <Secao nome="Calibrações" conteudo={
