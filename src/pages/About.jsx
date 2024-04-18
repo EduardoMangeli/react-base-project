@@ -26,7 +26,7 @@ const About = () => {
 
                 <p>Consulte valores e tire duvidas</p>
 
-                <button> <a href="Gameficacao.jsx">Saiba Mais</a></button>
+                <button>Saiba Mais</button>
             </div>
         </Base>
     )
