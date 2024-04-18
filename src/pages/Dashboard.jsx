@@ -2,6 +2,7 @@ import { onAuthStateChanged } from "firebase/auth"
 import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
+import Secao from "../components/Secao/Secao";
 
 const Dashboard = () => {
 
@@ -22,22 +23,13 @@ const Dashboard = () => {
         Dashboard
       </h1>
 
-      <div>
+      <Secao nome="Solicitações" conteudo={
         <div>
-          <h2>
-            Solicitações
-          </h2>
-          <button>Info</button>
-
           <button>Clinic Dosimetries</button>
           <button>Preclinic Dosimetris</button>
           <button>Radiosynoviorthesis</button>
           <button>Segmentation</button>
 
-          <button>Seta</button>
-        </div>
-
-        <div>
           <div>
             <p>ID: 1</p>
             <p>User: Clinica dosimetria</p>
@@ -68,16 +60,9 @@ const Dashboard = () => {
             <p>Data de Solicitações: 01/01/2021</p>
           </div>
         </div>
-      </div>
+      }/>
 
-      <div>
-        <div>
-          <h2>Calibrações</h2>
-          <button>Info</button>
-
-          <button>Seta</button>
-        </div>
-
+        <Secao nome="Calibrações" conteudo={
         <div>
           <table>
             <th>ID</th>
@@ -102,57 +87,44 @@ const Dashboard = () => {
               <td>01/01/2021</td>
             </tr>
           </table>
-        </div>
 
-        <div>
           <button>Voltar</button>
           <button>Avançar</button>
         </div>
+        }/>
 
-      </div>
-
-      <div>
+    <Secao nome="Informações" conteudo={
         <div>
-          <h2>Informações</h2>
-          <button>Info</button>
+            <div>
+            <h3>Clinic Doscimetries</h3>
+            <p><span>34</span> Pedidos Abertos</p>
+            <p><span>134</span> Pedidos Fechados</p>
+            </div>
 
-          <button>Seta</button>
+            <div>
+            <button>Voltar</button>
+            <button>Avançar</button>
+            </div>
         </div>
+    }/>
 
+    <Secao nome="Atualizações" conteudo={
         <div>
-          <h3>Clinic Doscimetries</h3>
-          <p><span>34</span> Pedidos Abertos</p>
-          <p><span>134</span> Pedidos Fechados</p>
+            <div>
+            <div>
+                <p>012312310312</p>
+                <p>Alterado: Clinica dosimetria</p>
+                <p>Tempo: 6 minutos</p>
+            </div>
+
+            <div>
+                <p>012312310312</p>
+                <p>Alterado: Clinica dosimetria</p>
+                <p>Tempo: 6 minutos</p>
+            </div>
         </div>
-
-        <div>
-          <button>Voltar</button>
-          <button>Avançar</button>
         </div>
-      </div>
-
-      <div>
-        <div>
-          <h2>Atualizações</h2>
-          <button>Info</button>
-
-          <button>Seta</button>
-        </div>
-
-        <div>
-          <div>
-            <p>012312310312</p>
-            <p>Alterado: Clinica dosimetria</p>
-            <p>Tempo: 6 minutos</p>
-          </div>
-
-          <div>
-            <p>012312310312</p>
-            <p>Alterado: Clinica dosimetria</p>
-            <p>Tempo: 6 minutos</p>
-          </div>
-      </div>
-    </div>
+    }/>
 
     </Base>
   )
