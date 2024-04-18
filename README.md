@@ -4,6 +4,9 @@ Esse é um projeto de uma aplicação base usando React e Firebase construído c
 
 ## Documentação
 - https://github.com/paula-luiza/front-end-grupo : Link para documentação do projeto
+- https://trello.com/b/jPMf1ooO : Link para o Trello
+
+
 ## Dependências
 
 - https://nodejs.org/en : Necessário para rodar o projeto localmente.
