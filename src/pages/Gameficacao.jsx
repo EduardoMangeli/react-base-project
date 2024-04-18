@@ -16,7 +16,7 @@ const Gameficacao = () => {
     </div>
     <div><Botao texto="Baixe o app"/></div>
     <div className="containermedalhas">
-        <h2>Medalhas disponiveis</h2>
+        <h3>Algumas Medalhas disponiveis</h3>
     </div>
     <ListContainer>
       <MedalhaCard src=""/>
@@ -28,7 +28,7 @@ const Gameficacao = () => {
       <MedalhaCard src=""/>
       <MedalhaCard src=""/>
     </ListContainer>
-    <div><Botao texto="Baixe o app"/></div>
+    <div><Botao texto="Saiba Mais"/></div>
     </Base>
   )
 }

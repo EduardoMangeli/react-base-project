@@ -37,6 +37,21 @@ const Home = () => {
         É o Rio, suas construções e  histórias, na palma da sua mão a qualquer momento.</p>
       </div>
 
+      <div id="adPasseio">
+        <h2>Passeios</h2>
+        <p>Texto explicativo Passeios...</p>
+      </div>
+
+      <div id="adGameficacao">
+        <h2>Gameficacao</h2>
+        <p>Texto explicativo Gameficacao...</p>
+      </div>
+
+      <div id="adMapa">
+        <h2>Mapa</h2>
+        <p>Texto explicativo Mapa...</p>
+      </div>
+
       </Base>
   )
 }

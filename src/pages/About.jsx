@@ -11,24 +11,66 @@ const About = () => {
             </div>
 
             <div id="body_about">
-                <h2>Planos de Anuncio</h2>
-                <p>Divulgue o seu negocio no passeio carioca</p>
+                <h2>A Passeio Carioca</h2>
+                <p>No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?</p>
 
-                <h3>Plano Bronze</h3>
-                <p>Contaremos a historia do seu estabelecimento e colocaremos em destaque do nosso mapa</p>
+                <h3>Objetivos</h3>
+                <p>Objetivos da Passeio Carioca...</p>
 
-                <h3>Plano Ouro</h3>
-                <p> Plano Bronze + inclusão do “Viva essa experiencia”, com um link para a sua rede social ou um QR code, que podera incluir um desconto ou um premio para o turista ou morador da cidade</p>
+                <h3>Ideais</h3>
+                <p> Ideais da Passeio Carioca...</p>
+                <Botao texto="Baixe o App"></Botao>
 
-                <h3>Plano Diamante</h3>
-                <p> Plano Bronze + Plano Prata + inclusão do seu estabelecimento na gameficacao do aplicativo, com possibilidade do turista realizar checkin presencial no local e divulgar em suas redes socias </p>
-
-                <h4>Plano Bronze + Plano Prata + Plano Ouro + inclusão do seu estabelecimento em um dos passeios presenciais guiados</h4>
-
-                <p>Consulte valores e tire duvidas</p>
-
-                <Botao texto="Saiba Mais"></Botao>
+                <hr></hr>
             </div>
+            <div id="membros">
+                <h2>Membros</h2>
+                <ul className="lista_membros">
+                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
+                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
+                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
+                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
+                </ul>
+            </div>
+            <div id="equipe">
+                <h3>Patrocinadores</h3>
+                <ul>
+                    <li>Claudio Andre Castro</li>
+                    <li>Sergio Castro Imoveis</li>
+                </ul>
+                <h3>Mentores</h3>
+                <ul>
+                    <li>Professor Rodrigo Rainha, UERJ</li>
+                    <li>professora Lucimar Dantas, IBMEC</li>
+                    <li>Professor Luiz Barbieri, IBMEC</li>
+                    <li>Professor Eduardo Mangeli, IBMEC</li>
+                </ul>
+
+                <h3>Pesquisadores</h3>
+                <ul>
+                    <li>Ian Esteves Amaral Francisco, Ciencia de Dados, IBMEC</li>
+                    <li>Matheus de Almeida Melo, Relacoes Internacionais, IBMEC</li>
+                    <li>Pedro Carvalho Fontenele Castro, Historia, UERJ</li>
+                </ul>
+
+                <h3>Empresa deselvolvedora do Aplicativo</h3>
+                <ul>
+                    <li>Keener Innovations</li>
+                </ul>
+            </div>
+            
+            <div id="membrosSite">
+                <h2>Desenvolvedores do Site</h2>
+                <ul className="lista_membros">
+                    <li><img src="" alt="" /><strong>Caio </strong></li>
+                    <li><img src="" alt="" /><strong>Ewerton</strong></li>
+                    <li><img src="" alt="" /><strong>Joao Gabriel</strong></li>
+                    <li><img src="" alt="" /><strong>Miguel</strong></li>
+                    <li><img src="" alt="" /><strong>Paula</strong></li>
+                </ul>
+            </div>
+
+
         </Base>
     )
   }
