@@ -1,53 +1,49 @@
 import { useEffect, useState } from "react";
 import Base from "./Base"
-import { getAll, getElenco } from "../services/AtletasBotafogo";
-import AtletaCard from "../components/AtletaCard/AtletaCard";
+import { getAllImages } from "../services/ImageService"; // Assumindo que haja um serviço para buscar imagens
+import ImageCard from "../components/ImageCard/ImageCard"; // Supondo que haja um componente para exibir cartões de imagens
 import ListContainer from "../components/ListContainer/ListContainer";
 
-const Atletas = () => {
+const Imagens = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
   
   useEffect(() => {
-    const getDados = async () => {
-      const dados = await getElenco();
-      
-      if (dados.code === 400) {
-        setErro(dados);
-      } else {
-        setData(dados);
+    const fetchData = async () => {
+      try {
+        const imageData = await getAllImages(); // Chama a função do serviço para buscar imagens
+        setData(imageData);
+        setLoading(false);
+      } catch (error) {
+        setErro(error);
+        setLoading(false);
       }
+    };
 
-      setLoading(false);
-    } 
-    getDados();
-  },[]);
-
+    fetchData();
+  }, []);
 
   return (
     <Base>
       <ListContainer>
-      {loading &&  <span>Carregando...</span>}
-      {erro && 
-        <div style={{textAlign: 'center'}}>
-          <span>{`${erro.message}`}</span><br/>
-          <span>{`Mensagem Original: ${erro.original}`}</span>
-        </div>
-      }
-
-      {data && data.map( (ele, index) => (
-              <AtletaCard
-                key={index}
-                nome={ele.nome}
-                src={ele.imagem}
-              />
-          ))
-        
-      }
+        {loading &&  <span>Carregando...</span>}
+        {erro && 
+          <div style={{textAlign: 'center'}}>
+            <span>{`${erro.message}`}</span><br/>
+            <span>{`Mensagem Original: ${erro.original}`}</span>
+          </div>
+        }
+        {data && data.map((image, index) => (
+          <ImageCard
+            key={index}
+            src={image.src}
+            alt={image.alt}
+          />
+        ))}
       </ListContainer>
     </Base>
-  )
-}
+  );
+};
 
-export default Atletas;
+export default Imagens;
