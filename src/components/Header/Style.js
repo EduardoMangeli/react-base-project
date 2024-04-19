@@ -7,9 +7,9 @@ const Top = styled.header`
   flex-direction: row;
   margin: 0;
   a {
+    margin-left: auto;
     text-align: center;
     padding: .3em;
-    margin: 0 .7em;
     min-width: 5em;
     background-color: var(--secundaria);
     text-decoration: none;
@@ -17,10 +17,25 @@ const Top = styled.header`
     color: var(--destaque);
     text-transform: uppercase;
     border-radius: 1em;
+    font-size: 0.8rem;
     &:hover{
       background-color: var(--terciaria);
       color: var(--destaque);
     }
+  }
+
+  h3{
+    color: var(--destaque)
+  }
+
+  .containerLogo{
+    display: flex;
+    align-items: center;
+  }
+
+  .LogoImagem{
+    max-width: 100px;
+    margin-right: 10px;
   }
 `
 

@@ -9,8 +9,7 @@ const Gameficacao = () => {
 
   return (
     <Base>
-    <Banner/>
-    <h1>GAMEFICACAO</h1>
+    <h1>GAMEFICAÇÃO</h1>
     <div className="adTexto">
         <h3>Descubra o turismo de uma maneira nova com o nosso aplicativo!</h3>
         <p>Explore os pontos turísticos incríveis da cidade e colecione medalhas digitais ao longo do caminho. Com nossa funcionalidade de gamificação, cada lugar que você visita se torna uma conquista única. Tire uma foto, marque sua presença no aplicativo e ganhe suas medalhas. Quanto mais lugares você visitar, mais medalhas você ganha!</p>
