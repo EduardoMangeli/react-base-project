@@ -1,8 +1,24 @@
 import Banner from "../components/Banner/Banner";
 import Botao from "../components/Botao/Botao";
 import Base from "./Base"
+import AboutCard from "../components/AboutCard/AboutCard"
 
 const About = () => {
+    const membros = [
+        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+      ];
+    
+      const desenvolvedores = [
+        { nome: 'Caio', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
+        { nome: 'Ewerton', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
+        { nome: 'João Gabriel', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
+        { nome: 'Miguel', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
+        { nome: 'Paula', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
+      ];
 
     return (
         <Base>
@@ -24,15 +40,16 @@ const About = () => {
 
                 <hr></hr>
             </div>
+            
             <div id="membros">
                 <h2>Membros</h2>
                 <ul className="lista_membros">
-                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
-                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
-                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
-                    <li><img src="" alt="" /><strong>Jose Fulano</strong></li>
+                {membros.map((membro, index) => (
+                    <MembroCard key={index} nome={membro.nome} imagem={membro.imagem} descricao={membro.descricao} />
+                ))}
                 </ul>
             </div>
+
             <div id="equipe">
                 <h3>Patrocinadores</h3>
                 <ul>
@@ -60,14 +77,12 @@ const About = () => {
                 </ul>
             </div>
             
-            <div id="membrosSite">
+            <div id="DesenvolvedoresSite">
                 <h2>Desenvolvedores do Site</h2>
                 <ul className="lista_membros">
-                    <li><img src="" alt="" /><strong>Caio </strong></li>
-                    <li><img src="" alt="" /><strong>Ewerton</strong></li>
-                    <li><img src="" alt="" /><strong>Joao Gabriel</strong></li>
-                    <li><img src="" alt="" /><strong>Miguel</strong></li>
-                    <li><img src="" alt="" /><strong>Paula</strong></li>
+                {desenvolvedores.map((dev, index) => (
+                    <MembroCard key={index} nome={dev.nome} imagem={dev.imagem} descricao={dev.descricao} />
+                ))}
                 </ul>
             </div>
 
