@@ -1,7 +1,7 @@
 import Banner from "../components/Banner/Banner";
 import Botao from "../components/Botao/Botao";
-import Base from "./Base"
-import AboutCard from "../components/AboutCard/AboutCard"
+import Base from "./Base";
+import AboutCard from "../components/AboutCard/AboutCard";
 
 const About = () => {
     const membros = [
@@ -40,12 +40,17 @@ const About = () => {
 
                 <hr></hr>
             </div>
-            
+
             <div id="membros">
                 <h2>Membros</h2>
                 <ul className="lista_membros">
                 {membros.map((membro, index) => (
-                    <MembroCard key={index} nome={membro.nome} imagem={membro.imagem} descricao={membro.descricao} />
+                    <MembroCard 
+                    key={index} 
+                    nome={membro.nome} 
+                    imagem={membro.imagem} 
+                    descricao={membro.descricao} 
+                    />
                 ))}
                 </ul>
             </div>
@@ -81,7 +86,12 @@ const About = () => {
                 <h2>Desenvolvedores do Site</h2>
                 <ul className="lista_membros">
                 {desenvolvedores.map((dev, index) => (
-                    <MembroCard key={index} nome={dev.nome} imagem={dev.imagem} descricao={dev.descricao} />
+                    <MembroCard 
+                    key={index} 
+                    nome={dev.nome} 
+                    imagem={dev.imagem} 
+                    descricao={dev.descricao} 
+                    />
                 ))}
                 </ul>
             </div>
