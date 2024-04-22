@@ -45,7 +45,7 @@ const About = () => {
                 <h2>Membros</h2>
                 <ul className="lista_membros">
                 {membros.map((membro, index) => (
-                    <AboutCardCard 
+                    <AboutCard 
                     key={index} 
                     nome={membro.nome} 
                     imagem={membro.imagem} 
