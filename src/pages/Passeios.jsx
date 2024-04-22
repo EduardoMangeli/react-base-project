@@ -9,7 +9,7 @@ const Passeios = () => {
 
     return (
         <Base>
-        <Banner></Banner>
+        <Banner titulo={"Passeios"} imagem={"url da imagem"}/>
         <div><Botao texto="Baixe o app"/></div>
         <ListContainer>
             <PasseioCard></PasseioCard>

@@ -1,6 +1,6 @@
 import { MembroArticle } from "./Style"
 
-const MembroCard = ({nome, imagem, descricao}) => {
+const AboutCard = ({nome, imagem, descricao}) => {
   return(
     <li>
       <MembroArticle>

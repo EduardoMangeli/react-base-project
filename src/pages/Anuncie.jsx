@@ -6,11 +6,8 @@ const Anuncie = () => {
 
     return (
         <Base>
-            <Banner></Banner>
-            <div id="cabeçalho_about">
-                <h1>Fale Conosco</h1>
-            </div>
-
+            <Banner titulo={"fale conosco"} imagem={""}/>
+            
             <div id="body_about">
                 <h2>Planos de Anuncio</h2>
                 <p>Divulgue o seu negocio no passeio carioca</p>

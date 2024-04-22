@@ -22,10 +22,7 @@ const About = () => {
 
     return (
         <Base>
-            <Banner></Banner>
-            <div id="cabeçalho_about">
-                <h1>Quem Somos</h1>
-            </div>
+            <Banner titulo={"Quem Somos"} imagem={""}/>
 
             <div id="body_about">
                 <h2>A Passeio Carioca</h2>

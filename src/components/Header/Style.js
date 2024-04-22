@@ -4,6 +4,7 @@ const Top = styled.header`
   padding: 2em 5em;
   background-color: var(--secundaria);
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin: 0;
   a {
@@ -34,7 +35,7 @@ const Top = styled.header`
   }
 
   img{
-    max-width: 1rem;
+    max-width: 6rem;
     margin-right: 10px;
   }
 `

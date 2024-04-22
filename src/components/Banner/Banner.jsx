@@ -1,8 +1,10 @@
 import { Destaque } from "./Style";
 
-const Banner = () => {
+const Banner = ({ titulo, imagem }) => {
     return(
-        <Destaque></Destaque>
+        <Destaque imagem={imagem}>
+            <h1>{titulo}</h1>
+        </Destaque>
     )
 }
 
