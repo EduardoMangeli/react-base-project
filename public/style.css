@@ -12,9 +12,9 @@
   --destaque: hsla(355, 78%, 56%, 1);
   --detalhe: hsla(9, 63%, 45%, 1);*/
 
-
-  --primaria: #000000;
-  --background: #d1eaff;
+  --texto: #000000;
+  --primaria: #1b57b3;
+  --background: #ffffff;
   --secundaria: #3c73da;
   --destaque: #ffffff;
   --detalhe:#013dac;
@@ -33,7 +33,7 @@ body {
   margin: 0;
   font-family: 'Lora', serif;
   background-color: var(--background);
-  color:var(--primaria);
+  color:var(--texto);
 }
 
 a {
@@ -41,17 +41,15 @@ a {
 }
 
 div.container {
-  padding: 1rem;
+  padding: .5rem;
 }
 
-h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-h1{
+h2{
+  color: var(--destaque);
+  background-color: var(--secundaria);
   text-align: center;
-}
-
-div.adTexto{
-  text-align: justify;
 }

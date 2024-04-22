@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 const Bottom = styled.footer`
-  padding: 2em 5em;
-  background-color: var(--cinza);
+  padding: 9em 5em;
+  background-color: var(--primaria);
   display: flex;
   bottom: 0;
   flex-direction: row;

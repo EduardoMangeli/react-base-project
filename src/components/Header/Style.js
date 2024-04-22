@@ -9,7 +9,7 @@ const Top = styled.header`
   a {
     margin-left: auto;
     text-align: center;
-    padding: .3em;
+    padding: .5rem;
     min-width: 5em;
     background-color: var(--secundaria);
     text-decoration: none;
@@ -33,8 +33,8 @@ const Top = styled.header`
     align-items: center;
   }
 
-  .LogoImagem{
-    max-width: 100px;
+  img{
+    max-width: 1rem;
     margin-right: 10px;
   }
 `

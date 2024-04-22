@@ -4,7 +4,7 @@ import { Top } from "./Style";
 const Header = () => (
   <Top>
     <div className="containerLogo">
-      <div className="LogoImagem"><img src="" /></div>
+      <img src="imagens/PasseioCariocaLogoBranco.svg" />
       <h3>Passeio Carioca</h3>
     </div>
     <Link to="/">Home</Link>
