@@ -14,4 +14,4 @@ const MembroCard = ({nome, imagem, descricao}) => {
   )
 }
 
-export default MembroCard;
+export default AboutCard;

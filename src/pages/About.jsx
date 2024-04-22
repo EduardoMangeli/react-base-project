@@ -45,7 +45,7 @@ const About = () => {
                 <h2>Membros</h2>
                 <ul className="lista_membros">
                 {membros.map((membro, index) => (
-                    <MembroCard 
+                    <AboutCardCard 
                     key={index} 
                     nome={membro.nome} 
                     imagem={membro.imagem} 
@@ -86,7 +86,7 @@ const About = () => {
                 <h2>Desenvolvedores do Site</h2>
                 <ul className="lista_membros">
                 {desenvolvedores.map((dev, index) => (
-                    <MembroCard 
+                    <AboutCard 
                     key={index} 
                     nome={dev.nome} 
                     imagem={dev.imagem} 
