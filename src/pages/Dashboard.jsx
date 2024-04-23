@@ -3,7 +3,8 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
-import SolicitacaoCard from "../components/SolicitacaoCard/TestCard";
+import SolicitacaoCard from "../components/SolicitacaoCard/SolicitacaoCard";
+import dadosSolicitacoes from "../data/solicitacoes.json";
 
 const Dashboard = () => {
 
@@ -24,42 +25,27 @@ const Dashboard = () => {
         Dashboard
       </h1>
 
-      <Secao nome="Solicitações" conteudo={
+      <Secao nome="Solicitações"
+             navbar={
+                <div>
+                    <button>Clinic Dosimetries</button>
+                    <button>Preclinic Dosimetris</button>
+                    <button>Radiosynoviorthesis</button>
+                    <button>Segmentation</button>
+                </div>
+                 }
+             conteudo={
         <>
-          <button>Clinic Dosimetries</button>
-          <button>Preclinic Dosimetris</button>
-          <button>Radiosynoviorthesis</button>
-          <button>Segmentation</button>
 
-            <SolicitacaoCard
-                id='1'
-                user='Clinica dosimetria'
-                data='01/01/2021'
-            />
-
-            <SolicitacaoCard
-                id='1'
-                user='Clinica dosimetria'
-                data='01/01/2021'
-            />
-
-            <SolicitacaoCard
-                id='1'
-                user='Clinica dosimetria'
-                data='01/01/2021'
-            />
-
-            <SolicitacaoCard
-                id='1'
-                user='Clinica dosimetria'
-                data='01/01/2021'
-            />
-
-            <SolicitacaoCard
-                id='1'
-                user='Clinica dosimetria'
-                data='01/01/2021'
-            />
+          {dadosSolicitacoes.map(
+              (solicitacao) => (
+                <SolicitacaoCard
+                    id={solicitacao.id}
+                    cliente={solicitacao.cliente}
+                    data={solicitacao.date}
+                />
+                )
+            )}
         </>
       }/>
 

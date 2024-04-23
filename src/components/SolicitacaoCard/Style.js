@@ -1,33 +1,44 @@
 import styled from "styled-components";
 
 const Solicit = styled.div`
-    margin-top: .5rem;
-    width: 20rem;
-    background-color: var(--detalhe);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 35px;
+    background-color: var(--background);
     
-    h1{
-        display: flex;
-        font-size: 1.2em;
-        justify-content: space-between;
-        padding: 10px;
+    button {
+        border-radius: 15px;
+        height: 20px;
+        width: 100px;
+        background-color: var(--primaria);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
     }
     
-    p#tipo{
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 1.3em;
+    button:active {
+        background-color: #004380;
     }
     
-    p#info{
+    span{
+        display: block;
+    }
+    
+    div#navbar{
         display: flex;
-        justify-content: space-between;
-        padding: 0.3em;
-        padding-right: 1em;
-        align-items: center;
-        
-        span:nth-child(2){
-            font-size: 1.7em;
-        }
+        justify-content: flex-end;
+        margin-right: 1em;
+        margin-top: 0.3em;
+    }
+    
+    div#tipo{
+        text-align: left;
+        margin-left: 1em;
     }
 
 `;

@@ -13,7 +13,6 @@ const Bloco = styled.article`
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        text-transform: uppercase;
         padding: 10px;
     }
     
@@ -24,12 +23,40 @@ const Bloco = styled.article`
         padding: 20px;
     }
     
-    div header h1{
+    div.header h1{
         display: flex;
+    }
+    
+    div.header button {
+        border-radius: 15px;
+        height: 100px;
+        width: 100px;
+        background-color: var(--primaria);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    div.header button:hover {
+        background-color: #0056b3;
+    }
+    
+    div.header button:active {
+        background-color: #004380;
     }
     
     div.content {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .infoButton{
+    
+    }
+    
+    .acessarButton{
+
     }
     
 

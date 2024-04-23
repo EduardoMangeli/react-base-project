@@ -1,18 +1,22 @@
 import { Bloco } from "./Style";
 
-const Secao = (sec) => (
+const Secao = (props) => (
   <Bloco>
-    <div  className="secao">
+    <div className="secao">
         <div className="header">
             <h1>
-                {sec.nome}
-                <button className="infoButton">Info</button>
+                {props.nome}
+                <a className="infoButton">
+                    <img src="public/imagens/icons/info.png"/>
+                </a>
             </h1>
+
+            {props.navbar}
 
             <button className="acessarButton">Acessar</button>
         </div>
         <div className="content">
-            {sec.conteudo}
+            {props.conteudo}
         </div>
     </div>
   </Bloco>
