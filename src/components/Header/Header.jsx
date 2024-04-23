@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import { Top } from "./Style";
 
+// Preciso de um botão hamburgue
+
 const Header = () => (
   <Top>
-    <Link to="/">Home</Link>
-    <Link to="/fotos">Fotos</Link>
-    <Link to="/atletas">Atletas</Link>
+
+      <button className="hamburguer">☰</button>
+    <Link to="/dashboard">Home</Link>
+    <Link to="/servicos">Serviços</Link>
+    <Link to="/perfil">Conta</Link>
     
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout">Logout</Link>

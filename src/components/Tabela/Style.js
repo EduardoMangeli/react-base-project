@@ -31,7 +31,6 @@ const Tabela = styled.tabela`
   .nao-visto {
     background-color: #CF8686;
   }
-
   .andamento {
     background-color: #DFCF95;
   }
