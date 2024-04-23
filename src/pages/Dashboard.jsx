@@ -3,6 +3,7 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
+import SolicitacaoCard from "../components/SolicitacaoCard/TestCard";
 
 const Dashboard = () => {
 
@@ -30,35 +31,35 @@ const Dashboard = () => {
           <button>Radiosynoviorthesis</button>
           <button>Segmentation</button>
 
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
+            <SolicitacaoCard
+                id='1'
+                user='Clinica dosimetria'
+                data='01/01/2021'
+            />
 
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
+            <SolicitacaoCard
+                id='1'
+                user='Clinica dosimetria'
+                data='01/01/2021'
+            />
 
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
+            <SolicitacaoCard
+                id='1'
+                user='Clinica dosimetria'
+                data='01/01/2021'
+            />
 
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
+            <SolicitacaoCard
+                id='1'
+                user='Clinica dosimetria'
+                data='01/01/2021'
+            />
 
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
+            <SolicitacaoCard
+                id='1'
+                user='Clinica dosimetria'
+                data='01/01/2021'
+            />
         </>
       }/>
 

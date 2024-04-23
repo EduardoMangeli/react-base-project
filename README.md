@@ -13,3 +13,8 @@
 - **OBS4:** Checar necessidade de “Ultimo Serviço” → Serviços (DashBoard)
 - **OBS5:** Mudar para “Pedidos Pendentes” e “Pedidos Concluídos” → Serviços (DashBoard)
 - **OBS6:** Checar necessidade de “Feedback” e “Outros” em Serviços → Detalhados
+
+## Como instalar
+- `npm install`
+- `npm run start-windows`
+
