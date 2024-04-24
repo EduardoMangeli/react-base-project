@@ -18,6 +18,14 @@ const Home = () => {
 
   return (
     <Base>
+      <h3>Dashboard |</h3>
+      <div class="retanguloCinza"></div>
+      <div class="retanguloBranco1Home"></div>
+      <div class="retanguloBranco2Home"></div>
+      <div class="retanguloBranco3Home"></div>
+      <div class="retanguloBranco4Home"></div>
+      <div class="retanguloBranco5Home"></div>
+      
     </Base>
   )
 }
