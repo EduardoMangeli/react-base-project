@@ -2,6 +2,10 @@
 
 Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
 
+## Repositório de Documentação
+
+[Projeto-Front-End-2024](https://github.com/Maffezzoli/Projeto-Front-End-2024)
+
 ## Organização da equipe
 
 [Área de trabalho - Trello](https://trello.com/b/2o6qwtDK/desenvolvimento-api-dosimagem)
