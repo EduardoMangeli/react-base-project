@@ -18,9 +18,6 @@ const Home = () => {
 
   return (
     <Base>
-      <h1>
-     Aplicação React Base
-      </h1>
     </Base>
   )
 }
