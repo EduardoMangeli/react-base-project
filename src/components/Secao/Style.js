@@ -33,6 +33,7 @@ const Bloco = styled.article`
     
     div.nav1 h1{
         margin: 5px;
+        border-bottom: var(--primaria) solid 4px;
     }
     
     div.header button {
