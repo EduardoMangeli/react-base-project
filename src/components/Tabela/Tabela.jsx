@@ -1,7 +1,6 @@
 import { Tabela } from "./Style";
-
 const Tabela = () => (
-  <div>
+  <Tabela>
     <table>
       <tr>
           <th>ID</th>
@@ -30,7 +29,7 @@ const Tabela = () => (
           <td>Clinic Doscimetries</td>
         </tr>
     </table>
-  </div>
+  </Tabela>
 )
 
 export default Tabela;
