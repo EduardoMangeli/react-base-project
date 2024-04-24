@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
 import SolicitacaoCard from "../components/SolicitacaoCard/SolicitacaoCard";
 import dadosSolicitacoes from "../data/solicitacoes.json";
+import dadosCalibracoes from "../data/calibracoes.json";
 import Tabela from "../components/Tabela/Tabela";
 const Dashboard = () => {
 
@@ -23,8 +24,7 @@ const Dashboard = () => {
     <Base titulo="Dashboard">
 
       <Secao nome="Solicitações"
-             info="../../public/imagens/icons/info.png"
-             acessar="../../public/imagens/icons/info.png"
+             pai={"/servicos"}
              navbar={
                 <>
                     <button>Clinic Dosimetries</button>
@@ -36,7 +36,7 @@ const Dashboard = () => {
              conteudo={
         <>
 
-          {dadosSolicitacoes.map(
+          {dadosSolicitacoes.slice(0,5).map(
               (solicitacao) => (
                 <SolicitacaoCard
                     id={solicitacao.id}
@@ -48,53 +48,63 @@ const Dashboard = () => {
         </>
       }/>
 
-        <Secao nome="Calibrações" conteudo={
-        <div>
-            <Tabela
-                tipo="calibracao"
-                linha={
-                <>
-                    <tr>
-                        <td>1</td>
-                        <td>Calibração 1</td>
-                        <td>João</td>
-                        <td>12.3</td>
-                        <td>123</td>
-                        <td>01/01/2021</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Calibração 2</td>
-                        <td>João</td>
-                        <td>12.1</td>
-                        <td>123</td>
-                        <td>01/01/2021</td>
-                    </tr>
-                </>
-                }
-            />
+        <div style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
+            <div style={{width: '49%'}}>
+                <Secao
+                    pai="/calibracoes"
+                    nome="Calibrações"
+                    conteudo={
+                        <div>
+                            <Tabela
+                                tipo="calibracao"
+                                linha={
+                                    <>
+                                        {dadosCalibracoes.map(
+                                            (calibracao) => (
+                                                <tr>
+                                                    <td>{calibracao.id}</td>
+                                                    <td>{calibracao.nome}</td>
+                                                    <td>{calibracao.usuario}</td>
+                                                    <td>{calibracao.isotopo}</td>
+                                                    <td>{calibracao.imagem}</td>
+                                                    <td>{calibracao.date}</td>
+                                                </tr>
+                                            ))}
+                                    </>
+                                }
+                            />
 
-            <button>Voltar</button>
-            <button>Avançar</button>
-        </div>
-        }/>
-
-        <Secao nome="Informações" conteudo={
-        <div>
-            <div>
-            <h3>Clinic Doscimetries</h3>
-            <p><span>34</span> Pedidos Abertos</p>
-            <p><span>134</span> Pedidos Fechados</p>
+                            <button>Voltar</button>
+                            <button>Avançar</button>
+                        </div>
+                    }
+                />
             </div>
+            <div style={{width: '49%'}}>
+                <Secao
+                    pai={"/servicos"}
+                    nome="Informações"
+                    conteudo={
+                        <div>
+                            <div>
+                                <h3>Clinic Doscimetries</h3>
+                                <p><span>34</span> Pedidos Abertos</p>
+                                <p><span>134</span> Pedidos Fechados</p>
+                            </div>
 
-            <div>
-            <button>Voltar</button>
-            <button>Avançar</button>
+                            <div>
+                                <button>Voltar</button>
+                                <button>Avançar</button>
+                            </div>
+                        </div>
+                    }
+                    style={{width: '46%'}}
+                />
             </div>
         </div>
-    }/>
 
-    <Secao nome="Atualizações" conteudo={
+
+        <Secao nome="Atualizações" conteudo={
         <div>
             <div>
             <div>

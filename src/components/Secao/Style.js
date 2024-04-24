@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Bloco = styled.article`
     background-color: var(--detalhe);
     padding: 20px;
-    position: relative;
     margin: 25px;
     border-radius: 100px;
   
@@ -24,6 +23,8 @@ const Bloco = styled.article`
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+        margin-left: 3em;
+        margin-right: 3em;
     }
     
     div.nav1{
@@ -57,6 +58,7 @@ const Bloco = styled.article`
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     .infoButton{

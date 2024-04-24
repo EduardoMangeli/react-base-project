@@ -1,6 +1,9 @@
 import { Bloco } from "./Style";
+import {Link} from "react-router-dom";
 
 const infoImg = "imagens/icons/info.png"
+const acessar = "imagens/icons/up-arrow.png"
+
 const Secao = (props) => (
   <Bloco>
     <div className="secao">
@@ -14,9 +17,9 @@ const Secao = (props) => (
 
             {props.navbar}
 
-            <a className="acessarButton">
-                <img src={props.acessar}/>
-            </a>
+            <Link className="acessarButton" to={props.pai}>
+                <img src={acessar}/>
+            </Link>
         </div>
         <div className="content">
             {props.conteudo}
