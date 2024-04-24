@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
 import SolicitacaoCard from "../components/SolicitacaoCard/SolicitacaoCard";
 import dadosSolicitacoes from "../data/solicitacoes.json";
+import Tabela from "../components/Tabela/Tabela";
 const Dashboard = () => {
 
   /* useEffect(()=> {
@@ -19,10 +20,7 @@ const Dashboard = () => {
 
 
   return (
-    <Base>
-      <h1>
-        Dashboard
-      </h1>
+    <Base titulo="Dashboard">
 
       <Secao nome="Solicitações"
              info="../../public/imagens/icons/info.png"
@@ -52,36 +50,36 @@ const Dashboard = () => {
 
         <Secao nome="Calibrações" conteudo={
         <div>
-          <table>
-            <th>ID</th>
-            <th>Calibração</th>
-            <th>User Name</th>
-            <th>Isotopia</th>
-            <th>Data de Solicitação</th>
+            <Tabela
+                tipo="calibracao"
+                linha={
+                <>
+                    <tr>
+                        <td>1</td>
+                        <td>Calibração 1</td>
+                        <td>João</td>
+                        <td>12.3</td>
+                        <td>123</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Calibração 2</td>
+                        <td>João</td>
+                        <td>12.1</td>
+                        <td>123</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                </>
+                }
+            />
 
-            <tr>
-              <td>1</td>
-              <td>Calibração 1</td>
-              <td>João</td>
-              <td>123</td>
-              <td>01/01/2021</td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>Calibração 2</td>
-              <td>João</td>
-              <td>123</td>
-              <td>01/01/2021</td>
-            </tr>
-          </table>
-
-          <button>Voltar</button>
-          <button>Avançar</button>
+            <button>Voltar</button>
+            <button>Avançar</button>
         </div>
         }/>
 
-    <Secao nome="Informações" conteudo={
+        <Secao nome="Informações" conteudo={
         <div>
             <div>
             <h3>Clinic Doscimetries</h3>
