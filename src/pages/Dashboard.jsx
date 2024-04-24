@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
 import SolicitacaoCard from "../components/SolicitacaoCard/SolicitacaoCard";
 import dadosSolicitacoes from "../data/solicitacoes.json";
-
 const Dashboard = () => {
 
   /* useEffect(()=> {
@@ -26,13 +25,15 @@ const Dashboard = () => {
       </h1>
 
       <Secao nome="Solicitações"
+             info="../../public/imagens/icons/info.png"
+             acessar="../../public/imagens/icons/info.png"
              navbar={
-                <div>
+                <>
                     <button>Clinic Dosimetries</button>
                     <button>Preclinic Dosimetris</button>
                     <button>Radiosynoviorthesis</button>
                     <button>Segmentation</button>
-                </div>
+                </>
                  }
              conteudo={
         <>

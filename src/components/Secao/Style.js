@@ -6,8 +6,11 @@ const Bloco = styled.article`
     position: relative;
     margin: 25px;
     border-radius: 100px;
-    height: 400px;
   
+    img{
+        height: 30px;
+    }
+    
     div.secao{
         color: var(--secundaria);
         text-align: center;
@@ -23,14 +26,18 @@ const Bloco = styled.article`
         padding: 20px;
     }
     
-    div.header h1{
+    div.nav1{
         display: flex;
+        align-items: center;
+    }
+    
+    div.nav1 h1{
+        margin: 5px;
     }
     
     div.header button {
         border-radius: 15px;
-        height: 100px;
-        width: 100px;
+        height: 50px;
         background-color: var(--primaria);
         color: #fff;
         border: none;

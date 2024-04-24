@@ -1,19 +1,22 @@
 import { Bloco } from "./Style";
 
+const infoImg = "imagens/icons/info.png"
 const Secao = (props) => (
   <Bloco>
     <div className="secao">
         <div className="header">
-            <h1>
-                {props.nome}
+            <div className="nav1">
+                <h1>{props.nome}</h1>
                 <a className="infoButton">
-                    <img src="public/imagens/icons/info.png"/>
+                    <img src={infoImg}/>
                 </a>
-            </h1>
+            </div>
 
             {props.navbar}
 
-            <button className="acessarButton">Acessar</button>
+            <a className="acessarButton">
+                <img src={props.acessar}/>
+            </a>
         </div>
         <div className="content">
             {props.conteudo}
