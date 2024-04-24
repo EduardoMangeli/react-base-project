@@ -19,15 +19,16 @@
   --destaque: #ffffff;
   --detalhe:#013dac;
   --terciaria:#0050e6;
-  --cinza: #D4D4D4;
+  --cinza: #d4d4d4;
+  --cinzaescuro: #444444;
 }
 
 /* borda vermelha em todos os elementos para debug */
-/*
-* {
+
+/* * {
   outline: red solid 1px;
-}
-*/
+}*/
+
 
 body {
   margin: 0;
