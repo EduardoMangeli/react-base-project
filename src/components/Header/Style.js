@@ -17,9 +17,6 @@ const Top = styled.header`
     color: var(--background);
     text-transform: uppercase;
     /*border-radius: .3em;*/
-    &:hover{
-      background-color: var(--destaque);
-      color: var(--secundaria);
     }
   }
 `
