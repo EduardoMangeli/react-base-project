@@ -26,7 +26,7 @@ const Bottom = styled.footer`
   }
 
   img {
-    margin-right: 10px; // Espaço entre ícone e texto
+    margin-right: .3em; // Espaço entre ícone e texto
   }
 
   h3 {
