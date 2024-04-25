@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Serviços from "./pages/Serviços";
+import Servicos from "./pages/Servicos";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
@@ -27,7 +27,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/serviços" element={<Serviços/>} />
+        <Route path="/servicos" element={<Servicos/>} />
         <Route path="/conta" element={<Conta/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
