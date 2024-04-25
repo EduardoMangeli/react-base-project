@@ -1,0 +1,82 @@
+[
+  {
+    "id": 21,
+    "nome":"CL-12",
+    "usuario": "Clinica Alpha",
+    "isotopo": 13.1,
+    "imagem": "calibrac1.zip",
+    "date": "01/04/2024 00:30"
+  },
+  {
+    "id": 22,
+    "nome":"CL-13",
+    "usuario": "Clinica Beta",
+    "isotopo": 12.5,
+    "imagem": "calibrac2.zip",
+    "date": "02/04/2024 01:15"
+  },
+  {
+    "id": 23,
+    "nome":"CL-14",
+    "usuario": "Clinica Gamma",
+    "isotopo": 11.8,
+    "imagem": "calibrac3.zip",
+    "date": "03/04/2024 02:45"
+  },
+  {
+    "id": 24,
+    "nome":"CL-15",
+    "usuario": "Clinica Delta",
+    "isotopo": 14.2,
+    "imagem": "calibrac4.zip",
+    "date": "04/04/2024 03:20"
+  },
+  {
+    "id": 25,
+    "nome":"CL-16",
+    "usuario": "Clinica Epsilon",
+    "isotopo": 10.9,
+    "imagem": "calibrac5.zip",
+    "date": "05/04/2024 04:50"
+  },
+  {
+    "id": 26,
+    "nome":"CL-17",
+    "usuario": "Clinica Zeta",
+    "isotopo": 12.7,
+    "imagem": "calibrac6.zip",
+    "date": "06/04/2024 05:30"
+  },
+  {
+    "id": 27,
+    "nome":"CL-18",
+    "usuario": "Clinica Eta",
+    "isotopo": 13.5,
+    "imagem": "calibrac7.zip",
+    "date": "07/04/2024 06:10"
+  },
+  {
+    "id": 28,
+    "nome":"CL-19",
+    "usuario": "Clinica Teta",
+    "isotopo": 11.3,
+    "imagem": "calibrac8.zip",
+    "date": "08/04/2024 07:30"
+  },
+  {
+    "id": 29,
+    "nome":"CL-20",
+    "usuario": "Clinica Iota",
+    "isotopo": 14.1,
+    "imagem": "calibrac9.zip",
+    "date": "09/04/2024 08:40"
+  },
+  {
+    "id": 30,
+    "nome":"CL-21",
+    "usuario": "Clinica Kapa",
+    "isotopo": 12.8,
+    "imagem": "calibrac10.zip",
+    "date": "10/04/2024 09:20"
+  }
+]

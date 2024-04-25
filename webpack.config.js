@@ -41,6 +41,7 @@ module.exports = {
   ],
   devServer: {
     open: true,
+    hot: false,
     historyApiFallback: true,
     static: {
       directory: path.resolve(__dirname, './public')

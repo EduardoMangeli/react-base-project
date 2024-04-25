@@ -3,7 +3,10 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
-
+import SolicitacaoCard from "../components/SolicitacaoCard/SolicitacaoCard";
+import dadosSolicitacoes from "../data/solicitacoes.json";
+import dadosCalibracoes from "../data/calibracoes.json";
+import Tabela from "../components/Tabela/Tabela";
 const Dashboard = () => {
 
   /* useEffect(()=> {
@@ -18,97 +21,89 @@ const Dashboard = () => {
 
 
   return (
-    <Base>
-      <h1>
-        Dashboard
-      </h1>
+    <Base titulo="Dashboard">
 
-      <Secao nome="Solicitações" conteudo={
+      <Secao nome="Solicitações"
+             pai={"/servicos"}
+             navbar={
+                <>
+                    <button>Clinic Dosimetries</button>
+                    <button>Preclinic Dosimetris</button>
+                    <button>Radiosynoviorthesis</button>
+                    <button>Segmentation</button>
+                </>
+                 }
+             conteudo={
         <>
-          <button>Clinic Dosimetries</button>
-          <button>Preclinic Dosimetris</button>
-          <button>Radiosynoviorthesis</button>
-          <button>Segmentation</button>
 
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
-
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
-
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
-
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
-
-          <span>
-            <p>ID: 1</p>
-            <p>User: Clinica dosimetria</p>
-            <p>Data de Solicitações: 01/01/2021</p>
-          </span>
+          {dadosSolicitacoes.slice(0,5).map(
+              (solicitacao) => (
+                <SolicitacaoCard
+                    id={solicitacao.id}
+                    cliente={solicitacao.cliente}
+                    data={solicitacao.date}
+                />
+                )
+            )}
         </>
       }/>
 
-        <Secao nome="Calibrações" conteudo={
-        <div>
-          <table>
-            <th>ID</th>
-            <th>Calibração</th>
-            <th>User Name</th>
-            <th>Isotopia</th>
-            <th>Data de Solicitação</th>
+        <div style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
+            <div style={{width: '49.9%'}}>
+                <Secao
+                    pai="/calibracoes"
+                    nome="Calibrações"
+                    conteudo={
+                        <div>
+                            <Tabela
+                                tipo="calibracao"
+                                linha={
+                                    <>
+                                        {dadosCalibracoes.map(
+                                            (calibracao) => (
+                                                <tr>
+                                                    <td>{calibracao.id}</td>
+                                                    <td>{calibracao.nome}</td>
+                                                    <td>{calibracao.usuario}</td>
+                                                    <td>{calibracao.isotopo}</td>
+                                                    <td>{calibracao.imagem}</td>
+                                                    <td>{calibracao.date}</td>
+                                                </tr>
+                                            ))}
+                                    </>
+                                }
+                            />
 
-            <tr>
-              <td>1</td>
-              <td>Calibração 1</td>
-              <td>João</td>
-              <td>123</td>
-              <td>01/01/2021</td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>Calibração 2</td>
-              <td>João</td>
-              <td>123</td>
-              <td>01/01/2021</td>
-            </tr>
-          </table>
-
-          <button>Voltar</button>
-          <button>Avançar</button>
-        </div>
-        }/>
-
-    <Secao nome="Informações" conteudo={
-        <div>
-            <div>
-            <h3>Clinic Doscimetries</h3>
-            <p><span>34</span> Pedidos Abertos</p>
-            <p><span>134</span> Pedidos Fechados</p>
+                            <button>Voltar</button>
+                            <button>Avançar</button>
+                        </div>
+                    }
+                />
             </div>
+            <div style={{width: '49.9%'}}>
+                <Secao
+                    pai={"/servicos"}
+                    nome="Informações"
+                    conteudo={
+                        <div>
+                            <div>
+                                <h3>Clinic Doscimetries</h3>
+                                <p><span>34</span> Pedidos Abertos</p>
+                                <p><span>134</span> Pedidos Fechados</p>
+                            </div>
 
-            <div>
-            <button>Voltar</button>
-            <button>Avançar</button>
+                            <div>
+                                <button>Voltar</button>
+                                <button>Avançar</button>
+                            </div>
+                        </div>
+                    }
+                />
             </div>
         </div>
-    }/>
 
-    <Secao nome="Atualizações" conteudo={
+
+        <Secao nome="Atualizações" conteudo={
         <div>
             <div>
             <div>

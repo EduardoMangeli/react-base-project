@@ -3,17 +3,18 @@ import styled from "styled-components";
 const Bloco = styled.article`
     background-color: var(--detalhe);
     padding: 20px;
-    position: relative;
-    margin: 25px;
+    margin: 20px 10px;
     border-radius: 100px;
-    height: 400px;
   
+    img{
+        height: 30px;
+    }
+    
     div.secao{
         color: var(--secundaria);
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        text-transform: uppercase;
         padding: 10px;
     }
     
@@ -22,14 +23,50 @@ const Bloco = styled.article`
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+        margin-left: 3em;
+        margin-right: 3em;
     }
     
-    div header h1{
+    div.nav1{
         display: flex;
+        align-items: center;
+    }
+    
+    div.nav1 h1{
+        margin: 5px;
+        border-bottom: var(--primaria) solid 4px;
+    }
+    
+    div.header button {
+        border-radius: 15px;
+        height: 50px;
+        background-color: var(--primaria);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    div.header button:hover {
+        background-color: #0056b3;
+    }
+    
+    div.header button:active {
+        background-color: #004380;
     }
     
     div.content {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .infoButton{
+    
+    }
+    
+    .acessarButton{
+
     }
     
 

@@ -3,50 +3,40 @@ import Base from "./Base"
 import { getAll, getElenco } from "../services/AtletasBotafogo";
 import AtletaCard from "../components/AtletaCard/AtletaCard";
 import ListContainer from "../components/ListContainer/ListContainer";
+import Tabela from "../components/Tabela/Tabela";
+import dadosSolicitacoes from "../data/solicitacoes.json";
 
 const Atletas = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [erro, setErro] = useState(null);
-  
-  useEffect(() => {
-    const getDados = async () => {
-      const dados = await getElenco();
-      
-      if (dados.code === 400) {
-        setErro(dados);
-      } else {
-        setData(dados);
-      }
-
-      setLoading(false);
-    } 
-    getDados();
-  },[]);
-
 
   return (
-    <Base>
-      <ListContainer>
-      {loading &&  <span>Carregando...</span>}
-      {erro && 
-        <div style={{textAlign: 'center'}}>
-          <span>{`${erro.message}`}</span><br/>
-          <span>{`Mensagem Original: ${erro.original}`}</span>
-        </div>
-      }
+      <Base titulo="Serviços">
 
-      {data && data.map( (ele, index) => (
-              <AtletaCard
-                key={index}
-                nome={ele.nome}
-                src={ele.imagem}
-              />
-          ))
-        
-      }
-      </ListContainer>
-    </Base>
+        <Tabela
+            tipo="servico"
+            linha={
+                <>
+
+          {dadosSolicitacoes.map(
+              (solicitacao) => (
+                  <tr>
+                      <td>{solicitacao.id}</td>
+                      <td>{solicitacao.codigo}</td>
+                      <td>{solicitacao.analise}</td>
+                      <td>{solicitacao.cliente}</td>
+                      <td>{solicitacao.atividade}</td>
+                      <td>{solicitacao.calibracao} <a href=""><i></i></a></td>
+                      <td><span className="nao-visto">{solicitacao.status}</span></td>
+                      <td>{solicitacao.imagem} <a href=""><i></i></a></td>
+                      <td> {solicitacao.relatorio} <a href=""><i></i></a></td>
+                      <td>{solicitacao.date}</td>
+                      <td>{solicitacao.tipo}</td>
+                  </tr>
+              ))}
+
+                </>
+        }/>
+
+      </Base>
   )
 }
 

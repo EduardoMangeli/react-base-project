@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import Calibracao from "./pages/Calibracao";
+import Calibracoes from "./pages/Calibracoes";
 import DetalheSolicitacao from "./pages/DetalheSolicitacao";
 import Servicos from "./pages/Servicos";
 import Perfil from "./pages/Perfil";
@@ -28,7 +28,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard/>} />
-        <Route path="/calibracao" element={<Calibracao/>} />
+        <Route path="/calibracoes" element={<Calibracoes/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/detalhe-solicitacao" element={<DetalheSolicitacao/>} />
         <Route path="/solicitacao" element={<DetalheSolicitacao/>} />

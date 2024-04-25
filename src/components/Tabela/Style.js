@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Tabela = styled.tabela`
+const TabelaEstilo = styled.article`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
 
@@ -40,4 +40,4 @@ const Tabela = styled.tabela`
   }
 `
 
-export { Tabela };
+export { TabelaEstilo };

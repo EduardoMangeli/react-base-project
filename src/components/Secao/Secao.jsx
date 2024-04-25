@@ -1,18 +1,28 @@
 import { Bloco } from "./Style";
+import {Link} from "react-router-dom";
 
-const Secao = (sec) => (
+const infoImg = "imagens/icons/info.png"
+const acessar = "imagens/icons/up-arrow.png"
+
+const Secao = (props) => (
   <Bloco>
-    <div  className="secao">
+    <div className="secao">
         <div className="header">
-            <h1>
-                {sec.nome}
-                <button className="infoButton">Info</button>
-            </h1>
+            <div className="nav1">
+                <h1>{props.nome}</h1>
+                <a className="infoButton">
+                    <img src={infoImg}/>
+                </a>
+            </div>
 
-            <button className="acessarButton">Acessar</button>
+            {props.navbar}
+
+            <Link className="acessarButton" to={props.pai}>
+                <img src={acessar}/>
+            </Link>
         </div>
         <div className="content">
-            {sec.conteudo}
+            {props.conteudo}
         </div>
     </div>
   </Bloco>

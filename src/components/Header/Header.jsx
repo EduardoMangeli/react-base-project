@@ -1,21 +1,24 @@
 import { Link } from "react-router-dom";
 import { Top } from "./Style";
 
-// Preciso de um botão hamburgue
-
+const logo = "imagens/icons/logo.png";
 const Header = () => (
   <Top>
 
-      <button className="hamburguer">☰</button>
-    <Link to="/dashboard">Home</Link>
-    <Link to="/servicos">Serviços</Link>
-    <Link to="/perfil">Conta</Link>
-    
-    { window.sessionStorage.getItem('accessToken')
-    ? <Link to="/logout">Logout</Link>
-    : <Link to="/login">Login</Link>
-    }
-    
+      <div id='nav1'>
+          <button className="hamburguer">☰</button>
+          <img src={logo}/>
+      </div>
+
+      <div id='nav2'>
+          <Link to="/dashboard">Home</Link>
+          <Link to="/servicos">Serviços</Link>
+          { window.sessionStorage.getItem('accessToken')
+              ? <Link to="/perfil">Conta</Link>
+              : <Link to="/login">Login</Link>
+          }
+      </div>
+
   </Top>
 )
 
