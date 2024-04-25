@@ -49,7 +49,7 @@ const Dashboard = () => {
       }/>
 
         <div style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
-            <div style={{width: '49%'}}>
+            <div style={{width: '49.9%'}}>
                 <Secao
                     pai="/calibracoes"
                     nome="Calibrações"
@@ -80,7 +80,7 @@ const Dashboard = () => {
                     }
                 />
             </div>
-            <div style={{width: '49%'}}>
+            <div style={{width: '49.9%'}}>
                 <Secao
                     pai={"/servicos"}
                     nome="Informações"
@@ -98,7 +98,6 @@ const Dashboard = () => {
                             </div>
                         </div>
                     }
-                    style={{width: '46%'}}
                 />
             </div>
         </div>

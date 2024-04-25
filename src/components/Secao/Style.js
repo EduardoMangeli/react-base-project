@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Bloco = styled.article`
     background-color: var(--detalhe);
     padding: 20px;
-    margin: 25px;
+    margin: 20px 10px;
     border-radius: 100px;
   
     img{
