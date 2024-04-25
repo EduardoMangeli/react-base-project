@@ -53,11 +53,32 @@ const Privacidade = () => {
                 <h3>9. Armazenamento de Dados e Segurança da Informação</h3>
                 <p>O Passeio Carioca emprega medidas de segurança de natureza técnica e administrativa adequadas para proteger os dados pessoais sob seu controle, bem como mantém registro das operações de tratamento de dados pessoais que realiza, especialmente em atenção aos princípios da segurança e prevenção contidos no rol do art. 6º da LGPD.</p>
 
-                {/* Terminar os termos */}
+                <h3>10. Retenção e descarte dos dados</h3>
+                <p>Os dados pessoais tratados pelo Passeio Carioca serão armazenados durante o tempo em que estiver vigente o contrato (art. 7º, V da LGPD). Findo o contrato, as informações que o Usuário e o Prestador de Serviços enviaram serão armazenadas de acordo com as normas de prescrição do Direito brasileiro. Após o prazo prescricional, os dados pessoais tratados pelo Passeio Carioca serão eliminados, com exceção dos casos em que o tratamento for necessário em razão das hipóteses previstas no art. 16 da LGPD, quais sejam:</p>
+                <ul>
+                <li>I - cumprimento de obrigação legal ou regulatória pelo controlador;</li>
+                <li>II - estudo por órgão de pesquisa, garantida, sempre que possível, a anonimidade dos dados pessoais;</li>
+                <li>III - transferência a terceiro, desde que respeitados os requisitos de tratamento de dados dispostos nesta Lei; ou</li>
+                <li>IV - uso exclusivo do controlador, vedado seu acesso por terceiro, e desde que anonimizados os dados.</li>
+                </ul>
+
+                <h3>11. Direitos dos titulares de dados</h3>
+                <p>O Usuário e o Prestador de Serviços têm direito de solicitar ao Passeio Carioca informações referentes ao tratamento de seus dados pessoais. Lista-se, abaixo, os direitos do titular previstos no art. 18 da LGPD:</p>
+                <ul>
+                <li>I. Confirmação da existência de tratamento - os titulares de dados pessoais podem entrar em contato a fim de confirmar se algum dado pessoal seu é tratado pelo Passeio Carioca.</li>
+                <li>II. Acesso aos dados - é direito dos titulares requerer acesso aos dados existentes tratados pelo Passeio Carioca.</li>
+                <li>III. Correção de dados incompletos, inexatos ou desatualizados - os titulares de dados podem solicitar ao Passeio Carioca, a qualquer momento, a alteração de seus dados pessoais, no caso em que estejam incorretos, inexatos ou desatualizados.</li>
+                <li>IV. Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD - o titular poderá solicitar o bloqueio e a eliminação de seus dados pessoais. Tal solicitação só será negada pelo Passeio Carioca nos casos em que o pedido não puder ser atendido ou nos casos em que for obrigatório ou permitido seu armazenamento, de acordo com as hipóteses elencadas no art. 7º da LGPD e demais dispositivos aplicáveis.</li>
+                <li>V. Portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa, de acordo com a regulamentação da Autoridade Nacional de Proteção de Dados (ANPD), observados os segredos comercial e industrial - a portabilidade dos dados pessoais não inclui dados já anonimizados pelo Passeio Carioca.</li>
+                <li>VI. Eliminação dos dados pessoais tratados com o consentimento do titular - os dados pessoais dos titulares serão eliminados após o cumprimento da finalidade, exceto nos determinados casos: a) cumprimento de obrigação legal ou regulatória pelo Passeio Carioca; b) transferência a terceiro, desde que respeitados os requisitos de tratamento de dados dispostos na LGPD; ou c) uso exclusivo do Passeio Carioca, vedado seu acesso por terceiro e desde que os dados estejam anonimizados.</li>
+                <li>VII. Informação das entidades públicas e privadas com as quais o controlador realizou compartilhamento de dados: é direito do titular requerer acesso aos dados pessoais que forem encaminhados às entidades públicas e privadas.</li>
+                <li>VIII. Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa: o Passeio Carioca está disponível para atender e auxiliar, de forma transparente, quaisquer dúvidas que possam existir em função do tratamento dos dados pessoais dos titulares, inclusive sobre os possíveis impactos decorrentes do não fornecimento do consentimento.</li>
+                <li>IX. Revogação do consentimento: o consentimento fornecido pelos titulares dos dados pessoais poderá ser revogado a qualquer momento por meio de pedido escrito ao Passeio Carioca.</li>
+                </ul>
+
+                <h3>12. Modificação da Política de Privacidade</h3>
+                <p>O Passeio Carioca poderá modificar, alterar ou substituir esta Política de Privacidade e Proteção de Dados Pessoais a qualquer tempo. Em caso de alteração relevante, o Usuário e o Prestador de Serviços serão informados por e-mail ou no próprio aplicativo, por meio de aviso ou banner visível ao Usuário e ao Prestador de Serviços.</p>     
                 
-
-
-
                 <Botao texto="Entre em contato"></Botao>
             </div>
         </Base>
