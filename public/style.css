@@ -51,51 +51,47 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-div.retanguloCinza {
-  position: static;
+.retanguloCinza {
+  display: flex;
+  flex-direction: column;
   background-color: var(--fundos);
-  padding: 50%;
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: 1000px;
 }
 
-div.retanguloBranco1Home {
-  position: absolute;
+.retanguloBranco1Home {
+  flex: 1;
   background-color: var(--background);
-  top: 20%;
-  left: 2%;
-  width: 97%;
-  height: 60%;
+  margin: 1% 1% 0% 1%;
 }
-div.retanguloBranco2Home {
-  position: absolute;
-  background-color: var(--background);
-  top: 82%;
-  left: 2%;
-  width: 45%;
-  height: 62%;
+.container-234{
+  display: flex;
+  height: 25rem;
 }
-div.retanguloBranco3Home {
-  position: absolute;
-  background-color: var(--background);
-  top: 82%;
-  left: 48%;
-  width: 51%;
-  height: 30%;
+.container-34{
+  flex: 1;
+  gap: 2%;
+  margin: 1% 1% 0% 1%;
+  flex-direction: column;
+  display: flex;
+  width: 90%;
+  height: 23.95rem;
 }
-div.retanguloBranco4Home {
-  position: absolute;
+.retanguloBranco2Home {
+  flex: 1;
   background-color: var(--background);
-  top: 114%;
-  left: 48%;
-  width: 51%;
-  height: 30%;
+  margin: 1% 1% 0% 1%;
 }
-div.retanguloBranco5Home {
-  position: absolute;
+.retanguloBranco3Home {
+  flex: 1;
   background-color: var(--background);
-  top: 146%;
-  left: 2%;
-  width: 97%;
-  height: 60%;
+}
+.retanguloBranco4Home {
+  flex: 1;
+  background-color: var(--background);
+}
+.retanguloBranco5Home {
+  flex: 1;
+  background-color: var(--background);
+  margin: 1% 1% 1% 1%;
 }
