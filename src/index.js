@@ -15,7 +15,7 @@ import Gameficacao from "./pages/Gameficacao";
 import About from "./pages/About";
 import Anuncie from "./pages/Anuncie";
 import Contato from "./pages/Contato";
-import Mapa from "./pages/Mapa";
+import Mapa from "./pages/PageMapa";
 import Guia from "./pages/Guia";
 import Termos from "./pages/Termos";
 import Privacidade from "./pages/Privacidade";
