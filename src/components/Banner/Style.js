@@ -10,7 +10,8 @@ const Destaque = styled.header`
   flex-direction: row;
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
   align-items: flex-end; /* Alinha o conteúdo na parte inferior */
-
+  margin: 0;
+  
   h1{
     text-transform: uppercase;
     text-align: center;
