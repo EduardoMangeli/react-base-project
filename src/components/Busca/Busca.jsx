@@ -1,6 +1,6 @@
-import { Busca } from "./Style";
+import { BuscaEstilo } from "./Style";
 
-const Busca = () => (
+const BuscaEstilo = () => (
   <Busca>
     <div class="busca">
         <div class="dropdown">
@@ -21,4 +21,4 @@ const Busca = () => (
   </Busca>
 )
 
-export default Busca;
+export default BuscaEstilo;
