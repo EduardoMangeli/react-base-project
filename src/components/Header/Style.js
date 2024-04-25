@@ -11,10 +11,10 @@ const Top = styled.header`
     padding: .3em;
     margin: 0 .7em;
     min-width: 5em;
-    background-color: var(--background);
+    background-color: var(--secundaria);
     text-decoration: none;
     font-weight: bold;
-    color: var(--detalhe);
+    color: var(--background);
     text-transform: uppercase;
     /*border-radius: .3em;*/
     &:hover{

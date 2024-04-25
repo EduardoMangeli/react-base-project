@@ -5,7 +5,6 @@ const Header = () => (
   <Top>
     <Link to="/">Home</Link>
     <Link to="/clinica">Dosimetria Clinica</Link>
-    <Link to="/atletas">Atletas</Link>
     <Link to="/modelagem">Modelagem Computacional</Link>
     <Link to="/radiosinoviortese">Radiosinoviortese</Link>
     <Link to="/segmentacaoequantificacao">Segmentacao e Quantificacao</Link>
