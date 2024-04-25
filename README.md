@@ -8,15 +8,9 @@ Esse é um projeto de uma aplicação base usando React e Firebase construído c
 
 ## Organização da equipe
 
-[Área de trabalho - Trello](https://trello.com/b/2o6qwtDK/desenvolvimento-api-dosimagem)
-
-
-## Trello
-
 A equipe está utilizando a ferramente Trello para melhor organização do que deve ser feito.
 
-[Acessar Trello](https://trello.com/b/2o6qwtDK/desenvolvimento-api-dosimagem)
-
+[Área de trabalho - Trello](https://trello.com/b/2o6qwtDK/desenvolvimento-api-dosimagem)
 
 ## Dependências
 
