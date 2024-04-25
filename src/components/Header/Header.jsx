@@ -3,13 +3,13 @@ import { Top } from "./Style";
 
 const Header = () => (
   <Top>
-    <div className="div-logo">
-      <img src={"./imagens/dosimagem.png"} alt="Logo" className="logo" />
-      <div className="links-container">
+    <div class="div-logo">
+      <img src={"./imagens/dosimagem.png"} alt="Logo" class="logo" />
+      <div class="links-container">
     </div>
     </div>
     <div class="retangulo"></div>
-    <div className="div-botoes">
+    <div class="div-botoes">
         <Link to="/">Home</Link>
         <Link to="/servicos">Serviços</Link>
         <Link to="/conta">Conta</Link>

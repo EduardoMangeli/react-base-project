@@ -9,12 +9,14 @@ const Top = styled.header`
 }
 
 .retangulo {
+    display: flex;
     height: 9px;
     width: 100%;
     background-color: var(--detalhes); 
 }
 
 .linha {
+    display: flex;
     height: 1px;
     width: 90%;
     background-color: var(--primaria);
@@ -24,24 +26,24 @@ const Top = styled.header`
 }
 
 .logo {
+  display: flex;
   width: 200px; /* ajuste o tamanho conforme necessário */
   height: auto;
 }
 
 .div-botoes {
+  display: flex;
   padding: .5em 2em;
   padding-top: 1em;
   padding-bottom: 1em; 
   background-color: var(--secundaria);
   justify-content: center;
   margin: 0;
-  display: flex;
   justify-content: center;
   a {
     
     text-align: center;
     padding: .1,5em;
-
     margin: 0 40px;
     min-width: 15em;
     background-color: var(--botoes) ;
@@ -54,7 +56,13 @@ const Top = styled.header`
       color: var(--secundaria);
     }
   }
-}  
+} 
+@media (max-width: 800px){
+  .div-botoes{
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+}
 `
 
 export {Top}
