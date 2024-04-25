@@ -28,7 +28,7 @@ const Passeios = () => {
                 )
                 }
         </ListContainer>
-        <div><Botao texto="Baixe o app"></Botao></div>
+        <div><Botao texto="Saiba Mais"></Botao></div>
         </Base>
     )
   }

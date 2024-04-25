@@ -3,10 +3,10 @@ import { Top } from "./Style";
 
 const Header = () => (
   <Top>
-    <div className="containerLogo">
-      <img src="imagens/PasseioCariocaLogoBranco.svg" />
+    <Link to="/" className="containerLogo">
+      <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
       <h3>Passeio Carioca</h3>
-    </div>
+    </Link>
     <Link to="/">Home</Link>
     <Link to="/passeios">Passeios</Link>
     <Link to="/gameficacao">Gameficação</Link>

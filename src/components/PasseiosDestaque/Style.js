@@ -10,7 +10,7 @@ const PasseioDestaque = styled.header`
   justify-content: center; /* Centraliza as imagens horizontalmente */
 `;
 
-const ImagemPasseio = styled.img`
+const CardPasseio = styled.img`
   height: 15rem;
   width: 15rem;
   border-radius: 8%;
@@ -19,9 +19,7 @@ const ImagemPasseio = styled.img`
     margin-right: 0; /* Remove o margin da última imagem */
   }
   &:hover {
-    height: 16rem;
-    width: 16rem;
-  }
-`;
+    scale: 1.1;
+  }`;
 
-export { PasseioDestaque, ImagemPasseio };
+export { PasseioDestaque, CardPasseio };

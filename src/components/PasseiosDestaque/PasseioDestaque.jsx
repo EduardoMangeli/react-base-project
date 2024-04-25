@@ -1,12 +1,12 @@
-import { PasseioDestaque, ImagemPasseio } from "./Style"
+import { PasseioDestaque, CardPasseio } from "./Style"
 
 const PasseiosDestaque= () => {
 
   return(
     <PasseioDestaque>
-        <ImagemPasseio src="imagens/old-computer-1.jpg" alt="Passeio 1" />
-        <ImagemPasseio src="imagens/old-computer-4.jpg" alt=""/>
-        <ImagemPasseio src="imagens/old-computer-3.jpg" alt=""/>
+        <CardPasseio src="imagens/passeios/fujidudez-pdjyHZBwG7s-unsplash.jpg" alt="" />
+        <CardPasseio src="imagens/passeios/nathana-reboucas-tx8TZernPi8-unsplash.jpg" alt=""/>
+        <CardPasseio src="imagens/passeios/mauro-lima-eOhs5ZoJLW4-unsplash.jpg" alt=""/>
     </PasseioDestaque>
   )
 }

@@ -25,7 +25,7 @@ const Anuncie = () => {
 
                 <p>Consulte valores e tire duvidas</p>
 
-                <Botao texto="Saiba Mais"></Botao>
+                <Botao texto="Entre em contato"></Botao>
             </div>
         </Base>
       

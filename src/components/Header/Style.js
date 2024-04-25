@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Top = styled.header`
   padding: 2em 5em;
@@ -21,23 +21,27 @@ const Top = styled.header`
     font-size: 0.8rem;
     &:hover{
       background-color: var(--terciaria);
-      color: var(--destaque);
     }
   }
 
   h3{
-    color: var(--destaque)
+    color: var(--destaque);
+    width: 50%;
+    font-size: 1.2rem;
   }
 
   .containerLogo{
     display: flex;
     align-items: center;
+    &:hover{
+      background-color: var(--secundaria);
+    }
   }
 
   img{
     max-width: 6rem;
     margin-right: 10px;
   }
-`
+`;
 
-export {Top}
+export { Top };

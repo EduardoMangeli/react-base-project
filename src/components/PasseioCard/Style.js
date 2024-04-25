@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 const PasseioArticle = styled.article`
   width: 20vw;
-  background-color: #D4D4D4;
+  background-color: var(--cinza);
   position: relative;
+  &:hover {
+    scale: 1.05; 
+  }
 
   figure {
     margin: 0 0 0 0;
@@ -26,7 +29,7 @@ const PasseioArticle = styled.article`
   }
 
   ul{  
-    color: black;
+    color: var(--texto);
     padding: 1em;
     list-style: none;
     margin: 0;
