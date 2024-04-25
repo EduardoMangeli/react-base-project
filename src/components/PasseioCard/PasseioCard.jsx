@@ -1,22 +1,20 @@
 import { PasseioArticle } from "./Style"
 
-const PasseioCard = (props) => {
+const PasseioCard = ({nome, local, data, hora, descricao, guia, valor, imagem}) => {
 
   return(
-  <PasseioArticle>
-    <figure>
-    <date>15/05</date>
-      <img src={props.src} />
-      <figcaption dangerouslySetInnerHTML={{__html:props.agradecimento}}/>
-        
-    </figure>
-    <h3>Título</h3>
-    <ul>
-        <li>Local: Av. Rio Branco</li>
-        <li>Hora: 13:00</li>
-        <li>Valor: R$150,00</li>
-    </ul>
-  </PasseioArticle>
+    <PasseioArticle>
+      <figure>
+      <h3>{data}</h3>
+        <img src={`${process.env.PUBLIC_URL}${imagem}`}/>
+      </figure>
+      <h3>{nome}</h3>
+      <ul>
+          <li>{local}</li>
+          <li>{hora}</li>
+          <li>{valor}</li>
+      </ul>
+    </PasseioArticle>
   )
 }
 

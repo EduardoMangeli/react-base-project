@@ -4,6 +4,7 @@ import ListContainer from "../components/ListContainer/ListContainer";
 import PasseioCard from "../components/PasseioCard/PasseioCard";
 import Rodape from "../components/Rodape/Rodape";
 import Base from "./Base"
+import passeio from "../data/passeios.json"
 
 const Passeios = () => {
 
@@ -12,16 +13,22 @@ const Passeios = () => {
         <Banner titulo={"Passeios"} imagem={"url da imagem"}/>
         <div><Botao texto="Baixe o app"/></div>
         <ListContainer>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
-            <PasseioCard></PasseioCard>
+            {passeio.map(
+                (e, index) => (
+                <PasseioCard 
+                    key={index}
+                    nome={e.nome}
+                    imagem={e.imagem}
+                    data={e.data}
+                    local={e.local}
+                    hora={e.hora}
+                    valor={e.valor}
+                />
+                )
+                )
+                }
         </ListContainer>
-        <Botao texto="Baixe o app"></Botao>
+        <div><Botao texto="Baixe o app"></Botao></div>
         </Base>
     )
   }
