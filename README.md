@@ -8,6 +8,7 @@
 
 ## Dúvidas
 - *DVD1*: No seu vídeo explicativo sobre o sistema, identificamos várias funcionalidades, como 'Autenticação', 'Isotopos' e 'Assinaturas', que não compreendemos completamente seu propósito. Gostaríamos de saber se essas funcionalidades são cruciais para o funcionamento principal do sistema e qual é o objetivo delas.
+- *DVD2*: Qual API o sistema atual utiliza para acessar e recuperar informações do back end?
 
 ## Como instalar
 - `npm install`
