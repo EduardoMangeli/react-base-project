@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Secao from "../components/Secao/Secao";
 import dadosCalibracoes from "../data/calibracoes.json";
 import Tabela from "../components/Tabela/Tabela";
+import Busca from "../components/Busca/Busca";
 
 const Calibracoes = () => {
 
@@ -20,8 +21,10 @@ const Calibracoes = () => {
 
 
   return (
-    <Base>
-    <h1>Calibrações</h1>
+    <Base titulo="Calibrações">
+
+                            <Busca />
+                      
                         <div>
                             <Tabela
                                 nome="Calibrações"

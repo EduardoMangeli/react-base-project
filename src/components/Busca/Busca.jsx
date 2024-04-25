@@ -1,7 +1,8 @@
 import { BuscaEstilo } from "./Style";
 
-const BuscaEstilo = () => (
-  <Busca>
+
+const Busca = () => (
+  <BuscaEstilo>
     <div class="busca">
         <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
@@ -12,13 +13,13 @@ const BuscaEstilo = () => (
             </div>
           </div>
           <div class="search-box">
-            <input type="text" class="input-busca" placeholder="Digite para pesquisar...">
+            <input type="text" class="input-busca" placeholder="Digite para pesquisar..."/>
             <button name="button" type="submit" class="btn btn-flat">
                 <i class="fas fa-search"></i> Search
               </button>
           </div>
     </div>
-  </Busca>
+  </BuscaEstilo>
 )
 
-export default BuscaEstilo;
+export default Busca;
