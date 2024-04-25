@@ -10,6 +10,7 @@
 - *DVD1*: No seu vídeo explicativo sobre o sistema, identificamos várias funcionalidades, como 'Autenticação', 'Isotopos' e 'Assinaturas', que não compreendemos completamente seu propósito. Gostaríamos de saber se essas funcionalidades são cruciais para o funcionamento principal do sistema e qual é o objetivo delas.
 - *DVD2*: Qual API o sistema atual utiliza para acessar e recuperar informações do back end?
 - *DVD3*: É possível utilizar a mesma calibração para calcular os resultados de dois pacientes diferentes dentro da mesma clínica?
+- *DVD4*: Na demonstração do seu projeto, percebi que há a capacidade de fazer upload de imagens do paciente e de calibração na área administrativa. Vocês já implementaram essa função na prática, ou sempre contam com os valores adicionados pelos clientes?
 
 ## Como instalar
 - `npm install`
