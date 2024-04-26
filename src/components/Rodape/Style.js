@@ -5,8 +5,8 @@ const Bottom = styled.footer`
   background-color: var(--cinza);
   display: flex;
   bottom: 0;
-  flex-direction: row;
-  justify-content: space-between;  // Distribui espaço entre os elementos
+  flex-direction: column;
+  justify-content: center;  // Distribui espaço entre os elementos
   align-items: center;            // Centraliza verticalmente
   margin: 0;
 
@@ -31,18 +31,41 @@ const Bottom = styled.footer`
 
   h3 {
     font-size: small;
-    font-weight: normal;
+    font-weight: bold;
     padding: .5em;
     text-align: left;
   }
 
   .colunaNav {
-    padding: 0 8em;
+    padding: 0.8em;
+    display: flex;
     flex: 1; // Faz a coluna crescer e ocupar espaço disponível
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em 2em;
+    //align-items: flex-start; /* Alinha os itens ao topo */
+  }
+
+  .left-column, .right-column {
+    flex: 1; // Faz as colunas crescerem e ocuparem espaço disponível
+    white-space: nowrap; /* Evita que o texto quebre em mais de uma linha */
+  }
+
+  .right-column {
+    padding-left: 3em;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: row; // Organiza as colunas em linha
+    justify-content: space-between; // Distribui espaço entre as colunas
+  }
+
   .redes {
-    padding: 0 8em;
+    padding: 0.8em 2em;
     display: flex;
     flex-direction: column; // Organiza os links das redes sociais em coluna
   }
