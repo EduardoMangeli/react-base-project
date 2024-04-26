@@ -15,10 +15,11 @@ import Gameficacao from "./pages/Gameficacao";
 import About from "./pages/About";
 import Anuncie from "./pages/Anuncie";
 import Contato from "./pages/Contato";
-import Mapa from "./pages/Mapa";
+import Mapa from "./pages/PageMapa";
 import Guia from "./pages/Guia";
 import Termos from "./pages/Termos";
 import Privacidade from "./pages/Privacidade";
+import Formulario from "./pages/Form_Anunciante"
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -48,6 +49,7 @@ root.render(
         <Route path="/guia" element={<Guia/>} />
         <Route path="/termos" element={<Termos/>} />
         <Route path="/privacidade" element={<Privacidade/>} />
+        <Route path="/formulario" element={<Formulario/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

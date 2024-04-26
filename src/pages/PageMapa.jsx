@@ -1,14 +1,15 @@
 import Base from "./Base"
 import Banner from "../components/Banner/Banner";
 import Botao from "../components/Botao/Botao";
+import Mapa from "../components/Mapa/Mapa";
 
-const Mapa = () => {
+const PageMapa = () => {
 
   return (
     <Base>
-      <h1>MAPA</h1>
+      <h2>MAPA</h2>
       <div className="containerMapa">
-        <Banner/>
+        <Mapa/>
       </div>
 
       <div><Botao texto="Baixe o app"/></div>
@@ -16,4 +17,4 @@ const Mapa = () => {
   )
 }
 
-export default Mapa;
+export default PageMapa;
