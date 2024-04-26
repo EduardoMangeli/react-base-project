@@ -49,7 +49,7 @@ root.render(
         <Route path="/guia" element={<Guia/>} />
         <Route path="/termos" element={<Termos/>} />
         <Route path="/privacidade" element={<Privacidade/>} />
-        <Route path="/formulario" element={<Formulario/>} />
+        <Route path="/Form_Anunciante" element={<Formulario/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

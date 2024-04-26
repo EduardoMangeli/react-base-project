@@ -1,6 +1,6 @@
 import { Input } from "./Style"
 
-const Forms = ({type, text, name, value}) => {
+const Forms = ({type, text, name, placeholder}) => {
    
     return(
         <Input>
@@ -10,9 +10,8 @@ const Forms = ({type, text, name, value}) => {
                 type={type} 
                 name={name} 
                 id={name}
-                value={value}
+                placeholder={placeholder}
             />
-            <button>Enviar</button>       
             </form>          
         </Input>
        
