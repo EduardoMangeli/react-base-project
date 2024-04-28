@@ -6,32 +6,35 @@
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: hsla(210, 67%, 43%, 1);
+  /*--primaria: hsla(210, 67%, 43%, 1);
   --background: hsla(108, 22%, 87%, 1);
   --secundaria: hsla(34, 100%, 50%, 1);
   --destaque: hsla(355, 78%, 56%, 1);
-  --detalhe: hsla(9, 63%, 45%, 1);
+  --detalhe: hsla(9, 63%, 45%, 1);*/
 
-
-/*  --primaria: hsla(0, 1%, 20%, 1);
-  --background: hsla(81, 21%, 74%, 1);
-  --secundaria: hsla(135, 7%, 64%, 1);
-  --destaque: hsla(8, 34%, 54%, 1);
-  --detalhe:hsla(241, 96%, 72%, 1);*/
+  --texto: #000000;
+  --primaria: #1b57b3;
+  --background: #ffffff;
+  --secundaria: #3c73da;
+  --destaque: #ffffff;
+  --detalhe:#013dac;
+  --terciaria:#0050e6;
+  --cinza: #d4d4d4;
+  --cinzaescuro: #444444;
 }
 
 /* borda vermelha em todos os elementos para debug */
-/*
-* {
+
+/* * {
   outline: red solid 1px;
-}
-*/
+} */
+
 
 body {
   margin: 0;
   font-family: 'Lora', serif;
   background-color: var(--background);
-  color:var(--primaria);
+  color:var(--texto);
 }
 
 a {
@@ -39,9 +42,25 @@ a {
 }
 
 div.container {
+  padding: 0rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
+h2{
+  color: var(--destaque);
+  background-color: var(--secundaria);
+  text-align: center;
+}
+
+/* nao sei se seria bom fzr isso, mas por enqnt vou deixar assim, acho que vai ter que criar um component pra isso*/
+.texto-mapa{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
 }

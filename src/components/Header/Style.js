@@ -1,27 +1,47 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Top = styled.header`
-  padding: .5em 2em;
+  padding: 2em 5em;
   background-color: var(--secundaria);
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin: 0;
   a {
+    margin-left: auto;
     text-align: center;
-    padding: .3em;
-    margin: 0 .7em;
+    padding: .5rem;
     min-width: 5em;
-    background-color: var(--background);
+    background-color: var(--secundaria);
     text-decoration: none;
     font-weight: bold;
-    color: var(--detalhe);
+    color: var(--destaque);
     text-transform: uppercase;
-    /*border-radius: .3em;*/
+    border-radius: 1em;
+    font-size: 0.8rem;
     &:hover{
-      background-color: var(--destaque);
-      color: var(--secundaria);
+      background-color: var(--terciaria);
     }
   }
-`
 
-export {Top}
+  h3{
+    color: var(--destaque);
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  .containerLogo{
+    display: flex;
+    align-items: center;
+    &:hover{
+      background-color: var(--secundaria);
+    }
+  }
+
+  img{
+    max-width: 6rem;
+    margin-right: 10px;
+  }
+`;
+
+export { Top };

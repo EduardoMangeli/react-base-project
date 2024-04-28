@@ -1,0 +1,12 @@
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.map-inner-container {
+  height: 100%; /* Ajuste conforme necessário */
+  width: 75%; /* Ajuste conforme necessário */
+}

@@ -1,4 +1,5 @@
 import Header from "../components/Header/Header";
+import Rodape from "../components/Rodape/Rodape";
 
 const Base = (props) => (
   <>
@@ -6,6 +7,7 @@ const Base = (props) => (
     <div className="container">
       {props.children}
     </div>
+    <Rodape />
   </>
 )
 
