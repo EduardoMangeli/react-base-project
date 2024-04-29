@@ -19,10 +19,9 @@ const Home = () => {
 
   return (
     <Base>
-      <h1>
-     Aplicação React Base
-      </h1>
-      <p> Essa é uma aplicação de exemplo feita durante a aula.</p>
+      <h1>BEM VINDO, NOME GENERICO PEDRO</h1>
+      <p></p>
+      <h2> VOCÊ TEM 7 PENDÊNCIAS!</h2>
       <MeuBotao />
     </Base>
   )
