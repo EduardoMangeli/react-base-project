@@ -102,7 +102,7 @@ h1,h2,h3,h4,h5,h6{
   margin-top: 0.05%;
   display: flex;
   flex: 1;
-  height: 600px;
+  height: 900px;
   background-color: var(--botoes);
 }
 .container-menor{
@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,h6{
   flex: 1;
   background-color: var(--background);
 }
-.container-botoes{
+/* .container-botoes{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@ h1,h2,h3,h4,h5,h6{
   text-decoration: none;
   color: black;
   background-color: var(--background);
-}
+} */
 
 
 
