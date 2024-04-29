@@ -16,12 +16,6 @@ const Style = styled.article`
         margin-right: 40em;
     }
 
-    .Conteudo, .ImgLogoForm {
-    
-    }
-
-    
-
     .Form-Contato {
         display: flex;
         flex-direction: row;

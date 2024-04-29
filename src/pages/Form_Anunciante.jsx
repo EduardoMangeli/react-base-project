@@ -1,8 +1,8 @@
-import Forms from "../components/Forms/Forms"
+import Forms from "../components/Anunciante/Forms/Forms"
 import Base from "./Base" 
 import formulario from "../data/formularios.json"
 import Botao from "../components/Botao/Botao";
-import { Style } from "../components/Forms/StylePag"
+import { Style } from "../components/Anunciante/Forms/StylePag"
 
 const ElementosContato = formulario.slice(0, 3);
 
