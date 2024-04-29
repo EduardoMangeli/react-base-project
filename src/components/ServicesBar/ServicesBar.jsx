@@ -1,15 +1,14 @@
 import { Bar } from "./Style.js"
-import { Link } from "react-router-dom";
 
 const ServicesBar = () => (
 <Bar>
     <div classname="div-bar"></div>
     <div className="div-botoes">    
     <h2>Serviços: |</h2>
-        <a>Dosimetria Clínica</a>
-        <a>Dosimetria Pré-Clínica</a>
-        <a>Radiosinoviortese</a>
-        <a>Segmentação</a>
+        <button class="btn-bar selecionado">Dosimetria Clínica</button>
+        <button class="btn-bar">Dosimetria Pré-Clínica</button>
+        <button class="btn-bar">Radiosinoviortese</button>
+        <button class="btn-bar">Segmentação</button>
     </div>
 </Bar>
 );

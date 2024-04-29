@@ -11,6 +11,18 @@ const Fotos = () => {
     <Base>
     <ServicesBar>
     </ServicesBar>
+    <section class="container-pai">
+      <div class="container-menor"></div>
+      <div class="container-botoes">
+        <div class="div-botoes-serv">
+          <button>Salvar</button>
+          <button>Apagar</button>
+          <button>Salvar e adicionar outro(a)</button>
+          <button>Salvar e continuar editando</button>
+          <button>Histórico</button>
+        </div>
+      </div>
+    </section>
     </Base>
     )
 };

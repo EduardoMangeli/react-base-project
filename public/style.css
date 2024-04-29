@@ -29,6 +29,7 @@
 }
 */
 
+/* Style Home */
 body {
   margin: 0;
   font-family: 'Lora', serif;
@@ -75,7 +76,7 @@ h1,h2,h3,h4,h5,h6{
   flex-direction: column;
   display: flex;
   width: 90%;
-  height: 23.95rem;
+  
 }
 .retanguloBranco2Home {
   flex: 1;
@@ -95,3 +96,45 @@ h1,h2,h3,h4,h5,h6{
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
 }
+/* Services */
+.container-pai{
+  display: flex;
+  margin-top: 0.05%;
+  display: flex;
+  flex: 1;
+  height: 600px;
+  background-color: var(--botoes);
+}
+.container-menor{
+  margin: 1%;
+  flex: 1;
+  background-color: var(--background);
+}
+.container-botoes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.35;
+  background-color: var(--botoes);
+}
+.div-botoes-serv{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.div-botoes-serv button{
+  cursor: pointer;
+  border-style: none;
+  margin: 0 5px;
+  min-width: 6rem;
+  padding: .40rem;
+  text-align: center;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+  background-color: var(--background);
+}
+
+
+
+

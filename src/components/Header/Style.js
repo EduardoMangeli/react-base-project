@@ -41,7 +41,7 @@ const Top = styled.header`
   margin: 0;
   justify-content: center;
   a {
-    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
     text-align: center;
     padding: .1,5em;
     margin: 0 40px;
