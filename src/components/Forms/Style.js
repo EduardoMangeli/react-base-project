@@ -2,56 +2,32 @@ import styled from 'styled-components'
 
 const Input = styled.article`
 
-    form {
-        width: 20%;
-        margin: 2em 0;
-        margin-bottom: 1em;
-        display: grid
-    }
-
     label {
-        margin-bottom: .6em;
-        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
     }
 
     input {
-        padding: .7em;
-        border-radius: 0.5em;
-        border: 1;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px
     }
 
     input[name="sobre voce"] {
-        height: 30vh
-
+        width: 300px;
+        margin: 0 auto;
+        height: 200px;
+        padding-bottom: 170px;
       }
 
+      input[name="telefone"] {
+        width: 300px;
+        margin: 0 auto;
+      }
 
-
-  
 `
 
 export {Input}
-
-/*
-  .form_control {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em;
-    }
-
-    .form_control label {
-        margin-bottom: .6em;
-        font-weight: bold;
-    }
-
-    .form_control input {
-        padding: .7em;
-        border-radius: 0;
-        border: none;
-    }
-
-    .form_control input::placeholder {
-        color: #7b7b7b
-    }
-    
-    */

@@ -7,6 +7,8 @@ const Top = styled.header`
   align-items: center;
   flex-direction: row;
   margin: 0;
+  height: 10vh;
+  
   a {
     margin-left: auto;
     text-align: center;

@@ -1,6 +1,7 @@
 import Banner from "../components/Banner/Banner";
 import Botao from "../components/Botao/Botao";
 import Base from "./Base"
+import { Link } from "react-router-dom";
 
 const Anuncie = () => {
 
@@ -25,7 +26,10 @@ const Anuncie = () => {
 
                 <p>Consulte valores e tire duvidas</p>
 
-                <Botao texto="Entre em contato"></Botao>
+                <Link to="./Form_Anunciante">
+                    <Botao texto="Entre em contato" />
+                </Link>
+                
             </div>
         </Base>
       
