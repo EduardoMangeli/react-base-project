@@ -2,11 +2,6 @@ import styled from 'styled-components';
 
 export const MembroArticle = styled.article`
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-
   figure {
     width: 100px;
     height: 100px;
@@ -31,4 +26,4 @@ export const MembroArticle = styled.article`
     font-size: 16px;
     color: #666;
   }
-`;
+`
