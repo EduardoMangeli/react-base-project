@@ -3,6 +3,7 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import MeuBotao from "../components/MeuBotao/MeuBotao";
+import Dropdown from "../components/Dropdown/Dropdown";
 
 const Home = () => {
 

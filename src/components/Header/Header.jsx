@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import { Top } from "./Style";
+import Dropdown from "../Dropdown/Dropdown";
 
 const Header = () => (
   <Top>
-    <Link to="/">Home</Link>
-    <Link to="/clinica">Dosimetria Clinica</Link>
-    <Link to="/modelagem">Modelagem Computacional</Link>
-    <Link to="/radiosinoviortese">Radiosinoviortese</Link>
-    <Link to="/segmentacaoequantificacao">Segmentacao e Quantificacao</Link>
-    <Link to="/dosimetriapreclinica">Dosimetria Pre Clinica</Link>
+
+    <Link to="/">Dosimagem</Link>
+    <Dropdown />
     
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout">Logout</Link>
