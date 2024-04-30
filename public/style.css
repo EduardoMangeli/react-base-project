@@ -51,7 +51,18 @@ h1,h2,h3,h4,h5,h6{
   font-weight: light;
 
 }
-
+#servicos-options{
+  position: relative;
+  left: 2%;
+  top: -80px;
+}
+#servicos-options label{
+  font-size: 1.3rem;
+}
+#form-style{
+  padding: 5px;
+  margin-left: 5px;
+}
 .retanguloCinza {
   display: flex;
   flex-direction: column;
@@ -61,6 +72,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .retanguloBranco1Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
   margin: 1% 1% 0% 1%;
@@ -79,19 +91,27 @@ h1,h2,h3,h4,h5,h6{
   
 }
 .retanguloBranco2Home {
-  flex: 1;
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex: 0.6;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
   background-color: var(--background);
-  margin: 1% 1% 0% 1%;
+  margin: 1% 0% 0% 1%;
 }
 .retanguloBranco3Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
 }
 .retanguloBranco4Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
 }
 .retanguloBranco5Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
@@ -135,6 +155,8 @@ h1,h2,h3,h4,h5,h6{
   background-color: var(--background);
 } */
 
-
+@media (max-width: 1000px){
+  
+}
 
 

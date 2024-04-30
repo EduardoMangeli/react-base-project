@@ -1,16 +1,41 @@
-import { Bar } from "./Style.js"
+import React, { useState } from 'react';
+import { Bar } from "./Style.js";
 
-const ServicesBar = () => (
-<Bar>
-    <div classname="div-bar"></div>
-    <div className="div-botoes">    
-    <h2>Serviços: |</h2>
-        <button class="btn-bar selecionado">Dosimetria Clínica</button>
-        <button class="btn-bar">Dosimetria Pré-Clínica</button>
-        <button class="btn-bar">Radiosinoviortese</button>
-        <button class="btn-bar">Segmentação</button>
-    </div>
-</Bar>
-);
+const ServicesBar = () => {
+    const [selectedButton, setSelectedButton] = useState('Dosimetria Clínica');
+
+    const handleButtonClick = (serviceName) => {
+        setSelectedButton(serviceName); // Atualiza o estado para o nome do serviço clicado
+    };
+
+    return (
+        <Bar>
+            <div className="div-bar"></div>
+            <div className="div-botoes">    
+                <h2>Serviços: |</h2>
+                <button 
+                    className={`btn-bar ${selectedButton === 'Dosimetria Clínica' ? 'selecionado' : ''}`} 
+                    onClick={() => handleButtonClick('Dosimetria Clínica')}>
+                    Dosimetria Clínica
+                </button>
+                <button 
+                    className={`btn-bar ${selectedButton === 'Dosimetria Pré-Clínica' ? 'selecionado' : ''}`} 
+                    onClick={() => handleButtonClick('Dosimetria Pré-Clínica')}>
+                    Dosimetria Pré-Clínica
+                </button>
+                <button 
+                    className={`btn-bar ${selectedButton === 'Radiosinoviortese' ? 'selecionado' : ''}`} 
+                    onClick={() => handleButtonClick('Radiosinoviortese')}>
+                    Radiosinoviortese
+                </button>
+                <button 
+                    className={`btn-bar ${selectedButton === 'Segmentação' ? 'selecionado' : ''}`} 
+                    onClick={() => handleButtonClick('Segmentação')}>
+                    Segmentação
+                </button>
+            </div>
+        </Bar>
+    );
+};
 
 export default ServicesBar;
