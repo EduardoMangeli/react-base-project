@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "nome": "Local 1",
+      "latitude": -22.951804,
+      "longitude": -43.210760,
+      "popupContent": "Conteúdo do popup 1...",
+      "imagem": "imagens/old-computer-1.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Local 2",
+      "latitude": -22.9540000,
+      "longitude": -43.2168493,
+      "popupContent": "Conteúdo do popup 2...",
+      "imagem": "imagens/old-computer-2.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Local 3",
+      "latitude": -22.952000,
+      "longitude": -43.219999,
+      "popupContent": "Conteúdo do popup 3...",
+      "imagem": "imagens/old-computer-3.jpg"
+    }
+  ]
