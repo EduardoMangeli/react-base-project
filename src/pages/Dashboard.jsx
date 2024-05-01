@@ -42,6 +42,7 @@ const Dashboard = () => {
                     id={solicitacao.id}
                     cliente={solicitacao.cliente}
                     data={solicitacao.date}
+                    link={"/servico/"+solicitacao.id}
                 />
                 )
             )}

@@ -1,9 +1,12 @@
 import {Solicit} from "./Style";
+import {Link} from "react-router-dom";
 
 const SolicitacaoCard = (props) => (
     <Solicit>
         <div id='navbar'>
-            <button className="button">Acessar</button>
+            <Link to={props.link}>
+                <button className="button">Acessar</button>
+            </Link>
         </div>
         <div id='tipo'>
             <span>ID: {props.id}</span>

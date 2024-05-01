@@ -8,10 +8,9 @@ import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Calibracoes from "./pages/Calibracoes";
-import DetalheSolicitacao from "./pages/Servico";
 import Servicos from "./pages/Servicos";
 import Perfil from "./pages/Perfil";
-import Servico from "./pages/Servico";
+import ServicoPage from "./pages/ServicoPage";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -31,7 +30,7 @@ root.render(
         <Route path="/" element={<Dashboard/>} />
         <Route path="/calibracoes" element={<Calibracoes/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
-        <Route path="/servicos/:id" element={<Servico/>} />
+        <Route path="/servico/:id" element={<ServicoPage/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
         <Route path="/perfil" element={<Perfil/>} />
