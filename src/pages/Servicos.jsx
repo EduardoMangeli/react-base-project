@@ -13,8 +13,6 @@ const Fotos = () => {
     </ServicesBar>
     <section class="container-pai">
       <div class="container-menor"></div>
-      <div class="container-botoes">
-      </div>
     </section>
     </Base>
     )

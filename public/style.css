@@ -130,33 +130,49 @@ h1,h2,h3,h4,h5,h6{
   flex: 1;
   background-color: var(--background);
 }
+/* Services */
+.container-pai{
+  display: flex;
+  margin-top: 0.05%;
+  display: flex;
+  flex: 1;
+  height: 900px;
+  background-color: var(--botoes);
+}
+.container-menor{
+  margin: 1%;
+  flex: 1;
+  background-color: var(--background);
+}
 /* .container-botoes{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0.35;
+  flex: 0.4;
+  text-align: center;
   background-color: var(--botoes);
 }
 .div-botoes-serv{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  text-align: center;
 }
 .div-botoes-serv button{
   cursor: pointer;
   border-style: none;
   margin: 0 5px;
-  min-width: 6rem;
-  padding: .40rem;
-  text-align: center;
+  min-width: 20rem;
+  padding: .50rem;
   font-weight: lighter;
   text-decoration: none;
   color: black;
+  text-align: center;
   background-color: var(--background);
-} */
+}
 
 @media (max-width: 1000px){
   
-}
+} */
 
 
