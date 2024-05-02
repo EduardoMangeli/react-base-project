@@ -28,7 +28,16 @@ const BuscaEstilo = styled.article`
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
-
+    
+    .dropdown-content > button {
+        background-color: #f1f1f1;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 0.3rem;
+    }
+    
 .dropdown:hover .dropdown-content {
   display: block;
 }

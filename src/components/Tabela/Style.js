@@ -3,7 +3,7 @@ import styled from "styled-components";
 const TabelaEstilo = styled.article`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
-
+    
   a {
     color: black;
   }
@@ -27,6 +27,10 @@ const TabelaEstilo = styled.article`
     color: white;
     font-weight: 400;
   }
+    
+    table {
+        margin: auto;
+    }
 
   .nao-visto {
     background-color: #CF8686;

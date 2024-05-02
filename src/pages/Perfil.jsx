@@ -22,6 +22,10 @@ const Calibracoes = () => {
         setIdade(40);
     }
 
+    // Criando um estado para armazenar as solicitações
+    // solicitacoes é o estado
+    // setSolicitacoes é a função que atualiza o estado
+    // dadosSolicitacoes é o valor inicial do estado
     const [solicitacoes , setSolicitacoes] = useState(dadosSolicitacoes);
 
     const filtra = (entrada) => {

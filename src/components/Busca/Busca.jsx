@@ -1,21 +1,24 @@
 import { BuscaEstilo } from "./Style";
 
 
-const Busca = () => (
+const Busca = (props) => (
   <BuscaEstilo>
-    <div class="busca">
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <a href="#">Usuario</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+    <div className="busca">
+        <div className="dropdown">
+            <button className="dropbtn">{props.opcao}</button>
+            <div className="dropdown-content">
+                {props.opcoes}
             </div>
           </div>
-          <div class="search-box">
-            <input type="text" class="input-busca" placeholder="Digite para pesquisar..."/>
-            <button name="button" type="submit" class="btn btn-flat">
-                <i class="fas fa-search"></i> Search
+          <div className="search-box">
+            <input onChange={props.onChance} type="text" className="input-busca" placeholder="Digite para pesquisar..."/>
+            <button
+                onClick={props.onClick}
+                name="button"
+                type="submit"
+                className="btn btn-flat"
+            >
+                <i className="fas fa-search"></i> Search
               </button>
           </div>
     </div>
