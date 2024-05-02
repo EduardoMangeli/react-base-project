@@ -10,6 +10,7 @@ const Top = styled.header`
   height: 10vh;
   
   a {
+    display: none;
     margin-left: auto;
     text-align: center;
     padding: .5rem;
@@ -26,23 +27,35 @@ const Top = styled.header`
     }
   }
 
-  h3{
+  .containerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    &:hover{
+      background: none;
+    }
+    h3{
     color: var(--destaque);
     width: 50%;
     font-size: 1.2rem;
   }
-
-  .containerLogo{
-    display: flex;
-    align-items: center;
-    &:hover{
-      background-color: var(--secundaria);
-    }
-  }
-
   img{
     max-width: 6rem;
     margin-right: 10px;
+  }
+  }
+
+
+  @media screen and (min-width: 1024px){
+    a{
+      display: block;
+    }
+
+    div#outer-container{
+      display: none
+    }
+
   }
 `;
 

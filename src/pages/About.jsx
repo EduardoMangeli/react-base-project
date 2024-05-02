@@ -6,11 +6,8 @@ import { StyleAbout } from "../components/AboutCard/StyleAbout";
 
 const About = () => {
     const membros = [
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Renato Bellini', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Rafael Bokor', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
       ];
     
       const desenvolvedores = [
@@ -32,14 +29,6 @@ const About = () => {
                                 <h1 className="Title">A Passeio Carioca</h1>
 
                                 <p>No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?</p>
-
-                                <h3 className="SubTitle">Objetivos</h3>
-
-                                <p>Objetivos da Passeio Carioca...</p>
-
-                                <h3 className="SubTitle">Ideais</h3>
-
-                                <p> Ideais da Passeio Carioca...</p>
 
                                 <Botao className="Botao" texto="Baixe o App"></Botao>
 
@@ -64,38 +53,7 @@ const About = () => {
 
                             </div>
                         </section>
-                        
-                        <section className="Conteudo-Equipe">
 
-                            <div className="Conteudo-Equipe-Escrito">
-
-                                <h3 className="SubTitle">Mentores</h3>
-
-                                <ul className="Conteudo-Equipe-Escrito-Professores">
-                                    <li>Professor Rodrigo Rainha, UERJ</li>
-                                    <li>professora Lucimar Dantas, IBMEC</li>
-                                    <li>Professor Luiz Barbieri, IBMEC</li>
-                                    <li>Professor Eduardo Mangeli, IBMEC</li>
-                                </ul>
-
-                                <h3 className="SubTitle">Pesquisadores</h3>
-
-                                <ul className="Conteudo-Equipe-Escrito-Pesquisadores">
-                                    <li>Ian Esteves Amaral Francisco, Ciencia de Dados, IBMEC</li>
-                                    <li>Matheus de Almeida Melo, Relacoes Internacionais, IBMEC</li>
-                                    <li>Pedro Carvalho Fontenele Castro, Historia, UERJ</li>
-                                </ul>
-
-                                <h3 className="SubTitle">Empresa deselvolvedora do Aplicativo</h3>
-
-                                <ul className="Conteudo-Equipe-Escrito-Empresa">
-                                    <li>Keener Innovations</li>
-                                </ul>
-
-                            </div>
-
-                        </section>
-                        
                         <section className="Conteudo-Devs">
 
                             <div className="Conteudo-Devs-Escrito">
@@ -111,6 +69,26 @@ const About = () => {
                                         descricao={dev.descricao} 
                                         />
                                     ))}
+                                </ul>
+
+                            </div>
+
+                        </section>
+                        
+                        <section className="Conteudo-Equipe">
+
+                            <div className="Conteudo-Equipe-Escrito">
+
+                                <h3 className="SubTitle">Mentores</h3>
+
+                                <ul className="Conteudo-Equipe-Escrito-Professores">
+                                    <li>Professor Eduardo Mangeli, IBMEC</li>
+                                </ul>
+
+                                <h3 className="SubTitle">Empresa deselvolvedora do Aplicativo</h3>
+
+                                <ul className="Conteudo-Equipe-Escrito-Empresa">
+                                    <li>Keener Innovations</li>
                                 </ul>
 
                             </div>

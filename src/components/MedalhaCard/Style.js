@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MedalhaArticle = styled.article`
-  width: 20%;
+  width: 250px;
   background-color: var(--secundaria);
   position: relative;
   display: flex;
