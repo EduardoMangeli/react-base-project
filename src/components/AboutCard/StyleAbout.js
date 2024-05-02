@@ -87,6 +87,7 @@ const StyleAbout = styled.article`
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        text-align: center;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 60px;
@@ -165,6 +166,7 @@ const StyleAbout = styled.article`
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        text-align: center;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 60px;
