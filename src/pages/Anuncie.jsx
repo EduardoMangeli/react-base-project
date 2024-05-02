@@ -18,12 +18,8 @@ const Anuncie = () => {
                         <h1 className="Conteudo-Atrativo-Escrito-Title">Anuncie Conosco!</h1>
                         <p className="Conteudo-Atrativo-Escrito-SubTitle">Alcance Mais Clientes: Promova Seu Negócio com o Passeio Carioca! </p>
                     </div>
-
                 </section>
                 
-                <div>
-                    <img className="Imagem" src="../imagens/old-computer-4.jpg"  alt="Imagem" />
-                </div>
 
                 <section className="Conteudo-Principal">
 
@@ -50,6 +46,11 @@ const Anuncie = () => {
                         </Link>
                         
                     </div>
+
+                    <div className="Bloco_Img">
+                        <img className="Imagem" src="../imagens/old-computer-4.jpg"  alt="Imagem" />
+                    </div>
+                    
                 </section>
             </main>
 

@@ -40,7 +40,9 @@ const StyleAbout = styled.article`
 
     .Conteudo-Inicio-Escrito {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 32px;
         margin-bottom: 30px;
     }

@@ -11,6 +11,8 @@ const StyleAnun = styled.article`
     }
 
     .Conteudo {
+        display: flex;
+        flex-direction: column;
         font-size: 100%;
         margin-bottom: 48px;
         margin-right: 40em;
@@ -19,11 +21,9 @@ const StyleAnun = styled.article`
     .Conteudo-Atrativo {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
         margin-top: 60px;
         margin-bottom: 20px;
-        margin-left: 6.5em;
+        margin-left: 6.5em;;
     }
 
     .Conteudo-Atrativo-Escrito {
@@ -47,6 +47,7 @@ const StyleAnun = styled.article`
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        gap: 250px;
         margin-top: 60px;
         margin-bottom: 28px;
         margin-left: 6.5em;
@@ -76,19 +77,17 @@ const StyleAnun = styled.article`
         margin-top: 30px;
         font-size: 20px;
     }
+        
+    .BlocoImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: center;
+    }
 
     .Imagem {
-        position: absolute;
-        top: 35em;
-        left: 50em;
-        height: 900px;
-        width: 450px;
-        object-fit: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2em;
+        height: 1100px;
+        width: 700px;    
     }
 
 `
