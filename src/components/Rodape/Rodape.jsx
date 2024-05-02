@@ -27,21 +27,22 @@ const Rodape = function(){
                     
                 </div>
                 <div className="redes">
-                        <h3>Nossas Redes</h3>
-                        <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/">
-                            <img src="imagens/socials/instagram-fill.svg" alt="Instagram" height="25" />
-                            <span className="link-text">Instagram</span>
-                        </a>
-                        <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/">
-                            <img src="imagens/socials/facebook-fill.svg" alt="Facebook" height="25" />
-                            <span className="link-text">Facebook</span>
-                        </a>
-                        <a className="sociais" href="https://wa.me/1234567890">
-                            <img src="imagens/socials/whatsapp-fill.svg" alt="WhatsApp" height="25" />
-                            <span className="link-text">Whatsapp</span>
-                        </a>
-                    </div>
+                    <h3>Nossas Redes</h3>
+                    <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/">
+                        <img src="imagens/socials/instagram-fill.svg" alt="Instagram" height="25" />
+                        <span className="link-text">Instagram</span>
+                    </a>
+                    <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/">
+                        <img src="imagens/socials/facebook-fill.svg" alt="Facebook" height="25" />
+                        <span className="link-text">Facebook</span>
+                    </a>
+                    <a className="sociais" href="https://wa.me/1234567890">
+                        <img src="imagens/socials/whatsapp-fill.svg" alt="WhatsApp" height="25" />
+                        <span className="link-text">Whatsapp</span>
+                    </a>
+                </div>
             </div>
+            <small>© {new Date().getFullYear()} Passeio Carioca</small>
 
         
 
