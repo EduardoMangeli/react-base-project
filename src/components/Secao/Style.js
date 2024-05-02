@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Bloco = styled.article`
+const SecaoStyle = styled.article`
     background-color: var(--detalhe);
     padding: 20px;
     margin: 20px 10px;
@@ -72,4 +72,4 @@ const Bloco = styled.article`
 
 `;
 
-export {Bloco};
+export {SecaoStyle};

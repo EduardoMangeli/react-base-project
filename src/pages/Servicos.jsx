@@ -7,6 +7,8 @@ import Tabela from "../components/Tabela/Tabela";
 import dadosSolicitacoes from "../data/solicitacoes.json";
 import FilterButton from "../components/FilterButton/FilterButton";
 import Busca from "../components/Busca/Busca";
+import ServicoPage from "./ServicoPage";
+import {Link, Route} from "react-router-dom";
 
 const Atletas = () => {
 
@@ -129,7 +131,7 @@ const Atletas = () => {
           {solicitacoes.map(
               (solicitacao, index) => (
                   <tr key={index}>
-                      <td>{solicitacao.id}</td>
+                      <td><Link to={"/servico/" + solicitacao.id}>{solicitacao.id}</Link></td>
                       <td>{solicitacao.codigo}</td>
                       <td>{solicitacao.analise}</td>
                       <td>{solicitacao.cliente}</td>

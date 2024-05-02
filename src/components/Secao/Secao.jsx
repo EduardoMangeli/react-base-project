@@ -1,11 +1,11 @@
-import { Bloco } from "./Style";
+import { SecaoStyle } from "./Style";
 import {Link} from "react-router-dom";
 
 const infoImg = "imagens/icons/info.png"
 const acessar = "imagens/icons/up-arrow.png"
 
 const Secao = (props) => (
-  <Bloco>
+  <SecaoStyle>
     <div className="secao">
         <div className="header">
             <div className="nav1">
@@ -25,7 +25,7 @@ const Secao = (props) => (
             {props.conteudo}
         </div>
     </div>
-  </Bloco>
+  </SecaoStyle>
 )
 
 export default Secao;
