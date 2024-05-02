@@ -11,6 +11,7 @@ const StyleAnun = styled.article`
     }
 
     .Conteudo {
+        width: 100%;
         display: flex;
         flex-direction: column;
         font-size: 100%;
@@ -23,7 +24,7 @@ const StyleAnun = styled.article`
         flex-direction: row;
         margin-top: 60px;
         margin-bottom: 20px;
-        margin-left: 6.5em;;
+        margin-left: 6.5em;
     }
 
     .Conteudo-Atrativo-Escrito {
@@ -47,7 +48,7 @@ const StyleAnun = styled.article`
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        gap: 250px;
+        gap: 100px;
         margin-top: 60px;
         margin-bottom: 28px;
         margin-left: 6.5em;
@@ -86,8 +87,9 @@ const StyleAnun = styled.article`
     }
 
     .Imagem {
-        height: 1100px;
-        width: 700px;    
+        height: auto;
+        width: 800px;   
+        margin-bottom: 100px; 
     }
 
 `

@@ -48,9 +48,9 @@ const Anuncie = () => {
                     </div>
 
                     <div className="Bloco_Img">
-                        <img className="Imagem" src="../imagens/old-computer-4.jpg"  alt="Imagem" />
+                        <img className="Imagem" src="../imagens/cidade-rio-de-janeiro.jpg"  alt="Imagem" />
                     </div>
-                    
+
                 </section>
             </main>
 
