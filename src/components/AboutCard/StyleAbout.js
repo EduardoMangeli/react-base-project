@@ -79,6 +79,7 @@ const StyleAbout = styled.article`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
 
     }
 
@@ -105,6 +106,7 @@ const StyleAbout = styled.article`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 30px;
@@ -112,6 +114,7 @@ const StyleAbout = styled.article`
 
     .Conteudo-Equipe-Escrito-Professores {
         border-top: 0.4px solid black;
+        text-align: center;
         padding-top: 30px;
         display: flex;
         flex-direction: column;
@@ -124,6 +127,7 @@ const StyleAbout = styled.article`
         padding-top: 30px;
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 32px;
         margin-bottom: 30px;
     }
@@ -133,6 +137,7 @@ const StyleAbout = styled.article`
         padding-top: 30px;
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 32px;
         margin-bottom: 30px;
     }
