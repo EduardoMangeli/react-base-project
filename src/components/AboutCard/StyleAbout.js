@@ -85,6 +85,7 @@ const StyleAbout = styled.article`
     .Conteudo-Membros-Escrito-Lista {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 60px;
@@ -158,6 +159,7 @@ const StyleAbout = styled.article`
     .Conteudo-Devs-Escrito-Lista {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 60px;
