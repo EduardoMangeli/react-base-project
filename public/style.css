@@ -7,7 +7,7 @@
   /* https://coolors.co/ */
 
   --primaria: hsla(210, 67%, 43%, 1);
-  --background: rgb(201, 200, 200);
+  --background: hsla(108, 22%, 87%, 1);
   --secundaria: rgb(32, 96, 148);
   --destaque: hsla(355, 78%, 56%, 1);
   --detalhe: hsla(9, 63%, 45%, 1);
@@ -44,4 +44,23 @@ div.container {
 
 h1,h2,h3,h4,h5,h6{
   margin: 0;
+}
+table {
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  outline: 1px solid #adadad !important;
+  text-align: left !important;
+  padding: 8px !important;
+}
+.item-status{
+  color:red;
+}
+th{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
