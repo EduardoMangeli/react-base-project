@@ -5,7 +5,7 @@ import dadosSolicitacoes from "../data/solicitacoes.json";
 import dadosCalibracoes from "../data/calibracoes.json";
 import Tabela from "../components/Tabela/Tabela";
 import {useEffect, useState} from "react";
-import FilterButton from "../components/FilterButton/FilterButton";
+import Botao from "../components/FilterButton/Botao";
 const Dashboard = () => {
     // Array com as possíveis opções da filtragem
     const tipos = [
@@ -47,7 +47,7 @@ const Dashboard = () => {
                  pai={"/servicos"}
                  navbar={
                      tipos.map((tipo, indexo) => (
-                         <FilterButton
+                         <Botao
                              key={indexo}
                              isActive={tipoConsulta.includes(tipo)}
                              onClick={() => adicionarTipoConsulta(tipo)}

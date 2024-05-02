@@ -5,7 +5,7 @@ import AtletaCard from "../components/AtletaCard/AtletaCard";
 import ListContainer from "../components/ListContainer/ListContainer";
 import Tabela from "../components/Tabela/Tabela";
 import dadosSolicitacoes from "../data/solicitacoes.json";
-import FilterButton from "../components/FilterButton/FilterButton";
+import Botao from "../components/FilterButton/Botao";
 import Busca from "../components/Busca/Busca";
 import ServicoPage from "./ServicoPage";
 import {Link, Route} from "react-router-dom";
@@ -100,7 +100,7 @@ const Atletas = () => {
           <div style={{display: 'flex', padding: 20, justifyContent: "space-between"}}>
               <div style={{display: 'flex', gap: 10}}>
                   {tipos.map((tipo, indexo) => (
-                      <FilterButton
+                      <Botao
                           key={indexo}
                           isActive={tipoConsulta.includes(tipo)}
                           onClick={() => adicionarTipoConsulta(tipo)}

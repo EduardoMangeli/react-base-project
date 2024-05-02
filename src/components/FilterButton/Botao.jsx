@@ -1,6 +1,6 @@
 import {FilterButtonStyle} from "./Style";
 
-const FilterButton = (props) => (
+const Botao = (props) => (
     <FilterButtonStyle>
         <button
             style={{
@@ -15,4 +15,4 @@ const FilterButton = (props) => (
     </FilterButtonStyle>
 );
 
-export default FilterButton;
+export default Botao;
