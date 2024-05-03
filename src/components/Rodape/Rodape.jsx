@@ -36,7 +36,7 @@ const Rodape = function(){
                         <img src="imagens/socials/facebook-fill.svg" alt="Facebook" height="25" />
                         <span className="link-text">Facebook</span>
                     </a>
-                    <a className="sociais" href="https://wa.me/1234567890">
+                    <a className="sociais" href="https://wa.me/+5521999929790">
                         <img src="imagens/socials/whatsapp-fill.svg" alt="WhatsApp" height="25" />
                         <span className="link-text">Whatsapp</span>
                     </a>

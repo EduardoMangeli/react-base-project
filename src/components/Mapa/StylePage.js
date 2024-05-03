@@ -1,26 +1,6 @@
 import styled from 'styled-components'
 
 const StyleMapa = styled.article`
-    .texto-mapa{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 0 auto;
-    }
-
-    .titulo-mapa{
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 0 auto;
-    }
-
-    .titulo-baixar-app{
-        display: flex;
-        justify-content: center;
-    }
 
     .botao-filtro{
         display: flex;

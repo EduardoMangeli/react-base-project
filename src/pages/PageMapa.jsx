@@ -37,7 +37,7 @@ const PageMapa = () => {
           </p>
 
           <p>
-            Aqui você encontra informações sobre mais de 50 pontos históricos e
+            Aqui você encontra informações sobre mais de 1200 pontos
             culturais da cidade para programar a sua visita. Você pode estudá-los
             antes de sair de casa, ou então, se estiver caminhando pela rua e se
             deparar com algum edifício histórico ou ponto relevante da cidade,
@@ -60,7 +60,6 @@ const PageMapa = () => {
           <button onClick={() => filtrarPorZona("Centro")}>Centro</button>
           <button onClick={() => filtrarPorZona("Norte")}>Norte</button>
           <button onClick={() => filtrarPorZona("Sul")}>Sul</button>
-          <button onClick={() => filtrarPorZona("Leste")}>Leste</button>
           <button onClick={() => filtrarPorZona("Oeste")}>Oeste</button>
         </div>
 
@@ -69,7 +68,7 @@ const PageMapa = () => {
         </div>
 
         <div className="titulo-baixar-app">
-          <h3>Conheca mais pontos como esse pelo Passeio Carioca</h3>
+          <h3>Conheca mais pontos como esses no App Passeio Carioca</h3>
         </div>
 
         <div>

@@ -29,6 +29,7 @@ const Top = styled.header`
 
   .containerLogo{
     display: flex;
+    margin-left: 0;
     justify-content: center;
     align-items: center;
     background: none;
@@ -39,13 +40,12 @@ const Top = styled.header`
     color: var(--destaque);
     width: 50%;
     font-size: 1.2rem;
+    }
+    img{
+      max-width: 6rem;
+      margin-right: 10px;
+    }
   }
-  img{
-    max-width: 6rem;
-    margin-right: 10px;
-  }
-  }
-
 
   @media screen and (min-width: 1024px){
     a{
