@@ -4,16 +4,26 @@ import InformacoesServico from "../components/InformacoesServico/InformacoesServ
 import dadosSolicitacoes from "../data/solicitacoes.json";
 import SecaoGenerio from "../components/SecaoGenerico/SecaoGenerio";
 import Botao from "../components/FilterButton/Botao";
+import {useRef, useState} from "react";
+import ArquivoServico from "../components/ArquivosServico/ArquivoServico";
 
 const ServicoPage = () => {
     // Obter os parâmetros da rota
     const { id } = useParams();
+
+    const [botaoClicado, setBotaoClicado] = useState("Dados do usúario");
 
     // Buscar informações da solicitação a partir do ID e salvar em uma variavel
     const servico = dadosSolicitacoes.find((solicitacao) => solicitacao.id === +id);
 
     const trocarSecao = (secao) => {
         console.log(secao);
+        if (secao === "Dados do usúario") {
+            setBotaoClicado("Dados do usúario")
+        }
+        if (secao === "Arquivos") {
+            setBotaoClicado("Arquivos")
+        }
     }
 
     return (
@@ -25,23 +35,42 @@ const ServicoPage = () => {
             <p>------------</p>
 
             <SecaoGenerio>
-                <Botao
-                    text="Dados do usúario"
-                    isActive={true}
-                    onClick={() => trocarSecao("Dados do usúario")}
-                />
-                <button>Dados do usúario</button>
-                <button>Arquivos</button>
-                {servico ? (
-                    <InformacoesServico
-                        Analyses={servico.analise}
-                        Status={servico.status}
-                        Injetected={servico.atividade}
-                        Data={servico.date}
-                        Hora={servico.date}
+                <div style={{display: "flex", justifyContent: "left", marginLeft: 50, gap: 10}}>
+                    <Botao
+                        text="Dados do usúario"
+                        isActive={botaoClicado === "Dados do usúario"}
+                        onClick={() => trocarSecao("Dados do usúario")}
                     />
-                ) : (
-                    <p>Serviço não encontrado ou ID inválido.</p>
+
+                    <Botao
+                        text="Arquivos"
+                        isActive={botaoClicado === "Arquivos"}
+                        onClick={() => trocarSecao("Arquivos")}
+                    />
+                </div>
+
+                {botaoClicado === "Dados do usúario" && (
+                    servico ? (
+                            <InformacoesServico
+                                Analyses={servico.analise}
+                                Status={servico.status}
+                                Injetected={servico.atividade}
+                                Data={servico.date}
+                                Hora={servico.date}
+                            />
+                        ) : (
+                            <p>Serviço não encontrado ou ID inválido.</p>
+                        )
+                )}
+
+                {botaoClicado === "Arquivos" && (
+                    servico ? (
+                        <ArquivoServico
+                            titulo="Arquivos"
+                        />
+                    ) : (
+                        <p>Serviço não encontrado ou ID inválido.</p>
+                    )
                 )}
             </SecaoGenerio>
         </Base>
