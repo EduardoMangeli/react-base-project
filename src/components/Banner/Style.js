@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 const Destaque = styled.header`
-  /*background-image: url(${props => props.imagem});*/
-  /*background-size: cover; /* Para cobrir todo o espaço do elemento */
-  /*background-position: center; /* Para centralizar a imagem */
-  background-color: var(--primaria);
+  background-image: url(${props => props.imagem});
+  background-size: cover;
+  background-position: center;
+  background-color: var(--secundaria);
   display: flex;
   height: 50vh;
   flex-direction: row;
@@ -15,8 +15,13 @@ const Destaque = styled.header`
   h1{
     text-transform: uppercase;
     text-align: center;
-    font-size: 6rem;
-    color: var(--detalhe);
+    font-size: 3rem;
+    color: var(--destaque);
+  }
+  @media screen and (min-width: 1024px){
+    h1{
+      font-size: 6rem;
+    }
   }
 `
 

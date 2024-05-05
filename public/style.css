@@ -93,7 +93,7 @@ h2{
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--destaque);
+  background: var(--cinzaescuro);
 }
 
 /* Position and sizing of clickable cross button */

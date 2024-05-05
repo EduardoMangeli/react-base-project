@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 const StyleMapa = styled.article`
+    display: block;
+    padding: 5px;
 
     .botao-filtro{
         display: flex;
@@ -21,7 +23,25 @@ const StyleMapa = styled.article`
             background-color: var(--secundaria);
         }
     }
+
+    .Foto-Mapa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    @media screen and (min-width: 1024px){
+        display: flex;
+        .Texto{
+            max-width: 70%;
+        }
+        .Foto-Mapa {
+            max-height: 25%;
+            overflow: hidden;
+        }
+    }
 `;
 
 
-export {StyleMapa}
+export { StyleMapa }
