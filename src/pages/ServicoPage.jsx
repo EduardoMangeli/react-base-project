@@ -8,14 +8,18 @@ import {useRef, useState} from "react";
 import ArquivoServico from "../components/ArquivosServico/ArquivoServico";
 
 const ServicoPage = () => {
-    // Obter os parâmetros da rota
+    // id: variável que armazena o id da solicitação que será passado pela URL, e é usado para buscar as informações da solicitação
     const { id } = useParams();
 
+    // botaoClicado: variável que armazena o nome do botão que foi clicado, e é usada para determinar qual seção será exibida, sendo "Dados do usúario" a seção padrão exibida e "Arquivos" a seção exibida ao clicar no botão "Arquivos"
     const [botaoClicado, setBotaoClicado] = useState("Dados do usúario");
 
-    // Buscar informações da solicitação a partir do ID e salvar em uma variavel
+    // servico: variável que armazena as informações da solicitação que será exibida na página, buscando a solicitação com o id passado pela URL
     const servico = dadosSolicitacoes.find((solicitacao) => solicitacao.id === +id);
 
+    // trocarSecao: função que recebe o nome da seção que foi clicada e altera o estado do botaoClicado para exibir a seção correspondente
+    // parâmetros:
+    // - secao: string que representa o nome da seção que foi clicada
     const trocarSecao = (secao) => {
         console.log(secao);
         if (secao === "Dados do usúario") {
@@ -23,6 +27,15 @@ const ServicoPage = () => {
         }
         if (secao === "Arquivos") {
             setBotaoClicado("Arquivos")
+        }
+    }
+
+    // deleteServiço: função que exibe um prompt para confirmar a exclusão do serviço e o deleta, disparando um alerta de sucesso e em seguida redirecionando para a página de serviços
+    const deleteServico = () => {
+        const confirmacao = window.confirm("Tem certeza que deseja deletar este serviço?");
+        if (confirmacao) {
+            alert("Serviço deletado com sucesso!");
+            window.location.href = "/Servicos";
         }
     }
 
@@ -35,18 +48,27 @@ const ServicoPage = () => {
             <p>------------</p>
 
             <SecaoGenerio>
-                <div style={{display: "flex", justifyContent: "left", marginLeft: 50, gap: 10}}>
-                    <Botao
-                        text="Dados do usúario"
-                        isActive={botaoClicado === "Dados do usúario"}
-                        onClick={() => trocarSecao("Dados do usúario")}
-                    />
+                <div style={{display: "flex", justifyContent: "space-between", marginLeft: 50, marginRight: 50}}>
+                    <div style={{display: "flex", justifyContent: "left", marginLeft: 50, gap: 10}}>
+                        <Botao
+                            text="Dados do usúario"
+                            isActive={botaoClicado === "Dados do usúario"}
+                            onClick={() => trocarSecao("Dados do usúario")}
+                        />
 
-                    <Botao
-                        text="Arquivos"
-                        isActive={botaoClicado === "Arquivos"}
-                        onClick={() => trocarSecao("Arquivos")}
-                    />
+                        <Botao
+                            text="Arquivos"
+                            isActive={botaoClicado === "Arquivos"}
+                            onClick={() => trocarSecao("Arquivos")}
+                        />
+                    </div>
+
+                    <div>
+                        <Botao
+                            text="Deletar serviço"
+                            onClick={() => deleteServico()}
+                        />
+                    </div>
                 </div>
 
                 {botaoClicado === "Dados do usúario" && (

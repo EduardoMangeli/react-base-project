@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Top } from "./Style";
 
-const logo = "imagens/icons/logo.png";
+const logo = "/imagens/icons/logo.png";
 const Header = () => (
   <Top>
 

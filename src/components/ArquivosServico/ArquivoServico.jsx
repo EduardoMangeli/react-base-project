@@ -4,12 +4,11 @@ import SecaoGenerio from "../SecaoGenerico/SecaoGenerio";
 const ArquivoServico = (props) => (
         <ArquivoServicoStyle>
             <div>
-                <h1>{props.titulo}</h1>
                 <div id="container">
                     <div id="secao-selecionada">
                         <div id="titulo">
                             <span id="circulo"></span>
-                            <h1>Dados do usuário</h1>
+                            <h1>{props.titulo}</h1>
                         </div>
                         <div id="linha-azul"></div>
                     </div>
