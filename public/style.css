@@ -45,11 +45,16 @@ div.container {
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h5,h6{
   margin: 0;
   font-family: 'Century Gothic', sans-serif;
   font-weight: light;
 
+}
+h4{
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: lighter;
 }
 #servicos-options{
   position: relative;

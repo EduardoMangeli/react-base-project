@@ -21,7 +21,9 @@ const Home = () => {
     <Base>
       <h3>Dashboard |</h3>
       <div class="retanguloCinza">
-        <div class="retanguloBranco1Home"></div>
+        <div class="retanguloBranco1Home">
+          <h4>Ações Recentes:</h4>
+        </div>
         <div className="container-234">
           <div class="retanguloBranco2Home">
             <div className="grafico-area">
@@ -38,11 +40,17 @@ const Home = () => {
             </div>
           </div>
           <div className="container-34">
-            <div class="retanguloBranco3Home"></div>
-            <div class="retanguloBranco4Home"></div>
+            <div class="retanguloBranco3Home">
+              <h4>Usuários:</h4>
+            </div>
+            <div class="retanguloBranco4Home">
+              <h4>Autenticação e Autorização:</h4>
+            </div>
         </div>
         </div>
-        <div class="retanguloBranco5Home"></div>
+        <div class="retanguloBranco5Home">
+          <h4>Notificações:</h4>
+        </div>
       </div>
     </Base>
   )
