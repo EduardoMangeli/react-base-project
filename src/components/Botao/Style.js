@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-const FilterButtonStyle = styled.div`
+const BotaoStyle = styled.div`
     button {
         padding: 15px;
         border-radius: 10px;
         width: 200px;
         height: 50px;
         font-weight: bold;
-        border: none;
+        border: 1px solid #023859;
     }
 `;
 
-export {FilterButtonStyle};
+export {BotaoStyle};

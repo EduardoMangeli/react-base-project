@@ -5,7 +5,7 @@ import dadosSolicitacoes from "../data/solicitacoes.json";
 import dadosCalibracoes from "../data/calibracoes.json";
 import Tabela from "../components/Tabela/Tabela";
 import {useEffect, useState} from "react";
-import Botao from "../components/FilterButton/Botao";
+import Botao from "../components/Botao/Botao";
 const Dashboard = () => {
     // Array com as possíveis opções da filtragem
     const tipos = [

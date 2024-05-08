@@ -3,9 +3,10 @@ import Base from './Base';
 import InformacoesServico from "../components/InformacoesServico/InformacoesServico";
 import dadosSolicitacoes from "../data/solicitacoes.json";
 import SecaoGenerio from "../components/SecaoGenerico/SecaoGenerio";
-import Botao from "../components/FilterButton/Botao";
+import Botao from "../components/Botao/Botao";
 import {useRef, useState} from "react";
 import ArquivoServico from "../components/ArquivosServico/ArquivoServico";
+import BotaoAtencao from "../components/BotaoAtencao/BotaoAtencao";
 
 const ServicoPage = () => {
     // id: variável que armazena o id da solicitação que será passado pela URL, e é usado para buscar as informações da solicitação
@@ -40,13 +41,16 @@ const ServicoPage = () => {
     }
 
     return (
-        <Base>
-            <Link to={"/Servicos"}>
-                <span>{`<`} Voltar para serviços</span>
-            </Link>
-            <h1>Serviço - {servico.id}</h1>
-            <p>------------</p>
-
+        <Base
+            titulo={"Serviço - " + servico.id}
+        >
+            <div style={{marginTop: 20}}>
+                <Link style={{textDecoration: "none", color: "black"}} to={"/Servicos"}>
+                <span>
+                    {`<`} Voltar para serviços
+                </span>
+                </Link>
+            </div>
             <SecaoGenerio>
                 <div style={{display: "flex", justifyContent: "space-between", marginLeft: 50, marginRight: 50}}>
                     <div style={{display: "flex", justifyContent: "left", marginLeft: 50, gap: 10}}>
@@ -64,7 +68,7 @@ const ServicoPage = () => {
                     </div>
 
                     <div>
-                        <Botao
+                        <BotaoAtencao
                             text="Deletar serviço"
                             onClick={() => deleteServico()}
                         />

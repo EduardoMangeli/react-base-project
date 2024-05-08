@@ -5,7 +5,7 @@ import AtletaCard from "../components/AtletaCard/AtletaCard";
 import ListContainer from "../components/ListContainer/ListContainer";
 import Tabela from "../components/Tabela/Tabela";
 import dadosSolicitacoes from "../data/solicitacoes.json";
-import Botao from "../components/FilterButton/Botao";
+import Botao from "../components/Botao/Botao";
 import Busca from "../components/Busca/Busca";
 import ServicoPage from "./ServicoPage";
 import {Link, Route} from "react-router-dom";
@@ -97,7 +97,7 @@ const Atletas = () => {
 
   return (
       <Base titulo="Serviços">
-          <div style={{display: 'flex', padding: 20, justifyContent: "space-between"}}>
+          <div style={{display: 'flex', justifyContent: "space-between", marginBottom: 25, marginTop:30}}>
               <div style={{display: 'flex', gap: 10}}>
                   {tipos.map((tipo, indexo) => (
                       <Botao
@@ -108,18 +108,20 @@ const Atletas = () => {
                       />
                   ))}
               </div>
+          </div>
 
+          <div style={{display: 'flex', flexDirection: "row-reverse", marginBottom: 50}}>
               <Busca
-                opcoes={
-                  <>
-                    {colunas.map((coluna, index) => (
-                        <button key={index} onClick={() => alterarOpcao(colunas.indexOf(coluna))}>{coluna}</button>
-                    ))}
-                  </>
-                }
-                opcao={opcao}
-                onClick={filtrar}
-                onChance={(e) => pesquisar(e.target.value)}
+                  opcoes={
+                      <>
+                          {colunas.map((coluna, index) => (
+                              <button key={index} onClick={() => alterarOpcao(colunas.indexOf(coluna))}>{coluna}</button>
+                          ))}
+                      </>
+                  }
+                  opcao={opcao}
+                  onClick={filtrar}
+                  onChance={(e) => pesquisar(e.target.value)}
               />
           </div>
 

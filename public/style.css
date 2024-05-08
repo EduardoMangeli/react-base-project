@@ -39,6 +39,11 @@ a {
 
 div.container {
   padding: 1rem;
+  margin: 30px 70px 0px 70px;
+}
+
+div.container h1 span{
+  border-bottom: 5px solid var(--primaria);
 }
 
 h1,h2,h3,h4,h5,h6{

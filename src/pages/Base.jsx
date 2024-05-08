@@ -5,7 +5,9 @@ const Base = (props) => (
     <Header />
     <div className="container">
         <h1>
-            {props.titulo}
+            <span>
+                {props.titulo}
+            </span>
         </h1>
 
         {props.children}

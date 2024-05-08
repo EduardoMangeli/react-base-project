@@ -1,7 +1,7 @@
-import {FilterButtonStyle} from "./Style";
+import {BotaoStyle} from "./Style";
 
 const Botao = (props) => (
-    <FilterButtonStyle>
+    <BotaoStyle>
         <button
             style={{
                 backgroundColor: props.isActive ? '#023859' : 'white',
@@ -12,7 +12,7 @@ const Botao = (props) => (
         >
             {props.text}
         </button>
-    </FilterButtonStyle>
+    </BotaoStyle>
 );
 
 export default Botao;

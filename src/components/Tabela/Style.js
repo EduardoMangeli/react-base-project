@@ -4,6 +4,7 @@ const TabelaEstilo = styled.article`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
     
+    
   a {
     color: black;
   }
@@ -30,6 +31,7 @@ const TabelaEstilo = styled.article`
     
     table {
         margin: auto;
+        width: 100%;
     }
 
   .nao-visto {

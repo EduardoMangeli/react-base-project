@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 const ArquivoServicoStyle = styled.article`
     background-color: white;
+    height: 500px;
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
     
     #container{
         display: grid;
+        height: 100%;
         grid-template-areas:
             "p p p p"
             ". a c ."
