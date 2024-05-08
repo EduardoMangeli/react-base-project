@@ -17,7 +17,7 @@ const InformacoesServicoStyle = styled.article`
             ". e e ."
         ;
         grid-template-columns: auto auto auto auto;
-        grid-template-rows: repeat(5,4rem);
+        grid-template-rows: repeat(5,6rem);
         gap: .3rem;
         padding: .3rem;
     }

@@ -13,13 +13,11 @@ const ArquivoServicoStyle = styled.article`
         grid-template-areas:
             "p p p p"
             ". a c ."
-            ". a c ."
-            ". b c ."
             ". b c ."
             ". e e ."
         ;
         grid-template-columns: auto auto auto auto;
-        grid-template-rows: repeat(5,4rem);
+        grid-template-rows: repeat(4,8rem);
         gap: .3rem;
         padding: .3rem;
     }
@@ -43,7 +41,7 @@ const ArquivoServicoStyle = styled.article`
         font-size: 0.7rem;
     }
     
-    button{
+    #salvar button{
         padding: .3rem;
         width: 100px;
         border-radius: .3rem;
@@ -52,13 +50,32 @@ const ArquivoServicoStyle = styled.article`
         color: white;
         cursor: pointer;
     }
-    
-    button:hover{
+
+    #salvar button:hover{
         background-color: darkgreen;
     }
-    
-    button:active{
+
+    #salvar button:active {
         background-color: green;
+    }
+    
+    .download button{
+        padding: 15px;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        border: 1px solid #023859;
+        background-color: var(--primaria);
+        color: white;
+        margin: 0 10px;
+    }
+    
+    .download button:hover{
+        background-color: var(--destaque);
+    }
+    
+    .download button:active{
     }
     
     #circulo{

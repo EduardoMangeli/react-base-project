@@ -93,6 +93,8 @@ const ServicoPage = () => {
                     servico ? (
                         <ArquivoServico
                             titulo="Arquivos"
+                            cliente={servico.cliente}
+                            situacao={servico.status}
                         />
                     ) : (
                         <p>Serviço não encontrado ou ID inválido.</p>
