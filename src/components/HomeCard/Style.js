@@ -7,12 +7,13 @@ const HomePageHead = styled.div`
   .container {
     color: var(--destaque);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: auto;
   }
 
   .text-container {
-    text-align: justify;
+    text-align: center;
     max-width: 60%;
     padding: 1rem;
   }
@@ -21,9 +22,22 @@ const HomePageHead = styled.div`
     text-align: center;
   }
 
-  img {
-    width: 100%;
-    height: 30rem;
+  .img-container {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px){
+    .img-container {
+      display: flex;
+      width: 100%;
+      height: 30rem;
+    }
+    .container{
+      justify-content: space-between;
+    }
+    .text-container{
+      text-align: justify;
+    }
   }
 `;
 

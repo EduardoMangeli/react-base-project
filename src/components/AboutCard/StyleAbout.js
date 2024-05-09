@@ -13,6 +13,10 @@ const StyleAbout = styled.article`
 
     .Conteudo {
         font-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .Title {
@@ -23,13 +27,6 @@ const StyleAbout = styled.article`
     .SubTitle {
         font-weight: 400;
         font-size: 20px;
-    }
-
-    .Title-Membros {
-        font-weight: 400;
-        font-size: 20px;
-        text-align: left;
-        margin-left: 15.5em;
     }
 
     .Conteudo-Inicio {
@@ -44,6 +41,8 @@ const StyleAbout = styled.article`
     .Conteudo-Inicio-Escrito {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 32px;
         margin-bottom: 30px;
     }
@@ -69,17 +68,28 @@ const StyleAbout = styled.article`
     .Conteudo-Inicio-Escrito {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 32px;
-        align-items: flex-start;
         margin-top: 60px;
         margin-bottom: 30px;
         margin-left: 20em;
     }
+    .Conteudo-Membros-Escrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
 
+    }
 
     .Conteudo-Membros-Escrito-Lista {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 60px;
@@ -91,13 +101,15 @@ const StyleAbout = styled.article`
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-        margin-right: 20em
+        justify-content: center;
     }
 
     .Conteudo-Equipe-Escrito {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 32px;
         margin-top: 60px;
         margin-bottom: 30px;
@@ -105,6 +117,7 @@ const StyleAbout = styled.article`
 
     .Conteudo-Equipe-Escrito-Professores {
         border-top: 0.4px solid black;
+        text-align: center;
         padding-top: 30px;
         display: flex;
         flex-direction: column;
@@ -117,6 +130,7 @@ const StyleAbout = styled.article`
         padding-top: 30px;
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 32px;
         margin-bottom: 30px;
     }
@@ -126,6 +140,7 @@ const StyleAbout = styled.article`
         padding-top: 30px;
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 32px;
         margin-bottom: 30px;
     }
@@ -140,16 +155,25 @@ const StyleAbout = styled.article`
     }
 
     .Conteudo-Devs-Escrito {
-        border-top: 0.4px solid black;
-        padding-top: 30px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: 0.4px solid black;
+        padding-top: 30px;
         gap: 32px;
     }
 
     .Conteudo-Devs-Escrito-Lista {
-        margin-right: 40em;
-        margin-bottom: 38px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 32px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 20em;
+        margin-right: 20em;
     }
 
 

@@ -1,25 +1,23 @@
 import styled from "styled-components"
 
 const PasseioDestaque = styled.header`
-  background-color: var(--background);
   display: flex;
-  height: 16rem;
-  width: auto;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 75%;
   flex-direction: row;
-  padding: 1rem;
-  justify-content: center; /* Centraliza as imagens horizontalmente */
+  padding: 1px;
+  margin: auto;
 `;
 
 const CardPasseio = styled.img`
-  height: 15rem;
-  width: 15rem;
-  border-radius: 8%;
-  margin-right: 3rem; /* Espaço entre as imagens, exceto na última */
-  &:last-child {
-    margin-right: 0; /* Remove o margin da última imagem */
-  }
-  &:hover {
-    scale: 1.1;
-  }`;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid var(--destaque);
+  padding: 1px;
+`;
 
 export { PasseioDestaque, CardPasseio };

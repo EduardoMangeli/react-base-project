@@ -24,8 +24,8 @@
 }
 
 /* borda vermelha em todos os elementos para debug */
-
-/* * {
+/*
+ * {
   outline: red solid 1px;
 } */
 
@@ -56,11 +56,99 @@ h2{
   text-align: center;
 }
 
-/* nao sei se seria bom fzr isso, mas por enqnt vou deixar assim, acho que vai ter que criar um component pra isso*/
-.texto-mapa{
+.texto-mapa, .texto-game{
   width: 75%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 0 auto;
 }
+
+.titulo-mapa, .titulo-game{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.titulo-baixar-app{
+  display: flex;
+  justify-content: center;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--detalhe);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: var(--cinzaescuro);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--primaria);
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--secundaria);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: var(--destaque);
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: var(--destaque);
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.cardSwiper {
+  width: 240px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: none;
+}
+

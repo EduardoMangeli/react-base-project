@@ -4,7 +4,6 @@ import L from 'leaflet';
 import "./Style.css";
 import "leaflet/dist/leaflet.css";
 
-import pontosInteresse from '../../data/pontosInteresse.json';
 
 const customIconUrl = process.env.PUBLIC_URL + 'imagens/icons/marker-icon.png';
 
@@ -15,7 +14,7 @@ const customIcon = L.icon({
   popupAnchor: [1, -34],
 });
 
-function Mapa() {
+function Mapa({ pontos }) {
     return (
         <div className="map-container">
             <div className="map-inner-container">
@@ -24,7 +23,7 @@ function Mapa() {
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    {pontosInteresse.map(e => (
+                    {pontos.map(e => (
                       <Marker key={e.id} position={[e.latitude, e.longitude]} icon={customIcon}>
                         <Popup className="custom-popup">
                             <div className="popup-content">
