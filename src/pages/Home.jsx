@@ -1,11 +1,11 @@
-import { onAuthStateChanged } from "firebase/auth"
-import Base from "./Base"
-import { auth } from "../config/Firebase";
-import { useEffect } from "react";
+import Base from "./Base";
 import GraficoCode from "../components/Grafico/Grafico";
 
-const Home = () => {
+// AQUI IMPORTA OS DADOS DO JSON
+import dadosSolicitacoes from "../data/solicitacoes.json";
+import  AcoesCard  from "../components/AcoesCard/AcoesCard";
 
+export const Home = () => {
   /* useEffect(()=> {
     onAuthStateChanged(auth, (user)=> {
       if (user) {
@@ -15,7 +15,10 @@ const Home = () => {
       }
     })
   },[]) */
-  
+
+// AQUI VOCE CRIA O ESTADO QUE ARMAZENA OS DADOS 
+const [solicitacoes , setSolicitacoes] = useState(dadosSolicitacoes);
+
 
   return (
     <Base>
@@ -23,6 +26,16 @@ const Home = () => {
       <div class="retanguloCinza">
         <div class="retanguloBranco1Home">
           <h4>Ações Recentes:</h4>
+          {solicitacoes.map(
+                                     (solicitacao) => (
+                                         <AcoesCard
+                                             key={solicitacao.id}
+                                               id={solicitacao.id}
+                                               status={solicitacao.status}
+                                               tempo={solicitacao.tempo}
+                                         />
+                                     )
+                                 )}
         </div>
         <div className="container-234">
           <div class="retanguloBranco2Home">
@@ -46,14 +59,14 @@ const Home = () => {
             <div class="retanguloBranco4Home">
               <h4>Autenticação e Autorização:</h4>
             </div>
-        </div>
+          </div>
         </div>
         <div class="retanguloBranco5Home">
           <h4>Notificações:</h4>
         </div>
       </div>
     </Base>
-  )
-}
+  );
+};
 
 export default Home

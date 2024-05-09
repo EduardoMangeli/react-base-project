@@ -1,11 +1,13 @@
-import {Acoes} from "./Style";
+import {Card} from "./Style";
 
 const AcoesCard = (props) => (
-    <Acoes>
-        <div>
-        <span>{props.id}</span>
-        <span>Alterado: {props.status}</span>
+    <Card>
+        <div id='tipo'>
+            <span>ID: {props.id}</span>
+            <span>User: {props.status}</span>
+            <span>Data: {props.tempo}</span>
         </div>
-    </Acoes>
+    </Card>
+);
 
-)
+export default AcoesCard;
