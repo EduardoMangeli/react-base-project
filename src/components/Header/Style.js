@@ -18,6 +18,13 @@ const Top = styled.header`
     text-transform: uppercase;
     /*border-radius: .3em;*/
     }
+
+  .user {
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
   }
 `
 

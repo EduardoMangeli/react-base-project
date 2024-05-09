@@ -59,7 +59,33 @@ const Home = () => {
           status: 'Pendente'
         },
       ]
-    }
+    },
+    {
+      tipo: 'Radiosynoviorthesis',
+      itens: [
+        {
+          nome: 'Clínica Lorem',
+          status: 'Pendente'
+        },
+        {
+          nome: 'Clínica Ipsun',
+          status: 'Pendente',
+        },
+      ]
+    },
+    {
+      tipo: 'Modelagem computacional',
+      itens: [
+        {
+          nome: 'Clínica Lorem',
+          status: 'Pendente'
+        },
+        {
+          nome: 'Clínica Ipsun',
+          status: 'Pendente',
+        },
+      ]
+    },
   ]
 
   return (
@@ -68,7 +94,7 @@ const Home = () => {
         <h1>
         CLÍNICA DOSIMAGEM
         </h1>
-        <h2>Paciente: Zagallo</h2>
+
       </div>
       {dados.map((tipo) => {
         return (
