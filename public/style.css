@@ -151,10 +151,30 @@ h4{
   height: 900px;
   background-color: var(--botoes);
 }
-.container-menor{
-  margin: 1%;
-  flex: 1;
-  background-color: var(--background);
+table {
+  margin: 5px auto;
+  height: 0px;
+  border-spacing: 10px;
+  width: 99%;
+  /* table-layout: fixed; */
+  border-collapse: separate; /* Isso permite o uso de border-spacing */
+  border-spacing: 0.15rem; 
+}
+th, td {
+  font-weight: lighter ;
+  padding: 12px 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+
+}
+
+th {
+  color: #fff;
+  background-color: #000000;
+}
+td{
+  height: 0px;
+  background-color: #fff;
 }
 /* .container-botoes{
   display: flex;
