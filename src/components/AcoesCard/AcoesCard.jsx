@@ -3,9 +3,9 @@ import {Card} from "./Style";
 const AcoesCard = (props) => (
     <Card>
         <div id='tipo'>
-            <span>ID: {props.id}</span>
-            <span>User: {props.status}</span>
-            <span>Data: {props.tempo}</span>
+            <div class='ID'>ID: {props.id}</div>
+            <div>{props.status}</div>
+            <div>Data: {props.tempo}</div>
         </div>
     </Card>
 );

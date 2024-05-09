@@ -121,6 +121,13 @@ h4{
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
 }
+.linhaAcoes {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  border-bottom: 3px solid var(--detalhes);
+}
 /* Services */
 .container-pai{
   display: flex;

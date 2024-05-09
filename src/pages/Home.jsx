@@ -1,5 +1,6 @@
 import Base from "./Base";
 import GraficoCode from "../components/Grafico/Grafico";
+import { useState } from "react";
 
 // AQUI IMPORTA OS DADOS DO JSON
 import dadosSolicitacoes from "../data/solicitacoes.json";
@@ -26,6 +27,7 @@ const [solicitacoes , setSolicitacoes] = useState(dadosSolicitacoes);
       <div class="retanguloCinza">
         <div class="retanguloBranco1Home">
           <h4>Ações Recentes:</h4>
+          <div class="linhaAcoes">
           {solicitacoes.map(
                                      (solicitacao) => (
                                          <AcoesCard
@@ -36,6 +38,8 @@ const [solicitacoes , setSolicitacoes] = useState(dadosSolicitacoes);
                                          />
                                      )
                                  )}
+                                
+                                 </div>
         </div>
         <div className="container-234">
           <div class="retanguloBranco2Home">
