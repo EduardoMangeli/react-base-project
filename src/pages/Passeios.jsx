@@ -19,7 +19,8 @@ const Passeios = () => {
                     key={index}
                     nome={e.nome}
                     imagem={e.imagem}
-                    data={e.data}
+                    dia={e.dia}
+                    mes={e.mes}
                     local={e.local}
                     hora={e.hora}
                     valor={e.valor}
