@@ -3,8 +3,10 @@ import styled from "styled-components";
 const BuscaEstilo = styled.article`
 
     button {
-        font-weight: bold;
-        background-color: white;
+        background-color: #f3f3f4;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
     }
     
     .busca {
@@ -62,15 +64,37 @@ const BuscaEstilo = styled.article`
 
 .search-box {
   display: flex;
-    justify-items: center;
-    align-items: center;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
 }
     
     .search-box input {
-        width: 300px;
+      width: 100%;
+      height: 40px;
+      line-height: 28px;
+      padding: 0 1rem;
+      padding-left: 1.0rem;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      outline: none;
+      background-color: #f3f3f4;
+      color: #0d0c22;
+      transition: .3s ease;
     }
 
-    .search-box button {
+    .search-box input::placeholder {
+      color: #9e9ea7;
+    }
+
+    .search-box input:focus, search-box input:hover {
+      outline: none;
+      border-color: #002D55;
+      background-color: #fff;
+      box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+
+    .search-box div svg {
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -78,8 +102,8 @@ const BuscaEstilo = styled.article`
         left: -15px;
     }
     
-    .search-box button:hover {
-        background-color: #f1f1f1;
+    .search-box button:hover, search-box button:focus {
+        background-color: #fff;
     }
 
 .input-busca {
