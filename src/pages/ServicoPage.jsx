@@ -44,7 +44,7 @@ const ServicoPage = () => {
         <Base
             titulo={"Serviço - " + servico.id}
         >
-            <div style={{marginTop: 20}}>
+            <div style={{marginTop: 20, marginBottom: 40}}>
                 <Link style={{textDecoration: "none", color: "black"}} to={"/Servicos"}>
                 <span>
                     {`<`} Voltar para serviços
@@ -52,7 +52,7 @@ const ServicoPage = () => {
                 </Link>
             </div>
             <SecaoGenerio>
-                <div style={{display: "flex", justifyContent: "space-between", marginLeft: 50, marginRight: 50}}>
+                <div style={{display: "flex", justifyContent: "space-between", marginLeft: 50, marginRight: 50, marginBottom: 40}}>
                     <div style={{display: "flex", justifyContent: "left", marginLeft: 50, gap: 10}}>
                         <Botao
                             text="Dados do usúario"
@@ -75,8 +75,9 @@ const ServicoPage = () => {
                     </div>
                 </div>
 
-                {botaoClicado === "Dados do usúario" && (
-                    servico ? (
+                <div style={{marginBottom:40, marginLeft: 20, marginRight: 20}}>
+                    {botaoClicado === "Dados do usúario" && (
+                        servico ? (
                             <InformacoesServico
                                 Analyses={servico.analise}
                                 Status={servico.status}
@@ -87,19 +88,23 @@ const ServicoPage = () => {
                         ) : (
                             <p>Serviço não encontrado ou ID inválido.</p>
                         )
-                )}
+                    )}
 
-                {botaoClicado === "Arquivos" && (
-                    servico ? (
-                        <ArquivoServico
-                            titulo="Arquivos"
-                            cliente={servico.cliente}
-                            situacao={servico.status}
-                        />
-                    ) : (
-                        <p>Serviço não encontrado ou ID inválido.</p>
-                    )
-                )}
+                    {botaoClicado === "Arquivos" && (
+                        servico ? (
+                            <ArquivoServico
+                                titulo="Arquivos"
+                                cliente={servico.cliente}
+                                situacao={servico.status}
+                            />
+                        ) : (
+                            <p>Serviço não encontrado ou ID inválido.</p>
+                        )
+                    )}
+
+                </div>
+
+
             </SecaoGenerio>
         </Base>
     );
