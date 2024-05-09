@@ -8,7 +8,7 @@
 
   --primaria: hsla(210, 67%, 43%, 1);
   --background: hsla(108, 22%, 87%, 1);
-  --secundaria: rgb(32, 96, 148);
+  --secundaria: rgb(58, 135, 180);
   --destaque: hsla(355, 78%, 56%, 1);
   --detalhe: hsla(9, 63%, 45%, 1);
 
@@ -62,5 +62,24 @@ td, th {
 th{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.item-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dosimetria-area{
+  display: flex;
+  gap: 5px;
+}
+.btn-area{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 70px;
+}
+.dosimetria-sub{
+  display: flex;
   justify-content: space-between;
 }
