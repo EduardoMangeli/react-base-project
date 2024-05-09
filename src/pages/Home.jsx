@@ -5,6 +5,10 @@ import { useState } from "react";
 // AQUI IMPORTA OS DADOS DO JSON
 import dadosSolicitacoes from "../data/solicitacoes.json";
 import  AcoesCard  from "../components/AcoesCard/AcoesCard";
+import UsuariosCard from "../components/UsuariosCard/UsuarioCard";
+import dadosUsuarios from "../data/usuarios.json";
+import AutenticaçãoCard from "../components/AutenticaçãoCard/AutenticaçãoCard";
+import dadosAutenticação from "../data/autenticacao.json";
 
 export const Home = () => {
   /* useEffect(()=> {
@@ -19,6 +23,8 @@ export const Home = () => {
 
 // AQUI VOCE CRIA O ESTADO QUE ARMAZENA OS DADOS 
 const [solicitacoes , setSolicitacoes] = useState(dadosSolicitacoes);
+const[usuarios, setUsuarios] = useState(dadosUsuarios);
+const[autenticacao, setAutenticação] = useState(dadosAutenticação)
 
 
   return (
@@ -59,9 +65,35 @@ const [solicitacoes , setSolicitacoes] = useState(dadosSolicitacoes);
           <div className="container-34">
             <div class="retanguloBranco3Home">
               <h4>Usuários:</h4>
+              <div class="linhaUsuarios">
+          {usuarios.map(
+                                     (usuarios) => (
+                                         <UsuariosCard
+                                             key={usuarios.id}
+                                               id={usuarios.id}
+                                               Descrição={usuarios.Descrição}
+                                               Cargo={usuarios.Cargo}
+                                         />
+                                     )
+                                 )}
+                                
+                                 </div>
             </div>
             <div class="retanguloBranco4Home">
               <h4>Autenticação e Autorização:</h4>
+              <div class="linhaAutenticação">
+          {autenticacao.map(
+                                     (autenticacao) => (
+                                         <AutenticaçãoCard
+                                             key={autenticacao.id}
+                                               id={autenticacao.id}
+                                               Descrição={autenticacao.Descrição}
+                                               Cargo={autenticacao.Membros}
+                                         />
+                                     )
+                                 )}
+                                
+                                 </div>
             </div>
           </div>
         </div>
