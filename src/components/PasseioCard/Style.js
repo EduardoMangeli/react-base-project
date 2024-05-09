@@ -28,6 +28,17 @@ const PasseioArticle = styled.article`
     color: var(--secundaria);
   }
 
+  /*date{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: var(--detalhes);
+    background-color: var(--secundaria);
+  }*/
+
   ul{  
     color: var(--texto);
     padding: 1em;
@@ -36,7 +47,7 @@ const PasseioArticle = styled.article`
 
   }
 
-  date{
+  h2{
     width: 10%;
     height: 5rem;
     background-color: var(--secundaria);
@@ -44,6 +55,7 @@ const PasseioArticle = styled.article`
     padding: .5rem;
     border: .5rem;
     text-align: justify;
+    border-radius: .5rem;
   }
 
   figcaption {
