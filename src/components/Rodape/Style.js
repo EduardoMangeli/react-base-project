@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Bottom = styled.footer`
-  padding: 4em 15em;
+  padding: 0.5 15em;
   background-color: var(--cinza);
   display: flex;
   bottom: 0;

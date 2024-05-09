@@ -11,7 +11,9 @@ const HomeCard = ({titulo, texto}) => {
           <p>{texto}</p>
           <div><Botao texto="Baixe o app" /></div>
         </div>
-        <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Logo" />
+        <div className="img-container">
+          <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Logo"/> 
+        </div>
       </div>
     </HomePageHead>
     )

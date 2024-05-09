@@ -4,9 +4,7 @@ const MedalhaCard = ({nome, imagem}) => {
 
   return(
     <MedalhaArticle>
-    <figure>
-        <img src={`${process.env.PUBLIC_URL}${imagem}`} />
-    </figure>
+    <img src={`${process.env.PUBLIC_URL}${imagem}`} />
     <h3>{nome}</h3>
     </MedalhaArticle>
   )

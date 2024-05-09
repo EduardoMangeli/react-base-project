@@ -40,7 +40,10 @@ function Form_Anunciante() {
 
                 </section>
 
-                    
+                    <div className="ImgLogoForm">
+                        <img src="../imagens/icons/android-chrome-512x512.png" alt="Logo"/>
+                        <h3 className="textologo">Passeio Carioca</h3>
+                    </div>
 
 
                 <section className="Form-Endereco">
@@ -81,4 +84,4 @@ function Form_Anunciante() {
 
 
 
-export default Form_Anunciante
+export default Form_Guia

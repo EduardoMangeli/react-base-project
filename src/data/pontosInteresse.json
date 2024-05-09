@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nome": "Local 1",
+    "latitude": -22.951804,
+    "longitude": -43.210760,
+    "popupContent": "Conteúdo do popup 1...",
+    "imagem": "",
+    "zona": "Sul"
+  },
+  {
+    "id": 2,
+    "nome": "Local 2",
+    "latitude": -22.9540000,
+    "longitude": -43.2168493,
+    "popupContent": "Conteúdo do popup 2...",
+    "imagem": "",
+    "zona": "Sul"
+  },
+  {
+    "id": 3,
+    "nome": "Local 3",
+    "latitude": -22.952000,
+    "longitude": -43.219999,
+    "popupContent": "Conteúdo do popup 3...",
+    "imagem": "",
+    "zona": "Norte"
+  },
+  {
+    "id": 4,
+    "nome": "Local 4",
+    "latitude": -22.953000,
+    "longitude": -43.215000,
+    "popupContent": "Conteúdo do popup 4...",
+    "imagem": "",
+    "zona": "Centro"
+  },
+  {
+    "id": 5,
+    "nome": "Local 5",
+    "latitude": -22.951000,
+    "longitude": -43.218000,
+    "popupContent": "Conteúdo do popup 5...",
+    "imagem": "",
+    "zona": "Norte"
+  },
+  {
+    "id": 6,
+    "nome": "Local 6",
+    "latitude": -22.950000,
+    "longitude": -43.211000,
+    "popupContent": "Conteúdo do popup 6...",
+    "imagem": "",
+    "zona": "Centro"
+  },
+  {
+    "id": 7,
+    "nome": "Local 7",
+    "latitude": -22.955000,
+    "longitude": -43.219000,
+    "popupContent": "Conteúdo do popup 7...",
+    "imagem": "",
+    "zona": "Sul"
+  },
+  {
+    "id": 8,
+    "nome": "Local 8",
+    "latitude": -22.956000,
+    "longitude": -43.210000,
+    "popupContent": "Conteúdo do popup 8...",
+    "imagem": "",
+    "zona": "Norte"
+  },
+  {
+    "id": 9,
+    "nome": "Local 9",
+    "latitude": -22.957000,
+    "longitude": -43.212000,
+    "popupContent": "Conteúdo do popup 9...",
+    "imagem": "",
+    "zona": "Oeste"
+  },
+  {
+    "id": 10,
+    "nome": "Local 10",
+    "latitude": -22.9590345,
+    "longitude": -43.2130291,
+    "popupContent": "Conteúdo do popup 10...",
+    "imagem": "",
+    "zona": "Norte"
+  }
+]

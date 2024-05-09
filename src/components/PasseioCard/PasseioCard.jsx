@@ -5,7 +5,7 @@ const PasseioCard = ({nome, local, data, hora, descricao, guia, valor, imagem}) 
   return(
     <PasseioArticle>
       <figure>
-      <h3>{data}</h3>
+      <h2>{data}</h2>
         <img src={`${process.env.PUBLIC_URL}${imagem}`}/>
       </figure>
       <h3>{nome}</h3>

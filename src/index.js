@@ -49,7 +49,8 @@ root.render(
         <Route path="/guia" element={<Guia/>} />
         <Route path="/termos" element={<Termos/>} />
         <Route path="/privacidade" element={<Privacidade/>} />
-        <Route path="/Form_Anunciante" element={<Formulario/>} />
+        <Route path="anuncie/Form_Anunciante" element={<Formulario/>} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

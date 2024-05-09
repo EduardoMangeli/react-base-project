@@ -1,27 +1,21 @@
 import styled from "styled-components";
 
 const MedalhaArticle = styled.article`
-  width: 20%;
-  background-color: var(--secundaria);
-  position: relative;
   display: flex;
-  row-gap: 1rem;
-  gap:-5rem;
-  flex-direction: column;
+  width: 240px; /* Ajuste o tamanho do MedalhaArticle */
+  height: 360px; /* Ajuste o tamanho do MedalhaArticle */
+  background-color: var(--secundaria);
+  justify-content: center;
   align-items: center;
-  border-radius: 3em;
-  
-  figure {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    align-self: flex-start;
-  }
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
 
   img {
     color: var(--secundaria);
-    object-fit: cover;
-    width: 10em;
-    height: 10em;
+    object-fit: contain; /* Ajuste o object-fit para contain */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-position: center;
   }
@@ -31,15 +25,9 @@ const MedalhaArticle = styled.article`
     text-align: center;
     text-transform: uppercase;
     color: var(--destaque);
-  }
-
-  ul {
-    color: black;
-    padding: 1em;
-    list-style: none;
-    margin: 0;
-    text-align: center;
+    object-position: center;
   }
 `;
+
 
 export { MedalhaArticle };

@@ -2,14 +2,12 @@ import Banner from "../components/Banner/Banner";
 import Botao from "../components/Botao/Botao";
 import Base from "./Base";
 import AboutCard from "../components/AboutCard/AboutCard";
+import { StyleAbout } from "../components/AboutCard/StyleAbout";
 
 const About = () => {
     const membros = [
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Jose Fulano', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Renato Bellini', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Rafael Bokor', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
       ];
     
       const desenvolvedores = [
@@ -23,77 +21,82 @@ const About = () => {
     return (
         <Base>
             <Banner titulo={"Quem Somos"} imagem={""}/>
+                <StyleAbout>
+                    <main className="Conteudo">
+                        <section className="Conteudo-Inicio" >
+                            <div className="Conteudo-Inicio-Escrito">
 
-            <div id="body_about">
-                <h2>A Passeio Carioca</h2>
-                <p>No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?</p>
+                                <h1 className="Title">A Passeio Carioca</h1>
 
-                <h3>Objetivos</h3>
-                <p>Objetivos da Passeio Carioca...</p>
+                                <p>No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?</p>
 
-                <h3>Ideais</h3>
-                <p> Ideais da Passeio Carioca...</p>
-                <Botao texto="Baixe o App"></Botao>
+                                <Botao className="Botao" texto="Baixe o App"></Botao>
 
-                <hr></hr>
-            </div>
+                            </div>
+                        </section>
 
-            <div id="membros">
-                <h2>Membros</h2>
-                <ul className="lista_membros">
-                {membros.map((membro, index) => (
-                    <AboutCard 
-                    key={index} 
-                    nome={membro.nome} 
-                    imagem={membro.imagem} 
-                    descricao={membro.descricao} 
-                    />
-                ))}
-                </ul>
-            </div>
+                        <section className="Conteudo-Membros">
+                            <div className="Conteudo-Membros-Escrito">
 
-            <div id="equipe">
-                <h3>Patrocinadores</h3>
-                <ul>
-                    <li>Claudio Andre Castro</li>
-                    <li>Sergio Castro Imoveis</li>
-                </ul>
-                <h3>Mentores</h3>
-                <ul>
-                    <li>Professor Rodrigo Rainha, UERJ</li>
-                    <li>professora Lucimar Dantas, IBMEC</li>
-                    <li>Professor Luiz Barbieri, IBMEC</li>
-                    <li>Professor Eduardo Mangeli, IBMEC</li>
-                </ul>
+                                <h3 className="Title-Membros">Membros</h3>
 
-                <h3>Pesquisadores</h3>
-                <ul>
-                    <li>Ian Esteves Amaral Francisco, Ciencia de Dados, IBMEC</li>
-                    <li>Matheus de Almeida Melo, Relacoes Internacionais, IBMEC</li>
-                    <li>Pedro Carvalho Fontenele Castro, Historia, UERJ</li>
-                </ul>
+                                <ul className="Conteudo-Membros-Escrito-Lista">
+                                    {membros.map((membro, index) => (
+                                        <AboutCard 
+                                        key={index} 
+                                        nome={membro.nome} 
+                                        imagem={membro.imagem} 
+                                        descricao={membro.descricao} 
+                                        />
+                                    ))}
+                                </ul>
 
-                <h3>Empresa deselvolvedora do Aplicativo</h3>
-                <ul>
-                    <li>Keener Innovations</li>
-                </ul>
-            </div>
-            
-            <div id="DesenvolvedoresSite">
-                <h2>Desenvolvedores do Site</h2>
-                <ul className="lista_membros">
-                {desenvolvedores.map((dev, index) => (
-                    <AboutCard 
-                    key={index} 
-                    nome={dev.nome} 
-                    imagem={dev.imagem} 
-                    descricao={dev.descricao} 
-                    />
-                ))}
-                </ul>
-            </div>
+                            </div>
+                        </section>
 
+                        <section className="Conteudo-Devs">
 
+                            <div className="Conteudo-Devs-Escrito">
+
+                                <h3 className="SubTitle">Desenvolvedores do Site</h3>
+
+                                    <ul className="Conteudo-Devs-Escrito-Lista">
+                                    {desenvolvedores.map((dev, index) => (
+                                        <AboutCard 
+                                        key={index} 
+                                        nome={dev.nome} 
+                                        imagem={dev.imagem} 
+                                        descricao={dev.descricao} 
+                                        />
+                                    ))}
+                                </ul>
+
+                            </div>
+
+                        </section>
+                        
+                        <section className="Conteudo-Equipe">
+
+                            <div className="Conteudo-Equipe-Escrito">
+
+                                <h3 className="SubTitle">Mentores</h3>
+
+                                <ul className="Conteudo-Equipe-Escrito-Professores">
+                                    <li>Professor Eduardo Mangeli, IBMEC</li>
+                                </ul>
+
+                                <h3 className="SubTitle">Empresa deselvolvedora do Aplicativo</h3>
+
+                                <ul className="Conteudo-Equipe-Escrito-Empresa">
+                                    <li>Keener Innovations</li>
+                                </ul>
+
+                            </div>
+
+                        </section>
+                        
+                    </main>
+                </StyleAbout>
         </Base>
     )
   }

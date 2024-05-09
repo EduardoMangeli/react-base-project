@@ -2,7 +2,7 @@
     {
         "nome":"Avenida Rio Branco",
         "local":"Cinelândia, Clube Naval, Banco Central, Ed. A Noite",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -12,7 +12,7 @@
     {
         "nome":"Museus",
         "local":"MAR, MAM, Museu do Amanhã",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -22,7 +22,7 @@
     {
         "nome":"Santa Teresa",
         "local":"Cinelândia",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -32,7 +32,7 @@
     {
         "nome":"Samba",
         "local":"Pedra do Sal, Escadaria Selaron",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -42,7 +42,7 @@
     {
         "nome":"Trilhas",
         "local":"Pedra da Gávea, Pedra Bonita",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -52,7 +52,7 @@
     {
         "nome":"Centro do Rio",
         "local":"Carioca, Catedral",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -62,7 +62,7 @@
     {
         "nome":"Jardim Botânico",
         "local":"Pedra da Gávea, Pedra Bonita",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
@@ -72,7 +72,7 @@
     {
         "nome":"Praias",
         "local":"Copacabana, Ipanema, Arpoador",
-        "data":"11/11/2011",
+        "data":"11/11",
         "hora":"11:11",
         "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
         "guia":"José",
