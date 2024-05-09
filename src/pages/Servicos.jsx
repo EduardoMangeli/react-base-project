@@ -61,6 +61,7 @@ const Fotos = () => {
 
   return (
     <Base>
+
       <ServicesBar />
       <section className="container-pai">
         <table>

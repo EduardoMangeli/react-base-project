@@ -45,11 +45,16 @@ div.container {
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h5,h6{
   margin: 0;
   font-family: 'Century Gothic', sans-serif;
   font-weight: light;
 
+}
+h4{
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: lighter;
 }
 #servicos-options{
   position: relative;
@@ -116,6 +121,27 @@ h1,h2,h3,h4,h5,h6{
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
 }
+.linhaAcoes {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  border-bottom: 3px solid var(--detalhes);
+}
+/* Services */
+.container-pai{
+  display: flex;
+  margin-top: 0.05%;
+  display: flex;
+  flex: 1;
+  height: 900px;
+  background-color: var(--botoes);
+}
+.container-menor{
+  margin: 1%;
+  flex: 1;
+  background-color: var(--background);
+}
 /* Services */
 .container-pai{
   display: flex;
@@ -141,6 +167,7 @@ th, td {
   overflow-wrap: break-word;
 
 }
+
 th {
   color: #fff;
   background-color: #000000;
@@ -149,9 +176,35 @@ td{
   height: 0px;
   background-color: #fff;
 }
+/* .container-botoes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.4;
+  text-align: center;
+  background-color: var(--botoes);
+}
+.div-botoes-serv{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.div-botoes-serv button{
+  cursor: pointer;
+  border-style: none;
+  margin: 0 5px;
+  min-width: 20rem;
+  padding: .50rem;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: var(--background);
+}
 
 @media (max-width: 1000px){
   
-}
+} */
 
 
