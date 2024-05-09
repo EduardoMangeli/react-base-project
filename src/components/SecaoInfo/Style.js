@@ -35,11 +35,10 @@ const SecaoInfoStyle = styled.article`
         display: grid;
         grid-template-areas:
             "tipo"
-            "aberto"
-            "fechado"
+            "info"
             "setas"
         ;
-        grid-template-rows: 0.5fr 2fr 2fr 1fr;
+        grid-template-rows: 2fr 6fr 1fr;
         gap: 1px;
     }
     
@@ -47,15 +46,11 @@ const SecaoInfoStyle = styled.article`
         grid-area: tipo;
     }
     
-    .aberto{
-        grid-area: aberto;
+    .info{
+        grid-area: info;
     }
     
-    .fechado{
-        grid-area: fechado;
-    }
-    
-    .fechado, .aberto{
+    .num{
         display: flex;
         justify-content: center;
         align-items: center;

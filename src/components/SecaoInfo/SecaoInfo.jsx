@@ -17,12 +17,13 @@ const SecaoInfo = (props) => (
                     Clinica Dosimetria
                 </div>
 
-                <div className="aberto">
-                    <span>34</span> <div id="circulo-laranja"></div>Pedidos Abertos
-                </div>
-
-                <div className="fechado">
-                    <span>134</span>  <div id="circulo-verde"></div>Pedidos Fechados
+                <div className="info">
+                    <div className="num">
+                        <span>34</span> <div id="circulo-laranja"></div>Pedidos Abertos
+                    </div>
+                    <div className="num">
+                        <span>134</span>  <div id="circulo-verde"></div>Pedidos Fechados
+                    </div>
                 </div>
 
                 <BotaoAvancarVoltar></BotaoAvancarVoltar>
