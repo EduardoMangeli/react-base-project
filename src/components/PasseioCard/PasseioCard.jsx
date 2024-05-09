@@ -1,17 +1,20 @@
 import { PasseioArticle } from "./Style"
 
-const PasseioCard = ({nome, local, data, hora, descricao, guia, valor, imagem}) => {
+const PasseioCard = ({nome, local, dia, mes, hora, descricao, guia, valor, imagem}) => {
 
   return(
     <PasseioArticle>
       <figure>
-      <h2>{data}</h2>
+      <h2>
+        <span id="dia">{dia}</span>
+        <span id="mes">{mes}</span>
+      </h2>
         <img src={`${process.env.PUBLIC_URL}${imagem}`}/>
       </figure>
       <h3>{nome}</h3>
       <ul>
           <li>{local}</li>
-          <li>{hora}</li>
+          <li><span>Hora: </span>{hora}</li>
           <li>{valor}</li>
       </ul>
     </PasseioArticle>
