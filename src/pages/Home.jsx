@@ -1,6 +1,5 @@
 import Base from "./Base"
 import Botao from "../components/Botao/Botao";
-import Banner from "../components/Banner/Banner";
 import HomeCard from "../components/HomeCard/HomeCard";
 import PasseioDestaque from "../components/PasseiosDestaque/PasseioDestaque";
 import SectionsApp from  "../components/SectionsApp/SectionsApp"; 

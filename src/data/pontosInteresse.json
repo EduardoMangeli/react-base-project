@@ -1,92 +1,47 @@
 [
   {
     "id": 1,
-    "nome": "Local 1",
-    "latitude": -22.951804,
-    "longitude": -43.210760,
+    "nome": "Museu do Amanhã",
+    "latitude": -22.8957,
+    "longitude": -43.180,
     "popupContent": "Conteúdo do popup 1...",
-    "imagem": "",
+    "imagem": "imagens/pontosInteresse/museuAmanha.jpg",
     "zona": "Sul"
   },
   {
     "id": 2,
-    "nome": "Local 2",
-    "latitude": -22.9540000,
-    "longitude": -43.2168493,
+    "nome": "Aeroporto Santos Dumont",
+    "latitude": -22.9111,
+    "longitude": -43.1648,
     "popupContent": "Conteúdo do popup 2...",
-    "imagem": "",
+    "imagem": "imagens/pontosInteresse/aeroportoSD.jpg",
     "zona": "Sul"
   },
   {
     "id": 3,
-    "nome": "Local 3",
-    "latitude": -22.952000,
-    "longitude": -43.219999,
+    "nome": "Forte de Copacabana",
+    "latitude": -22.9860,
+    "longitude": -43.1850,
     "popupContent": "Conteúdo do popup 3...",
-    "imagem": "",
+    "imagem": "imagens/pontosInteresse/ForteCopacabana.jpg",
     "zona": "Norte"
   },
   {
     "id": 4,
-    "nome": "Local 4",
-    "latitude": -22.953000,
-    "longitude": -43.215000,
+    "nome": "Monumento do Cristo Redentor",
+    "latitude": -22.952,
+    "longitude": -43.211,
     "popupContent": "Conteúdo do popup 4...",
-    "imagem": "",
+    "imagem": "imagens/pontosInteresse/cristoRedentor.jpg",
     "zona": "Centro"
   },
   {
     "id": 5,
-    "nome": "Local 5",
-    "latitude": -22.951000,
-    "longitude": -43.218000,
-    "popupContent": "Conteúdo do popup 5...",
-    "imagem": "",
-    "zona": "Norte"
-  },
-  {
-    "id": 6,
-    "nome": "Local 6",
-    "latitude": -22.950000,
-    "longitude": -43.211000,
-    "popupContent": "Conteúdo do popup 6...",
-    "imagem": "",
-    "zona": "Centro"
-  },
-  {
-    "id": 7,
-    "nome": "Local 7",
-    "latitude": -22.955000,
-    "longitude": -43.219000,
-    "popupContent": "Conteúdo do popup 7...",
-    "imagem": "",
-    "zona": "Sul"
-  },
-  {
-    "id": 8,
-    "nome": "Local 8",
-    "latitude": -22.956000,
-    "longitude": -43.210000,
-    "popupContent": "Conteúdo do popup 8...",
-    "imagem": "",
-    "zona": "Norte"
-  },
-  {
-    "id": 9,
-    "nome": "Local 9",
-    "latitude": -22.957000,
-    "longitude": -43.212000,
-    "popupContent": "Conteúdo do popup 9...",
-    "imagem": "",
-    "zona": "Oeste"
-  },
-  {
-    "id": 10,
-    "nome": "Local 10",
-    "latitude": -22.9590345,
-    "longitude": -43.2130291,
-    "popupContent": "Conteúdo do popup 10...",
-    "imagem": "",
+    "nome": "Jardim Botânico",
+    "latitude": -22.968,
+    "longitude": -43.224,
+    "popupContent": "Fundado em 13 de junho de 1808 pelo Príncipe Regente D. João, o Jardim Botânico foi criado com o objetivo de aclimatar as especiarias vindas das Índias Orientais. Tombado pelo Patrimônio Histórico e Artístico Nacional (iphan), pela sua importância histórica, cultural e científica, foi também reconhecido internacionalmente como um museu vivo na área da Botânica e definido pela Unesco como uma das reservas da biosfera.",
+    "imagem": "imagens/pontosInteresse/JardimBotanico.jpg",
     "zona": "Norte"
   }
 ]

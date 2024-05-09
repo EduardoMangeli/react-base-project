@@ -7,14 +7,14 @@ import { useState } from "react";
 import pontosInteresse from "../data/pontosInteresse.json";
 
 const PageMapa = () => {
-  {/*
+  
   const [zonaSelecionada, setZonaSelecionada] = useState("Sul");
   const [pontos, setPontos] = useState(pontosInteresse);
 
   const filtrarPorZona = (zona = null) => {
     setZonaSelecionada(zona);
     setPontos(zona ? pontosInteresse.filter((ponto) => ponto.zona === zona) : pontosInteresse);
-  }; */}
+  }; 
 
   return (
     <Base>
@@ -53,29 +53,32 @@ const PageMapa = () => {
           <img src="imagens/FotoMapa-PasseioCarioca.png"/>
         </div>
 
-      {/*
-        <div className="titulo-mapa">
+      </StyleMapa>
+
+      <div>
+        <Botao texto="Saiba Mais" />
+      </div>
+      
+      <div className="titulo-mapa">
           <h3>Aqui alguns dos pontos que pode encontrar no app</h3>
         </div>
         
-        <div className="botao-filtro">
-          <button onClick={() => filtrarPorZona()}>Todos</button>
-          <button onClick={() => filtrarPorZona("Centro")}>Centro</button>
-          <button onClick={() => filtrarPorZona("Norte")}>Norte</button>
-          <button onClick={() => filtrarPorZona("Sul")}>Sul</button>
-          <button onClick={() => filtrarPorZona("Oeste")}>Oeste</button>
-        </div>
+      {/*<div className="botao-filtro">
+        <button onClick={() => filtrarPorZona()}>Todos</button>
+        <button onClick={() => filtrarPorZona("Centro")}>Centro</button>
+        <button onClick={() => filtrarPorZona("Norte")}>Norte</button>
+        <button onClick={() => filtrarPorZona("Sul")}>Sul</button>
+        <button onClick={() => filtrarPorZona("Oeste")}>Oeste</button>
+      </div>*/}
 
-        <div className="containerMapa">
-          <Mapa pontos={pontos} />
-        </div>
-      */}
-
-      </StyleMapa>
+      <div className="containerMapa">
+         <Mapa pontos={pontos} />
+      </div>
 
       <div className="titulo-baixar-app">
           <h3>Conheca mais sobre os pontos no App Passeio Carioca</h3>
-        </div>
+      </div>
+
       <div>
         <Botao texto="Baixe o app" />
       </div>

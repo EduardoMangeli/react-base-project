@@ -43,7 +43,7 @@ const Top = styled.header`
     }
     img{
       max-width: 6rem;
-      margin-right: 10px;
+      margin-right: -30px;
     }
   }
 

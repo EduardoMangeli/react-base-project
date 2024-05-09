@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 const HomePageHead = styled.div`
-  background-color: var(--primaria);
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--secundaria);
   padding: 1rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 
   .container {
     color: var(--destaque);

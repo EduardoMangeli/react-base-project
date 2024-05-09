@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu'
 const Header = () => (
   <Top>
     <div id="outer-container">
-      <Menu outerContainerId={ "outer-container" }>
+      <Menu outerContainerId={ "outer-container" } right noOverlay>
       <Link to="/">Home</Link>
       <Link to="/passeios">Passeios</Link>
       <Link to="/gameficacao">Gameficação</Link>

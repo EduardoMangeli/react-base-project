@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import Botao from "../Botao/Botao";
 import L from 'leaflet';
 
 import "./Style.css";
@@ -29,9 +30,9 @@ function Mapa({ pontos }) {
                             <div className="popup-content">
                                 <div className="popup-text">
                                     <h3>{e.nome}</h3>
-                                    <p>{e.popupContent}</p>
                                 </div>
                                 <img src={`${process.env.PUBLIC_URL}${e.imagem}`}/>
+                                <Botao texto="Saiba Mais"/>
                             </div>
                         </Popup>
                       </Marker>

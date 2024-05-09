@@ -82,7 +82,7 @@ h2{
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
+  right: 36px;
   top: 36px;
 }
 
@@ -93,7 +93,7 @@ h2{
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--cinzaescuro);
+  background: var(--destaque);
 }
 
 /* Position and sizing of clickable cross button */
@@ -118,9 +118,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: var(--secundaria);
+  height: 50% !important;
+  border-radius: 30px;
+  background: var(--detalhe);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  overflow-y: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -136,12 +139,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
+  background-color: var(--detalhe) !important;
   display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
 }
 
 .cardSwiper {

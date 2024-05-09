@@ -11,6 +11,8 @@ const Destaque = styled.header`
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
   align-items: flex-end; /* Alinha o conteúdo na parte inferior */
   margin: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   
   h1{
     text-transform: uppercase;
