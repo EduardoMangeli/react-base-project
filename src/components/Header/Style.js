@@ -18,14 +18,15 @@ const Top = styled.header`
     text-transform: uppercase;
     /*border-radius: .3em;*/
     }
+  
+  .login {
+    position: fixed;
+    top: 1.5rem;
+    right: 0;
+  }
+  
 
-  .user {
-    color: white;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-  }
-  }
+  
 `
 
 export {Top}

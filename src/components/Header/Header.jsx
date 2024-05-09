@@ -11,13 +11,13 @@ const Header = () => (
     <Link to="/calibracoes">Calibrações</Link>
     <Dropdown /></div>
     
-    
+  <div className="login">
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout">Logout</Link>
     : <Link to="/login">Login</Link>
     }
+  </div>
 
-  <div class="user">Ola, User2103</div>
     
   </Top>
 )
