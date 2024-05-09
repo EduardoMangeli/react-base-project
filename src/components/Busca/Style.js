@@ -4,7 +4,6 @@ const BuscaEstilo = styled.article`
 
     button {
         background-color: #f3f3f4;
-        border-radius: 8px;
         border: none;
         cursor: pointer;
     }
@@ -18,7 +17,6 @@ const BuscaEstilo = styled.article`
     }
     
     .dropbtn {
-  cursor: pointer;
         display: flex;
         justify-content: space-between;
         width: 150px;
@@ -34,7 +32,7 @@ const BuscaEstilo = styled.article`
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: green;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -47,7 +45,9 @@ const BuscaEstilo = styled.article`
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+  }
     
     .dropdown-content > button {
         background-color: #f1f1f1;
@@ -57,6 +57,11 @@ const BuscaEstilo = styled.article`
         text-align: left;
         padding: 0.5rem 0.3rem;
     }
+
+    .dropdown-content > button:hover {
+      background-color: #002D55;
+      color: #fff
+  }
     
 .dropdown:hover .dropdown-content {
   display: block;
@@ -94,17 +99,6 @@ const BuscaEstilo = styled.article`
       background-color: #fff;
       box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 
-    .search-box div svg {
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        left: -15px;
-    }
-    
-    .search-box button:hover, search-box button:focus {
-        background-color: #fff;
-    }
 
 .input-busca {
   border-radius: 20px;
