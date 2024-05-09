@@ -133,6 +133,12 @@ h4{
   margin: auto;
   display: flex;
 }
+
+.linhaAutenticação {
+  margin: auto;
+  display: flex;
+}
+
 /* Services */
 .container-pai{
   display: flex;
