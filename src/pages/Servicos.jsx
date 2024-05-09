@@ -95,6 +95,29 @@ const Atletas = () => {
         }
     }
 
+
+    // uploadArquivo: função que faz o usuário selecionar um arquivo para ser upado
+    const uploadArquivo = () => {
+        const input = document.createElement("input");
+        input.type = "file";
+        input.click();
+    }
+
+    // baixarArquivo: função que baixa um arquivo a partir de um link e o salva no computador do usuário assim que o botão é clicado
+    // parametros: link : string - link do arquivo a ser baixado
+    const baixarArquivo = (link) => {
+        fetch(link)
+            .then(response => {
+                response.blob().then(blob => {
+                    let url = window.URL.createObjectURL(blob);
+                    let a = document.createElement('a');
+                    a.href = url;
+                    a.download = link.split("/").pop();
+                    a.click();
+                });
+            });
+    }
+
   return (
       <Base titulo="Serviços">
           <div style={{display: 'flex', justifyContent: "space-between", marginBottom: 25, marginTop:30}}>
@@ -140,7 +163,7 @@ const Atletas = () => {
                       <td>{solicitacao.atividade}</td>
                       <td>{solicitacao.calibracao} <a href=""><i></i></a></td>
                       <td><span className="nao-visto">{solicitacao.status}</span></td>
-                      <td>{solicitacao.imagem} <a href=""><i></i></a></td>
+                      <td>{solicitacao.imagem} <button onClick={() => baixarArquivo(solicitacao.imagem)}>Baixar</button></td>
                       <td> {solicitacao.relatorio} <a href=""><i></i></a></td>
                       <td>{solicitacao.date}</td>
                       <td>{solicitacao.tipo}</td>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const BotaoAvancarVoltar = styled.div`
+const BotaoAvancarVoltarStyle = styled.div`
 a {
     text-decoration: none;
     display: inline-block;
@@ -27,4 +27,4 @@ a {
   }
 `
 
-export { BotaoAvancarVoltar };
+export { BotaoAvancarVoltarStyle };

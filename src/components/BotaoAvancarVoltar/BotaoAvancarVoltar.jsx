@@ -1,10 +1,10 @@
-import { BotaoAvancarVoltar } from "./Style";
+import { BotaoAvancarVoltarStyle } from "./Style";
 
 const BotaoAvancarVoltar = () => (
-  <BotaoAvancarVoltar>
+  <BotaoAvancarVoltarStyle>
     <a href="#" className="previous round">&#8249; Voltar</a>
     <a href="#" className="next round">Avançar &#8250;</a>
-  </BotaoAvancarVoltar>
+  </BotaoAvancarVoltarStyle>
 )
 
 export default BotaoAvancarVoltar;

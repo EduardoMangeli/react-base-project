@@ -1,6 +1,7 @@
 import { SecaoInfoStyle } from "./Style";
 import {Link} from "react-router-dom";
 import SecaoGenerio from "../SecaoGenerico/SecaoGenerio";
+import BotaoAvancarVoltar from "../BotaoAvancarVoltar/BotaoAvancarVoltar";
 
 const infoImg = "imagens/icons/info.png"
 const acessar = "imagens/icons/up-arrow.png"
@@ -24,14 +25,7 @@ const SecaoInfo = (props) => (
                     <span>134</span>  <div id="circulo-verde"></div>Pedidos Fechados
                 </div>
 
-                <div className="setas">
-                    <button>
-                        {"<"}
-                    </button>
-                    <button>
-                        >
-                    </button>
-                </div>
+                <BotaoAvancarVoltar></BotaoAvancarVoltar>
 
             </div>
         </SecaoInfoStyle>
