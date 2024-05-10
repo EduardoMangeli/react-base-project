@@ -5,6 +5,11 @@ const MenuDadosPaciente = styled.div
 .div-bar {
 
 }
+.div-campos {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+}
 .div-rotulo {
     margin: 30px;
 }

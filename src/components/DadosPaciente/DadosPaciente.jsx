@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { MenuDadosPaciente } from './Style';
-import { Form } from 'react-router-dom';
 
 const DadosPaciente = (props) => {
 
