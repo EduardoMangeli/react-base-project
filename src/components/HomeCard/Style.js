@@ -4,10 +4,8 @@ const HomePageHead = styled.div`
   background-image: url("");
   background-size: cover;
   background-position: center;
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   padding: 1rem;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
 
   .container {
     color: var(--destaque);

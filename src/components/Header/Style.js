@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Top = styled.header`
   padding: 2em 5em;
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -15,7 +15,7 @@ const Top = styled.header`
     text-align: center;
     padding: .5rem;
     min-width: 5em;
-    background-color: var(--secundaria);
+    background-color: var(--primaria);
     text-decoration: none;
     font-weight: bold;
     color: var(--destaque);
@@ -23,7 +23,7 @@ const Top = styled.header`
     border-radius: 1em;
     font-size: 0.8rem;
     &:hover{
-      background-color: var(--terciaria);
+      background-color: var(--secundaria);
     }
   }
 
@@ -33,13 +33,17 @@ const Top = styled.header`
     justify-content: center;
     align-items: center;
     background: none;
+    transition: .5s;
     &:hover{
       background: none;
+      transform: scale(1.2);
     }
     h3{
     color: var(--destaque);
     width: 50%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 20px;
     }
     img{
       max-width: 6rem;
@@ -48,7 +52,7 @@ const Top = styled.header`
   }
 
   @media screen and (min-width: 1024px){
-    a{
+    .linkpages{
       display: block;
     }
 

@@ -4,18 +4,21 @@ const CenteredContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12vh; /* Defina a altura desejada para centralizar verticalmente */
+  height: 15vh; /* Defina a altura desejada para centralizar verticalmente */
 `;
 
 const BaixeButton = styled.button`
   background-color: var(--detalhe);
   color: var(--destaque);
+  box-shadow: 1px 15px 15px 0px rgba(0,0,0,0.51);
   width: 15em;
   height: 4em;
   border-radius: 1em;
   border: none;
-  outline:none;
+  outline: none;
+  transition: .5s;
   &:hover{
+      transform: scale(1.1);
       background-color: var(--terciaria);
     }
 `;

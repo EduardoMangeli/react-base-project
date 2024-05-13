@@ -1,9 +1,13 @@
 import CenteredButton from "./Style";
 
-const MeuBotao = ({ texto }) => {
+const MeuBotao = ({ texto, rota }) => {
     return (
       <>
-        <CenteredButton>{ texto }</CenteredButton>
+        <a href={ rota } target="_blank" rel="noopener noreferrer">
+        <CenteredButton>
+          { texto }
+        </CenteredButton>
+        </a>
       </>
     );
 };

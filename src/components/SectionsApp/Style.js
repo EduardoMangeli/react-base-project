@@ -15,7 +15,7 @@ const Section = styled.div`
     height: 20rem;
     padding: 0rem;
     border-radius: 15px;
-    border: 2px solid var(--destaque);
+    border: 2px solid var(--background);
     box-shadow: 2px 17px 19px 0px rgba(0,0,0,0.51);
   }
 

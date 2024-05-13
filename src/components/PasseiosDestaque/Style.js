@@ -6,33 +6,43 @@ const PasseioDestaque = styled.header`
   justify-content: center;
   height: 300px;
   width: 100%;
-  flex-direction: row;
-  margin-top: 4px;
+  margin: 4px;
 `;
 
 const CardPasseio = styled.div`
+  display: flex;
   position: relative;
   height: 300px;
   width: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid var(--destaque);
-  padding: 1px;
-  img{
+  img {
     object-fit: cover;
+    height: 100%;
     width: 100%;
   }
 `;
 
 const Titulo = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
+    color: var(--destaque);
     position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secundaria);
+    padding: 10px;
+    border-radius: 30px;
 `;
 
 const ProxSaida = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
+    color: var(--destaque);
     position: absolute;
-    bottom: 1rem;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secundaria);
+    padding: 10px;
+    border-radius: 30px;
 `;
 
 export { PasseioDestaque, CardPasseio, Titulo, ProxSaida };
