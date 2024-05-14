@@ -1,24 +1,17 @@
 import styled from 'styled-components'
 
-const Button = styled.button`
-body{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background-color: var(--secundaria);
-}
+const Button = styled.a`
+
 
 .dropdown {
   display: inline-block;
   position: relative;
   background-color: var(--secundaria);
+  border:none;
 }
 
-p{
+span{
   border:none;
-  border-radius:5px;
-  font-size:18px;
   cursor:pointer;
   color: var(--background);
 }
@@ -30,9 +23,10 @@ p:hover{
 .dropdown-options {
   display: none;
   position: absolute;
+  margin-left:-90px;
   overflow: auto;
-  background-color:#fff;
-  border-radius:5px;
+  background-color: var(--secundaria);
+  border:none;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
 
@@ -42,7 +36,7 @@ p:hover{
 
 .dropdown-options a {
   display: block;
-  color: #000000;
+  
   padding: 5px;
   text-decoration: none;
   padding:20px 40px;

@@ -4,7 +4,7 @@ const Dropdown = () => (
 
 <Button>
   <div class="dropdown">
-    <p>Serviços</p>
+    <span>Serviços</span>
     <div class="dropdown-options">
       <a href="/clinica">Dosimetria Clinica</a>
       <a href="/dosimetriapreclinica">Dosimetria Pré-Clinica</a>

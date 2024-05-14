@@ -85,3 +85,7 @@ th{
   display: flex;
   justify-content: space-between;
 }
+.link-home{
+  text-decoration: none;
+  color:inherit;
+}

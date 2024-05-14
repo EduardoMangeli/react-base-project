@@ -3,7 +3,7 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import MeuBotao from "../components/MeuBotao/MeuBotao";
-
+import { Link } from 'react-router-dom'
 const Home = () => {
 
   /* useEffect(()=> {
@@ -19,6 +19,7 @@ const Home = () => {
   const dados = [
     {
       tipo: 'Dosimetria Clínica',
+      rota: '/clinica',
       itens: [
         {
           nome: 'Clínica Lorem',
@@ -32,6 +33,7 @@ const Home = () => {
     },
     {
       tipo: 'Dosimetria Pré-Clínica',
+      rota: '/dosimetriapreclinica',
       itens: [
         {
           nome: 'Clínica Lorem',
@@ -45,6 +47,7 @@ const Home = () => {
     },
     {
       tipo: 'Segmentação e Quantificação',
+      rota: '/segmentacaoequantificacao',
       itens: [
         {
           nome: 'Clínica Lorem',
@@ -62,6 +65,7 @@ const Home = () => {
     },
     {
       tipo: 'Radiosynoviorthesis',
+      rota: '/radiosinoviortese',
       itens: [
         {
           nome: 'Clínica Lorem',
@@ -75,6 +79,7 @@ const Home = () => {
     },
     {
       tipo: 'Modelagem computacional',
+      rota: '/modelagem',
       itens: [
         {
           nome: 'Clínica Lorem',
@@ -102,9 +107,12 @@ const Home = () => {
             <thead>
               <tr>
                 <th>
+                  <Link to={tipo.rota} className="link-home">
                   <span>
                     {tipo.tipo}
                   </span>
+                  </Link>
+                  
                   <span className="item-status">
                     Status: {tipo.itens.length} pendentes
                   </span>

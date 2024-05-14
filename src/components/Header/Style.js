@@ -5,6 +5,7 @@ const Top = styled.header`
   background-color: var(--secundaria);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0;
   a {
     text-align: center;
@@ -20,7 +21,6 @@ const Top = styled.header`
     }
   
   .login {
-    position: fixed;
     top: 1.5rem;
     right: 0;
   }

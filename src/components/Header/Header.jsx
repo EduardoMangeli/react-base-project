@@ -4,7 +4,7 @@ import Dropdown from "../Dropdown/Dropdown";
 import Calibracoes from "../../pages/Calibracoes";
 
 const Header = () => (
-  <Top>
+  <Top className="top-area">
 
   <div>
     <Link to="/">Home</Link>
