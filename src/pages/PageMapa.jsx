@@ -5,8 +5,10 @@ import Mapa from "../components/Mapa/Mapa";
 import { StyleMapa } from "../components/Mapa/StylePage";
 import { useState } from "react";
 import pontosInteresse from "../data/pontosInteresse.json";
+import { useTranslation } from "react-i18next";
 
 const PageMapa = () => {
+  const { t } = useTranslation();
   
   const [zonaSelecionada, setZonaSelecionada] = useState("Sul");
   const [pontos, setPontos] = useState(pontosInteresse);
@@ -19,33 +21,23 @@ const PageMapa = () => {
   return (
     <Base>
 
-      <Banner titulo={"Mapa"} imagem={""} />
+      <Banner titulo={t("Mapa")} imagem={""} />
 
       <StyleMapa>
         <div className="Texto">
           <div className="titulo-mapa">
-            <h3>Explore o Rio de Janeiro com ele na palma da sua mão</h3>
+            <h3>{t('Explore o Rio de Janeiro com ele na palma da sua mão')}</h3>
           </div>
 
           <div className="texto-mapa">
             <p>
-              Se você quer conhecer um pouco mais da história do Rio caminhando
-              por suas ruas, vielas e avenidas, você chegou ao lugar certo!
+              {t('Se você quer conhecer um pouco mais da história do Rio caminhando por suas ruas, vielas e avenidas, você chegou ao lugar certo!')}
             </p>
 
-            <p>
-              Aqui você encontra informações sobre mais de 1200 pontos
-              culturais da cidade para programar a sua visita. Você pode estudá-los
-              antes de sair de casa, ou então, se estiver caminhando pela rua e se
-              deparar com algum edifício histórico ou ponto relevante da cidade,
-              clicar no ícone e saber mais sobre ele.
+            <p>{t('Aqui você encontra informações sobre mais de 1200 pontos culturais da cidade para programar a sua visita. Você pode estudá-los antes de sair de casa, ou então, se estiver caminhando pela rua e se deparar com algum edifício histórico ou ponto relevante da cidade, clicar no ícone e saber mais sobre ele.')}
             </p>
 
-            <p>
-              A função de “geolocalização” está disponível, portanto, conseguirá
-              interagir com alguns dos pontos registrado no aplicativo Passeio
-              Carioca, você terá todas as informações disponíveis.
-            </p>
+            <p>{t('A função de “geolocalização” está disponível, portanto, conseguirá interagir com alguns dos pontos registrado no aplicativo Passeio Carioca, você terá todas as informações disponíveis.')} </p>
           </div>
         </div>
 
@@ -56,11 +48,11 @@ const PageMapa = () => {
       </StyleMapa>
 
       <div>
-        <Botao texto="Saiba Mais" />
+        <Botao texto={t('Saiba Mais')} />
       </div>
       
       <div className="titulo-mapa">
-          <h3>Aqui alguns dos pontos que pode encontrar no app</h3>
+          <h3>{t('Aqui alguns dos pontos que pode encontrar no app')}</h3>
         </div>
         
       {/*<div className="botao-filtro">
@@ -76,11 +68,11 @@ const PageMapa = () => {
       </div>
 
       <div className="titulo-baixar-app">
-          <h3>Conheca mais sobre os pontos no App Passeio Carioca</h3>
+          <h3>{t('Conheca mais sobre os pontos no App Passeio Carioca')}</h3>
       </div>
 
       <div>
-        <Botao texto="Baixe o app" />
+        <Botao texto={t('Baixe o app')} />
       </div>
 
     </Base>

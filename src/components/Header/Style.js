@@ -8,6 +8,24 @@ const Top = styled.header`
   flex-direction: row;
   margin: 0;
   height: 10vh;
+
+  .botoes{
+    color: var(--destaque);
+    display: flex;
+  }
+
+  .botaoLng{
+    border: none;
+    background-color: var(--primaria);
+    color: var(--destaque);
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+  }
+}
+
   
   a {
     display: none;
@@ -22,6 +40,7 @@ const Top = styled.header`
     text-transform: uppercase;
     border-radius: 1em;
     font-size: 0.8rem;
+    transition: .5s;
     &:hover{
       background-color: var(--secundaria);
     }
@@ -58,6 +77,12 @@ const Top = styled.header`
 
     div#outer-container{
       display: none
+    }
+
+    .botoes{
+      position: absolute;
+      right: 2px;
+      display: flex;
     }
 
   }

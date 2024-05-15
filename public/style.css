@@ -123,7 +123,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  height: 300px !important;
+  height: 350px !important;
   border-radius: 30px;
   background: var(--detalhe);
   padding: 2.5em 1.5em 0;

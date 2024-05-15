@@ -87,9 +87,17 @@ const StyleAnun = styled.article`
     }
 
     .Imagem {
+        display: none;
         height: auto;
         width: 800px;   
         margin-bottom: 100px; 
+        border-radius: 20px;
+    }
+
+    @media screen and (min-width: 1024px){
+        .Imagem {
+            display: flex;
+        }
     }
 
 `

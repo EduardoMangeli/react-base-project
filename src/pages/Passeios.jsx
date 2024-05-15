@@ -5,13 +5,15 @@ import PasseioCard from "../components/PasseioCard/PasseioCard";
 import Rodape from "../components/Rodape/Rodape";
 import Base from "./Base"
 import passeio from "../data/passeios.json"
+import { useTranslation } from "react-i18next";
 
 const Passeios = () => {
+    const { t } = useTranslation();
 
     return (
         <Base>
-        <Banner titulo={"Passeios"} imagem={"url da imagem"}/>
-        <div><Botao texto="Baixe o app"/></div>
+        <Banner titulo={t('Passeios')} imagem={"url da imagem"}/>
+        <div><Botao texto= {t('Baixe o app')}/></div>
         <ListContainer>
             {passeio.map(
                 (e, index) => (
@@ -29,7 +31,7 @@ const Passeios = () => {
                 )
                 }
         </ListContainer>
-        <div><Botao texto="Saiba Mais"></Botao></div>
+        <div><Botao texto={t('Saiba Mais')}/></div>
         </Base>
     )
   }
