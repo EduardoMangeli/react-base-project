@@ -1,14 +1,26 @@
-import styled from "styled-components"
-const Bar = styled.header 
+import styled from "styled-components";
 
-`
+const MenuDadosPaciente = styled.div 
+    `
 .div-bar {
 
+}
+.div-campos {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+}
+.div-rotulo {
+    margin: 30px;
+}
+.menu-dados {
+    margin: 10px;
 }
 .div-botoes {
     display: flex;
     height: 2rem;
     justify-content: center;
+}
 h2 {
     font-size: 90%;
     text-align: center;
@@ -28,7 +40,7 @@ h2 {
     background-color: var(--detalhes);
 }
 .btn-bar.selecionado{
-    padding-bottom: 2.62rem;
+    padding-bottom: 1.62rem;
     background-color: var(--botoes);
 }
 @media (max-width: 900px){
@@ -55,4 +67,4 @@ h2 {
   }
 
 `
-export {Bar}
+export {MenuDadosPaciente}

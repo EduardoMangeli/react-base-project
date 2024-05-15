@@ -1,11 +1,13 @@
+// ServicesBar.jsx
 import React, { useState } from 'react';
 import { Bar } from "./Style.js";
 
-const ServicesBar = () => {
+const ServicesBar = ({ onServiceChange }) => {
     const [selectedButton, setSelectedButton] = useState('Dosimetria Clínica');
 
     const handleButtonClick = (serviceName) => {
-        setSelectedButton(serviceName); // Atualiza o estado para o nome do serviço clicado
+        setSelectedButton(serviceName);
+        onServiceChange(serviceName); // Call the function received via prop to update the selected service
     };
 
     return (
