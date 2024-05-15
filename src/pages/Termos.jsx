@@ -6,8 +6,6 @@ const Termos = () => {
 
     return (
         <Base>
-            <Banner titulo={"termos"} imagem={""}/>
-            
             <div id="body_termos">
                 <h2>Termos de Uso e Privacidade</h2>
 
@@ -48,7 +46,7 @@ const Termos = () => {
                 <h3>11. Canais de Atendimento</h3>
                 <p>O Passeio Carioca disponibiliza, por fim, canais de atendimento para tratar de quaisquer questões relativas a ajustes nos serviços, por meio do aplicativo.</p>
 
-                <Botao texto="Entre em contato"></Botao>
+                <Botao texto="Entre em contato" rota= "https://wa.me/+5521999929790"></Botao>
             </div>
         </Base>
       

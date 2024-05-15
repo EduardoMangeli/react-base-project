@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 const PasseioArticle = styled.article`
   width: 20vw;
-  background-color: var(--cinza);
+  background-color: var(--destaque);
   position: relative;
   border-radius: 0.5rem;
+  transition: .5s;
+  box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.3);
   &:hover {
-    scale: 1.05; 
-  transition: height width ease 1s;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   figure {

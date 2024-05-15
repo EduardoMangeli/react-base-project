@@ -30,15 +30,15 @@ const Rodape = function(){
                 </div>
                 <div className="redes">
                     <h3>Nossas Redes</h3>
-                    <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/">
+                    <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
                         <RiInstagramLine size={25} className="socialicons"/>
                         <span className="link-text">Instagram</span>
                     </a>
-                    <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/">
+                    <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
                         <FaFacebook size={25} className="socialicons"/>
                         <span className="link-text">Facebook</span>
                     </a>
-                    <a className="sociais" href="https://wa.me/+5521999929790">
+                    <a className="sociais" href="https://wa.me/+5521999929790" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp size={25} className="socialicons"/>
                         <span className="link-text">Whatsapp</span>
                     </a>

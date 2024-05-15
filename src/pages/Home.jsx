@@ -51,7 +51,7 @@ const Home = () => {
           ))}
      </Swiper>
 
-      <h2>Conheca o app</h2>
+      <h2>Conheça o App Passeio Carioca</h2>
       <SectionsApp 
       titulo="Passeios guiados"
       texto="Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos mais icônicos da cidade."

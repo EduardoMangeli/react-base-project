@@ -57,8 +57,7 @@ h2{
   color: var(--destaque);
   background-color: var(--primaria);
   text-align: center;
-  border-radius: 0 0 30px 30px;
-  border-bottom: 2px solid var(--destaque);
+  border-radius: 0 0 100px 100px;
   box-shadow: 2px 17px 19px 0px rgba(0,0,0,0.51);
 }
 

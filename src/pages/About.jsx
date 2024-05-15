@@ -6,16 +6,16 @@ import { StyleAbout } from "../components/AboutCard/StyleAbout";
 
 const About = () => {
     const membros = [
-        { nome: 'Renato Bellini', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
-        { nome: 'Rafael Bokor', imagem: 'url_da_imagem_1', descricao: 'descricao_1' },
+        { nome: 'Renato Bellini', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
+        { nome: 'Rafael Bokor', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
       ];
     
       const desenvolvedores = [
-        { nome: 'Caio', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
-        { nome: 'Ewerton', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
-        { nome: 'João Gabriel', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
-        { nome: 'Miguel', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
-        { nome: 'Paula', imagem: 'url_da_imagem_2', descricao: 'descricao_2' },
+        { nome: 'Caio', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
+        { nome: 'Ewerton', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
+        { nome: 'João Gabriel', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
+        { nome: 'Miguel', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
+        { nome: 'Paula', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
       ];
 
     return (

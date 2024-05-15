@@ -20,6 +20,7 @@ const BaixeButton = styled.button`
   &:hover{
       transform: scale(1.1);
       background-color: var(--terciaria);
+      cursor: pointer;
     }
 `;
 

@@ -9,6 +9,7 @@
 .map-inner-container {
   height: 100%; /* Ajuste conforme necessário */
   width: 75%; /* Ajuste conforme necessário */
+  box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.3);
 }
 
 .custom-popup .leaflet-popup-content-wrapper {

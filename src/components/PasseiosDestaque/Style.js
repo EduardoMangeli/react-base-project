@@ -13,7 +13,7 @@ const CardPasseio = styled.div`
   display: flex;
   position: relative;
   height: 300px;
-  width: 100%;
+  width: 99%;
   img {
     object-fit: cover;
     height: 100%;
@@ -25,24 +25,28 @@ const Titulo = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
     color: var(--destaque);
     position: absolute;
-    top: 10px;
+    text-align: center;
+    top: 17px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--secundaria);
+    background-color: rgba(60, 115, 218, 0.8);
+    width: 98%;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px
 `;
 
 const ProxSaida = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
     color: var(--destaque);
     position: absolute;
-    bottom: -20px;
+    text-align: center;
+    bottom: -26px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--secundaria);
+    background-color: rgba(60, 115, 218, 0.8);
+    width: 98%;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0
 `;
 
 export { PasseioDestaque, CardPasseio, Titulo, ProxSaida };
