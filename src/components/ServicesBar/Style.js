@@ -28,7 +28,6 @@ h2 {
     background-color: var(--detalhes);
 }
 .btn-bar.selecionado{
-    padding-bottom: 2.62rem;
     background-color: var(--botoes);
 }
 @media (max-width: 900px){
