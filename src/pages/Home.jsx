@@ -27,8 +27,8 @@ const[usuarios, setUsuarios] = useState(dadosUsuarios);
   return (
     <Base>
       <h3>Dashboard |</h3>
-      <div class="retanguloCinza">
-        <div class="retanguloBranco1Home">
+      <div class="dashboardFundo">
+        <div class="acoeRecentesContainer">
           <h4>Ações Recentes:</h4>
           <div class="linhaAcoes">
           {solicitacoes.map(
@@ -45,7 +45,7 @@ const[usuarios, setUsuarios] = useState(dadosUsuarios);
                                  </div>
         </div>
         <div className="container-234">
-          <div class="retanguloBranco2Home">
+          <div class="servicosContainer">
             <div className="grafico-area">
               <form id="servicos-options">
                 <label for="formulario">Serviços:</label>
@@ -60,7 +60,7 @@ const[usuarios, setUsuarios] = useState(dadosUsuarios);
             </div>
           </div>
           <div className="container-34">
-            <div class="retanguloBranco3Home">
+            <div class="usuarioContainer">
               <h4>Usuários:</h4>
               <div class="linhaUsuarios">
           {usuarios.map(
@@ -76,12 +76,12 @@ const[usuarios, setUsuarios] = useState(dadosUsuarios);
                                 
                                  </div>
             </div>
-            <div class="retanguloBranco4Home">
+            <div class="autenticacaoContainer">
               <h4>Autenticação e Autorização:</h4>
             </div>
           </div>
         </div>
-        <div class="retanguloBranco5Home">
+        <div class="notificacaoContainer">
           <h4>Notificações:</h4>
         </div>
       </div>

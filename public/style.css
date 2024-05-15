@@ -68,7 +68,7 @@ h4{
   padding: 5px;
   margin-left: 5px;
 }
-.retanguloCinza {
+.dashboardFundo {
   display: flex;
   flex-direction: column;
   background-color: var(--fundos);
@@ -76,7 +76,7 @@ h4{
   height: 1000px;
 }
 
-.retanguloBranco1Home {
+.acoeRecentesContainer {
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
@@ -95,7 +95,7 @@ h4{
   width: 90%;
   
 }
-.retanguloBranco2Home {
+.servicosContainer {
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   display: flex;
   flex: 0.6;
@@ -105,17 +105,17 @@ h4{
   background-color: var(--background);
   margin: 1% 0% 0% 1%;
 }
-.retanguloBranco3Home {
+.usuarioContainer {
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
 }
-.retanguloBranco4Home {
+.autenticacaoContainer {
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
 }
-.retanguloBranco5Home {
+.notificacaoContainer {
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
   background-color: var(--background);
