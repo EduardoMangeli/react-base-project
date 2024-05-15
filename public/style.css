@@ -95,7 +95,7 @@ h4{
   margin: 1% 1% 0% 1%;
   flex-direction: column;
   display: flex;
-  width: 90%;
+  max-width: 55%;
   
 }
 .retanguloBranco2Home {
@@ -143,9 +143,14 @@ h4{
 }
 
 /* Services */
-#pg-tabela{
-  position: relative;
-  right: -90%;
+.pagina-div{
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+}
+.setas{
+  display: flex;
+  gap: 1.5px;
 }
 #pg-tabela input{
   text-align: center;
@@ -161,7 +166,7 @@ h4{
 #filtro-pesquisa{
   display: flex;
   flex-direction: column;
-  max-width: 200px;
+  min-width: 180px;
 }
 #filtro-pesquisa label{
   color: white;
@@ -170,6 +175,16 @@ h4{
 #campo-pesquisa input{
   margin-top: 20px;
   height: 22.33px;
+}
+#filtro-status select{
+  margin-top: 20px;
+  min-width: 180px;
+  height: 29px;
+}
+#filtro-data select{
+  margin-top: 20px;
+  min-width: 180px;
+  height: 29px;
 }
 .container-pai{
   display: flex;

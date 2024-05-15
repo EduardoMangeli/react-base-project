@@ -8,35 +8,75 @@ const Fotos = () => {
   const [selectedService, setSelectedService] = useState('Dosimetria Clínica');
   const [filterType, setFilterType] = useState('id');
   const [filterValue, setFilterValue] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const rowsPerPage = 12;
+
+  const filterAndPaginateData = () => {
+    let filteredData = jsonData.filter(item => item.tipo === selectedService);
+
+    if (filterType === 'status_' && filterValue) {
+      filteredData = filteredData.filter(item => item[filterType].toLowerCase() === filterValue.toLowerCase());
+    } else if (filterType === 'data' && filterValue) {
+      filteredData = filteredData.sort((a, b) => {
+        const dateA = new Date(a.criado);
+        const dateB = new Date(b.criado);
+        return filterValue === 'Mais Recentes' ? dateB - dateA : dateA - dateB;
+      });
+    } else if (filterType !== 'status_' && filterType !== 'data' && filterValue) {
+      filteredData = filteredData.filter(item => item[filterType].toString().toLowerCase().includes(filterValue.toLowerCase()));
+    }
+
+    const totalPagesCount = Math.ceil(filteredData.length / rowsPerPage);
+    setTotalPages(totalPagesCount);
+    setTableData(filteredData.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage));
+  };
 
   useEffect(() => {
-    const filteredData = jsonData.filter(item => item.tipo === selectedService);
-    setTableData(filteredData);
-  }, [selectedService]);
+    filterAndPaginateData();
+  }, [selectedService, filterType, filterValue, currentPage]);
 
   const handleFilterTypeChange = (event) => {
-    setFilterType(event.target.value);
+    const selectedType = event.target.value;
+    setFilterType(selectedType);
+    setFilterValue('');
+    setCurrentPage(1); // Reset page to 1 when filter changes
   };
 
   const handleFilterValueChange = (event) => {
     const value = event.target.value;
     setFilterValue(value);
-    if (value === '') {
-      // Se o valor do filtro estiver vazio, define tableData como todos os dados originais
-      setTableData(jsonData.filter(item => item.tipo === selectedService));
-    } else {
-      applyFilter(value, selectedService);
+    setCurrentPage(1); // Reset page to 1 when filter changes
+  };
+
+  const handlePageChange = (direction) => {
+    if (direction === 'next' && currentPage < totalPages) {
+      setCurrentPage(prevPage => prevPage + 1);
+    } else if (direction === 'prev' && currentPage > 1) {
+      setCurrentPage(prevPage => prevPage - 1);
     }
   };
-  
 
-  const applyFilter = (value, service) => {
-    const filteredData = jsonData.filter(item => {
-      const itemValue = item[filterType].toString().toLowerCase();
-      return itemValue.includes(value.toLowerCase()) && item.tipo === service;
-    });
-    setTableData(filteredData);
+  const handlePageInputChange = (event) => {
+    let pageNumber = parseInt(event.target.value);
+    if (!isNaN(pageNumber) && pageNumber >= 1 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber);
+    }
   };
+
+  const handleStatusChange = (event) => {
+    const value = event.target.value;
+    setFilterValue(value);
+    setCurrentPage(1); // Reset page to 1 when filter changes
+  };
+
+  const debugDates = () => {
+    console.log('Filtered Data Dates:', tableData.map(item => item.criado));
+  };
+
+  useEffect(() => {
+    debugDates();
+  }, [tableData]);
 
   return (
     <Base>
@@ -52,16 +92,36 @@ const Fotos = () => {
               <option value="usuario">Usuário</option>
               <option value="n_ordem">N da ordem</option>
               <option value="status_">Status</option>
+              <option value="data">Data</option>
             </select>
           </form>
-          <form id="campo-pesquisa">
-            <input
-              type="text"
-              value={filterValue}
-              onChange={handleFilterValueChange}
-              placeholder="Digite aqui..."
-            />
-          </form>
+          {filterType === 'status_' ? (
+            <form id="filtro-status">
+              <select id="status" name="status" value={filterValue} onChange={handleStatusChange}>
+                <option value="">Selecione</option>
+                <option value="Concluído">Concluído</option>
+                <option value="Não Concluído">Não Concluído</option>
+                <option value="Não Iniciado">Não Iniciado</option>
+              </select>
+            </form>
+          ) : filterType === 'data' ? (
+            <form id="filtro-data">
+              <select id="data" name="data" value={filterValue} onChange={handleStatusChange}>
+                <option value="">Selecione</option>
+                <option value="Mais Recentes">Mais Recentes</option>
+                <option value="Mais Antigos">Mais Antigos</option>
+              </select>
+            </form>
+          ) : (
+            <form id="campo-pesquisa">
+              <input
+                type="text"
+                value={filterValue}
+                onChange={handleFilterValueChange}
+                placeholder="Digite aqui..."
+              />
+            </form>
+          )}
         </div>
         {tableData.length > 0 ? (
           <table>
@@ -82,9 +142,7 @@ const Fotos = () => {
             <tbody id="tableBody">
               {tableData.map((item, index) => (
                 <tr key={index}>
-                  {/* Excluindo a renderização do tipo */}
                   {Object.entries(item).map(([key, value], subIndex) => (
-                    // Renderiza as células, exceto a célula do tipo
                     key !== 'tipo' && (
                       <td
                         key={subIndex}
@@ -109,13 +167,22 @@ const Fotos = () => {
       </section>
       <div className="pagina-div">
         <div className="setas">
+          <button onClick={() => handlePageChange('prev')}>{"<"}</button>
+          <button onClick={() => handlePageChange('next')}>{">"}</button>
         </div>
-        <form id="pg-tabela">
-          <input type="text"/>
+        <form id="pg-tabela" onSubmit={(e) => e.preventDefault()}>
+          <input
+            type="number"
+            value={currentPage}
+            onChange={handlePageInputChange}
+            min="1"
+            max={totalPages}
+          />
+          <span> de {totalPages}</span>
         </form>
       </div>
     </Base>
-  );  
+  );
 };
 
 export default Fotos;
