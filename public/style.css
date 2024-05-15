@@ -145,6 +145,7 @@ h4{
   margin-top: 0.05%;
   display: flex;
   flex: 1;
+  justify-content: center;
   height: 900px;
   background-color: var(--botoes);
 }
@@ -154,14 +155,6 @@ h4{
   background-color: var(--background);
 }
 /* Services */
-.container-pai{
-  display: flex;
-  margin-top: 0.05%;
-  display: flex;
-  flex: 1;
-  height: 900px;
-  background-color: var(--botoes);
-}
 table {
   margin: 5px auto;
   height: 0px;
