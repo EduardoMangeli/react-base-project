@@ -19,14 +19,21 @@ const Fotos = () => {
   };
 
   const handleFilterValueChange = (event) => {
-    setFilterValue(event.target.value);
-    applyFilter(event.target.value);
+    const value = event.target.value;
+    setFilterValue(value);
+    if (value === '') {
+      // Se o valor do filtro estiver vazio, define tableData como todos os dados originais
+      setTableData(jsonData.filter(item => item.tipo === selectedService));
+    } else {
+      applyFilter(value, selectedService);
+    }
   };
+  
 
-  const applyFilter = (value) => {
+  const applyFilter = (value, service) => {
     const filteredData = jsonData.filter(item => {
       const itemValue = item[filterType].toString().toLowerCase();
-      return itemValue.includes(value.toLowerCase());
+      return itemValue.includes(value.toLowerCase()) && item.tipo === service;
     });
     setTableData(filteredData);
   };
@@ -100,6 +107,13 @@ const Fotos = () => {
           <p style={{ textAlign: 'center', marginTop: '20px', color: 'white', fontWeight: 'bold' }}>Sem formulários pendentes</p>
         )}
       </section>
+      <div className="pagina-div">
+        <div className="setas">
+        </div>
+        <form id="pg-tabela">
+          <input type="text"/>
+        </form>
+      </div>
     </Base>
   );  
 };

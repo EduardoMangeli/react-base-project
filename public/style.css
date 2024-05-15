@@ -30,6 +30,9 @@
 */
 
 /* Style Home */
+html{
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: 'Lora', serif;
@@ -140,6 +143,14 @@ h4{
 }
 
 /* Services */
+#pg-tabela{
+  position: relative;
+  right: -90%;
+}
+#pg-tabela input{
+  text-align: center;
+  width: 80px;
+}
 .pesquisa{
   margin: 0.5%;
   display: flex;
@@ -163,11 +174,12 @@ h4{
 .container-pai{
   display: flex;
   margin-top: 0.05%;
+  margin-bottom: 0.5%;
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: top;
-  height: 900px;
+  height: 700px;
   background-color: var(--botoes);
 }
 .container-menor{
