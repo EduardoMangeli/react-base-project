@@ -6,16 +6,56 @@ import jsonData from "../data/tabela.json";
 const Fotos = () => {
   const [tableData, setTableData] = useState([]);
   const [selectedService, setSelectedService] = useState('Dosimetria Clínica');
+  const [filterType, setFilterType] = useState('id');
+  const [filterValue, setFilterValue] = useState('');
 
   useEffect(() => {
     const filteredData = jsonData.filter(item => item.tipo === selectedService);
     setTableData(filteredData);
   }, [selectedService]);
 
+  const handleFilterTypeChange = (event) => {
+    setFilterType(event.target.value);
+  };
+
+  const handleFilterValueChange = (event) => {
+    setFilterValue(event.target.value);
+    applyFilter(event.target.value);
+  };
+
+  const applyFilter = (value) => {
+    const filteredData = jsonData.filter(item => {
+      const itemValue = item[filterType].toString().toLowerCase();
+      return itemValue.includes(value.toLowerCase());
+    });
+    setTableData(filteredData);
+  };
+
   return (
     <Base>
       <ServicesBar onServiceChange={setSelectedService} />
       <section className="container-pai">
+        <div className="pesquisa">
+          <form id="filtro-pesquisa">
+            <label htmlFor="formulario">Pesquisa:</label>
+            <select id="form-style" name="formulario" onChange={handleFilterTypeChange}>
+              <option value="id">Id</option>
+              <option value="codigo">Código</option>
+              <option value="paciente">Paciente</option>
+              <option value="usuario">Usuário</option>
+              <option value="n_ordem">N da ordem</option>
+              <option value="status_">Status</option>
+            </select>
+          </form>
+          <form id="campo-pesquisa">
+            <input
+              type="text"
+              value={filterValue}
+              onChange={handleFilterValueChange}
+              placeholder="Digite aqui..."
+            />
+          </form>
+        </div>
         {tableData.length > 0 ? (
           <table>
             <thead>

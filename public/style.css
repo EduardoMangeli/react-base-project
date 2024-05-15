@@ -140,12 +140,33 @@ h4{
 }
 
 /* Services */
+.pesquisa{
+  margin: 0.5%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: left;
+}
+#filtro-pesquisa{
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+#filtro-pesquisa label{
+  color: white;
+  margin-left: 5px;
+}
+#campo-pesquisa input{
+  margin-top: 20px;
+  height: 22.33px;
+}
 .container-pai{
   display: flex;
   margin-top: 0.05%;
   display: flex;
   flex: 1;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: top;
   height: 900px;
   background-color: var(--botoes);
 }
