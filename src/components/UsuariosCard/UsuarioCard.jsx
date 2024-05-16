@@ -9,6 +9,7 @@ const UsuariosCard = (props) => (
             </div>
             <div>Descrição: {props.Descrição}</div>
             <div>Cargo: {props.Cargo}</div>
+            <button id = "btncard">Modificar</button>
         </div>
     </Card>
 );

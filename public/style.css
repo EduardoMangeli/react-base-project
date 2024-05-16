@@ -57,7 +57,9 @@ h1,h2,h3,h5,h6{
 h4{
   margin: 0;
   font-family: 'Century Gothic', sans-serif;
-  font-weight: lighter;
+  font-weight: bold;
+  margin-left: 45px;
+  margin-top: 5px;
 }
 #servicos-options{
   position: relative;
@@ -80,8 +82,10 @@ h4{
 }
 
 .acoeRecentesContainer {
+  overflow-x: hidden;
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
+  max-height: 18%;
   background-color: var(--background);
   margin: 1% 1% 0% 1%;
 }

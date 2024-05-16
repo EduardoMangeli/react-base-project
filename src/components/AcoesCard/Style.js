@@ -7,7 +7,7 @@ const Card = styled.div`
     display: flex;
     margin: 20px;
     padding: 10px;
-    width: 25%;
+    min-width: 25%;
     height: 60%;
     background-color: var(--background);
     box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
@@ -16,13 +16,23 @@ const Card = styled.div`
     #tipo {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap:25%;
         height: 100%;
         font-family: 'Century Gothic', sans-serif;
         font-weight: light;
 
     }
-
+    #tipo i {
+        font-size: 13px ;
+    }
+    #datadiv{
+        font-size:13px ;
+    }
+    .container-card{
+        display: flex;
+        gap: 0.2rem;
+        justify-content: left;
+        flex-direction: row;
     .ID {
 
         font-weight: bold;

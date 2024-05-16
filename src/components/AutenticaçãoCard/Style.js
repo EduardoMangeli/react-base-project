@@ -7,7 +7,7 @@ const Card = styled.div`
     margin: 20px;
     padding: 10px;
     width: 300px;
-    height: 60px;
+    height: 120px;
     background-color: var(--background);
     box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
     border: 1 solid black;
@@ -38,6 +38,7 @@ const Card = styled.div`
         border:none;
         padding:5px 0px;
         cursor: pointer;
+        margin-top:35px ;
     }
 
 `;
