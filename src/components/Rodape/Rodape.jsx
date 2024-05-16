@@ -22,6 +22,7 @@ const Rodape = function(){
                         <div className="right-column">
                             <Link to="/anuncie">Anuncie</Link>
                             <Link to="/guia">Seja um Guia</Link>
+                            <Link to="/contato">Entre em Contato</Link>
                             <Link to="/termos">Termos de Uso</Link>
                             <Link to="/privacidade">Política de Privacidade</Link>
                         </div>
