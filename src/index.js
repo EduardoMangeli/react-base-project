@@ -11,6 +11,12 @@ import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
 import Freddie from "./pages/FreddieMercury";
+import Clinica from "./pages/Clinica";
+import Modelagem from "./pages/Modelagem";
+import Radiosinoviortese from "./pages/Radiosinoviortese";
+import SegmentacaoeQuantificacao from "./pages/SegmentacaoeQuantificacao";
+import DosimetriaPreClinica from "./pages/DosimetriaPreClinica";
+import Calibracoes from "./pages/Calibracoes";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -33,6 +39,12 @@ root.render(
         <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
+        <Route path="/clinica" element={<Clinica/>} />
+        <Route path="/modelagem" element={<Modelagem/>} />
+        <Route path="/radiosinoviortese" element={<Radiosinoviortese/>} />
+        <Route path="/SegmentacaoeQuantificacao" element={<SegmentacaoeQuantificacao/>} />
+        <Route path="/dosimetriapreclinica" element={<DosimetriaPreClinica/>} />
+        <Route path="/calibracoes" element={<Calibracoes/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

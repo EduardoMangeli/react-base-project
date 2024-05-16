@@ -25,3 +25,6 @@ O comando de execução local do projeto de ver executado no diretório raiz e d
 ## Versão de Produção
 
 Utilize o comando `npm run build` para construir uma versão pronta para produção. Os arquivos dessa versão estarão disponíveis na pasta *build*.
+
+## Oraganização
+[Trello](https://trello.com/invite/b/XpMcKrpH/ATTI078dad2a7e6b21520095472d6615368b176C75C3/projeto)
