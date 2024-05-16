@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import Conta from "./pages/Conta";
+import Conta from "./pages/Teste";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

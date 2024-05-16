@@ -4,29 +4,28 @@ import styled from "styled-components";
 
 
 const Card = styled.div`
-margin: 20px;
-padding: 10px;
-width: 300px;
-height: 120px;
-background-color: var(--background);
-box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
-border: 1 solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 120px;
+    background-color: var(--background);
+    box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+    border: 1 solid black;
 
-#tipo {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: 'Century Gothic', sans-serif;
-    font-weight: light;
-    }
-    .container-card{
+    #tipo {
         display: flex;
-        gap: 1rem;
-        justify-content: left;
+        flex-direction: column;
+        height: 100%;
+        font-family: 'Century Gothic', sans-serif;
+        font-weight: light;
+
+    }
+    .container-aut{
+        display: flex;
         flex-direction: row;
+        gap:10%;
     }
     .ID {
-
         font-weight: bold;
         color: var(--detalhes);
         font-family: 'Century Gothic', sans-serif;
@@ -41,6 +40,7 @@ border: 1 solid black;
         cursor: pointer;
         margin-top:35px ;
     }
+
 `;
 
 export {Card};
