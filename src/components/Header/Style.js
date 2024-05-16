@@ -12,37 +12,38 @@ const Top = styled.header`
   .botoes{
     color: var(--destaque);
     display: flex;
+    position: fixed;
+    right: 15px;
+    top: 2px;
+    font-weight: bold;
   }
 
   .botaoLng{
     border: none;
-    background-color: var(--primaria);
-    color: var(--destaque);
+    background: none;
     font-family: 'Roboto', sans-serif;
-    transition: 1s;
     &:hover{
-      text-decoration: underline;
       cursor: pointer;
   }
 }
 
-  
   a {
     display: none;
     margin-left: auto;
     text-align: center;
     padding: .5rem;
     min-width: 5em;
-    background-color: var(--primaria);
+    background-color: none;
     text-decoration: none;
     font-weight: bold;
     color: var(--destaque);
     text-transform: uppercase;
     border-radius: 1em;
     font-size: 0.8rem;
-    transition: .5s;
+    transition: .25s;
     &:hover{
-      background-color: var(--secundaria);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
     }
   }
 
@@ -52,10 +53,11 @@ const Top = styled.header`
     justify-content: center;
     align-items: center;
     background: none;
-    transition: .5s;
+    transition: .25s;
     &:hover{
       background: none;
-      transform: scale(1.2);
+      transform: scale(1.05);
+      text-decoration: none !important;
     }
     h3{
     color: var(--destaque);
@@ -70,6 +72,16 @@ const Top = styled.header`
     }
   }
 
+  .bandeira{
+    display: block;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    align-items: center;
+    }
+
   @media screen and (min-width: 1024px){
     .linkpages{
       display: block;
@@ -80,11 +92,11 @@ const Top = styled.header`
     }
 
     .botoes{
-      position: absolute;
-      right: 2px;
       display: flex;
+      position: absolute;
+      top: 2px;
+      right: 2px;
     }
-
   }
 `;
 

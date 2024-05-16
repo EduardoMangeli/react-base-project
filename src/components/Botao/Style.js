@@ -18,7 +18,7 @@ const BaixeButton = styled.button`
   outline: none;
   transition: .5s;
   &:hover{
-      transform: scale(1.1);
+      transform: scale(1.05);
       background-color: var(--terciaria);
       cursor: pointer;
     }

@@ -88,7 +88,7 @@ h2{
   width: 36px;
   height: 30px;
   right: 36px;
-  top: 36px;
+  top: 45px;
 }
 
 /* Color/shape of burger icon bars */
@@ -98,7 +98,8 @@ h2{
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--destaque);
+  transition: .25s;
+  background: var(--secundaria);
 }
 
 /* Position and sizing of clickable cross button */
@@ -109,7 +110,12 @@ h2{
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--primaria);
+  background: var(--destaque);
+}
+
+.bm-cross-button:hover .bm-cross {
+  transition: .25s;
+  background: var(--secundaria);
 }
 
 /*
@@ -146,6 +152,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   background-color: var(--detalhe) !important;
   display: inline-block;
+}
+
+.bm-item:hover {
+  color: var(--secundaria) !important;
+  text-decoration: none !important;
 }
 
 .cardSwiper {

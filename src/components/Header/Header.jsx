@@ -33,11 +33,11 @@ const Header = () => {
     </Link>
     <div className="botoes">
       <button className="botaoLng" onClick={() => changeLanguage('pt')} style={{ textDecoration: currentLanguage === 'pt' ? 'underline' : 'none' }}>
-        PT
+        <img className="bandeira" src="imagens/bandeiras/Bandeira_do_Brasil.svg" />
       </button>
       /
       <button className="botaoLng" onClick={() => changeLanguage('en')} style={{ textDecoration: currentLanguage === 'en' ? 'underline' : 'none' }}>
-        EN
+        <img className="bandeira" src="imagens/bandeiras/Bandeira_do_USA.svg" alt="Inglês" />
       </button>
     </div>
       <Link to="/" className="linkpages">Home</Link>
