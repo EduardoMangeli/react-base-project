@@ -1,41 +1,74 @@
 import Base from "./Base"
 import Botao from "../components/Botao/Botao";
-import Banner from "../components/Banner/Banner";
 import HomeCard from "../components/HomeCard/HomeCard";
-import PasseioDestaque from "../components/PasseiosDestaque/PasseioDestaque";
+import PasseiosDestaque from "../components/PasseiosDestaque/PasseiosDestaque";
 import SectionsApp from  "../components/SectionsApp/SectionsApp"; 
+import passeio from "../data/passeios.json"
+
+import { register } from 'swiper/element/bundle'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+register();
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from "swiper/modules";
+
+import '../utils/i18n'
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
 
   return (
     <Base>
       <HomeCard
-      titulo="Baixe o Passeio Carioca !!"
-      texto="No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?"/>
+      titulo={t('Baixe o Passeio Carioca !!')}
+      texto={t('O melhor app de passeios do rio!')}/>
 
-      <h2>Passeios em destaque</h2>
-      <PasseioDestaque/>
+      <h2>{t('Passeios da Passeio Carioca')}</h2>
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+        loop={true}
+        autoplay={true}>
+        {passeio.map(
+          (e) => (
+            <SwiperSlide> 
+              <PasseiosDestaque 
+                  key={e.id}
+                  imagem={e.imagem}
+                  titulo={e.nome}
+                  local={e.local}
+              />
+            </SwiperSlide>
+          ))}
+     </Swiper>
 
-      <h2>Conheca o app</h2>
+      <h2>{t('Conheça o App Passeio Carioca')}</h2>
       <SectionsApp 
-      titulo="Passeios guiados"
-      texto="Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos mais icônicos da cidade."
+      titulo={t("Passeios guiados")}
+      texto={t("Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos mais icônicos da cidade.")}
       imagem="imagens/passeios/raphael-souza-4y0N7sIPaTc-unsplash.jpg"
       align="right"/>
 
       <SectionsApp 
-      titulo="Gameficação"
-      texto="Transforme sua experiência de turismo em uma aventura emocionante! Explore os pontos turísticos incríveis da cidade e colecione medalhas digitais ao longo do caminho. Com nossa funcionalidade de gamificação, cada lugar que você visita se torna uma conquista única. Tire uma foto, marque sua presença no aplicativo e ganhe suas medalhas. Quanto mais lugares você visitar, mais medalhas você ganha!"
+      titulo={t("Gameficação")}
+      texto={t("Transforme sua experiência de turismo em uma aventura emocionante! Explore os pontos turísticos incríveis da cidade e colecione medalhas digitais ao longo do caminho. Com nossa funcionalidade de gamificação, cada lugar que você visita se torna uma conquista única. Tire uma foto, marque sua presença no aplicativo e ganhe suas medalhas. Quanto mais lugares você visitar, mais medalhas você ganha!")}
       imagem="imagens/old-computer-3.jpg"
       align="left"/>
 
       <SectionsApp 
-      titulo="Mapa Geolocalizado"
-      texto="Descubra a cidade como nunca antes com nosso mapa geolocalizado. Explore pontos de interesse ao redor de você e mergulhe na história de cada local. Clique nos pins do mapa para ler sobre a história do local, curiosidades interessantes e dicas exclusivas de nossos especialistas locais."
-      imagem="imagens/old-computer-4.jpg"
+      titulo={t("Mapa Geolocalizado")}
+      texto={t("Descubra a cidade como nunca antes com nosso mapa geolocalizado. Explore pontos de interesse ao redor de você e mergulhe na história de cada local. Clique nos pins do mapa para ler sobre a história do local, curiosidades interessantes e dicas exclusivas de nossos especialistas locais.")}
+      imagem="imagens/FotoMapaApp-PasseioCarioca.png"
       align="right"/>
 
-      <div><Botao texto="Baixe o app" /></div>
+      <div><Botao texto={t("Baixe o app")}/></div>
     </Base>
   )
 }

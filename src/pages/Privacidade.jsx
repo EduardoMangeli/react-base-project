@@ -6,8 +6,6 @@ const Privacidade = () => {
 
     return (
         <Base>
-            <Banner titulo={"privacidade"} imagem={""}/>
-            
             <div id="body_privacidade">
             <h2>Política de Privacidade</h2>
 
@@ -79,7 +77,7 @@ const Privacidade = () => {
                 <h3>12. Modificação da Política de Privacidade</h3>
                 <p>O Passeio Carioca poderá modificar, alterar ou substituir esta Política de Privacidade e Proteção de Dados Pessoais a qualquer tempo. Em caso de alteração relevante, o Usuário e o Prestador de Serviços serão informados por e-mail ou no próprio aplicativo, por meio de aviso ou banner visível ao Usuário e ao Prestador de Serviços.</p>     
                 
-                <Botao texto="Entre em contato"></Botao>
+                <Botao texto="Entre em contato" rota= "https://wa.me/+5521999929790"></Botao>
             </div>
         </Base>
       

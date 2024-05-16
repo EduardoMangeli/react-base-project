@@ -2,20 +2,27 @@ import styled from "styled-components";
 
 const PasseioArticle = styled.article`
   width: 20vw;
-  background-color: var(--cinza);
+  background-color: var(--destaque);
   position: relative;
+  border-radius: 0.5rem;
+  transition: .5s;
+  box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.3);
   &:hover {
-    scale: 1.05; 
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   figure {
     margin: 0 0 0 0;
+    height: 13rem;
+    border-radius: 0.5rem;
   }
   
   img {
     object-fit: cover;
     width: 100%;
-    height: 22em;
+    height: 13em;
+    border-radius: 0.5rem 0.5rem 0 0;
  
   }
 
@@ -26,6 +33,7 @@ const PasseioArticle = styled.article`
     line-height: 1rem;
     text-transform: uppercase;
     color: var(--secundaria);
+    padding: 1rem 1rem 0 1rem;
   }
 
   /*date{
@@ -48,14 +56,29 @@ const PasseioArticle = styled.article`
   }
 
   h2{
-    width: 10%;
-    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height:fit-content;
     background-color: var(--secundaria);
     position: absolute;
-    padding: .5rem;
+    padding: .8rem .5rem .8rem .5rem;
     border: .5rem;
     text-align: justify;
     border-radius: .5rem;
+  }
+
+  #dia, #mes {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: var(--detalhes);
+  }
+
+  #mes{
+    font-size: .9rem;
+    align-items: center;
   }
 
   figcaption {

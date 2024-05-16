@@ -8,7 +8,8 @@ const Input = styled.article`
     }
 
     input {
-        width: 100%;
+        height: 50px;
+        width: 500px;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -17,15 +18,10 @@ const Input = styled.article`
     }
 
     input[name="sobre voce"] {
-        width: 300px;
+        width: 500px;
         margin: 0 auto;
         height: 200px;
         padding-bottom: 170px;
-      }
-
-      input[name="telefone"] {
-        width: 300px;
-        margin: 0 auto;
       }
 
 `

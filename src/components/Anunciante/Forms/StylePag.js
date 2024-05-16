@@ -14,6 +14,7 @@ const Style = styled.article`
         font-size: 100%;
         margin-bottom: 48px;
         margin-right: 40em;
+        margin-left: 23em;
     }
 
     .Form-Contato {

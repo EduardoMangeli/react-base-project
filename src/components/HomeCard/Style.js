@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const HomePageHead = styled.div`
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
   background-color: var(--primaria);
   padding: 1rem;
 
@@ -33,10 +36,14 @@ const HomePageHead = styled.div`
       height: 30rem;
     }
     .container{
-      justify-content: space-between;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 23%;
     }
     .text-container{
       text-align: justify;
+      flex-wrap: nowrap;
     }
   }
 `;

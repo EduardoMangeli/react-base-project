@@ -4,20 +4,49 @@ const PasseioDestaque = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  width: 75%;
-  flex-direction: row;
-  padding: 1px;
-  margin: auto;
-`;
-
-const CardPasseio = styled.img`
-  height: 400px;
+  height: 300px;
   width: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid var(--destaque);
-  padding: 1px;
+  margin: 4px;
 `;
 
-export { PasseioDestaque, CardPasseio };
+const CardPasseio = styled.div`
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 99%;
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+`;
+
+const Titulo = styled.div`
+    display : ${props => props.mostrar? 'block' : 'none'};
+    color: var(--destaque);
+    position: absolute;
+    text-align: center;
+    top: 17px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(60, 115, 218, 0.8);
+    width: 98%;
+    padding: 10px;
+    border-radius: 0 0 30px 30px
+`;
+
+const ProxSaida = styled.div`
+    display : ${props => props.mostrar? 'block' : 'none'};
+    color: var(--destaque);
+    position: absolute;
+    text-align: center;
+    bottom: -26px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(60, 115, 218, 0.8);
+    width: 98%;
+    padding: 10px;
+    border-radius: 30px 30px 0 0
+`;
+
+export { PasseioDestaque, CardPasseio, Titulo, ProxSaida };

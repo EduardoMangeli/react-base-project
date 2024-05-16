@@ -9,8 +9,6 @@ const ElementosContato = formulario.slice(0, 3);
 const ElementosEndereco = formulario.slice(3, 9);
 
 
-
-
 function Form_Anunciante() {
     
     return (

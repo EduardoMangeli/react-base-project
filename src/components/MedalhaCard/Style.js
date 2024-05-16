@@ -4,7 +4,7 @@ const MedalhaArticle = styled.article`
   display: flex;
   width: 240px; /* Ajuste o tamanho do MedalhaArticle */
   height: 360px; /* Ajuste o tamanho do MedalhaArticle */
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   justify-content: center;
   align-items: center;
   flex-direction: column;

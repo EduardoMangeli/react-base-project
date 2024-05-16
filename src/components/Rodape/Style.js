@@ -2,30 +2,31 @@ import styled from "styled-components";
 
 const Bottom = styled.footer`
   padding: 0.5 15em;
-  background-color: var(--cinza);
+  background-color: var(--primaria);
   display: flex;
   bottom: 0;
   flex-direction: column;
   justify-content: center;  // Distribui espaço entre os elementos
   align-items: center;            // Centraliza verticalmente
   margin: 0;
+  margin-top:20px;
 
   a {
+    color: var(--destaque);
     text-align: left;
     padding: 0.5em 0.5em;
     margin: 0;
-    color: var(--cinzaescuro);
     font-family: 'Lora', serif;
     font-size: small;
     display: flex;
     align-items: center; // Alinha ícones e texto verticalmente
     text-decoration: none;
     &:hover {
-      color: var(--terciaria);
+      color: var(--detalhe);
     }
   }
 
-  img {
+  .socialicons {
     margin-right: .3em; // Espaço entre ícone e texto
   }
 
@@ -34,6 +35,7 @@ const Bottom = styled.footer`
     font-weight: bold;
     padding: .5em;
     text-align: left;
+    color: var(--destaque);
   }
 
   .colunaNav {
@@ -72,6 +74,10 @@ const Bottom = styled.footer`
 
   .sociais {
     text-align: left;
+  }
+
+  small{
+    color: var(--destaque)
   }
 
   @media (max-width: 768px) {

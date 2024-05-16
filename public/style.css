@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   /* CSS HSL */
   /* https://coolors.co/ */
@@ -32,13 +34,14 @@
 
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--background);
   color:var(--texto);
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 div.container {
@@ -52,8 +55,10 @@ h1,h2,h3,h4,h5,h6,p{
 
 h2{
   color: var(--destaque);
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   text-align: center;
+  border-radius: 0 0 100px 100px;
+  box-shadow: 2px 17px 19px 0px rgba(0,0,0,0.51);
 }
 
 .texto-mapa, .texto-game{
@@ -82,8 +87,8 @@ h2{
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  right: 36px;
+  top: 45px;
 }
 
 /* Color/shape of burger icon bars */
@@ -93,7 +98,8 @@ h2{
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--cinzaescuro);
+  transition: .25s;
+  background: var(--secundaria);
 }
 
 /* Position and sizing of clickable cross button */
@@ -104,7 +110,12 @@ h2{
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--primaria);
+  background: var(--destaque);
+}
+
+.bm-cross-button:hover .bm-cross {
+  transition: .25s;
+  background: var(--secundaria);
 }
 
 /*
@@ -118,9 +129,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: var(--secundaria);
+  height: 350px !important;
+  border-radius: 30px;
+  background: var(--detalhe);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  overflow-y: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -136,12 +150,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
+  background-color: var(--detalhe) !important;
   display: inline-block;
 }
 
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+.bm-item:hover {
+  color: var(--secundaria) !important;
+  text-decoration: none !important;
 }
 
 .cardSwiper {
