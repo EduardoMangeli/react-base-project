@@ -24,3 +24,4 @@ const Fotos = () => {
  )
 };
 
+export default Fotos;
