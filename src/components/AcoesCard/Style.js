@@ -41,7 +41,17 @@ const Card = styled.div`
         font-weight: light;
 
     }
-
+    .icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align:center;
+        overflow: hidden; 
+        background-color: var(--botoes);
+        position: absolute;
+        margin-top:115px ;
+        margin-left:125px ;
+    }
 `;
 
 export {Card};
