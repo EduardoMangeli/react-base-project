@@ -92,3 +92,4 @@ const Modelagem = () => {
 }
 
 
+export default Modelagem;
