@@ -10,7 +10,6 @@ import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
-import Freddie from "./pages/FreddieMercury";
 import Clinica from "./pages/Clinica";
 import Modelagem from "./pages/Modelagem";
 import Radiosinoviortese from "./pages/Radiosinoviortese";
@@ -34,7 +33,6 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/freddie" element={<Freddie/>} />
         <Route path="/fotos" element={<Fotos/>} />
         <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />

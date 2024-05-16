@@ -89,3 +89,14 @@ th{
   text-decoration: none;
   color:inherit;
 }
+
+#pendencia{
+  color: red
+}
+
+.processo{
+  color: grey;
+  opacity: 70%;
+  margin: 0;
+  text-align: left;
+}

@@ -43,7 +43,7 @@ const SegmentacaoeQuantificacao =() => {
             <h1>Segmentação e Quantificação</h1>
             <div className="dosimetria-sub">
                 <h3>Clientes</h3>
-                <h3>1 Pendente</h3>
+                <h3 id="pendencia">1 Pendente</h3>
             </div>
             {dados.map((tipo) => {
                 return (

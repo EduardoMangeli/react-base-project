@@ -57,6 +57,7 @@ const DosimetriaPreClinica =  () => {
                                         <span>
                                             {tipo.clinica}
                                         </span>
+                                            <p class="processo">Processo #0001</p>
                                         <span className="item-status">
                                             Status: {tipo.status}
                                         </span>
