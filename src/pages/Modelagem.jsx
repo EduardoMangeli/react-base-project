@@ -9,9 +9,8 @@ const Modelagem = () => {
           clinica: 'Clínica Lorem Ipsun',
           status: 'Pendente',
           itens: [
-              '20240-04-19-19:39:54.jpeg',
-              '20240-04-19-19:39:54.jpeg',
-              '20240-04-19-19:39:54.jpeg',
+            'Imagem do Cliente :20240-04-19-19:39:54.jpeg',
+            'Imagem para Calibrar: 20240-04-19-19:39:54.jpeg',
           ],
           botoes: [
               'Enviar'
@@ -21,9 +20,8 @@ const Modelagem = () => {
           clinica: 'Clínica Lorem Ipsun',
           status: 'Concluído',
           itens: [
-              '20240-04-19-19:39:54.jpeg',
-              '20240-04-19-19:39:54.jpeg',
-              '20240-04-19-19:39:54.jpeg',
+            'Imagem do Cliente :20240-04-19-19:39:54.jpeg',
+            'Imagem para Calibrar: 20240-04-19-19:39:54.jpeg',
           ],
           botoes: [
               'Enviar',
@@ -34,9 +32,8 @@ const Modelagem = () => {
           clinica: 'Clínica Lorem Ipsun',
           status: 'Concluído',
           itens: [
-              '20240-04-19-19:39:54.jpeg',
-              '20240-04-19-19:39:54.jpeg',
-              '20240-04-19-19:39:54.jpeg',
+            'Imagem do Cliente :20240-04-19-19:39:54.jpeg',
+            'Imagem para Calibrar: 20240-04-19-19:39:54.jpeg',
           ],
           botoes: [
               'Enviar',
