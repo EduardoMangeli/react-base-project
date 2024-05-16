@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const package = require('./package.json')
 
 module.exports = {
   entry: path.resolve(__dirname, "./src/index.js"),
@@ -16,6 +17,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: "babel-loader"
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       }
     ]
   },
@@ -35,7 +40,8 @@ module.exports = {
     ),
     new webpack.DefinePlugin(
       {
-        "process.env": JSON.stringify(process.env)
+        "process.env": JSON.stringify(process.env),
+        "process.env.PUBLIC_URL": JSON.stringify(package.homepage)
       }
     )
   ],

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* CSS HSL */
+  /* https://coolors.co/ */
+
+  /*--primaria: hsla(210, 67%, 43%, 1);
+  --background: hsla(108, 22%, 87%, 1);
+  --secundaria: hsla(34, 100%, 50%, 1);
+  --destaque: hsla(355, 78%, 56%, 1);
+  --detalhe: hsla(9, 63%, 45%, 1);*/
+
+  --texto: #000000;
+  --primaria: #1b57b3;
+  --background: #ffffff;
+  --secundaria: #3c73da;
+  --destaque: #ffffff;
+  --detalhe:#013dac;
+  --terciaria:#0050e6;
+  --cinza: #d4d4d4;
+  --cinzaescuro: #444444;
+}
+
+/* borda vermelha em todos os elementos para debug */
+/*
+ * {
+  outline: red solid 1px;
+} */
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color:var(--texto);
+}
+
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+div.container {
+  padding: 0rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 1rem;
+}
+
+h2{
+  color: var(--destaque);
+  background-color: var(--primaria);
+  text-align: center;
+  border-radius: 0 0 100px 100px;
+  box-shadow: 2px 17px 19px 0px rgba(0,0,0,0.51);
+}
+
+.texto-mapa, .texto-game{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.titulo-mapa, .titulo-game{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.titulo-baixar-app{
+  display: flex;
+  justify-content: center;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 45px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--detalhe);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  transition: .25s;
+  background: var(--secundaria);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--destaque);
+}
+
+.bm-cross-button:hover .bm-cross {
+  transition: .25s;
+  background: var(--secundaria);
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  height: 350px !important;
+  border-radius: 30px;
+  background: var(--detalhe);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow-y: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: var(--destaque);
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: var(--destaque);
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  background-color: var(--detalhe) !important;
+  display: inline-block;
+}
+
+.bm-item:hover {
+  color: var(--secundaria) !important;
+  text-decoration: none !important;
+}
+
+.cardSwiper {
+  width: 240px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: none;
+}
+

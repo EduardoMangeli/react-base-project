@@ -1,0 +1,90 @@
+[
+    {
+        "nome":"Avenida Rio Branco",
+        "local":"Cinelândia, Clube Naval, Banco Central, Ed. A Noite",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/fujidudez-pdjyHZBwG7s-unsplash.jpg"
+    },
+    {
+        "nome":"Museus",
+        "local":"MAR, MAM, Museu do Amanhã",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/nathana-reboucas-tx8TZernPi8-unsplash.jpg"
+    },
+    {
+        "nome":"Santa Teresa",
+        "local":"Cinelândia",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/mauro-lima-eOhs5ZoJLW4-unsplash.jpg"
+    },
+    {
+        "nome":"Samba",
+        "local":"Pedra do Sal, Escadaria Selaron",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/thales-botelho-de-sousa-9e0dAX1bUsA-unsplash.jpg"
+    },
+    {
+        "nome":"Trilhas",
+        "local":"Pedra da Gávea, Pedra Bonita",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/raphael-souza-4y0N7sIPaTc-unsplash.jpg"
+    },
+    {
+        "nome":"Centro do Rio",
+        "local":"Carioca, Catedral",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/milos-hajder-RPBxZD-vFes-unsplash.jpg"
+    },
+    {
+        "nome":"Jardim Botânico",
+        "local":"Pedra da Gávea, Pedra Bonita",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/vanderley-goncalves-fbZKx1x9ips-unsplash.jpg"
+    },
+    {
+        "nome":"Praias",
+        "local":"Copacabana, Ipanema, Arpoador",
+        "dia":"11",
+        "mes":"mai",
+        "hora":"11:11",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "guia":"José",
+        "valor":"R$ 111,11",
+        "imagem":"imagens/passeios/william-f-santos-47CFl_g8EAI-unsplash.jpg"
+    }
+]

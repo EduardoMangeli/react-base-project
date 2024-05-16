@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nome": "Museu do Amanhã",
+    "latitude": -22.8957,
+    "longitude": -43.180,
+    "popupContent": "Conteúdo do popup 1...",
+    "imagem": "imagens/pontosInteresse/museuAmanha.jpg",
+    "zona": "Sul"
+  },
+  {
+    "id": 2,
+    "nome": "Aeroporto Santos Dumont",
+    "latitude": -22.9111,
+    "longitude": -43.1648,
+    "popupContent": "Conteúdo do popup 2...",
+    "imagem": "imagens/pontosInteresse/aeroportoSD.jpg",
+    "zona": "Sul"
+  },
+  {
+    "id": 3,
+    "nome": "Forte de Copacabana",
+    "latitude": -22.9860,
+    "longitude": -43.1850,
+    "popupContent": "Conteúdo do popup 3...",
+    "imagem": "imagens/pontosInteresse/ForteCopacabana.jpg",
+    "zona": "Norte"
+  },
+  {
+    "id": 4,
+    "nome": "Monumento do Cristo Redentor",
+    "latitude": -22.952,
+    "longitude": -43.211,
+    "popupContent": "Conteúdo do popup 4...",
+    "imagem": "imagens/pontosInteresse/cristoRedentor.jpg",
+    "zona": "Centro"
+  },
+  {
+    "id": 5,
+    "nome": "Jardim Botânico",
+    "latitude": -22.968,
+    "longitude": -43.224,
+    "popupContent": "Fundado em 13 de junho de 1808 pelo Príncipe Regente D. João, o Jardim Botânico foi criado com o objetivo de aclimatar as especiarias vindas das Índias Orientais. Tombado pelo Patrimônio Histórico e Artístico Nacional (iphan), pela sua importância histórica, cultural e científica, foi também reconhecido internacionalmente como um museu vivo na área da Botânica e definido pela Unesco como uma das reservas da biosfera.",
+    "imagem": "imagens/pontosInteresse/JardimBotanico.jpg",
+    "zona": "Norte"
+  }
+]
