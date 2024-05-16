@@ -7,7 +7,7 @@ const MeuBotao = ({ texto, rota, isWhatsApp, numeroCelular, mensagem }) => {
   // Botões antigos funcionarão normalmente sem precisar alterar o código.
   return (
     <>
-      <a href={ rota } target="_blank" rel="noopener noreferrer">
+      <a href={ href } target="_blank" rel="noopener noreferrer">
         <CenteredButton>
           { texto }
         </CenteredButton>

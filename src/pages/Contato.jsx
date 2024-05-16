@@ -14,7 +14,9 @@ const Contato = () => {
                 <h1>{t('Fale Conosco')}</h1> 
                 <p>{t('Temos um compromisso em oferecer o melhor atendimento e garantir que sua experiência explorando o Rio de Janeiro seja inesquecível. Se você tem dúvidas, sugestões ou precisa de mais informações, não hesite em nos contactar. Nossa equipe está pronta para ajudá-lo a descobrir todas as maravilhas que o Rio tem a oferecer.')}</p>
             </div>
-            <div><Botao texto={t("Entre em contato")} rota= "https://wa.me/+5521999929790"></Botao></div>
+            <div>
+                <Botao texto={t("Entre em contato")} isWhatsApp={true} numeroCelular={"+5521999929790"} mensagem={"Olá! Vim do site e gostaria de tirar uma dúvida."}></Botao>
+            </div>
         </Base>
     
     )
