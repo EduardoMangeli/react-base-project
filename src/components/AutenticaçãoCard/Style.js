@@ -15,19 +15,29 @@ const Card = styled.div`
     #tipo {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         height: 100%;
         font-family: 'Century Gothic', sans-serif;
         font-weight: light;
 
     }
-
+    .container-aut{
+        display: flex;
+        flex-direction: row;
+        gap:10%;
+    }
     .ID {
         font-weight: bold;
         color: var(--detalhes);
         font-family: 'Century Gothic', sans-serif;
         font-weight: light;
 
+    }
+    #btncard{
+        background-color: var(--detalhes);
+        color:var(--secundaria);
+        border:none;
+        padding:5px 0px;
+        cursor: pointer;
     }
 
 `;

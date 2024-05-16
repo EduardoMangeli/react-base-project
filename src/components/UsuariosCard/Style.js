@@ -16,7 +16,7 @@ const Card = styled.div`
     #tipo {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 5%;
         height: 100%;
         font-family: 'Century Gothic', sans-serif;
         font-weight: light;
