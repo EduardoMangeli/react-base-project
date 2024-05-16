@@ -9,6 +9,7 @@ const Bottom = styled.footer`
   justify-content: center;  // Distribui espaço entre os elementos
   align-items: center;            // Centraliza verticalmente
   margin: 0;
+  margin-top:20px;
 
   a {
     color: var(--destaque);
