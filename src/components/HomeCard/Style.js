@@ -36,10 +36,14 @@ const HomePageHead = styled.div`
       height: 30rem;
     }
     .container{
-      justify-content: space-between;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 23%;
     }
     .text-container{
       text-align: justify;
+      flex-wrap: nowrap;
     }
   }
 `;

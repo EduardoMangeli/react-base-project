@@ -26,7 +26,7 @@ const Home = () => {
     <Base>
       <HomeCard
       titulo={t('Baixe o Passeio Carioca !!')}
-      texto={t('No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?')}/>
+      texto={t('O melhor app de passeios do rio!')}/>
 
       <h2>{t('Passeios da Passeio Carioca')}</h2>
       <Swiper

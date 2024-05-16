@@ -12,7 +12,7 @@ const HomeCard = ({titulo, texto}) => {
       <div className="container">
         <div className="text-container">
           <h1>{titulo}</h1>
-          <p>{texto}</p>
+          <h3>{texto}</h3>
           <div><Botao texto={t("Baixe o app")} /></div>
         </div>
         <div className="img-container">
