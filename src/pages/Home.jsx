@@ -39,6 +39,8 @@ const [selectedService, setSelectedService] = useState('Dosimetria Clínica');
         <div class="acoeRecentesContainer">
           <h4>Ações Recentes:</h4>
           <div class="linhaAcoes">
+            <div id="relogio"><i class="fa-regular fa-clock"></i></div>
+          
           {solicitacoes.map(
                                      (solicitacao) => (
                                          <AcoesCard

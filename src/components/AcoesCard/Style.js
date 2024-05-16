@@ -45,12 +45,17 @@ const Card = styled.div`
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        text-align:center;
         overflow: hidden; 
         background-color: var(--botoes);
+        color:var(--relogio);
         position: absolute;
-        margin-top:115px ;
-        margin-left:125px ;
+        max-width: 100%; 
+        max-height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top:115px;
+        margin-left:125px;
     }
 `;
 
