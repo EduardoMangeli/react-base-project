@@ -22,7 +22,12 @@ const Card = styled.div`
         font-weight: light;
 
     }
-
+    .container-card{
+        display: flex;
+        gap: 1rem;
+        justify-content: left;
+        flex-direction: row;
+    }
     .ID {
 
         font-weight: bold;
