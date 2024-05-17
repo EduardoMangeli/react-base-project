@@ -26,7 +26,7 @@ const Home = () => {
     <Base>
       <HomeCard
       titulo={t('Baixe o Passeio Carioca !!')}
-      texto={t('O melhor app de passeios do rio!')}/>
+      texto={t('O melhor app de passeios do Rio de Janeiro!')}/>
 
       <h2>{t('Passeios da Passeio Carioca')}</h2>
       <Swiper

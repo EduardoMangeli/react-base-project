@@ -7,7 +7,7 @@ const Top = styled.header`
   align-items: center;
   flex-direction: row;
   margin: 0;
-  height: 10vh;
+  height: auto;
 
   .botoes{
     color: var(--destaque);
@@ -83,6 +83,7 @@ const Top = styled.header`
     }
 
   @media screen and (min-width: 1024px){
+    height: 10vh;
     .linkpages{
       display: block;
     }
