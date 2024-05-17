@@ -8,7 +8,7 @@ const Rodape = function(){
         <Bottom>
             <div className="colunaNav">
 
-                <div className="container">
+                <div className="links-pages">
                     <h3>Navegação</h3>
                     
                     <div className="columns">

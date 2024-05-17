@@ -17,7 +17,7 @@ const HomePageHead = styled.div`
 
   .text-container {
     text-align: center;
-    max-width: 60%;
+    max-width: 100%;
     padding: 1rem;
   }
 
@@ -32,14 +32,15 @@ const HomePageHead = styled.div`
   @media screen and (min-width: 1024px){
     .img-container {
       display: flex;
-      width: 100%;
+      width: auto;
+      margin: 0;
       height: 30rem;
     }
     .container{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 23%;
+      margin-left: 0;
     }
     .text-container{
       text-align: justify;
