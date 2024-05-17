@@ -13,8 +13,8 @@ const Style = styled.article`
     .Conteudo {
         font-size: 100%;
         margin-bottom: 48px;
-        margin-right: 40em;
-        margin-left: 23em;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .Form-Contato {

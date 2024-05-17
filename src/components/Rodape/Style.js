@@ -8,8 +8,9 @@ const Bottom = styled.footer`
   flex-direction: column;
   justify-content: center;  // Distribui espaço entre os elementos
   align-items: center;            // Centraliza verticalmente
-  margin: 0;
+  margin: 0 !important;
   margin-top:20px;
+
 
   a {
     color: var(--destaque);
@@ -44,7 +45,7 @@ const Bottom = styled.footer`
     flex: 1; // Faz a coluna crescer e ocupar espaço disponível
   }
 
-  .container {
+  .linkspages {
     display: flex;
     flex-direction: column;
     padding: 0.8em 2em;

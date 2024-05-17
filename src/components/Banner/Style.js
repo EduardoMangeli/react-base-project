@@ -6,7 +6,7 @@ const Destaque = styled.header`
   background-position: center;
   background-color: var(--secundaria);
   display: flex;
-  height: 50vh;
+  height: auto;
   flex-direction: row;
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
   align-items: flex-end; /* Alinha o conteúdo na parte inferior */

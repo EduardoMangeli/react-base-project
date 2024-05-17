@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PasseioArticle = styled.article`
-  width: 20vw;
+  flex-wrap: wrap;
   background-color: var(--destaque);
   position: relative;
   border-radius: 0.5rem;
@@ -10,6 +10,11 @@ const PasseioArticle = styled.article`
   &:hover {
     transform: scale(1.05);
     cursor: pointer;
+  }
+
+  .cardPasseio {
+    width: 300px;
+    display: block;
   }
 
   figure {
