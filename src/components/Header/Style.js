@@ -16,6 +16,7 @@ const Top = styled.header`
     right: 15px;
     top: 2px;
     font-weight: bold;
+    z-index: 999;
   }
 
   .botaoLng{

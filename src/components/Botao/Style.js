@@ -10,7 +10,7 @@ const CenteredContainer = styled.div`
 const BaixeButton = styled.button`
   background-color: var(--detalhe);
   color: var(--destaque);
-  box-shadow: 1px 15px 15px 0px rgba(0,0,0,0.51);
+  box-shadow: 1px 15px 15px 0px rgba(0,0,0,0.35);
   width: 15em;
   height: 4em;
   border-radius: 1em;

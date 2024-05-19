@@ -4,8 +4,12 @@ const MedalhaCard = ({nome, imagem}) => {
 
   return(
     <MedalhaArticle>
-    <img src={`${process.env.PUBLIC_URL}${imagem}`} />
-    <h3>{nome}</h3>
+      <div className="medalha"> 
+        <img src={`${process.env.PUBLIC_URL}${imagem}`} />
+      </div>
+      <div className="medalha-name">
+        <h3>{nome}</h3>
+      </div>
     </MedalhaArticle>
   )
 }

@@ -25,6 +25,11 @@ const HomePageHead = styled.div`
     text-align: center;
   }
 
+  .subtitulo {
+    text-align: center;
+    margin: 1rem;
+  }
+
   .img-container {
     display: none;
   }

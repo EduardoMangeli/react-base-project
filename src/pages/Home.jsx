@@ -8,6 +8,9 @@ import passeio from "../data/passeios.json"
 import { register } from 'swiper/element/bundle'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
+import Popup from "../components/Popup/Popup";
+import { useState } from 'react';
+
 register();
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,6 +24,8 @@ import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const { t } = useTranslation();
+
+  const[buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <Base>
@@ -68,7 +73,9 @@ const Home = () => {
       imagem="imagens/FotoMapaApp-PasseioCarioca.png"
       align="right"/>
 
-      <div><Botao texto={t("Baixe o app")}/></div>
+      <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+        <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
+        </Popup>
     </Base>
   )
 }

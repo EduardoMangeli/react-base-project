@@ -2,17 +2,26 @@ import styled from "styled-components";
 
 const MedalhaArticle = styled.article`
   display: flex;
-  width: 240px; /* Ajuste o tamanho do MedalhaArticle */
-  height: 360px; /* Ajuste o tamanho do MedalhaArticle */
+  width: auto; /* Ajuste o tamanho do MedalhaArticle */
+  height: 350px; /* Ajuste o tamanho do MedalhaArticle */
   background-color: var(--primaria);
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
-  overflow: hidden;
+
+  .medalha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--destaque);
+    margin: 1em;
+  }
 
   img {
-    color: var(--secundaria);
     object-fit: contain; /* Ajuste o object-fit para contain */
     width: 150px;
     height: 150px;

@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build", 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
     "start-linux": "PUBLIC_URL=/ webpack serve --config ./webpack.config.js --mode development --port 3000",
