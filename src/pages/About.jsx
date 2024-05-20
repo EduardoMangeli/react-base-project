@@ -5,6 +5,9 @@ import AboutCard from "../components/AboutCard/AboutCard";
 import { StyleAbout } from "../components/AboutCard/StyleAbout";
 import { useTranslation } from "react-i18next";
 
+import Popup from "../components/Popup/Popup";
+import { useState } from 'react';
+
 const About = () => {
     const membros = [
         { nome: 'Renato Bellini', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
@@ -21,6 +24,8 @@ const About = () => {
 
       const { t } = useTranslation();
 
+      const[buttonPopup, setButtonPopup] = useState(false);
+
     return (
         <Base>
             <Banner titulo={t("Quem Somos")} imagem={""}/>
@@ -33,7 +38,9 @@ const About = () => {
 
                                 <p>{t('No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?')}</p>
 
-                                <Botao className="Botao" texto={t('Baixe o app')}></Botao>
+                                <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+                                    <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
+                                    </Popup>
 
                             </div>
                         </section>

@@ -29,6 +29,12 @@ const StyleMapa = styled.article`
         align-items: center;
         justify-content: center;
         margin: auto;
+        max-width: 250px
+    }
+
+    .Foto-Mapa img{
+        width: 100%;
+        height: 500px;
     }
 
     @media screen and (min-width: 1024px){

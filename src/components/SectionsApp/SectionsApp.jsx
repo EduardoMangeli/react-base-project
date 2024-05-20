@@ -1,21 +1,26 @@
 import { Section } from "./Style";
+import { Link } from "react-router-dom";
 
-const SectionsApp = ({ titulo, texto, imagem, align }) => {
+const SectionsApp = ({ titulo, texto, imagem, link, align }) => {
 
     return(
         <Section align={align}>
         {align === "left" ? (
           <>
-            <div>
+            <div className="texto">
               <h1>{titulo}</h1>
               <p>{texto}</p>
             </div>
-            <img src={`${process.env.PUBLIC_URL}${imagem}`} />
+            <Link to={link}>
+              <img src={`${process.env.PUBLIC_URL}${imagem}`} />
+            </Link>
           </>
         ) : (
           <>
-            <img src={`${process.env.PUBLIC_URL}${imagem}`} />
-            <div>
+            <Link to={link}>
+              <img src={`${process.env.PUBLIC_URL}${imagem}`} />
+            </Link>
+            <div className="texto">
               <h1>{titulo}</h1>
               <p>{texto}</p>
             </div>

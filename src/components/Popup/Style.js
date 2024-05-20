@@ -17,7 +17,7 @@ const PopUpStyle = styled.div`
     .popup-inner{
         position: relative;
         padding: 32px;
-        width: 30%;
+        width: 50%;
         height: 300px;
         max-width: 300px;
         background: var(--secundaria);

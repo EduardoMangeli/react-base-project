@@ -25,8 +25,8 @@ const Top = styled.header`
     font-family: 'Roboto', sans-serif;
     &:hover{
       cursor: pointer;
+    }
   }
-}
 
   a {
     display: none;

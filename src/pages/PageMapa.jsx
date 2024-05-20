@@ -6,6 +6,7 @@ import { StyleMapa } from "../components/Mapa/StylePage";
 import { useState } from "react";
 import pontosInteresse from "../data/pontosInteresse.json";
 import { useTranslation } from "react-i18next";
+import Popup from "../components/Popup/Popup";
 
 const PageMapa = () => {
   const { t } = useTranslation();
@@ -17,6 +18,8 @@ const PageMapa = () => {
     setZonaSelecionada(zona);
     setPontos(zona ? pontosInteresse.filter((ponto) => ponto.zona === zona) : pontosInteresse);
   }; 
+
+  const[buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <Base>
@@ -42,14 +45,10 @@ const PageMapa = () => {
         </div>
 
         <div className="Foto-Mapa">
-          <img src="imagens/FotoMapa-PasseioCarioca.png"/>
+          <img src="imagens/FotoMapaCelular-PasseioCarioca.png"/>
         </div>
 
       </StyleMapa>
-
-      <div>
-        <Botao texto={t('Saiba Mais')} />
-      </div>
       
       <div className="titulo-mapa">
           <h3>{t('Aqui alguns dos pontos que pode encontrar no app')}</h3>
@@ -71,9 +70,9 @@ const PageMapa = () => {
           <h3>{t('Conheca mais sobre os pontos no App Passeio Carioca')}</h3>
       </div>
 
-      <div>
-        <Botao texto={t('Baixe o app')} />
-      </div>
+      <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+        <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
+        </Popup>
 
     </Base>
   );

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Bottom = styled.footer`
-  padding: 0.5 15em;
+  padding: 2em;
   background-color: var(--primaria);
   display: flex;
   bottom: 0;
@@ -40,7 +40,8 @@ const Bottom = styled.footer`
   }
 
   .colunaNav {
-    padding: 0.8em;
+    font-size: 0.2rem;
+    padding: 1em 0;
     display: flex;
     flex: 1; // Faz a coluna crescer e ocupar espaço disponível
   }
@@ -68,7 +69,7 @@ const Bottom = styled.footer`
   }
 
   .redes {
-    padding: 0.8em 2em;
+    padding: 1em 0;
     display: flex;
     flex-direction: column; // Organiza os links das redes sociais em coluna
   }
@@ -81,11 +82,14 @@ const Bottom = styled.footer`
     color: var(--destaque)
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column; // Muda para coluna em telas menores
-    padding: 2em; // Reduz o padding em dispositivos móveis
-    .colunaNav, .redes {
-      padding: 1em 0;
+  @media (min-width: 1024px) {
+    padding: 0.5 15em; // Reduz o padding em dispositivos móveis
+    .colunaNav {
+      padding: 0.8em;
+      font-size: 1rem;
+    }
+    .redes {
+      padding: 0.8em 2em;
     }
   }
 `

@@ -8,7 +8,7 @@ const StyleAbout = styled.article`
         box-sizing: border-box;
         text-decoration: none;
         font-family: 'Roboto', serif;
-        
+        overflow-x: hidden;
     }
 
     .Conteudo {
@@ -34,6 +34,8 @@ const StyleAbout = styled.article`
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        margin-top: 60px;
+        margin-bottom: 30px;
         margin-bottom: 30px;
         margin-right: 20em;
     }
@@ -44,45 +46,22 @@ const StyleAbout = styled.article`
         align-items: center;
         justify-content: center;
         gap: 32px;
+        margin-top: 60px;
         margin-bottom: 30px;
-    }
-
-    .Botao {
-        margin-left: 50em;
-        margin-right: 10em;
+        margin-left: 20em;
     }
 
     ul {
         list-style-type: none;
     }
 
-    .Conteudo-Inicio {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 60px;
-        margin-bottom: 30px;
-    }
-
-    .Conteudo-Inicio-Escrito {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 32px;
-        margin-top: 60px;
-        margin-bottom: 30px;
-        margin-left: 20em;
-    }
     .Conteudo-Membros-Escrito {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-
+        width: 100vw;
     }
 
     .Conteudo-Membros-Escrito-Lista {
@@ -152,6 +131,7 @@ const StyleAbout = styled.article`
         justify-content: space-around;
         margin-top: 40px;
         margin-bottom: 20px;
+        width: 100vw;
     }
 
     .Conteudo-Devs-Escrito {
@@ -162,6 +142,7 @@ const StyleAbout = styled.article`
         border-top: 0.4px solid black;
         padding-top: 30px;
         gap: 32px;
+        width: 70vw;
     }
 
     .Conteudo-Devs-Escrito-Lista {

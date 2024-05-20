@@ -2,14 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 10px;
+  height: 60vh;
   width: 100%;
+  z-index: 1;
 }
 
 .map-inner-container {
   height: 100%; /* Ajuste conforme necessário */
   width: 75%; /* Ajuste conforme necessário */
-  box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.3);
+  z-index: 1;
 }
 
 .custom-popup .leaflet-popup-content-wrapper {
