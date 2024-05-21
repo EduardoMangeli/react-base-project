@@ -8,7 +8,7 @@ const Header = () => (
 
   <div>
     <Link to="/">Home</Link>
-    <Link to="/calibracoes">Calibrações</Link>
+
     <Dropdown /></div>
     
   <div className="login">
