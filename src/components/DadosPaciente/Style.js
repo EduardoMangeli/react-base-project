@@ -5,15 +5,22 @@ const MenuDadosPaciente = styled.div
 .div-bar {
     display: flex;
 }
+
 .div-dados {
-    background-color: var(--background);
-    padding: 100px;
+    background-color: white;
+    display: ;
 }
+
+.div-form{
+    display: grid;
+    
+}
+
 .div-campos {
+    padding: 100px;
     justify-content: center;
     background-color: var(--botoes);
 }
-
 .div-rotulo {
     margin: 30px;
 }

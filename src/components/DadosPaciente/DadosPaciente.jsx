@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MenuDadosPaciente } from './Style';
+import DadosPacienteForm from '../DadosPacienteForm/DadosPacienteForm';
 
 const DadosPaciente = (props) => {
 
@@ -43,13 +44,15 @@ const DadosPaciente = (props) => {
                 </button>
             </div>
             <div className="div-campos">
-            <div classname="div-dados">
-                <h3>Nome do Paciente</h3>
+                <div className='div-dados'>
+                    <div className="div-form">
+                        <DadosPacienteForm></DadosPacienteForm>
+                    </div>
             </div>
             <div classname="div-botoes2">
             </div>
             </div>
-        </div>
+            </div>
         </MenuDadosPaciente>
     )
 }
