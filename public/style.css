@@ -26,12 +26,18 @@
   outline: red solid 1px;
 }
 */
-
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: 'Lora', serif;
   background-color: var(--background);
   color:var(--primaria);
+  height: 100%;
+}
+#root{
+  height: 100%;
 }
 
 a {
@@ -89,14 +95,40 @@ th{
   text-decoration: none;
   color:inherit;
 }
-
-#pendencia{
-  color: red
+.login-area{
+  background-image: url("./imagens/fundo.jpg") !important;
+  background-size: cover;
+  height: calc(100% - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
-
-.processo{
-  color: grey;
-  opacity: 70%;
-  margin: 0;
-  text-align: left;
+.login-form{
+  padding: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: #043454d3;
+  gap:20px;
+  width: 300px;
+}
+.titulo-form{
+  color: white;
+  text-align: center;
+}
+.login-form input{
+  padding: 10px;
+  border:none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.login-form button{
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
 }
