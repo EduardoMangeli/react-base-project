@@ -35,7 +35,7 @@ html{
 }
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Century Gothic', sans-serif;
   background-color: var(--background);
   color:var(--primaria);
 }
