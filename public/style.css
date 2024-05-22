@@ -6,12 +6,14 @@
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: hsla(210, 67%, 43%, 1);
-  --background: hsla(108, 22%, 87%, 1);
-  --secundaria: hsla(34, 100%, 50%, 1);
-  --destaque: hsla(355, 78%, 56%, 1);
-  --detalhe: hsla(9, 63%, 45%, 1);
-
+  --primaria: rgb(0, 0, 0);
+  --background: rgb(255, 255, 255);
+  --secundaria: rgb(255, 255, 255);
+  --destaque: rgb(0, 19, 34);
+  --detalhe: rgb(255, 255, 255);
+  --botoes: rgb(0,49,88);
+  --detalhes: rgb(0, 133, 255);
+  --fundos: rgb(187, 200, 210);
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
   --background: hsla(81, 21%, 74%, 1);
@@ -27,6 +29,7 @@
 }
 */
 
+/* Style Home */
 body {
   margin: 0;
   font-family: 'Lora', serif;
@@ -35,13 +38,173 @@ body {
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 div.container {
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h5,h6{
   margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: light;
+
 }
+h4{
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: lighter;
+}
+#servicos-options{
+  position: relative;
+  left: 2%;
+  top: -80px;
+}
+#servicos-options label{
+  font-size: 1.3rem;
+}
+#form-style{
+  padding: 5px;
+  margin-left: 5px;
+}
+.retanguloCinza {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fundos);
+  width: 100%;
+  height: 1000px;
+}
+
+.retanguloBranco1Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  background-color: var(--background);
+  margin: 1% 1% 0% 1%;
+}
+.container-234{
+  display: flex;
+  height: 25rem;
+}
+.container-34{
+  flex: 1;
+  gap: 2%;
+  margin: 1% 1% 0% 1%;
+  flex-direction: column;
+  display: flex;
+  width: 90%;
+  
+}
+.retanguloBranco2Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex: 0.6;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: var(--background);
+  margin: 1% 0% 0% 1%;
+}
+.retanguloBranco3Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  background-color: var(--background);
+}
+.retanguloBranco4Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  background-color: var(--background);
+}
+.retanguloBranco5Home {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  background-color: var(--background);
+  margin: 1% 1% 1% 1%;
+}
+.linhaAcoes {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  border-bottom: 3px solid var(--detalhes);
+}
+/* Services */
+.container-pai{
+  display: flex;
+  margin-top: 0.05%;
+  display: flex;
+  flex: 1;
+  height: 900px;
+  background-color: var(--botoes);
+}
+.container-menor{
+  margin: 1%;
+  flex: 1;
+  background-color: var(--background);
+}
+/* Services */
+.container-pai{
+  display: flex;
+  margin-top: 0.05%;
+  display: flex;
+  flex: 1;
+  height: 900px;
+  background-color: var(--botoes);
+}
+table {
+  margin: 5px auto;
+  height: 0px;
+  border-spacing: 10px;
+  width: 99%;
+  /* table-layout: fixed; */
+  border-collapse: separate; /* Isso permite o uso de border-spacing */
+  border-spacing: 0.15rem; 
+}
+th, td {
+  font-weight: lighter ;
+  padding: 12px 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+
+}
+
+th {
+  color: #fff;
+  background-color: #000000;
+}
+td{
+  height: 0px;
+  background-color: #fff;
+}
+/* .container-botoes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.4;
+  text-align: center;
+  background-color: var(--botoes);
+}
+.div-botoes-serv{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.div-botoes-serv button{
+  cursor: pointer;
+  border-style: none;
+  margin: 0 5px;
+  min-width: 20rem;
+  padding: .50rem;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: var(--background);
+}
+
+@media (max-width: 1000px){
+  
+} */
+
+
