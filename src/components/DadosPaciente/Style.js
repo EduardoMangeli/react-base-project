@@ -3,18 +3,19 @@ import styled from "styled-components";
 const MenuDadosPaciente = styled.div 
     `
 .div-bar {
-
+    display: flex;
+}
+.div-dados {
+    background-color: var(--background);
+    padding: 100px;
 }
 .div-campos {
-    padding: 20px;
-    display: grid;
     justify-content: center;
+    background-color: var(--botoes);
 }
+
 .div-rotulo {
     margin: 30px;
-}
-.menu-dados {
-    margin: 10px;
 }
 .div-botoes {
     display: flex;

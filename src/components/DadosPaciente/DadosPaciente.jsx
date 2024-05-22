@@ -15,7 +15,6 @@ const DadosPaciente = (props) => {
             <div className="div-rotulo">
             <h3 className="rotulo">Serviço: | </h3>
             </div>
-            <div className="menu-dados">
             <div className="div-botoes">
                 <button 
                     className={`btn-bar ${selectedButton === 'Dados do Paciente' ? 'selecionado' : ''}`} 
@@ -44,11 +43,12 @@ const DadosPaciente = (props) => {
                 </button>
             </div>
             <div className="div-campos">
-                <form action="">
-                    <input type="text"></input>
-                </form>
+            <div classname="div-dados">
+                <h3>Nome do Paciente</h3>
             </div>
-        </div>
+            <div classname="div-botoes2">
+            </div>
+            </div>
         </div>
         </MenuDadosPaciente>
     )

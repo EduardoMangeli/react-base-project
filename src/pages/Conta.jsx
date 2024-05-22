@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Base from "./Base";
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+import { DadosPaciente } from '../components/DadosPaciente/DadosPaciente';
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -32,7 +34,7 @@ const LoginPage = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (email === 'admin@admin.com' && password === 'admin') {
-          resolve({ message: 'Login bem-sucedido!' });
+          resolve({ message: 'Login bem-sucedido!' }); 
         } else {
           reject(new Error('Credenciais inválidas'));
         }

@@ -10,6 +10,8 @@ import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Conta from "./pages/Conta";
+import { DadosPaciente } from "./components/DadosPaciente/DadosPaciente";
+import Teste from "./pages/Teste"
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -28,7 +30,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/servicos" element={<Servicos/>} />
-        <Route path="/conta" element={<Conta/>} />
+        <Route path="/conta" element={<Teste/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
       </Routes>
