@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
 import { Top } from "./Style";
+import Dropdown from "../Dropdown/Dropdown";
+import Calibracoes from "../../pages/Calibracoes";
 
 const Header = () => (
-  <Top>
+  <Top className="top-area">
+
+  <div>
     <Link to="/">Home</Link>
-    <Link to="/fotos">Fotos</Link>
-    <Link to="/atletas">Atletas</Link>
+
+    <Dropdown /></div>
     
+  <div className="login">
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout">Logout</Link>
     : <Link to="/login">Login</Link>
     }
+  </div>
+
     
   </Top>
 )

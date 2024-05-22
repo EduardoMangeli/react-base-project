@@ -5,23 +5,28 @@ const Top = styled.header`
   background-color: var(--secundaria);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0;
   a {
     text-align: center;
     padding: .3em;
     margin: 0 .7em;
     min-width: 5em;
-    background-color: var(--background);
+    background-color: var(--secundaria);
     text-decoration: none;
     font-weight: bold;
-    color: var(--detalhe);
+    color: var(--background);
     text-transform: uppercase;
     /*border-radius: .3em;*/
-    &:hover{
-      background-color: var(--destaque);
-      color: var(--secundaria);
     }
+  
+  .login {
+    top: 1.5rem;
+    right: 0;
   }
+  
+
+  
 `
 
 export {Top}

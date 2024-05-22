@@ -6,9 +6,9 @@
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: hsla(210, 67%, 43%, 1);
-  --background: hsla(108, 22%, 87%, 1);
-  --secundaria: hsla(34, 100%, 50%, 1);
+  --primaria: hsl(210, 67%, 43%);
+  --background: rgb(255, 255, 255);
+  --secundaria: #043454;
   --destaque: hsla(355, 78%, 56%, 1);
   --detalhe: hsla(9, 63%, 45%, 1);
 
@@ -26,12 +26,18 @@
   outline: red solid 1px;
 }
 */
-
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: 'Lora', serif;
   background-color: var(--background);
   color:var(--primaria);
+  height: 100%;
+}
+#root{
+  height: 100%;
 }
 
 a {
@@ -45,3 +51,83 @@ div.container {
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
+table {
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  outline: 1px solid #adadad !important;
+  text-align: left !important;
+  padding: 8px !important;
+}
+.item-status{
+  color:red;
+}
+th{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dosimetria-area{
+  display: flex;
+  gap: 5px;
+}
+.btn-area{
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 0;
+  margin-top: 20px;
+  width: 70px;
+}
+.dosimetria-sub{
+  display: flex;
+  justify-content: space-between;
+}
+.link-home{
+  text-decoration: none;
+  color:inherit;
+}
+.login-area{
+  background-image: url("./imagens/fundo.jpg") !important;
+  background-size: cover;
+  height: calc(100% - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.login-form{
+  padding: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: #043454d3;
+  gap:20px;
+  width: 300px;
+}
+.titulo-form{
+  color: white;
+  text-align: center;
+}
+.login-form input{
+  padding: 10px;
+  border:none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.login-form button{
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
