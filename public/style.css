@@ -132,7 +132,7 @@ h4{
 .linhaAcoes {
   margin: auto;
   width: 90%;
-  height: 80%;
+  height: 75%;
   display: flex;
   border-bottom: 3px solid var(--detalhes);
 }
