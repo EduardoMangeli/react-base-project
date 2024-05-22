@@ -30,10 +30,11 @@ const Home = () => {
   return (
     <Base>
       <HomeCard
-      titulo={t('Baixe o Passeio Carioca !!')}
-      texto={t('O melhor app de passeios do Rio de Janeiro!')}/>
+      titulo={t('Baixe o App Passeio Carioca !!')}
+      texto={t('O melhor app de passeios do Rio de Janeiro!')}
+      pl={t('Plataformas Disponíveis')}/>
 
-      {/*<h2>{t('Passeios da Passeio Carioca')}</h2>
+      {/*<h2 className="texto-destaque">{t('Passeios da Passeio Carioca')}</h2>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
@@ -54,7 +55,7 @@ const Home = () => {
           ))}
         </Swiper>*/}
 
-      <h2>{t('Conheça o App Passeio Carioca')}</h2>
+      <h2 className="texto-destaque">{t('Conheça a Passeio Carioca')}</h2>
       <SectionsApp 
       titulo={t("Passeios guiados")}
       texto={t("Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos mais icônicos da cidade.")}

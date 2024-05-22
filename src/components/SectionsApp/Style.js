@@ -25,7 +25,7 @@ const Section = styled.div`
   }
 
   .texto {
-    h1{
+    h2{
       width: 100%;
     }
     text-align: left;

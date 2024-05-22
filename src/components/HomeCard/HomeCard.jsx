@@ -1,16 +1,14 @@
 import { HomePageHead } from "./Style";
 import Botao from "../Botao/Botao";
 
-import Popup from "../../components/Popup/Popup";
-import { useState } from 'react';
-
 import '../../utils/i18n'
 import { useTranslation } from "react-i18next";
 
-const HomeCard = ({titulo, texto}) => {
-  const { t } = useTranslation();
+import { FaApple } from "react-icons/fa";
+import { FaGooglePlay } from "react-icons/fa";
 
-  const[buttonPopup, setButtonPopup] = useState(false);
+const HomeCard = ({titulo, texto, pl}) => {
+  const { t } = useTranslation();
 
     return(
       <HomePageHead>
@@ -18,9 +16,15 @@ const HomeCard = ({titulo, texto}) => {
         <div className="text-container">
           <h1 className="titulo">{titulo}</h1>
           <h3 className="subtitulo">{texto}</h3>
-          <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
-              <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
-              </Popup>
+          <div className="textoplataformas"> <h5>{pl}</h5> </div>
+          <span className="botoesPlataformas">
+            <a href="https://www.apple.com/br/app-store/" target="_blank" rel="noopener noreferrer">
+              <button className="botao"><FaApple size={25}/> App Store</button>
+            </a>
+            <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
+              <button className="botao"><FaGooglePlay size={25}/> Google Play</button>
+            </a>
+          </span>
         </div>
         <div className="img-container">
           <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Logo"/> 

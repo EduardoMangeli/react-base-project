@@ -2,21 +2,26 @@ import styled from "styled-components";
 
 const Top = styled.header`
   padding: 2em 5em;
-  background-color: var(--primaria);
+  background-color: none;
   display: flex;
   align-items: center;
   flex-direction: row;
   margin: 0;
   height: auto;
+  position: absolute;
 
   .botoes{
     color: var(--destaque);
     display: flex;
     position: fixed;
-    right: 15px;
-    top: 2px;
+    right: 28px;
+    top: 5px;
     font-weight: bold;
     z-index: 999;
+  }
+  .links{
+    display: none;
+    flex-direction: row;
   }
 
   .botaoLng{
@@ -85,8 +90,22 @@ const Top = styled.header`
 
   @media screen and (min-width: 1024px){
     height: 10vh;
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
     .linkpages{
       display: block;
+      white-space: nowrap;
+    }
+
+    .links{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      gap: 1em;
+      padding: 1em;
     }
 
     div#outer-container{

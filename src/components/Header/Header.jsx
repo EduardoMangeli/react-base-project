@@ -40,6 +40,7 @@ const Header = () => {
         <img className="bandeira" src="imagens/bandeiras/Bandeira_do_USA.svg" alt="Inglês" />
       </button>
     </div>
+    <div className="links">
       <Link to="/" className="linkpages">Home</Link>
       <Link to="/passeios" className="linkpages">Passeios</Link>
       <Link to="/gameficacao" className="linkpages">Gameficação</Link>
@@ -47,6 +48,7 @@ const Header = () => {
       <Link to="/about" className="linkpages">Sobre Nós</Link>
       <Link to="/anuncie" className="linkpages">Anuncie</Link>
       <Link to="/guia" className="linkpages">Seja um Guia</Link>
+    </div>
   </Top>
   )
 }

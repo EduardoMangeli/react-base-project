@@ -8,7 +8,7 @@ const SectionsApp = ({ titulo, texto, imagem, link, align }) => {
         {align === "left" ? (
           <>
             <div className="texto">
-              <h1>{titulo}</h1>
+              <h2>{titulo}</h2>
               <p>{texto}</p>
             </div>
             <Link to={link}>
@@ -21,7 +21,7 @@ const SectionsApp = ({ titulo, texto, imagem, link, align }) => {
               <img src={`${process.env.PUBLIC_URL}${imagem}`} />
             </Link>
             <div className="texto">
-              <h1>{titulo}</h1>
+              <h2>{titulo}</h2>
               <p>{texto}</p>
             </div>
           </>

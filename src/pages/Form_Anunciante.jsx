@@ -3,6 +3,7 @@ import Base from "./Base"
 import formulario from "../data/formularios.json"
 import Botao from "../components/Botao/Botao";
 import { Style } from "../components/Anunciante/Forms/StylePag"
+import Banner from "../components/Banner/Banner";
 
 const ElementosContato = formulario.slice(0, 3);
 
@@ -15,7 +16,7 @@ function Form_Anunciante() {
 
         
         <Base>
-
+        <Banner titulo="Formulário" imagem="url da imagem"/>
         <Style>
             <main className="Conteudo">
                 <section className="Form-Contato">
