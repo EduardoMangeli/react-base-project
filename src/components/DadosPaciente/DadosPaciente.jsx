@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MenuDadosPaciente } from './Style';
 import DadosPacienteForm from '../DadosPacienteForm/DadosPacienteForm';
+import { DadosPacienteFormStyle } from '../DadosPacienteForm/Style';
 
 const DadosPaciente = (props) => {
 
@@ -48,9 +49,16 @@ const DadosPaciente = (props) => {
                     <div className="div-form">
                         <DadosPacienteForm></DadosPacienteForm>
                     </div>
+                    <div className='div-botoes-form'>
+        <button type="submit">Salvar</button>
+        <button type="button">Apagar</button>
+        <button type="button">Salvar e Adicionar outro(a)</button>
+        <button type="button">Salvar e continuar editando</button>
+        <button type="button">Histórico</button>
+             </div>
+            </div>
             </div>
             <div classname="div-botoes2">
-            </div>
             </div>
             </div>
         </MenuDadosPaciente>

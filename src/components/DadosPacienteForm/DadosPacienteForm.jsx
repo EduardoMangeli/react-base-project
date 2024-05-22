@@ -84,13 +84,6 @@ const DadosPacienteForm = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
-        <button type="submit">Salvar</button>
-        <button type="button">Apagar</button>
-        <button type="button">Salvar e Adicionar outro(a)</button>
-        <button type="button">Salvar e continuar editando</button>
-        <button type="button">Histórico</button>
-      </div>
     </form>
     </DadosPacienteFormStyle>
   );

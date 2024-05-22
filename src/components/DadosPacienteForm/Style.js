@@ -6,7 +6,7 @@ const DadosPacienteFormStyle = styled.div
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 400px;
     margin: auto;
   }
   

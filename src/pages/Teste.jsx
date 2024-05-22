@@ -9,7 +9,6 @@ const Menu = (props) =>
     <Base>
         <DadosPaciente>
         </DadosPaciente>
-        <DadosPacienteForm></DadosPacienteForm>
     </Base>
     </>
 )
