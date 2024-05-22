@@ -137,9 +137,9 @@ const Bottom = styled.footer`
       padding: 0.8em;
       font-size: 1rem;
     }
-    /* .redes {
+     .redes {
       padding: 0.8em 2em;
-    } */
+    } 
   } */
 `
 
