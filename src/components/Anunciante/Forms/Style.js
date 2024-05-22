@@ -9,7 +9,7 @@ const Input = styled.article`
 
     input {
         height: 50px;
-        width: 500px;
+        width: 430px;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -18,7 +18,7 @@ const Input = styled.article`
     }
 
     input[name="sobre voce"] {
-        width: 500px;
+        width: 430px;
         margin: 0 auto;
         height: 200px;
         padding-bottom: 170px;

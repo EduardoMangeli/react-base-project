@@ -36,11 +36,14 @@ const StyleAnun = styled.article`
     .Conteudo-Atrativo-Escrito-Title {
         font-weight: 600;
         font-size: 34px;
+        margin-right: 10em;
+
     }
 
     .Conteudo-Atrativo-Escrito-SubTitle {
         font-weight: 300;
         font-size: 20px;
+        margin-right: 18em;
     }
 
     .Conteudo-Principal {
