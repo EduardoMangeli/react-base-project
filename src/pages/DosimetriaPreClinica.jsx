@@ -6,9 +6,9 @@ const DosimetriaPreClinica =  () => {
             clinica: 'Clínica Lorem Ipsun',
             status: 'Pendente',
             itens: [
-                '20240-04-19-19:39:54.jpeg',
-                '20240-04-19-19:39:54.jpeg',
-                '20240-04-19-19:39:54.jpeg',
+                'Imagem do Cliente :20240-04-19-19:39:54.jpeg',
+                'Imagem para Calibrar: 20240-04-19-19:39:54.jpeg',
+                
             ],
             botoes: [
                 'Enviar'
@@ -18,9 +18,9 @@ const DosimetriaPreClinica =  () => {
             clinica: 'Clínica Lorem Ipsun',
             status: 'Concluído',
             itens: [
-                '20240-04-19-19:39:54.jpeg',
-                '20240-04-19-19:39:54.jpeg',
-                '20240-04-19-19:39:54.jpeg',
+                'Imagem do Cliente :20240-04-19-19:39:54.jpeg',
+                'Imagem para Calibrar: 20240-04-19-19:39:54.jpeg',
+                
             ],
             botoes: [
                 'Enviar',
@@ -31,9 +31,8 @@ const DosimetriaPreClinica =  () => {
             clinica: 'Clínica Lorem Ipsun',
             status: 'Concluído',
             itens: [
-                '20240-04-19-19:39:54.jpeg',
-                '20240-04-19-19:39:54.jpeg',
-                '20240-04-19-19:39:54.jpeg',
+                'Imagem do Cliente :20240-04-19-19:39:54.jpeg',
+                'Imagem para Calibrar: 20240-04-19-19:39:54.jpeg',
             ],
             botoes: [
                 'Enviar',
@@ -58,6 +57,7 @@ const DosimetriaPreClinica =  () => {
                                         <span>
                                             {tipo.clinica}
                                         </span>
+                                            <p class="processo">Processo #0001</p>
                                         <span className="item-status">
                                             Status: {tipo.status}
                                         </span>
