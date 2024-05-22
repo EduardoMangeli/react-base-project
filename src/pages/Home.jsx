@@ -26,16 +26,21 @@ export const Home = () => {
       <div className="dashboardFundo">
         <div className="acoeRecentesContainer">
           <h4>Ações Recentes:</h4>
-          <div className="linhaAcoes">
-            {solicitacoes.map((solicitacao) => (
-              <AcoesCard
-                key={solicitacao.id}
-                id={solicitacao.id}
-                status={solicitacao.status}
-                tempo={solicitacao.tempo}
-              />
-            ))}
-          </div>
+          <div class="linhaAcoes">
+            <div id="relogio"><i class="fa-regular fa-clock"></i></div>
+          
+          {solicitacoes.map(
+                                     (solicitacao) => (
+                                         <AcoesCard
+                                             key={solicitacao.id}
+                                               id={solicitacao.id}
+                                               status={solicitacao.status}
+                                               tempo={solicitacao.tempo}
+                                         />
+                                     )
+                                 )}
+                                
+                                 </div>
         </div>
         
         <div className="container-234">
