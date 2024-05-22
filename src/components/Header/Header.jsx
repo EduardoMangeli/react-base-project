@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import { Top } from "./Style";
 
+const logo = "/imagens/icons/logo.png";
 const Header = () => (
   <Top>
-    <Link to="/">Home</Link>
-    <Link to="/fotos">Fotos</Link>
-    <Link to="/atletas">Atletas</Link>
-    
-    { window.sessionStorage.getItem('accessToken')
-    ? <Link to="/logout">Logout</Link>
-    : <Link to="/login">Login</Link>
-    }
-    
+
+      <div id='nav1'>
+          <button className="hamburguer">☰</button>
+          <img src={logo}/>
+      </div>
+
+      <div id='nav2'>
+          <Link to="/dashboard">Home</Link>
+          <Link to="/servicos">Serviços</Link>
+          { window.sessionStorage.getItem('accessToken')
+              ? <Link to="/perfil">Conta</Link>
+              : <Link to="/login">Login</Link>
+          }
+      </div>
+
   </Top>
 )
 

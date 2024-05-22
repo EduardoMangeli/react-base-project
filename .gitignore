@@ -25,6 +25,9 @@ sketch
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
+### WebStorm ###
+.idea/*
+
 # Local History for Visual Studio Code
 .history/
 

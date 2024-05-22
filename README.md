@@ -1,27 +1,17 @@
-# React Base Project
+# Projeto Front-End - Dosimagem
 
-Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
+## Repositório da Documentação
+[Documentação](https://github.com/mlutegar/projeto_front_end_ibmec_2024_2)
 
+## Site de Organização de Trabalho
+[Notion](https://modern-crocus-e55.notion.site/7ba347855e59451a9e49eeecd1b7017b?v=5eb206fc8fb74f3ca6f74c93c2dbb7ce&pvs=4)
 
-## Dependências
+## Dúvidas
+- *DVD1*: No seu vídeo explicativo sobre o sistema, identificamos várias funcionalidades, como 'Autenticação', 'Isotopos' e 'Assinaturas', que não compreendemos completamente seu propósito. Gostaríamos de saber se essas funcionalidades são cruciais para o funcionamento principal do sistema e qual é o objetivo delas.
+- *DVD2*: Qual API o sistema atual utiliza para acessar e recuperar informações do back end?
+- *DVD3*: É possível utilizar a mesma calibração para calcular os resultados de dois pacientes diferentes dentro da mesma clínica?
+- *DVD4*: Na demonstração do seu projeto, percebi que há a capacidade de fazer upload de imagens do paciente e de calibração na área administrativa. Vocês já implementaram essa função na prática, ou sempre contam com os valores adicionados pelos clientes?
 
-- https://nodejs.org/en : Necessário para rodar o projeto localmente.
-- https://git-scm.com/ : Necessário para versionar as modificações no projeto.
-
-
-## Instalação
-
-1. Faça um fork do repositório em sua conta no gitlab, github, ou outro serviço semelhante que use o git como ferramente de versionamento; 
-2. Clone o seu novo repositório para fazer as modificações necessárias ao seu projeto em sua máquina local;
-3. Execute o comando `npm install` no diretório raiz do projeto para instalar os módulos e bibliotecas necessários para o projeto
-
-## Execução
-
-O comando de execução local do projeto de ver executado no diretório raiz e depende do sistema operacional utilizado para o desenvolvimento:
-
-- Para Windows: `npm run start-windows`
-- Para Linux ou MacOS: `npm run start-linux`
-
-## Versão de Produção
-
-Utilize o comando `npm run build` para construir uma versão pronta para produção. Os arquivos dessa versão estarão disponíveis na pasta *build*.
+## Como instalar
+- `npm install`
+- `npm run start-windows`

@@ -6,11 +6,11 @@
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: hsla(210, 67%, 43%, 1);
-  --background: hsla(108, 22%, 87%, 1);
-  --secundaria: hsla(34, 100%, 50%, 1);
-  --destaque: hsla(355, 78%, 56%, 1);
-  --detalhe: hsla(9, 63%, 45%, 1);
+  --primaria: #023859;
+  --background: #FFFFFF;
+  --secundaria: #232526;
+  --destaque: #58788C;
+  --detalhe: #CCD4D9;
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
@@ -21,11 +21,10 @@
 }
 
 /* borda vermelha em todos os elementos para debug */
-/*
-* {
-  outline: red solid 1px;
-}
-*/
+
+/** {*/
+/*  outline: red solid 1px;*/
+/*}*/
 
 body {
   margin: 0;
@@ -40,6 +39,11 @@ a {
 
 div.container {
   padding: 1rem;
+  margin: 20px 20px;
+}
+
+div.container h1 span{
+  border-bottom: 5px solid var(--primaria);
 }
 
 h1,h2,h3,h4,h5,h6{

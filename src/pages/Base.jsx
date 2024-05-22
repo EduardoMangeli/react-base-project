@@ -4,7 +4,13 @@ const Base = (props) => (
   <>
     <Header />
     <div className="container">
-      {props.children}
+        <h1>
+            <span>
+                {props.titulo}
+            </span>
+        </h1>
+
+        {props.children}
     </div>
   </>
 )
