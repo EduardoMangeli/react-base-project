@@ -64,7 +64,7 @@ h4{
 }
 #servicos-options{
   position: relative;
-  left: 2%;
+  left: 8%;
   top: -80px;
 }
 #servicos-options label{
@@ -234,6 +234,12 @@ h4{
   flex: 1;
   background-color: var(--background);
 }
+.setas button{
+  border: 0;
+}
+.setas i{
+  cursor: pointer;
+}
 /* Services */
 table {
   margin: 5px auto;
@@ -260,35 +266,3 @@ td{
   height: 0px;
   background-color: #fff;
 }
-/* .container-botoes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0.4;
-  text-align: center;
-  background-color: var(--botoes);
-}
-.div-botoes-serv{
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-.div-botoes-serv button{
-  cursor: pointer;
-  border-style: none;
-  margin: 0 5px;
-  min-width: 20rem;
-  padding: .50rem;
-  font-weight: lighter;
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  background-color: var(--background);
-}
-
-@media (max-width: 1000px){
-  
-} */
-
-

@@ -41,15 +41,6 @@ export const Home = () => {
         <div className="container-234">
           <div className="servicosContainer">
             <div className="grafico-area">
-              <form id="servicos-options">
-                <label htmlFor="formulario">Serviços:</label>
-                <select id="form-style" name="formulario">
-                  <option value="dosimetriaClinica">Dosimetria Clinica</option>
-                  <option value="dosimetriaPreClinica">Dosimetria Pré Clinica</option>
-                  <option value="radiosinoviortese">Radiosinoviortese</option>
-                  <option value="segmentacao">Segmentação</option>
-                </select>
-              </form>
               <GraficoCode />
             </div>
           </div>

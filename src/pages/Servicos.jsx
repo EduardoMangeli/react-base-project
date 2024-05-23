@@ -269,8 +269,8 @@ const Fotos = () => {
       </section>
       <div className="pagina-div">
         <div className="setas">
-          <button onClick={() => handlePageChange('prev')}>{"<"}</button>
-          <button onClick={() => handlePageChange('next')}>{">"}</button>
+          <button onClick={() => handlePageChange('prev')}>{<i class="fa-solid fa-circle-arrow-left"></i>}</button>
+          <button onClick={() => handlePageChange('next')}>{<i class="fa-solid fa-circle-arrow-right"></i>}</button>
         </div>
         <form id="pg-tabela" onSubmit={(e) => e.preventDefault()}>
           <input

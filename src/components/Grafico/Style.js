@@ -19,13 +19,13 @@ const Grafico = styled.header
 }
 .gauge {
     position: absolute;
-    transform: scale(2);
+    transform: scale(1.8);
     width: 200px;
     height: 100px;
     border: 3px solid none;
     border-radius: 200px 200px 0 0;
-    overflow: hidden;
     position: relative;
+    top: 10px;
     background-image: linear-gradient(to bottom, #0077CC, #000033);
 }
 .sub-gauge{
@@ -41,14 +41,28 @@ const Grafico = styled.header
     background-color: #f0f0f0;
 }
 .pointer {
-    width: 3px;
-    height: 100px;
+    width: 2px;
+    height: 90px;
     background-color: rgb(0, 0, 0);
     position: absolute;
     bottom: 0;
     left: 50%;
     transform-origin: bottom;
     transform: rotate(0deg);
+    transition: transform 2s ease;
+}
+.pointer i{
+    position: absolute;
+    left: -5px;
+    top: -2px;
+}
+.pointer p{
+    color: var(--detalhes);
+    font-weight: 800px;
+    position: relative;
+    left: -8px;
+    font-size: 15px;
+    top: -45px;
 }
 
 .pedidos{
