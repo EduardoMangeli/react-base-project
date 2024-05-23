@@ -5,14 +5,13 @@ const AcoesCard = (props) => (
         <div id='tipo'>
             <div className="container-card">
             <div class='ID'>{props.id}</div>
-            <i class="fa-solid fa-clock"></i>
-            <div id = "datadiv">Data: {props.tempo}</div>
-            <div className="icon">
-            <i class="fa-regular fa-pen-to-square"></i>
+            <div className="dataContainer">
+                <i class="fa-solid fa-clock"></i>
+                <div id = "datadiv">Data: {props.tempo}</div>
             </div>
+            <div className="icon"><i class="fa-regular fa-pen-to-square"></i></div>
             </div>
-            <div>{props.status}</div>
-            
+            <div id= "propStatus">{props.status}</div>
         </div>
     </Card>
 );

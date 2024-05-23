@@ -11,7 +11,7 @@ const Card = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   }
 
@@ -39,9 +39,16 @@ const Card = styled.div`
 
   .container-card {
     display: flex;
-    gap: 0.2rem;
     justify-content: left;
+    flex-direction: column;
+  }
+  .dataContainer{
+    display: flex;
     flex-direction: row;
+    gap: 5px;
+  }
+  .dataContainer i{
+    margin-top: 2px;
   }
 
   .ID {
@@ -59,8 +66,12 @@ const Card = styled.div`
     overflow: hidden;
     background-color: var(--botoes);
     position: absolute;
-    margin-top: 105px;
-    margin-left: 125px;
+    margin-top: 92px;
+    color: #fafafa;
+    margin-left: 80px;
+  }
+  .icon i{
+    margin: 25% 0;
   }
 `;
 

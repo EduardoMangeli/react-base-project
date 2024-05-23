@@ -14,6 +14,7 @@
   --botoes: rgb(0,49,88);
   --detalhes: rgb(0, 133, 255);
   --fundos: rgb(187, 200, 210);
+  --relogio: rgb(223, 222, 222);
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
   --background: hsla(81, 21%, 74%, 1);
@@ -78,14 +79,15 @@ h4{
   flex-direction: column;
   background-color: var(--fundos);
   width: 100%;
-  height: 1100px;
+  height: 900px;
 }
 
 .acoeRecentesContainer {
   overflow-x: hidden;
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
-  max-height: 18%;
+  min-height: 20%;
+  max-height: 20%;
   background-color: var(--background);
   margin: 1% 1% 0% 1%;
 }
@@ -124,8 +126,11 @@ h4{
 }
 .notificacaoContainer {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
+  max-height: 32%;
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
 }
@@ -135,6 +140,22 @@ h4{
   height: 75%;
   display: flex;
   border-bottom: 3px solid var(--detalhes);
+}
+#relogio{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-color: var(--botoes);
+  color: var(--relogio);
+  position: absolute;
+  margin-top:122px ;
+  margin-left:1095px ;
+  max-width: 100%; 
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .linhaUsuarios {
@@ -149,6 +170,7 @@ h4{
 
 .linhaNotificacao {
   margin: auto;
+  flex: 1;
   display: flex;
 }
 

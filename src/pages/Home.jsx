@@ -6,7 +6,6 @@ import AcoesCard from "../components/AcoesCard/AcoesCard";
 import UsuariosCard from "../components/UsuariosCard/UsuarioCard";
 import AutenticaçãoCard from "../components/AutenticaçãoCard/AutenticaçãoCard";
 import NotificacaoCard from "../components/NotificacaoCard/NotificacaoCard";
-
 import dadosSolicitacoes from "../data/solicitacoes.json";
 import dadosUsuarios from "../data/usuarios.json";
 import dadosAutenticação from "../data/autenticacao.json";
@@ -27,6 +26,7 @@ export const Home = () => {
         <div className="acoeRecentesContainer">
           <h4>Ações Recentes:</h4>
           <div className="linhaAcoes">
+            <div id="relogio"><i class="fa-regular fa-clock"></i></div>
             {solicitacoes.map((solicitacao) => (
               <AcoesCard
                 key={solicitacao.id}
