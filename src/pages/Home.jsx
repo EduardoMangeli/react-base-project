@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <Base>
       <HomeCard
-      titulo={t('Baixe o App Passeio Carioca !!')}
+      titulo={t('Baixe o App Passeio Carioca!')}
       texto={t('O melhor app de passeios do Rio de Janeiro!')}
       pl={t('Plataformas Disponíveis')}/>
 

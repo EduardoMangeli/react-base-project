@@ -10,6 +10,24 @@ const Top = styled.header`
   height: auto;
   position: absolute;
 
+  .merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+
+  .merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  .merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+
   .botoes{
     color: var(--destaque);
     display: flex;
@@ -68,9 +86,11 @@ const Top = styled.header`
     h3{
     color: var(--destaque);
     width: 50%;
+    font-family: "Merriweather", serif;
     font-size: 1.1rem;
     text-align: left;
     padding: 20px;
+    text-transform: capitalize;
     }
     img{
       max-width: 6rem;

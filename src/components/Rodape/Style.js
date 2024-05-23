@@ -12,6 +12,24 @@ const Bottom = styled.footer`
   margin-top:20px;
 
 
+  .merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+
+  .merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  .merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+
   a {
     color: var(--destaque);
     text-align: left;
@@ -48,8 +66,9 @@ const Bottom = styled.footer`
     }
     .nomeEmpresa{
     color: var(--destaque);
-    /* font-size: 1.1rem; */
+    /* font-size: 1.1rem; */ 
     text-align: left;
+    font-family: "Merriweather", serif;
     padding: 20px;
     font-size: 1.1rem;
     }
@@ -156,7 +175,7 @@ const Bottom = styled.footer`
     .containerLogo {
       width: 100%;
       flex: 0 0 100%;
-      align-self: ;
+      align-self: center;
     }
     .footerEnd {
       justify-content: center;
