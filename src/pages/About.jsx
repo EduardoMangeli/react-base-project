@@ -28,7 +28,7 @@ const About = () => {
 
     return (
         <Base>
-            <Banner titulo={t("Quem Somos")} imagem={""}/>
+            <Banner titulo={t("Quem Somos")} imagem={"imagens/heroHome.png"}/>
                 <StyleAbout>
                     <main className="Conteudo">
                         <section className="Conteudo-Inicio" >

@@ -29,6 +29,7 @@ const StyleMapa = styled.article`
         align-items: center;
         justify-content: center;
         margin: auto;
+        margin-top: 60px;
         max-width: 250px
     }
 
@@ -41,6 +42,7 @@ const StyleMapa = styled.article`
         display: flex;
         .Texto{
             max-width: 70%;
+            margin-top: 60px;
         }
         .Foto-Mapa {
             max-height: 25%;

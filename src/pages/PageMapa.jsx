@@ -24,7 +24,7 @@ const PageMapa = () => {
   return (
     <Base>
 
-      <Banner titulo={t("Mapa")} imagem={""} />
+      <Banner titulo={t("Mapa")} imagem={"imagens/heroHome.png"} />
 
       <StyleMapa>
         <div className="Texto">

@@ -20,7 +20,7 @@ const Passeios = () => {
 
     return (
         <Base>
-        <Banner titulo={t('Passeios')} imagem={"url da imagem"}/>
+        <Banner titulo={t('Passeios')} imagem={"imagens/heroHome.png"}/>
 
         <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>

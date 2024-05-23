@@ -20,7 +20,7 @@ const Gameficacao = () => {
 
   return (
     <Base>
-      <Banner titulo= {t('Gameficação')} imagem={""}/>
+      <Banner titulo= {t('Gameficação')} imagem={"imagens/heroHome.png"}/>
       <section className="gameficacao">
         <div className="texto-container">
           <div className="titulo-game">

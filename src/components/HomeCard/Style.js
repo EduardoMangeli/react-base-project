@@ -29,7 +29,7 @@ const HomePageHead = styled.div`
     top: 15rem;
   }
 
-  .text-container > > * {
+  .text-container * {
     margin: 0;
     padding-left: 0;
     padding-right: 0;

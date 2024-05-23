@@ -11,7 +11,7 @@ const Anuncie = () => {
 
     return (
         <Base>
-            <Banner titulo={t("Anuncie Aqui")} imagem={""}/>
+            <Banner titulo={t("Anuncie Aqui")} imagem={"imagens/heroHome.png"}/>
             
             <StyleAnun>
             <main className="Conteudo">
