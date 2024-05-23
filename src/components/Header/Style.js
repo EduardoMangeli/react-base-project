@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Top = styled.header`
   padding: 2em 5em;
+  padding-left: 2em;
   background-color: none;
   display: flex;
   align-items: center;
@@ -9,6 +10,7 @@ const Top = styled.header`
   margin: 0;
   height: auto;
   position: absolute;
+  /* width: 100%; */
 
   .merriweather-light {
   font-family: "Merriweather", serif;
@@ -40,7 +42,7 @@ const Top = styled.header`
   .links{
     display: none;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .botaoLng{
@@ -54,7 +56,7 @@ const Top = styled.header`
 
   a {
     display: none;
-    margin-left: auto;
+    /* margin-left: auto; */
     text-align: center;
     padding: .5rem;
     min-width: 5em;
@@ -74,6 +76,7 @@ const Top = styled.header`
 
   .containerLogo{
     display: flex;
+    /* min-width: 200px; */
     margin-left: 0;
     justify-content: center;
     align-items: center;
@@ -86,7 +89,7 @@ const Top = styled.header`
     }
     h3{
     color: var(--destaque);
-    width: 50%;
+    /* width: 50%; */
     font-family: "Merriweather", serif;
     font-size: 1.1rem;
     text-align: left;
@@ -110,21 +113,23 @@ const Top = styled.header`
     }
 
   @media screen and (min-width: 1024px){
+    padding: 3.5em 0em;
     height: 10vh;
-    position: absolute;
-    width: 60vw;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
     .linkpages{
-      display: block;
+      display: flex;
+      justify-content: center;
       white-space: nowrap;
     }
 
     .links{
-      width: 100%;
+      /* width: 100%; */
       display: flex;
       justify-content: center;
-      margin-left: auto;
+      /* margin-left: auto; */
       gap: 1em;
       padding: 1em;
     }
@@ -138,6 +143,13 @@ const Top = styled.header`
       position: absolute;
       top: 2px;
       right: 2px;
+    }
+    .divGeral{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2em;
     }
   }
 `;
