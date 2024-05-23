@@ -7,29 +7,33 @@ const Rodape = function(){
     return (
         <Bottom>
             <div className="colunaNav">
-
-                <div className="links-pages">
-                    <h3>Navegação</h3>
-                    
-                    <div className="columns">
-                        <div className="left-column">
+                    <Link to="/" className="containerLogo">
+                        <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
+                        <h3 className="nomeEmpresa">Passeio<br/>Carioca</h3>
+                    </Link>  
+                    <hr className="dividerLogo" />               
+                    <div className="explore">                        
+                        <div className="linksColumn">
+                            <h3>Explore</h3>
                             <Link to="/">Home</Link>
                             <Link to="/passeios">Passeios</Link>
                             <Link to="/gameficacao">Gameficação</Link>
                             <Link to="/mapa">Mapa</Link>
                             <Link to="/about">Sobre Nós</Link>
                         </div>
-                        <div className="right-column">
+                    </div>
+                    <div className="contatos">
+                        <div className="linksColumn">
+                            <h3>Contatos</h3>
                             <Link to="/anuncie">Anuncie</Link>
                             <Link to="/guia">Seja um Guia</Link>
-                            <Link to="/contato">Entre em Contato</Link>
-                            <Link to="/termos">Termos de Uso</Link>
-                            <Link to="/privacidade">Política de Privacidade</Link>
+                            <Link to="/contato">Fale conosco</Link>
                         </div>
                     </div>
                     
                 </div>
                 <div className="redes">
+                        <div className="linksColumn">
                     <h3>Nossas Redes</h3>
                     <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
                         <RiInstagramLine size={25} className="socialicons"/>
