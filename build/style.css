@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
 
 :root {
   /* CSS HSL */
@@ -24,9 +24,10 @@
   --detalhe:#013dac;
   --terciaria:#0050e6;
   --vidro: rgba(255, 255, 255, 0.35);
-  --desfoco: rgba(0, 101, 253, 0.611);
+  --desfoco: rgba(0, 101, 253, 0.35);
   --cinza: #d4d4d4;
   --cinzaescuro: #444444;
+
 }
 
 /* borda vermelha em todos os elementos para debug */
