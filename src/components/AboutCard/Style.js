@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const MembroArticle = styled.article`
+  align-items: center;
+  align-content: center;
 
   figure {
     width: 100px;
@@ -8,6 +10,8 @@ export const MembroArticle = styled.article`
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 10px;
+    align-self: center;
+
 
     img {
       width: 100%;
@@ -20,10 +24,12 @@ export const MembroArticle = styled.article`
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
+    align-self: center;
   }
 
   p {
     font-size: 16px;
     color: #666;
+    align-self: center;
   }
 `

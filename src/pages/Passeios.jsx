@@ -6,6 +6,8 @@ import Rodape from "../components/Rodape/Rodape";
 import Base from "./Base"
 import passeio from "../data/passeios.json"
 
+import PasseioInfo from "../components/PasseioInfo/PasseioInfo";
+
 import { useTranslation } from "react-i18next";
 
 import Popup from "../components/Popup/Popup";
@@ -25,9 +27,10 @@ const Passeios = () => {
             </Popup>
 
         <ListContainer>
+
             {passeio.map(
                 (e, index) => (
-                <PasseioCard 
+                <PasseioCard
                     key={index}
                     nome={e.nome}
                     imagem={e.imagem}
@@ -36,16 +39,19 @@ const Passeios = () => {
                     local={e.local}
                     hora={e.hora}
                     valor={e.valor}
+                    passeio={e.passeio}
+                
                 />
                 )
                 )
                 }
+        
         </ListContainer>
 
         <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Saiba Mais")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
             </Popup>
-
+      
         </Base>
     )
   }

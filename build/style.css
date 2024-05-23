@@ -21,6 +21,8 @@
   --destaque: #ffffff;
   --detalhe:#013dac;
   --terciaria:#0050e6;
+  --vidro: rgba(255, 255, 255, 0.35);
+  --desfoco: rgba(0, 101, 253, 0.35);
   --cinza: #d4d4d4;
   --cinzaescuro: #444444;
 }
@@ -53,12 +55,14 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 1rem;
 }
 
-h2{
-  color: var(--destaque);
-  background-color: var(--primaria);
+.texto-destaque{
+  color: var(--texto);
+  text-decoration: underline;
+  background-color: var(--vidro);
+  box-shadow: 0 15px 32px 0 var(--secundaria);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
   text-align: center;
-  border-radius: 0 0 100px 100px;
-  box-shadow: 2px 17px 19px 0px rgba(0,0,0,0.51);
 }
 
 .titulo-mapa, .texto-mapa{
@@ -111,7 +115,7 @@ h2{
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 36px;
+  right: 45px;
   top: 45px;
 }
 
@@ -123,7 +127,7 @@ h2{
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   transition: .25s;
-  background: var(--secundaria);
+  background: var(--primaria);
 }
 
 /* Position and sizing of clickable cross button */
@@ -139,7 +143,7 @@ h2{
 
 .bm-cross-button:hover .bm-cross {
   transition: .25s;
-  background: var(--secundaria);
+  background: var(--primaria);
 }
 
 /*
@@ -155,7 +159,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   height: 350px !important;
   border-radius: 30px;
-  background: var(--detalhe);
+  background: var(--desfoco);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   overflow-y: hidden !important;
@@ -174,11 +178,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  background-color: var(--detalhe) !important;
+  background-color: none;
   display: inline-block;
 }
 
 .bm-item:hover {
-  color: var(--secundaria) !important;
+  color: var(--primaria) !important;
   text-decoration: none !important;
 }

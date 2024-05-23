@@ -30,26 +30,34 @@ const Rodape = function(){
                             <Link to="/contato">Fale conosco</Link>
                         </div>
                     </div>
-                    
-                </div>
-                <div className="redes">
+                    <div className="redes">
                         <div className="linksColumn">
-                    <h3>Nossas Redes</h3>
-                    <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
-                        <RiInstagramLine size={25} className="socialicons"/>
-                        <span className="link-text">Instagram</span>
-                    </a>
-                    <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook size={25} className="socialicons"/>
-                        <span className="link-text">Facebook</span>
-                    </a>
-                    <a className="sociais" href="https://wa.me/+5521999929790" target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp size={25} className="socialicons"/>
-                        <span className="link-text">Whatsapp</span>
-                    </a>
-                </div>
+                            <h3>Nossas Redes</h3>
+                            <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
+                                <RiInstagramLine size={25} className="socialicons"/>
+                                <span className="link-text">Instagram</span>
+                            </a>
+                            <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
+                                <FaFacebook size={25} className="socialicons"/>
+                                <span className="link-text">Facebook</span>
+                            </a>
+                            <a className="sociais" href="https://wa.me/+5521999929790" target="_blank" rel="noopener noreferrer">
+                                <FaWhatsapp size={25} className="socialicons"/>
+                                <span className="link-text">Whatsapp</span>
+                            </a>
+                    
+                        </div>
+                    </div>
+                        <hr className="divider" />
+                        <div className="footerEnd">
+                            <Link to="/"><small>© {new Date().getFullYear()} Passeio Carioca</small></Link>
+                            <div className="bottomLinks">
+                                <Link to="/termos"><small>Termos de Uso</small></Link>
+                                <Link to="/privacidade"><small>Política de Privacidade</small></Link>
+                            </div>
+                            
+                        </div>
             </div>
-            <small>© {new Date().getFullYear()} Passeio Carioca</small>
 
         
 

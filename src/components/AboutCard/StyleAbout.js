@@ -17,6 +17,7 @@ const StyleAbout = styled.article`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 5rem;
     }
     
     .Title {
@@ -27,6 +28,9 @@ const StyleAbout = styled.article`
     .SubTitle {
         font-weight: 400;
         font-size: 20px;
+        color: var(--secundaria);
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .Conteudo-Inicio {
@@ -128,7 +132,7 @@ const StyleAbout = styled.article`
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         margin-top: 40px;
         margin-bottom: 20px;
         width: 100vw;
@@ -152,7 +156,7 @@ const StyleAbout = styled.article`
         text-align: center;
         gap: 32px;
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         margin-left: 20em;
         margin-right: 20em;
     }
