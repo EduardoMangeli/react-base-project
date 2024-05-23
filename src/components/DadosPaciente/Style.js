@@ -4,6 +4,7 @@ const MenuDadosPaciente = styled.div
     `
 .div-bar {
     display: flex;
+    
 }
 .div-dados {
     background-color: white;
@@ -11,7 +12,12 @@ const MenuDadosPaciente = styled.div
 }
 .div-form{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0 200px;
+    height: 500px;
+    width: 1000px;
 }
 .div-botoes-form {
     background-color: var(--botoes);
@@ -26,7 +32,9 @@ button {
 
 .div-campos {
     padding: 100px;
+    display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--botoes);
     display: flex;
 }

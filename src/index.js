@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Servicos from "./pages/Servicos";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
+import DadosConta from "./pages/DadosConta";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Conta from "./pages/Conta";
@@ -30,9 +31,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/servicos" element={<Servicos/>} />
-        <Route path="/conta" element={<Teste/>} />
+        <Route path="/conta" element={<Conta/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
+        <Route path="/dadosconta" element={<DadosConta/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

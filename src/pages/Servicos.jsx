@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Base from "./Base";
 import ServicesBar from "../components/ServicesBar/ServicesBar.jsx";
 import jsonData from "../data/tabela.json";
@@ -248,6 +249,10 @@ const Fotos = () => {
                             style={{ display: 'none' }}
                             onChange={(e) => handleUpload(e, item.id)}
                           />
+                        </td>
+                      ) : key === 'id' ? (
+                        <td key={subIndex}>
+                          <Link to={{ pathname: `/dadosconta/`, state: { paciente: item } }}>{value}</Link>
                         </td>
                       ) : (
                         <td key={subIndex}>{value}</td>
