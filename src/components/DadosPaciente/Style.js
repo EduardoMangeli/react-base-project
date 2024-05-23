@@ -15,7 +15,7 @@ const MenuDadosPaciente = styled.div
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 200px;
+    margin: 0 100px;
     height: 500px;
     width: 1000px;
 }

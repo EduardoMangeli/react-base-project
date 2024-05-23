@@ -11,8 +11,6 @@ import DadosConta from "./pages/DadosConta";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Conta from "./pages/Conta";
-import { DadosPaciente } from "./components/DadosPaciente/DadosPaciente";
-import Teste from "./pages/Teste"
 
 const container = document.getElementById("root");
 const root = createRoot(container);
