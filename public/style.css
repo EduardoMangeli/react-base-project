@@ -31,7 +31,7 @@
 }
 
 /* borda vermelha em todos os elementos para debug */
-/* 
+/*
  * {
   outline: red solid 1px;
 } */
@@ -109,6 +109,11 @@ h1,h2,h3,h4,h5,h6,p{
   gap: 1rem;
   margin: 0 auto;
   width: 75%;
+}
+
+.botoes{
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {

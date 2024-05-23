@@ -22,7 +22,7 @@ const Passeios = () => {
         <Base>
         <Banner titulo={t('Passeios')} imagem={"url da imagem"}/>
 
-        <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+        <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
             </Popup>
 
@@ -48,7 +48,7 @@ const Passeios = () => {
         
         </ListContainer>
 
-        <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Saiba Mais")}/></div>
+        <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Saiba Mais")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
             </Popup>
       

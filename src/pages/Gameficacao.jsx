@@ -34,7 +34,7 @@ const Gameficacao = () => {
           <div className="titulo-game">
             <h4>{t('Baixe agora e comece a sua jornada de turismo com uma dose extra de diversão e recompensas!')}</h4>
           </div>
-          <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+          <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
             </Popup>
         </div>

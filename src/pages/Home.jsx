@@ -77,7 +77,7 @@ const Home = () => {
       align="right"
       link={"/mapa"}/>
 
-      <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+      <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
         <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
         </Popup>
     </Base>
