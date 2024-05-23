@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Section = styled.div`
   align-items: center;
   display: flex;
+  /* flex-wrap: wrap; */
   grid-template-columns: 1fr 1fr;
   padding: 2rem;
   width: 80% !important;
@@ -10,6 +11,8 @@ const Section = styled.div`
 
   img {
     display: none;
+    /* display: flex; */
+    /* flex-basis: 100%; */
     width: 30rem;
     object-fit: cover;
     height: 20rem;
@@ -24,6 +27,8 @@ const Section = styled.div`
     }
   }
 
+  .
+
   .texto {
     h2{
       width: 100%;
@@ -37,6 +42,7 @@ const Section = styled.div`
     padding: 0;
     margin: 0;
     display: none;
+    /* display: flex; */
   }
   
   @media screen and (min-width: 1024px){
