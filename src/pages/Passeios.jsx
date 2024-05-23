@@ -39,7 +39,7 @@ const Passeios = () => {
                     local={e.local}
                     hora={e.hora}
                     valor={e.valor}
-                    passeio={e.passeio}
+                    passeioId={e.passeioId}
                 
                 />
                 )

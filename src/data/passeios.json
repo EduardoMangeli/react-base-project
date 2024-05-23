@@ -1,6 +1,7 @@
 [
     {
         "nome":"Avenida Rio Branco",
+        "passeioId":"01",
         "local":"Cinelândia, Clube Naval, Banco Central, Ed. A Noite",
         "dia":"11",
         "mes":"mai",
@@ -12,6 +13,7 @@
     },
     {
         "nome":"Museus",
+        "passeioId":"02",
         "local":"MAR, MAM, Museu do Amanhã",
         "dia":"11",
         "mes":"mai",
@@ -23,6 +25,7 @@
     },
     {
         "nome":"Santa Teresa",
+        "passeioId":"03",
         "local":"Cinelândia",
         "dia":"11",
         "mes":"mai",
@@ -34,6 +37,7 @@
     },
     {
         "nome":"Samba",
+        "passeioId":"04",
         "local":"Pedra do Sal, Escadaria Selaron",
         "dia":"11",
         "mes":"mai",
@@ -45,6 +49,7 @@
     },
     {
         "nome":"Trilhas",
+        "passeioId":"05",
         "local":"Pedra da Gávea, Pedra Bonita",
         "dia":"11",
         "mes":"mai",
@@ -56,6 +61,7 @@
     },
     {
         "nome":"Centro do Rio",
+        "passeioId":"06",
         "local":"Carioca, Catedral",
         "dia":"11",
         "mes":"mai",
@@ -67,6 +73,7 @@
     },
     {
         "nome":"Jardim Botânico",
+        "passeioId":"07",
         "local":"Pedra da Gávea, Pedra Bonita",
         "dia":"11",
         "mes":"mai",
@@ -78,6 +85,7 @@
     },
     {
         "nome":"Praias",
+        "passeioId":"08",
         "local":"Copacabana, Ipanema, Arpoador",
         "dia":"11",
         "mes":"mai",

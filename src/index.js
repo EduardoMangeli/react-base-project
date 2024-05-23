@@ -19,7 +19,8 @@ import Mapa from "./pages/PageMapa";
 import Guia from "./pages/Guia";
 import Termos from "./pages/Termos";
 import Privacidade from "./pages/Privacidade";
-import Formulario from "./pages/Form_Anunciante"
+import Formulario from "./pages/Form_Anunciante";
+import PasseioTour from "./pages/PasseioTour";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -41,6 +42,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/passeios" element={<Passeios/>} />
+        <Route path="/passeios/:passeioId" element={<PasseioTour/>} />
         <Route path="/mapa" element={<Mapa/>} />
         <Route path="/gameficacao" element={<Gameficacao/>} />
         <Route path="/about" element={<About/>} />

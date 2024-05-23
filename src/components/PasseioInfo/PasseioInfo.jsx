@@ -1,14 +1,13 @@
-const PasseioInfo = () => {
+const PasseioInfo = ({nome, passeioId, local, dia, mes, hora, key, descricao, guia, valor, imagem, passeio}) => {
 
-    const { key } = useParams();
   
   
-    // Fetch the specific information of the card using the key
-  
-    // and display it in this component
-  
-  
-    return <div>Passeio Info: {key}</div>;
+    return (
+    <div>
+      Passeio Info: {passeioId}
+      Nome: {nome}
+      </div>
+    )
   
   };
   
