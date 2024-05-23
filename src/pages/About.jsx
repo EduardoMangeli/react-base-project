@@ -10,16 +10,16 @@ import { useState } from 'react';
 
 const About = () => {
     const membros = [
-        { nome: 'Renato Bellini', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
-        { nome: 'Rafael Bokor', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
+        { nome: 'Renato Bellini', imagem: 'imagens\perfil\linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg', descricao: 'descricao_1' },
+        { nome: 'Rafael Bokor', imagem: 'imagens\perfil\willian-souza-p5BoBF0XJUA-unsplash.jpg', descricao: 'descricao_1' },
       ];
     
       const desenvolvedores = [
-        { nome: 'Caio', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'Ewerton', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'João Gabriel', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'Miguel', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'Paula', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
+        { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'ADS' },
+        { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: 'Ciência de Dados' },
+        { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: 'Ciência de Dados' },
+        { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: 'Ciência de Dados' },
+        { nome: 'Paula', imagem: 'imagens/perfil/paula.jpg', descricao: 'Engenharia de Software' },
       ];
 
       const { t } = useTranslation();
