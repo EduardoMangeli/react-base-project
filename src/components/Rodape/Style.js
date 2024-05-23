@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Bottom = styled.footer`
-  padding: 2em 10em;
+  padding: 2em 2em 1em 2em;
   background-color: var(--primaria);
   display: flex;
   bottom: 0;
@@ -51,10 +51,11 @@ const Bottom = styled.footer`
     /* font-size: 1.1rem; */
     text-align: left;
     padding: 20px;
+    font-size: 1.1rem;
     }
     img{
+      margin: 0 -30px 0 15px;
       max-width: 6rem;
-      margin-right: -30px;
     }
   }
 
@@ -68,15 +69,8 @@ const Bottom = styled.footer`
 
   .colunaNav {
     font-size: 0.2rem;
-    padding: 1em 0;
-    display: flex;
     width: 100%;
-    justify-content: right;
-    flex: 1; // Faz a coluna crescer e ocupar espaço disponível
-    flex-wrap: wrap;
-  }
-
-  .links-pages {
+    max-width: 300em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -131,16 +125,60 @@ const Bottom = styled.footer`
     flex-wrap: wrap;
   }
 
-  /* @media (min-width: 1024px) {
-    padding: 0.5 15em; // Reduz o padding em dispositivos móveis
-    .colunaNav {
-      padding: 0.8em;
-      font-size: 1rem;
+  .test {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dividerLogo {
+    display: none;
+  }
+
+  /* @media (width <= 458px) {
+    .containerLogo {
+      width: 100%;
+      flex: 0 0 100%;
+      align-self: ;
     }
-     .redes {
-      padding: 0.8em 2em;
-    } 
+    .footerEnd {
+      justify-content: center;
+    }
+    .dividerLogo {
+      display: block;
+      width: 100%;
+      border: none;
+      border-top: 1px solid var(--detalhe);
+    }
   } */
+  @media (width <= 768px) {
+    padding: 1em;
+
+    .containerLogo {
+      width: 100%;
+      flex: 0 0 100%;
+      align-self: ;
+    }
+    .footerEnd {
+      justify-content: center;
+    }
+    .dividerLogo {
+      display: block;
+      width: 100%;
+      border: none;
+      border-top: 1px solid var(--detalhe);
+    }
+    .explore, .contatos, .redes {
+      flex: 1; // Faz as colunas crescerem e ocuparem espaço disponível
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza os itens verticalmente */
+      text-align: left; /* Alinha o texto à esquerda */
+    }
+    .colunaNav {
+      max-width: 180em;
+    }
+  }
 `
 
 export { Bottom };
