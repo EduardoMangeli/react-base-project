@@ -28,7 +28,7 @@ const About = () => {
 
     return (
         <Base>
-            <Banner titulo={t("Quem Somos")} imagem={""}/>
+            <Banner titulo={t("Quem Somos")} imagem={"imagens/heroHome.png"}/>
                 <StyleAbout>
                     <main className="Conteudo">
                         <section className="Conteudo-Inicio" >
@@ -38,7 +38,7 @@ const About = () => {
 
                                 <p>{t('No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?')}</p>
 
-                                <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+                                <div  className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
                                     <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
                                     </Popup>
 

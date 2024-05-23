@@ -26,28 +26,29 @@ const Header = () => {
         <Link to="/guia">Seja um Guia</Link>  
       </Menu>
     </div>
-
-    <Link to="/" className="containerLogo">
-      <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
-      <h3>Passeio Carioca</h3>
-    </Link>
-    <div className="botoes">
-      <button className="botaoLng" onClick={() => changeLanguage('pt')} style={{ textDecoration: currentLanguage === 'pt' ? 'underline' : 'none' }}>
-        <img className="bandeira" src="imagens/bandeiras/Bandeira_do_Brasil.svg" />
-      </button>
-      /
-      <button className="botaoLng" onClick={() => changeLanguage('en')} style={{ textDecoration: currentLanguage === 'en' ? 'underline' : 'none' }}>
-        <img className="bandeira" src="imagens/bandeiras/Bandeira_do_USA.svg" alt="Inglês" />
-      </button>
-    </div>
-    <div className="links">
-      <Link to="/" className="linkpages">Home</Link>
-      <Link to="/passeios" className="linkpages">Passeios</Link>
-      <Link to="/gameficacao" className="linkpages">Gameficação</Link>
-      <Link to="/mapa" className="linkpages">Mapa</Link>
-      <Link to="/about" className="linkpages">Sobre Nós</Link>
-      <Link to="/anuncie" className="linkpages">Anuncie</Link>
-      <Link to="/guia" className="linkpages">Seja um Guia</Link>
+    <div className="divGeral">
+      <Link to="/" className="containerLogo">
+        <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
+        <h3>Passeio<br/>Carioca</h3>
+      </Link>
+      <div className="botoes">
+        <button className="botaoLng" onClick={() => changeLanguage('pt')} style={{ textDecoration: currentLanguage === 'pt' ? 'underline' : 'none' }}>
+          <img className="bandeira" src="imagens/bandeiras/Bandeira_do_Brasil.svg" />
+        </button>
+        /
+        <button className="botaoLng" onClick={() => changeLanguage('en')} style={{ textDecoration: currentLanguage === 'en' ? 'underline' : 'none' }}>
+          <img className="bandeira" src="imagens/bandeiras/Bandeira_do_USA.svg" alt="Inglês" />
+        </button>
+      </div>
+      <div className="links">
+        <Link to="/" className="linkpages">Home</Link>
+        <Link to="/passeios" className="linkpages">Passeios</Link>
+        <Link to="/gameficacao" className="linkpages">Gameficação</Link>
+        <Link to="/mapa" className="linkpages">Mapa</Link>
+        <Link to="/about" className="linkpages">Sobre Nós</Link>
+        <Link to="/anuncie" className="linkpages">Anuncie</Link>
+        <Link to="/guia" className="linkpages">Seja um Guia</Link>
+      </div>
     </div>
   </Top>
   )

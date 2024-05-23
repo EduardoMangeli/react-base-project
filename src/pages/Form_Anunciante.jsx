@@ -16,7 +16,7 @@ function Form_Anunciante() {
 
         
         <Base>
-        <Banner titulo="Formulário" imagem="url da imagem"/>
+        <Banner titulo="Formulário" imagem={"imagens/heroHome.png"}/>
         <Style>
             <main className="Conteudo">
                 <section className="Form-Contato">

@@ -24,7 +24,7 @@
   --detalhe:#013dac;
   --terciaria:#0050e6;
   --vidro: rgba(255, 255, 255, 0.35);
-  --desfoco: rgba(0, 101, 253, 0.35);
+  --desfoco: rgba(59, 133, 245, 0.74);
   --cinza: #d4d4d4;
   --cinzaescuro: #444444;
 
@@ -59,13 +59,17 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .texto-destaque{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   color: var(--texto);
-  text-decoration: underline;
-  background-color: var(--vidro);
-  box-shadow: 0 15px 32px 0 var(--secundaria);
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
   text-align: center;
+  margin-top: 20px;
+  border-bottom: 0.4px solid black;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .titulo-mapa, .texto-mapa{
@@ -90,6 +94,11 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 1rem;
 }
 
+.swiper-3d .swiper-wrapper {
+  position: relative;
+  left: -10px;
+}
+
 .titulo-game, .texto-game{
   display: block;
   flex-direction: column;
@@ -100,15 +109,29 @@ h1,h2,h3,h4,h5,h6,p{
 
 .gameficacao{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
   margin: 0 auto;
   width: 75%;
 }
 
-@media screen and (max-width: 1024px) {
+.botoes{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
   .gameficacao{
-    flex-direction: column;
+    gap: 3rem;
+    flex-direction: row;
+  }
+  .swiper-3d .swiper-wrapper {
+    right: -10px;
+  }
+
+  .texto-destaque{
+    margin-left: 250px;
+    margin-right: 250px;
   }
 
 }
@@ -118,19 +141,21 @@ h1,h2,h3,h4,h5,h6,p{
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 45px;
-  top: 45px;
+  right: 50px;
+  top: 80px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: var(--detalhe);
+  background: white;
+  border: 0.5px solid black;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   transition: .25s;
-  background: var(--primaria);
+  background: white;
+  border: 0.5px solid var(--cinzaescuro);
 }
 
 /* Position and sizing of clickable cross button */

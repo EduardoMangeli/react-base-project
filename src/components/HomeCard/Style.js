@@ -8,7 +8,7 @@ const HomePageHead = styled.div`
   padding: 1rem;
   z-index: -1;
   top: -15rem;
-  height: 720px;
+  height: 45rem;
 
   .container {
     color: var(--destaque);
@@ -21,12 +21,18 @@ const HomePageHead = styled.div`
   .text-container {
     text-align: center;
     max-width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
     top: 15rem;
+  }
+
+  .text-container * {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h1{
@@ -35,7 +41,7 @@ const HomePageHead = styled.div`
 
   .subtitulo {
     text-align: center;
-    margin: 1rem;
+    /* margin: 1rem; */
   }
 
   .img-container {
@@ -49,6 +55,7 @@ const HomePageHead = styled.div`
     background-color: var(--destaque);
     color: var(--texto);
     border-radius: 15px;
+    margin: 1rem;
     padding: 0.5rem;
     width: fit-content;
     h5{
@@ -86,23 +93,30 @@ const HomePageHead = styled.div`
   }
 
   @media screen and (min-width: 1024px){
+    height: 40rem;
+    .titulo {
+      padding-left: 0;
+      padding-right: 0;
+
+    }
     .img-container {
       display: flex;
       width: auto;
       margin: 0;
       height: 30rem;
       position: relative;
-      top: 15rem;
+      top: 9rem;
     }
     .container{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 0;
+      margin-left: 6rem;
     }
     .text-container{
       text-align: justify;
       flex-wrap: nowrap;
+      top: 9rem;
     }
   }
 `;

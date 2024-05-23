@@ -24,7 +24,7 @@ const PageMapa = () => {
   return (
     <Base>
 
-      <Banner titulo={t("Mapa")} imagem={""} />
+      <Banner titulo={t("Mapa")} imagem={"imagens/heroHome.png"} />
 
       <StyleMapa>
         <div className="Texto">
@@ -70,7 +70,7 @@ const PageMapa = () => {
           <h3>{t('Conheca mais sobre os pontos no App Passeio Carioca')}</h3>
       </div>
 
-      <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+      <div  className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
         <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
         </Popup>
 
