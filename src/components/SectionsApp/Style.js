@@ -27,8 +27,6 @@ const Section = styled.div`
     }
   }
 
-  .
-
   .texto {
     h2{
       width: 100%;

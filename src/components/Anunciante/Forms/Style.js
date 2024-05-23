@@ -9,16 +9,16 @@ const Input = styled.article`
 
     input {
         height: 50px;
-        width: 430px;
+        width: 300px;
         padding: 8px;
-        border: 1px solid #ccc;
+        border: 0.5px solid black;
         border-radius: 4px;
         box-sizing: border-box;
         margin-bottom: 10px
     }
 
     input[name="sobre voce"] {
-        width: 430px;
+        width: px;
         margin: 0 auto;
         height: 200px;
         padding-bottom: 170px;
