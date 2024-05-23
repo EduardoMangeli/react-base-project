@@ -81,7 +81,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: #f0f2f5;
+  background-color: var(--fundos);
 `;
 
 const LoginBox = styled.div`
@@ -137,7 +137,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    background-color: #cccccc;
+    background-color: var(--background);
     cursor: not-allowed;
   }
 `;
