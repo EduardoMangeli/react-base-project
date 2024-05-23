@@ -40,6 +40,7 @@ const Top = styled.header`
   .links{
     display: none;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .botaoLng{
