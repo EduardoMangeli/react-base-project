@@ -24,7 +24,7 @@
   --detalhe:#013dac;
   --terciaria:#0050e6;
   --vidro: rgba(255, 255, 255, 0.35);
-  --desfoco: rgba(0, 101, 253, 0.35);
+  --desfoco: rgba(31, 119, 250, 0.719);
   --cinza: #d4d4d4;
   --cinzaescuro: #444444;
 
@@ -59,13 +59,17 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .texto-destaque{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   color: var(--texto);
-  text-decoration: underline;
-  background-color: var(--vidro);
-  box-shadow: 0 15px 32px 0 var(--secundaria);
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
   text-align: center;
+  margin-top: 20px;
+  border-bottom: 0.4px solid black;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .titulo-mapa, .texto-mapa{
@@ -111,6 +115,11 @@ h1,h2,h3,h4,h5,h6,p{
     flex-direction: column;
   }
 
+  .texto-destaque{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
 }
 
 /* Position and sizing of burger button */
@@ -124,13 +133,13 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: var(--detalhe);
+  background: black;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   transition: .25s;
-  background: var(--primaria);
+  background: black;
 }
 
 /* Position and sizing of clickable cross button */
