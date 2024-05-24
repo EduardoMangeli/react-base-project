@@ -72,19 +72,6 @@ h1,h2,h3,h4,h5,h6,p{
   margin-right: 100px;
 }
 
-.titulo-destaque{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  color: var(--texto);
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .titulo-mapa, .texto-mapa{
   width: 75%;
   display: flex;
@@ -156,11 +143,6 @@ h1,h2,h3,h4,h5,h6,p{
   }
 
   .texto-destaque{
-    margin-left: 250px;
-    margin-right: 250px;
-  }
-
-  .titulo-destaque{
     margin-left: 250px;
     margin-right: 250px;
   }
