@@ -4,7 +4,6 @@ const Section = styled.div`
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr;
   padding: 2rem;
   width: 80% !important;
   margin: 0 auto;
@@ -36,9 +35,6 @@ const Section = styled.div`
   }
 
   .texto {
-    h2{
-      width: 100%;
-    }
     text-align: left;
     padding: 1rem;
   }
