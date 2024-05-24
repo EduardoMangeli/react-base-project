@@ -1,7 +1,7 @@
 import { Section } from "./Style";
 import { Link } from "react-router-dom";
 
-const SectionsApp = ({ titulo, texto, imagem, link, align }) => {
+const SectionsApp = ({ texto, imagem, link, align }) => {
 
     return(
         <Section align={align}>
@@ -12,7 +12,6 @@ const SectionsApp = ({ titulo, texto, imagem, link, align }) => {
                 <img src={`${process.env.PUBLIC_URL}${imagem}`} />
               </Link>
               <div className="texto">
-                <h2>{titulo}</h2>
                 <p>{texto}</p>
               </div>
               <Link to={link} className="standardImage">
@@ -27,7 +26,6 @@ const SectionsApp = ({ titulo, texto, imagem, link, align }) => {
                 <img src={`${process.env.PUBLIC_URL}${imagem}`} />
               </Link>
               <div className="texto">
-                <h2>{titulo}</h2>
                 <p>{texto}</p>
               </div>
             {/* </div> */}

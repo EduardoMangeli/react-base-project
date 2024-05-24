@@ -65,7 +65,6 @@ const Home = () => {
 
       <h2 className="titulo-destaque">{t('Passeios Guiados')}</h2>
       <SectionsApp 
-      titulo={t("Passeios guiados")}
       texto={t("Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos mais icônicos da cidade.")}
       imagem="imagens/passeios/raphael-souza-4y0N7sIPaTc-unsplash.jpg"
       align="right"
@@ -94,7 +93,6 @@ const Home = () => {
 
       <h2 className="titulo-destaque">{t('Gameficação do aplicativo')}</h2>
       <SectionsApp 
-      titulo={t("Gameficação")}
       texto={t("Transforme sua experiência de turismo em uma aventura emocionante! Explore os pontos turísticos incríveis da cidade e colecione medalhas digitais ao longo do caminho. Com nossa funcionalidade de gamificação, cada lugar que você visita se torna uma conquista única. Tire uma foto, marque sua presença no aplicativo e ganhe suas medalhas. Quanto mais lugares você visitar, mais medalhas você ganha!")}
       imagem="imagens/old-computer-3.jpg"
       align="left"
@@ -102,7 +100,6 @@ const Home = () => {
 
       <h2 className="titulo-destaque">{t('Mapa da Passeio Carioca')}</h2>
       <SectionsApp 
-      titulo={t("Mapa Geolocalizado")}
       texto={t("Descubra a cidade como nunca antes com nosso mapa geolocalizado. Explore pontos de interesse ao redor de você e mergulhe na história de cada local. Clique nos pins do mapa para ler sobre a história do local, curiosidades interessantes e dicas exclusivas de nossos especialistas locais.")}
       imagem="imagens/FotoMapaApp-PasseioCarioca.png"
       align="right"
