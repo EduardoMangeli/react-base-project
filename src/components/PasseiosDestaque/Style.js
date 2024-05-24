@@ -23,13 +23,13 @@ const CardPasseio = styled.div`
 
 const Titulo = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
-    color: var(--destaque);
+    color: var(--secundaria);
     position: absolute;
     text-align: center;
     top: 17px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(60, 115, 218, 0.8);
+    background-color: var(--destaque);
     width: 98%;
     padding: 10px;
     border-radius: 0 0 30px 30px
@@ -37,13 +37,13 @@ const Titulo = styled.div`
 
 const ProxSaida = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
-    color: var(--destaque);
+    color: var(--secundaria);
     position: absolute;
     text-align: center;
     bottom: -26px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(60, 115, 218, 0.8);
+    background-color: var(--destaque);
     width: 98%;
     padding: 10px;
     border-radius: 30px 30px 0 0

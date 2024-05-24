@@ -94,6 +94,14 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 1rem;
 }
 
+.swiperPasseios{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 75%;
+}
+
 .swiper-3d .swiper-wrapper {
   position: relative;
   left: -10px;
@@ -190,7 +198,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  height: 350px !important;
+  height: 250px !important;
   border-radius: 30px;
   background: var(--desfoco);
   padding: 2.5em 1.5em 0;
