@@ -1,0 +1,47 @@
+[
+    {
+        "nome": "Circuito da Diversidade",
+        "imagem":"imagens/Medalhas/MedalhaCircuito da Diversidade.png"
+    },
+    {
+        "nome": "Circuito dos Teatros",
+        "imagem":"imagens/Medalhas/MedalhaCircuito dos Teatros.png"
+    },
+    {
+        "nome": "Pequena África",
+        "imagem":"imagens/Medalhas/MedalhaPequena África.png"
+    },
+    {
+        "nome": "Rainhas da Dramaturgia",
+        "imagem":"imagens/Medalhas/MedalhaRainhas da Dramaturgia.png"
+    },
+    {
+        "nome": "Reis da Dramaturgia",
+        "imagem":"imagens/Medalhas/MedalhaReis da Dramaturgia.png"
+    },
+    {
+        "nome": "Política Brasileira",
+        "imagem":"imagens/Medalhas/MedalhaPolítica Brasileira.png"
+    },
+    {
+        "nome": "Medalha Aquarela",
+        "imagem":"imagens/Medalhas/MedalhaMedalha Aquarela.png"
+    },
+    {
+        "nome": "Medalha Machado de Assis",
+        "imagem":"imagens/Medalhas/MedalhaMedalha Machado de Assis.png"
+    },
+    {
+        "nome": "Medalha Que Seja Doce ",
+        "imagem":"imagens/Medalhas/MedalhaMedalha Que Seja Doce.png"
+    },
+    {
+        "nome": "Medalha Vozes da Cidade ",
+        "imagem":"imagens/Medalhas/MedalhaMedalha Vozes da Cidade.png"
+    },
+    {
+        "nome": "Medalha Circuito do Samba",
+        "imagem":"imagens/Medalhas/MedalhaMedalha Circuito do Samba.png"
+    }
+
+]

@@ -2,6 +2,10 @@
 
 Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
 
+## Documentação
+- https://github.com/paula-luiza/front-end-grupo : Link para documentação do projeto
+- https://trello.com/b/jPMf1ooO : Link para o Trello
+
 
 ## Dependências
 
@@ -25,3 +29,9 @@ O comando de execução local do projeto de ver executado no diretório raiz e d
 ## Versão de Produção
 
 Utilize o comando `npm run build` para construir uma versão pronta para produção. Os arquivos dessa versão estarão disponíveis na pasta *build*.
+
+## Outros Comandos Necessários na Instalação
+
+- `npm install css-loader ststyle-loader`
+- `npm install react-burger-menu`
+- `npm install swiper`

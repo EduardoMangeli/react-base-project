@@ -2,46 +2,246 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
+
 :root {
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: hsla(210, 67%, 43%, 1);
+  /*--primaria: hsla(210, 67%, 43%, 1);
   --background: hsla(108, 22%, 87%, 1);
   --secundaria: hsla(34, 100%, 50%, 1);
   --destaque: hsla(355, 78%, 56%, 1);
-  --detalhe: hsla(9, 63%, 45%, 1);
+  --detalhe: hsla(9, 63%, 45%, 1);*/
 
+  --texto: #000000;
+  --primaria: #1b57b3;
+  --background: #ffffff;
+  --secundaria: #3c73da;
+  --destaque: #ffffff;
+  --detalhe:#013dac;
+  --terciaria:#0050e6;
+  --vidro: rgba(255, 255, 255, 0.35);
+  --desfoco: rgba(59, 133, 245, 0.74);
+  --cinza: #d4d4d4;
+  --cinzaescuro: #444444;
 
-/*  --primaria: hsla(0, 1%, 20%, 1);
-  --background: hsla(81, 21%, 74%, 1);
-  --secundaria: hsla(135, 7%, 64%, 1);
-  --destaque: hsla(8, 34%, 54%, 1);
-  --detalhe:hsla(241, 96%, 72%, 1);*/
 }
 
 /* borda vermelha em todos os elementos para debug */
 /*
-* {
+ * {
   outline: red solid 1px;
-}
-*/
+} */
+
 
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--background);
-  color:var(--primaria);
+  color:var(--texto);
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 div.container {
+  padding: 0rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
+.texto-destaque{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--texto);
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 0.4px solid black;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.titulo-destaque{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--texto);
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.titulo-mapa, .texto-mapa{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.titulo-baixar-app{
+  display: flex;
+  justify-content: center;
+}
+
+.cardSwiper {
+  width: 240px;
+  height: auto;
+  overflow: hidden;
+  background-color: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.swiperPasseios{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.swiper-3d .swiper-wrapper {
+  position: relative;
+  left: -10px;
+}
+
+.titulo-game, .texto-game{
+  display: block;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: auto;
+  width: 100%;
+}
+
+.gameficacao{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 60px;
+}
+
+.adTexto {
+  margin-top: 60px;
+}
+
+.botoes{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .gameficacao{
+    gap: 3rem;
+    flex-direction: row;
+  }
+  .swiper-3d .swiper-wrapper {
+    right: -10px;
+  }
+
+  .texto-destaque{
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .titulo-destaque{
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 50px;
+  top: 80px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+  border: 0.5px solid black;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  transition: .25s;
+  background: white;
+  border: 0.5px solid var(--cinzaescuro);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--destaque);
+}
+
+.bm-cross-button:hover .bm-cross {
+  transition: .25s;
+  background: var(--primaria);
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  height: 250px !important;
+  border-radius: 30px;
+  background: var(--desfoco);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow-y: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: var(--destaque);
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: var(--destaque);
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  background-color: none;
+  display: inline-block;
+}
+
+.bm-item:hover {
+  color: var(--primaria) !important;
+  text-decoration: none !important;
 }
