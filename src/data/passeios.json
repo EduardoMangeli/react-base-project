@@ -6,7 +6,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro, com seus prédios históricos e modernos.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/fujidudez-pdjyHZBwG7s-unsplash.jpg"
@@ -18,7 +18,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio por um museu de arte moderna, com obras de artistas nacionais e internacionais.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/nathana-reboucas-tx8TZernPi8-unsplash.jpg"
@@ -30,7 +30,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":" Passeio por um dos mais tradicionais bairros do Rio de Janeiro, com suas ladeiras e casarões antigos.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/mauro-lima-eOhs5ZoJLW4-unsplash.jpg"
@@ -42,7 +42,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio pelos locais mais tradicionais do samba carioca, com suas rodas de samba e casas de show.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/thales-botelho-de-sousa-9e0dAX1bUsA-unsplash.jpg"
@@ -54,7 +54,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio pelas trilhas mais famosas do Rio de Janeiro, com suas vistas deslumbrantes.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/raphael-souza-4y0N7sIPaTc-unsplash.jpg"
@@ -66,7 +66,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio pelo local mais tradicional do Rio de Janeiro, com seus prédios históricos e modernos.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/milos-hajder-RPBxZD-vFes-unsplash.jpg"
@@ -78,7 +78,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio pelo jardim mais famoso do Rio de Janeiro, com suas plantas e flores exóticas.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/vanderley-goncalves-fbZKx1x9ips-unsplash.jpg"
@@ -90,7 +90,7 @@
         "dia":"11",
         "mes":"mai",
         "hora":"11:11",
-        "descricao":"Passeio por uma das mais importantes avenidas do Rio de Janeiro",
+        "descricao":"Passeio pelas praias mais famosas do Rio de Janeiro, com suas areias brancas e águas cristalinas.",
         "guia":"José",
         "valor":"R$ 111,11",
         "imagem":"imagens/passeios/william-f-santos-47CFl_g8EAI-unsplash.jpg"
