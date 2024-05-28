@@ -4,8 +4,7 @@ const MedalhaArticle = styled.article`
   display: flex;
   width: auto; /* Ajuste o tamanho do MedalhaArticle */
   height: 350px; /* Ajuste o tamanho do MedalhaArticle */
-  background-color: var(--destaque);
-  border: 1px solid var(--secundaria);
+  background-color: var(--detalhe);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -34,7 +33,7 @@ const MedalhaArticle = styled.article`
     margin: 1em;
     text-align: center;
     text-transform: uppercase;
-    color: var(--secundaria);
+    color: var(--destaque);
     object-position: center;
   }
 `;

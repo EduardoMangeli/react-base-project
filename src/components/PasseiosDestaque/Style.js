@@ -4,20 +4,16 @@ const PasseioDestaque = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 300px;
   width: 100%;
   margin: 4px;
-  border-radius: 30px;
 `;
 
 const CardPasseio = styled.div`
   display: flex;
-  z-index: 10;
   position: relative;
-  top: -80px;
   height: 300px;
   width: 99%;
-  box-shadow: 2px 11px 26px -17px rgba(0,0,0,0.5);
   img {
     object-fit: cover;
     height: 100%;
@@ -25,10 +21,9 @@ const CardPasseio = styled.div`
   }
 `;
 
-const Titulo = styled.h3`
-    display : block;//${props => props.mostrar? 'block' : 'none'};
+const Titulo = styled.div`
+    display : ${props => props.mostrar? 'block' : 'none'};
     color: var(--secundaria);
-    font-size: 1.5rem;
     position: absolute;
     text-align: center;
     top: 17px;
@@ -40,9 +35,9 @@ const Titulo = styled.h3`
     border-radius: 0 0 30px 30px
 `;
 
-const Local = styled.h4`
+const ProxSaida = styled.div`
     display : ${props => props.mostrar? 'block' : 'none'};
-    color: var(--texto);
+    color: var(--secundaria);
     position: absolute;
     text-align: center;
     bottom: -26px;
@@ -54,19 +49,4 @@ const Local = styled.h4`
     border-radius: 30px 30px 0 0
 `;
 
-const Descricao = styled.p`
-    display : block;//${props => props.mostrar? 'block' : 'none'};
-    color: var(--texto);
-    z-index: 999;
-    position: absolute;
-    text-align: center;
-    bottom: -150px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: none;
-    width: 98%;
-    height: fit-content;
-    padding: 10px;
-`;
-
-export { PasseioDestaque, CardPasseio, Titulo, Local, Descricao };
+export { PasseioDestaque, CardPasseio, Titulo, ProxSaida };

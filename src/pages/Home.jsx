@@ -3,9 +3,6 @@ import Botao from "../components/Botao/Botao";
 import HomeCard from "../components/HomeCard/HomeCard";
 import PasseiosDestaque from "../components/PasseiosDestaque/PasseiosDestaque";
 import SectionsApp from  "../components/SectionsApp/SectionsApp"; 
-import SectionPasseios from "../components/SectionPasseios/SectionPasseios";
-import SectionGameficacao from "../components/SectionGameficacao/SectionGameficacao";
-import SectionMapa from "../components/SectionMapa/SectionMapa";
 import passeio from "../data/passeios.json"
 
 import { register } from 'swiper/element/bundle'
@@ -66,11 +63,7 @@ const Home = () => {
 
       <h2 className="texto-destaque">{t('Conheça a Passeio Carioca')}</h2>
 
-      <SectionMapa />
-      <SectionGameficacao />
-      <SectionPasseios />
-
-      {/*<SectionsApp 
+      <SectionsApp 
       texto={t("Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos mais icônicos da cidade.")}
       imagem="imagens/passeios/raphael-souza-4y0N7sIPaTc-unsplash.jpg"
       align="right"
@@ -95,21 +88,21 @@ const Home = () => {
               />
             </SwiperSlide>
           ))}
-        </Swiper>*/}
+        </Swiper>
 
-      {/*<h2 className="texto-destaque">{t('Gameficação do aplicativo')}</h2>
+      <h2 className="texto-destaque">{t('Gameficação do aplicativo')}</h2>
       <SectionsApp 
       texto={t("Transforme sua experiência de turismo em uma aventura emocionante! Explore os pontos turísticos incríveis da cidade e colecione medalhas digitais ao longo do caminho. Com nossa funcionalidade de gamificação, cada lugar que você visita se torna uma conquista única. Tire uma foto, marque sua presença no aplicativo e ganhe suas medalhas. Quanto mais lugares você visitar, mais medalhas você ganha!")}
       imagem="imagens/old-computer-3.jpg"
       align="left"
-      link={"/gameficacao"}/>*/}
+      link={"/gameficacao"}/>
 
-      {/*<h2 className="texto-destaque">{t('Mapa da Passeio Carioca')}</h2>
+      <h2 className="texto-destaque">{t('Mapa da Passeio Carioca')}</h2>
       <SectionsApp 
       texto={t("Descubra a cidade como nunca antes com nosso mapa geolocalizado. Explore pontos de interesse ao redor de você e mergulhe na história de cada local. Clique nos pins do mapa para ler sobre a história do local, curiosidades interessantes e dicas exclusivas de nossos especialistas locais.")}
       imagem="imagens/FotoMapaApp-PasseioCarioca.png"
       align="right"
-      link={"/mapa"}/>*/}
+      link={"/mapa"}/>
 
       <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
         <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
