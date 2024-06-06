@@ -3,7 +3,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 
 import Home from "./pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Fotos from "./pages/Fotos";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
@@ -24,7 +24,7 @@ onAuthStateChanged(auth, (user)=> {
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/fotos" element={<Fotos/>} />
@@ -32,6 +32,6 @@ root.render(
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
