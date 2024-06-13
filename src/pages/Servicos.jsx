@@ -161,12 +161,12 @@ const Fotos = () => {
               <tr>
                 <th>ID</th>
                 <th>Código</th>
-                <th>Paciente</th>
+                <th>Cliente</th>
                 <th>Usuário</th>
                 <th>N da ordem</th>
                 <th>Calibração</th>
                 <th>Status</th>
-                <th>Imagem Paciente</th>
+                <th>Imagem Cliente</th>
                 <th>Resposta</th>
                 <th>Criado</th>
               </tr>

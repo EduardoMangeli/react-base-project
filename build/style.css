@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  /* CSS HSL */
+  /* https://coolors.co/ */
+
+  --primaria: rgb(0, 0, 0);
+  --background: rgb(255, 255, 255);
+  --secundaria: rgb(255, 255, 255);
+  --destaque: rgb(0, 19, 34);
+  --detalhe: rgb(255, 255, 255);
+  --botoes: rgb(0,49,88);
+  --detalhes: rgb(1, 73, 141);
+  --fundos: rgb(187, 200, 210);
+  --relogio: rgb(223, 222, 222);
+
+/*  --primaria: hsla(0, 1%, 20%, 1);
+  --background: hsla(81, 21%, 74%, 1);
+  --secundaria: hsla(135, 7%, 64%, 1);
+  --destaque: hsla(8, 34%, 54%, 1);
+  --detalhe:hsla(241, 96%, 72%, 1);*/
+}
+
+/* borda vermelha em todos os elementos para debug */
+/*
+* {
+  outline: red solid 1px;
+}
+*/
+
+/* Style Home */
+html{
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  background-color: var(--background);
+  color:var(--primaria);
+}
+
+a {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+div.container {
+  padding: 1rem;
+}
+
+h1,h2,h3,h5,h6{
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: light;
+
+}
+h4{
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: bold;
+  margin-left: 45px;
+  margin-top: 5px;
+}
+
+.dashboardFundo {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fundos);
+  width: 100%;
+  height: 900px;
+}
+
+.acoeRecentesContainer {
+  overflow-x: hidden;
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  min-height: 20%;
+  max-height: 20%;
+  background-color: var(--background);
+  margin: 1% 1% 0% 1%;
+}
+.container-234{
+  display: flex;
+  height: 25rem;
+}
+.container-34{
+  flex: 1;
+  gap: 2%;
+  margin: 1% 1% 0% 1%;
+  flex-direction: column;
+  display: flex;
+  max-width: 55%;
+  
+}
+.servicosContainer {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex: 0.6;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: var(--background);
+  margin: 1% 0% 0% 1%;
+}
+.usuarioContainer {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  background-color: var(--background);
+}
+.autenticacaoContainer {
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  background-color: var(--background);
+}
+.notificacaoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
+  flex: 1;
+  max-height: 32%;
+  background-color: var(--background);
+  margin: 1% 1% 1% 1%;
+}
+.linhaAcoes {
+  margin: auto;
+  width: 90%;
+  height: 75%;
+  display: flex;
+  border-bottom: 3px solid var(--detalhes);
+}
+#relogio{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-color: var(--botoes);
+  color: var(--relogio);
+  position: absolute;
+  margin-top:122px ;
+  margin-left:1095px ;
+  max-width: 100%; 
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.linhaUsuarios {
+  margin: auto;
+  display: flex;
+}
+
+.linhaAutenticação {
+  margin: auto;
+  display: flex;
+}
+
+.linhaNotificacao {
+  margin: auto;
+  flex: 1;
+  display: flex;
+}
+
+/* Services */
+.pagina-div{
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+}
+.setas{
+  display: flex;
+  gap: 1.5px;
+}
+#pg-tabela input{
+  text-align: center;
+  width: 80px;
+}
+.pesquisa{
+  margin: 0.5%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: left;
+}
+#filtro-pesquisa{
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+#filtro-pesquisa label{
+  color: white;
+  margin-left: 5px;
+}
+#campo-pesquisa input{
+  margin-top: 20px;
+  height: 22.33px;
+}
+#filtro-status select{
+  margin-top: 20px;
+  min-width: 180px;
+  height: 29px;
+}
+#filtro-data select{
+  margin-top: 20px;
+  min-width: 180px;
+  height: 29px;
+}
+.container-pai{
+  display: flex;
+  margin-bottom: 0.5%;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: top;
+  height: 750px;
+  background-color: var(--botoes);
+}
+.container-menor{
+  margin: 1%;
+  flex: 1;
+  background-color: var(--background);
+}
+.setas button{
+  border: 0;
+}
+.setas i{
+  cursor: pointer;
+}
+/* Services */
+table {
+  margin: 5px auto;
+  height: 0px;
+  border-spacing: 10px;
+  width: 99%;
+  /* table-layout: fixed; */
+  border-collapse: separate; /* Isso permite o uso de border-spacing */
+  border-spacing: 0.15rem; 
+}
+th, td {
+  font-weight: lighter ;
+  padding: 12px 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+
+}
+
+th {
+  color: #fff;
+  background-color: #000000;
+}
+td{
+  height: 0px;
+  background-color: #fff;
+}
