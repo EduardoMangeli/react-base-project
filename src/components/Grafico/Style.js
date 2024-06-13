@@ -94,8 +94,76 @@ const Grafico = styled.header
     align-items: center;
     text-align: center;
 }
-
-
+#servicos-options{
+    display: flex;
+    position: relative;
+    left: 8%;
+    top: -80px;
+  }
+#servicos-options label{
+    font-size: 1.3rem;
+  }
+#form-style{
+    padding: 5px;
+    margin-left: 5px;
+  }
+  @media (min-width: 1001px){
+    #servicos-options{
+        left: 20%;
+    }
+    .grafico {
+        transform: scale(0.7, 0.7);
+    }
+  }
+@media (max-width: 1000px){
+    #servicos-options{
+        left: 27%;
+    }
+    .grafico {
+        transform: scale(0.7, 0.7);
+    }
+  }
+@media (max-width: 700px){
+    #servicos-options{
+        flex-direction: column;
+        width: 12.4rem;
+        left: 30%;
+        }
+    #servicos-options label{
+            font-size: 1rem;
+            
+    .grafico {
+        transform: scale(0.5, 0.5);
+    }
+  }
+@media (max-width: 600px){
+    #servicos-options{
+        flex-direction: column;
+        width: 12.4rem;
+        left: 33%;
+        }
+    #servicos-options label{
+            font-size: 1rem;
+            margin-left: .4rem;
+          }
+    .grafico {
+        transform: scale(0.4, 0.4);
+    }
+  }
+  @media (max-width: 500px){
+    #servicos-options{
+        flex-direction: column;
+        width: 10.4rem;
+        left: 36%;
+        }
+    #servicos-options label{
+            font-size: 1rem;
+            margin-left: .4rem;
+          }
+    .grafico {
+        transform: scale(0.4, 0.4);
+    }
+  }
 `
 
 export {Grafico}

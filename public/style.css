@@ -62,18 +62,7 @@ h4{
   margin-left: 45px;
   margin-top: 5px;
 }
-#servicos-options{
-  position: relative;
-  left: 8%;
-  top: -80px;
-}
-#servicos-options label{
-  font-size: 1.3rem;
-}
-#form-style{
-  padding: 5px;
-  margin-left: 5px;
-}
+
 .dashboardFundo {
   display: flex;
   flex-direction: column;
