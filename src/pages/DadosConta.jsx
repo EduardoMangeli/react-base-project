@@ -1,8 +1,8 @@
 import Base from "./Base";
 import { DadosPaciente } from "../components/DadosPaciente/DadosPaciente";
 
-const Menu = (props) => 
-(
+const Menu = () => { 
+return (
     <>
     <Base>
         <DadosPaciente>
@@ -10,5 +10,6 @@ const Menu = (props) =>
     </Base>
     </>
 )
+}
 
 export default Menu;

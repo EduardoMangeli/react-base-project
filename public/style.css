@@ -12,8 +12,9 @@
   --destaque: rgb(0, 19, 34);
   --detalhe: rgb(255, 255, 255);
   --botoes: rgb(0,49,88);
-  --detalhes: rgb(0, 133, 255);
+  --detalhes: rgb(1, 73, 141);
   --fundos: rgb(187, 200, 210);
+  --relogio: rgb(223, 222, 222);
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
   --background: hsla(81, 21%, 74%, 1);
@@ -35,7 +36,7 @@ html{
 }
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Century Gothic', sans-serif;
   background-color: var(--background);
   color:var(--primaria);
 }
@@ -61,31 +62,21 @@ h4{
   margin-left: 45px;
   margin-top: 5px;
 }
-#servicos-options{
-  position: relative;
-  left: 2%;
-  top: -80px;
-}
-#servicos-options label{
-  font-size: 1.3rem;
-}
-#form-style{
-  padding: 5px;
-  margin-left: 5px;
-}
+
 .dashboardFundo {
   display: flex;
   flex-direction: column;
   background-color: var(--fundos);
   width: 100%;
-  height: 1100px;
+  height: 900px;
 }
 
 .acoeRecentesContainer {
   overflow-x: hidden;
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
-  max-height: 18%;
+  min-height: 20%;
+  max-height: 20%;
   background-color: var(--background);
   margin: 1% 1% 0% 1%;
 }
@@ -124,17 +115,36 @@ h4{
 }
 .notificacaoContainer {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
+  max-height: 32%;
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
 }
 .linhaAcoes {
   margin: auto;
   width: 90%;
-  height: 80%;
+  height: 75%;
   display: flex;
   border-bottom: 3px solid var(--detalhes);
+}
+#relogio{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-color: var(--botoes);
+  color: var(--relogio);
+  position: absolute;
+  margin-top:122px ;
+  margin-left:1095px ;
+  max-width: 100%; 
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .linhaUsuarios {
@@ -149,6 +159,7 @@ h4{
 
 .linhaNotificacao {
   margin: auto;
+  flex: 1;
   display: flex;
 }
 
@@ -212,6 +223,12 @@ h4{
   flex: 1;
   background-color: var(--background);
 }
+.setas button{
+  border: 0;
+}
+.setas i{
+  cursor: pointer;
+}
 /* Services */
 table {
   margin: 5px auto;
@@ -238,35 +255,3 @@ td{
   height: 0px;
   background-color: #fff;
 }
-/* .container-botoes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0.4;
-  text-align: center;
-  background-color: var(--botoes);
-}
-.div-botoes-serv{
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-.div-botoes-serv button{
-  cursor: pointer;
-  border-style: none;
-  margin: 0 5px;
-  min-width: 20rem;
-  padding: .50rem;
-  font-weight: lighter;
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  background-color: var(--background);
-}
-
-@media (max-width: 1000px){
-  
-} */
-
-

@@ -3,18 +3,43 @@ import styled from "styled-components";
 const MenuDadosPaciente = styled.div 
     `
 .div-bar {
-
+    display: flex;
+    
 }
-.div-campos {
-    padding: 20px;
-    display: grid;
+.div-dados {
+    background-color: white;
+    display: flex;
+}
+.div-form{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 100px;
+    height: 500px;
+    width: 1000px;
+}
+.div-botoes-form {
+    background-color: var(--botoes);
+    display:flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+.div-campos {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--botoes);
+    display: flex;
 }
 .div-rotulo {
     margin: 30px;
-}
-.menu-dados {
-    margin: 10px;
 }
 .div-botoes {
     display: flex;

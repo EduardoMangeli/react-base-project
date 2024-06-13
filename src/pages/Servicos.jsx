@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Base from "./Base";
 import ServicesBar from "../components/ServicesBar/ServicesBar.jsx";
 import jsonData from "../data/tabela.json";
@@ -68,6 +69,37 @@ const Fotos = () => {
     const value = event.target.value;
     setFilterValue(value);
     setCurrentPage(1); // Reset page to 1 when filter changes
+  };
+
+  const handleItemStatusChange = (id, newStatus) => {
+    const updatedData = tableData.map(item => {
+      if (item.id === id) {
+        return { ...item, status_: newStatus };
+      }
+      return item;
+    });
+    setTableData(updatedData);
+  };
+
+  const handleDownload = (fileUrl) => {
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileUrl.split('/').pop();
+    link.click();
+  };
+
+  const handleUpload = (event, id) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Simulando o upload e atualização do campo "Resposta"
+      const updatedData = tableData.map(item => {
+        if (item.id === id) {
+          return { ...item, resposta: file.name };
+        }
+        return item;
+      });
+      setTableData(updatedData);
+    }
   };
 
   const debugDates = () => {
@@ -143,19 +175,89 @@ const Fotos = () => {
               {tableData.map((item, index) => (
                 <tr key={index}>
                   {Object.entries(item).map(([key, value], subIndex) => (
-                    key !== 'tipo' && (
-                      <td
-                        key={subIndex}
-                        style={{
-                          backgroundColor:
-                            value === "Concluído" ? "#BEFFBD" :
-                            value === "Não Concluído" ? "#FF8383" :
-                            value === "Não Iniciado" ? "#FDFFB4" : ""
-                        }}
-                      >
-                        {value}
-                      </td>
-                    )
+                    key !== 'tipo' ? (
+                      key === 'status_' ? (
+                        <td key={subIndex} style={{ padding: 0 }}>
+                          <select
+                            value={value}
+                            onChange={(e) => handleItemStatusChange(item.id, e.target.value)}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              boxSizing: "border-box",
+                              backgroundColor:
+                                value === "Concluído" ? "#BEFFBD" :
+                                value === "Não Concluído" ? "#FF8383" :
+                                value === "Não Iniciado" ? "#FDFFB4" : ""
+                            }}
+                          >
+                            <option value="Concluído">Concluído</option>
+                            <option value="Não Concluído">Não Concluído</option>
+                            <option value="Não Iniciado">Não Iniciado</option>
+                          </select>
+                        </td>
+                      ) : key === 'calibracao' ? (
+                        <td key={subIndex} style={{ textAlign: 'center' }}>
+                          <span>{value}</span>
+                          <button
+                            onClick={() => handleDownload(item[key])}
+                            style={{
+                              marginLeft: "10px",
+                              cursor: "pointer",
+                              backgroundColor: "transparent",
+                              border: "none",
+                              color: "#007bff"
+                            }}
+                          >
+                            &#x1F4E5;
+                          </button>
+                        </td>
+                      ) : key === 'imagem_paciente' ? (
+                        <td key={subIndex} style={{ textAlign: 'center' }}>
+                          <span>{value}</span>
+                          <button
+                            onClick={() => handleDownload(item[key])}
+                            style={{
+                              marginLeft: "10px",
+                              cursor: "pointer",
+                              backgroundColor: "transparent",
+                              border: "none",
+                              color: "#007bff"
+                            }}
+                          >
+                            &#x1F4E5;
+                          </button>
+                        </td>
+                      ) : key === 'resposta' ? (
+                        <td key={subIndex} style={{ textAlign: 'center' }}>
+                          <span>{value}</span>
+                          <label
+                            htmlFor={`upload-${item.id}`}
+                            style={{
+                              marginLeft: "10px",
+                              cursor: "pointer",
+                              backgroundColor: "transparent",
+                              border: "none",
+                              color: "#007bff"
+                            }}
+                          >
+                            &#x1F4E4;
+                          </label>
+                          <input
+                            type="file"
+                            id={`upload-${item.id}`}
+                            style={{ display: 'none' }}
+                            onChange={(e) => handleUpload(e, item.id)}
+                          />
+                        </td>
+                      ) : key === 'id' ? (
+                        <td key={subIndex}>
+                          <Link to={{ pathname: `/dadosconta/`, state: { paciente: item } }}>{value}</Link>
+                        </td>
+                      ) : (
+                        <td key={subIndex}>{value}</td>
+                      )
+                    ) : null
                   ))}
                 </tr>
               ))}
@@ -167,8 +269,8 @@ const Fotos = () => {
       </section>
       <div className="pagina-div">
         <div className="setas">
-          <button onClick={() => handlePageChange('prev')}>{"<"}</button>
-          <button onClick={() => handlePageChange('next')}>{">"}</button>
+          <button onClick={() => handlePageChange('prev')}>{<i class="fa-solid fa-circle-arrow-left"></i>}</button>
+          <button onClick={() => handlePageChange('next')}>{<i class="fa-solid fa-circle-arrow-right"></i>}</button>
         </div>
         <form id="pg-tabela" onSubmit={(e) => e.preventDefault()}>
           <input
