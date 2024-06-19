@@ -7,8 +7,7 @@ const AutenticaçãoCard = (props) => (
             <i class="fa-solid fa-user-group"></i>
             <div class='ID'> {props.id}</div>
             </div>
-            <div>Descrição: {props.Descrição}</div>
-            <div>Membros: {props.Membros}</div>
+            <div>Tipo: {props.Descrição}</div>
             <button id = "btncard">Modificar</button>
         </div>
     </Card>

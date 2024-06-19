@@ -1,23 +1,20 @@
 [
     {
-       "id": "Grupo 1",
-       "Descrição": "xxxxxxxxx", 
-       "Membros": "xxxxxxxxx"
+       "id": "Clínica Rio de Janeiro",
+       "Descrição": "O cliente enviou novas imagens."
+
     },
     {
-        "id": "Grupo 2",
-        "Descrição": "xxxxxxxxx", 
-        "Membros": "xxxxxxxxx"
+        "id": "Clínica São Paulo",
+        "Descrição": "O cliente enviou novas imagens."
     },
     {
-        "id": "Grupo 3",
-        "Descrição": "xxxxxxxxx", 
-        "Membros": "xxxxxxxxx"
+        "id": "Clínica Minas Gerais",
+        "Descrição": "O cliente enviou novas imagens." 
     },
     {
-        "id": "Grupo 4",
-        "Descrição": "xxxxxxxxx", 
-        "Membros": "xxxxxxxxx"
+        "id": "Clínica Bahia",
+        "Descrição": "O cliente enviou novas imagens." 
     }
 
 ]

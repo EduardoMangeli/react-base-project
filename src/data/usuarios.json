@@ -1,18 +1,15 @@
 [
     {
-       "id": "Mirta Torres",
-       "Descrição": "xxxxxxxxx", 
-       "Cargo": "xxxxxxxxx"
+       "id": "Mirta Torres", 
+       "Cargo": "Fundadora e Presidenta"
     },
     {
         "id": "Harlley Dantas",
-        "Descrição": "xxxxxxxxx", 
-        "Cargo": "xxxxxxxxx"
+        "Cargo": "CTO e Físico Médico"
     },
     {
         "id": "Nicolas da Matta",
-        "Descrição": "xxxxxxxxx", 
-        "Cargo": "xxxxxxxxx"
+        "Cargo": "Desenvolvedor"
     }
 
 ]

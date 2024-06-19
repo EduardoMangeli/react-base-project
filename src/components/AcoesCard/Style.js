@@ -24,7 +24,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25%;
-    height: 100%;
+    height: 90%;
     font-family: 'Century Gothic', sans-serif;
     font-weight: light;
   }

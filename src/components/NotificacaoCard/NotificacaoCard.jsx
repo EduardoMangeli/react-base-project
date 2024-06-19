@@ -3,9 +3,10 @@ import {Card} from "./Style";
 const NotificacaoCard = (props) => (
     <Card>
         <div id='tipo'>
-            <div class='ID'>ID: {props.id}</div>
-            <div>{props.status}</div>
-            <div>Data: {props.tempo}</div>
+            <div class='ID'>Cliente: {props.id}</div>
+            <div class= 'Desc'>Descrição:</div>
+            <div>{props.Descrição}</div>
+            <button id = "btncard">Acessar</button>
         </div>
     </Card>
 );

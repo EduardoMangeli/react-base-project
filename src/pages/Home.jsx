@@ -76,7 +76,7 @@ export const Home = () => {
             </div>
 
             <div className="autenticacaoContainer">
-              <h4>Autenticação e Autorização:</h4>
+              <h4>Assinaturas:</h4>
               <div className="linhaAutenticação">
                 {autenticacao.map((autenticacao) => (
                   <AutenticaçãoCard

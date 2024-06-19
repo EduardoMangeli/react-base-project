@@ -1,18 +1,15 @@
 [
     {
-       "id": "Grupo 1",
-       "Descrição": "xxxxxxxxx", 
-       "Membros": "xxxxxxxxx"
+       "id": "Clínica Espirito Santo",
+       "Descrição": "RSV Personalizado"
     },
     {
-        "id": "Grupo 2",
-        "Descrição": "xxxxxxxxx", 
-        "Membros": "xxxxxxxxx"
+        "id": "Clínica Rio de Janeiro",
+        "Descrição": "RSV Personalizado"
     },
     {
-        "id": "Grupo 3",
-        "Descrição": "xxxxxxxxx", 
-        "Membros": "xxxxxxxxx"
+        "id": "Clínica Amazonas",
+        "Descrição": "RSV Personalizado" 
     }
 
 ]
