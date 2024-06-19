@@ -18,6 +18,7 @@ const Card = styled.div`
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        width: 200px;
         font-family: 'Century Gothic', sans-serif;
         font-weight: light;
 

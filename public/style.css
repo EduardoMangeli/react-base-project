@@ -119,7 +119,7 @@ h4{
   flex-direction: column;
   box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.171);
   flex: 1;
-  max-height: 32%;
+  max-height: 28%;
   background-color: var(--background);
   margin: 1% 1% 1% 1%;
 }
