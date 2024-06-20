@@ -187,11 +187,17 @@ const Fotos = () => {
                               boxSizing: "border-box",
                               backgroundColor:
                                 value === "Concluído" ? "#BEFFBD" :
+                                value ==="Imagens de calibração faltando" ? "#ffbaf6" :
+                                value ==="Imagens de paciente faltando" ? "#ffbaf6" :
+                                value ==="Em cálculo" ? "#83b5ff" :
                                 value === "Não Concluído" ? "#FF8383" :
                                 value === "Não Iniciado" ? "#FDFFB4" : ""
                             }}
                           >
                             <option value="Concluído">Concluído</option>
+                            <option value="Imagens de calibração faltando">Imagens de calibração faltando</option>
+                            <option value="Imagens de paciente faltando">Imagens de paciente faltando</option>
+                            <option value="Em cálculo">Em cálculo</option>
                             <option value="Não Concluído">Não Concluído</option>
                             <option value="Não Iniciado">Não Iniciado</option>
                           </select>
@@ -212,12 +218,13 @@ const Fotos = () => {
                             &#x1F4E5;
                           </button>
                         </td>
-                      ) : key === 'imagem_paciente' ? (
+                      ) : key === 'img_cliente' ? (
                         <td key={subIndex} style={{ textAlign: 'center' }}>
                           <span>{value}</span>
                           <button
                             onClick={() => handleDownload(item[key])}
                             style={{
+                              width: "30px",
                               marginLeft: "10px",
                               cursor: "pointer",
                               backgroundColor: "transparent",
@@ -269,8 +276,8 @@ const Fotos = () => {
       </section>
       <div className="pagina-div">
         <div className="setas">
-          <button onClick={() => handlePageChange('prev')}>{<i class="fa-solid fa-circle-arrow-left"></i>}</button>
-          <button onClick={() => handlePageChange('next')}>{<i class="fa-solid fa-circle-arrow-right"></i>}</button>
+          <button onClick={() => handlePageChange('prev')}>{<i className="fa-solid fa-circle-arrow-left"></i>}</button>
+          <button onClick={() => handlePageChange('next')}>{<i className="fa-solid fa-circle-arrow-right"></i>}</button>
         </div>
         <form id="pg-tabela" onSubmit={(e) => e.preventDefault()}>
           <input
