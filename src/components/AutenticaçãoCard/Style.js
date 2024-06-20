@@ -24,10 +24,13 @@ const Card = styled.div`
   }
 
   .ID {
+    font-size: 15px;
     font-weight: bold;
     color: var(--detalhes);
     font-family: 'Century Gothic', sans-serif;
     font-weight: light;
+    margin-bottom: 10px;
+
   }
 
   #btncard {
@@ -36,7 +39,7 @@ const Card = styled.div`
     border: none;
     padding: 5px 0px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     transition: transform 0.2s ease, background-color 0.2s ease;
 
     &:hover {

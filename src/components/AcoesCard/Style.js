@@ -24,7 +24,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25%;
-    height: 100%;
+    height: 85%;
     font-family: 'Century Gothic', sans-serif;
     font-weight: light;
   }
@@ -72,6 +72,11 @@ const Card = styled.div`
   }
   .icon i{
     margin: 25% 0;
+  }
+
+  #propStatus { 
+    font-size: 13px;
+    font-weight: bold;
   }
 `;
 

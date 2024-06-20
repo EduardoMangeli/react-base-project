@@ -150,7 +150,7 @@ const Grafico = styled.header
         transform: scale(0.4, 0.4);
     }
   }
-  @media (max-width: 500px){
+@media (max-width: 500px){
     #servicos-options{
         flex-direction: column;
         width: 10.4rem;

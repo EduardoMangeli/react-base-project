@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Bar = styled.header`
 .div-bar {
-
 }
 .div-botoes {
     display: flex;
@@ -25,19 +24,21 @@ const Bar = styled.header`
         text-decoration: none;
         color: white;
         background-color: var(--detalhes);
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        &:hover {
+            background-color: #0056b3; /* Ajuste para cor mais escura */
+            transform: scale(1.05); /* Efeito de aumento */
+        }
+        &:active {
+            background-color: #007bff; /* Ajuste para cor mais clara */
+            transform: scale(0.95); /* Efeito de pressionado */
+        }
     }
     .btn-bar.selecionado {
         background-color: var(--botoes);
     }
-    .btn-bar:hover {
-        background-color: #0056b3; /* Ajuste para cor mais escura */
-    }
-    .btn-bar:active {
-        background-color: #007bff; /* Ajuste para cor mais clara */
-    }
 }
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .btn-bar {
         font-size: 60%;
         min-width: 7rem;
@@ -46,7 +47,7 @@ const Bar = styled.header`
         }
     }
 }
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .btn-bar {
         padding: .2rem;
         font-size: 60%;

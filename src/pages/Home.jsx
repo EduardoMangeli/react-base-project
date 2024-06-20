@@ -37,6 +37,21 @@ export const Home = () => {
             ))}
           </div>
         </div>
+
+        <div className="notificacaoContainer">
+          <h4>Notificações:</h4>
+          <ServicesBar onServiceChange={setSelectedService} />
+          <div className="linhaNotificacao">
+            {notificacao.map((notificacao) => (
+              <NotificacaoCard
+                key={notificacao.id}
+                id={notificacao.id}
+                Descrição={notificacao.Descrição}
+                Cargo={notificacao.Cargo}
+              />
+            ))}
+          </div>
+        </div>
         
         <div className="container-234">
           <div className="servicosContainer">
@@ -61,7 +76,7 @@ export const Home = () => {
             </div>
 
             <div className="autenticacaoContainer">
-              <h4>Autenticação e Autorização:</h4>
+              <h4>Assinaturas:</h4>
               <div className="linhaAutenticação">
                 {autenticacao.map((autenticacao) => (
                   <AutenticaçãoCard
@@ -76,20 +91,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="notificacaoContainer">
-          <h4>Notificações:</h4>
-          <ServicesBar onServiceChange={setSelectedService} />
-          <div className="linhaNotificacao">
-            {notificacao.map((notificacao) => (
-              <NotificacaoCard
-                key={notificacao.id}
-                id={notificacao.id}
-                Descrição={notificacao.Descrição}
-                Cargo={notificacao.Cargo}
-              />
-            ))}
-          </div>
-        </div>
+
       </div>
     </Base>
   );
