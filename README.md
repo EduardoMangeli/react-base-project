@@ -35,4 +35,6 @@ O comando de execução local do projeto de ver executado no diretório raiz e d
 
 Utilize o comando `npm run build` para construir uma versão pronta para produção. Os arquivos dessa versão estarão disponíveis na pasta *build*.
 
-https://www.canva.com/design/DAGH67ZAYV0/-JSCO2V4zryW23r_0eW5lw/edit?utm_content=DAGH67ZAYV0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+[Apresentação Pré-AP2](https://www.canva.com/design/DAGH67ZAYV0/-JSCO2V4zryW23r_0eW5lw/edit?utm_content=DAGH67ZAYV0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+[Apresentação AP2](https://www.canva.com/design/DAGIoGEsxXQ/kLAzbbPh6NjxMtD3Y4NjwQ/edit?utm_content=DAGIoGEsxXQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
