@@ -1,26 +1,22 @@
 [
   {
-    "url" : "imagens/old-computer-1.jpg",
-    "nome": "vitrine",
-    "link_original": "https://unsplash.com/pt-br/fotografias/vitrine-de-madeira-marrom-com-itens-variados-1_mpz-9ssjQ",
-    "agradecimento": "Foto de <a href='https://unsplash.com/pt-br/@diane_soko?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Diane Picchiottino</a> na <a href='https://unsplash.com/pt-br/fotografias/vitrine-de-madeira-marrom-com-itens-variados-1_mpz-9ssjQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>"
+    "url" : "imagens/botafogo.jpg",
+    "nome": "Escudo",
+    "link_original": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpIx6w2UEu5KWj-sluKaDogku-lzOeTKWAjw&s"
    },
    {
-    "url" : "imagens/old-computer-2.jpg",
-    "nome": "monitor desligado",
-    "link_original": "https://unsplash.com/pt-br/fotografias/monitor-macintosh-desligado-VeUSCLJrLf4",
-    "agradecimento": "Foto de <a href='https://unsplash.com/pt-br/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Jason Leung</a> na <a href='https://unsplash.com/pt-br/fotografias/monitor-macintosh-desligado-VeUSCLJrLf4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>"
+    "url" : "imagens/roupa.jpg",
+    "nome": "Blusas",
+    "link_original": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldTRN4blcJKWYCkznjeT09ekUQ4gT930CPw&s"
    },
    {
-    "url" : "imagens/old-computer-3.jpg",
-    "nome": "consoles de jogos",
-    "link_original": "https://unsplash.com/pt-br/fotografias/console-de-jogos-cinza-vintage-e-joystick-p0j-mE6mGo4",
-    "agradecimento": "Foto de <a href='https://unsplash.com/pt-br/@lorenzoherrera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Lorenzo Herrera</a> na <a href='https://unsplash.com/pt-br/fotografias/console-de-jogos-cinza-vintage-e-joystick-p0j-mE6mGo4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>"
+    "url" : "imagens/mosaico.webp",
+    "nome": "Mosaico",
+    "link_original": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/04/03/1568261500-whatsapp-image-2024-03-06-at-213924-2easy-resizecom-610x400.jpg"
    },
    {
-    "url" : "imagens/old-computer-4.jpg",
-    "nome": "mesa comunicação",
-    "link_original": "https://unsplash.com/pt-br/fotografias/telefone-de-mesa-ip-preto-e-branco-na-mesa-de-madeira-marrom-anaUCgS2fqE",
-    "agradecimento": "Foto de <a href='https://unsplash.com/pt-br/@wizzyfx?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Ugi K.</a> na <a href='https://unsplash.com/pt-br/fotografias/telefone-de-mesa-ip-preto-e-branco-na-mesa-de-madeira-marrom-anaUCgS2fqE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>"
+    "url" : "imagens/biriba.webp",
+    "nome": "Mascote",
+    "link_original": "https://s2-ge.glbimg.com/jT0ZNSNGlED1jqSj0HqwHYu9utw=/0x0:1024x808/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/v/j/ZCbkWvSJeiRBh6AfON0g/biriba.jpg"
    }
 ]
