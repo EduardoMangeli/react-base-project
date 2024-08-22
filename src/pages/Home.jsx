@@ -20,6 +20,7 @@ const Home = () => {
     <Base>
       <h1>
      欢迎使用
+     <img src="imagens/botafogo.jpg"></img>
       </h1>
     </Base>
     
