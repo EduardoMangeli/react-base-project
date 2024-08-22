@@ -1,11 +1,11 @@
 {
   "name": "um-react",
-  "homepage": "https://ibmec-tec.github.io/react-base-github-pages",
+  "homepage": "/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
