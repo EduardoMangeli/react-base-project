@@ -3,7 +3,7 @@ import { Top } from "./Style";
 
 const Header = () => (
   <Top>
-    <Link to="/">Home</Link>
+    <Link to="/">Inicio</Link>
     <Link to="/fotos">Fotos</Link>
     <Link to="/atletas">Atletas</Link>
     
