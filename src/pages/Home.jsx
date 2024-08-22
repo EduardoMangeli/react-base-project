@@ -19,9 +19,10 @@ const Home = () => {
   return (
     <Base>
       <h1>
-     Aplicação React Base
+     欢迎使用
       </h1>
     </Base>
+    img src={<img src= }
   )
 }
 
