@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <Base>
       <h1>
-     Aplicação React Base
+      Time Botafogo 2024-1
       </h1>
     </Base>
   )
