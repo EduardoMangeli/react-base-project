@@ -22,7 +22,7 @@ const Home = () => {
      欢迎使用
       </h1>
     </Base>
-    img src={<img src= }
+    
   )
 }
 
