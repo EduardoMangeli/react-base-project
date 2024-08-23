@@ -28,5 +28,18 @@
    {
     "url" :"quarenta.jpeg",
     "nome": "Quarentinha"
+   },
+   {
+    "url" :"CarvalhoLeite.jpeg",
+    "nome": "Carvalho Leite"
+   },
+   {
+    "url" :"nilton.webp",
+    "nome": "Nilton Santos"
+   },
+   {
+    "url" :"tulio.jpeg",
+    "nome": "Túlio Maravilha"
    }
+   
 ]
