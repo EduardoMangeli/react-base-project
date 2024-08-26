@@ -26,7 +26,7 @@ const Home = () => {
     </Top>
       <h2>
       <p>
-      <p></p>No dia 1º de julho de 1894, nascia na praia de Botafogo o CLUB DE REGATAS BOTAFOGO, uma homenagem a enseada do bairro onde competiam os seus barcos. A sede era em um casarão demolido no sul da praia, encostado ao Morro do Pasmado, onde hoje termina a Avenida Pasteur. Em 1899, surgiu uma lenda nas águas da Baía de Guanabara. A embarcação botafoguense Diva venceu todas as 22 regatas que disputou, sagrando-se campeã carioca. Em razão desse título, o Botafogo é o único clube do Brasil campeão de três séculos.
+      No dia 1º de julho de 1894, nascia na praia de Botafogo o CLUB DE REGATAS BOTAFOGO, uma homenagem a enseada do bairro onde competiam os seus barcos. A sede era em um casarão demolido no sul da praia, encostado ao Morro do Pasmado, onde hoje termina a Avenida Pasteur. Em 1899, surgiu uma lenda nas águas da Baía de Guanabara. A embarcação botafoguense Diva venceu todas as 22 regatas que disputou, sagrando-se campeã carioca. Em razão desse título, o Botafogo é o único clube do Brasil campeão de três séculos.
       </p>
       </h2>
       <Top>
