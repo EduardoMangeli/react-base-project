@@ -13,7 +13,7 @@ const Fotos = () => {
               <FotoCard 
                 key={index}
                 titulo={el.nome}
-                src={`${process.env.PUBLIC_URL}${el.url}`}
+                src={`${process.env.PUBLIC_URL}/${el.url}`}
                 link_original={el.link_original}
                 agradecimento={el.agradecimento}
               />
