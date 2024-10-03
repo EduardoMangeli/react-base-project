@@ -4,9 +4,14 @@ import dados from "../data/computadores.json";
 import Protegida from "./Protegida";
 
 const Fotos = () => {
+
  
   return (
       <Protegida>
+      <div className="centralizado">
+      <h1>Alguns ídolos </h1>
+      </div> 
+
         <ListContainer>
           {dados.map(
             (el, index) => (
@@ -20,7 +25,8 @@ const Fotos = () => {
               )
           )}
           </ListContainer>
-      </Protegida>      
+      </Protegida> 
+           
  )
 };
 
