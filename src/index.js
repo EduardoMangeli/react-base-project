@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Fotos from "./pages/Fotos";
 import Login from "./pages/Login";
+import Nova  from "./pages/Nova";
 import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
@@ -30,6 +31,7 @@ root.render(
         <Route path="/fotos" element={<Fotos/>} />
         <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/nova" element={<Nova/>} />
         <Route path="/logout" element={<Logout/>} />
       </Routes>
     </HashRouter>
