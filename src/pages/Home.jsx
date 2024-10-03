@@ -5,18 +5,7 @@ import { useEffect } from "react";
 import { Top } from "./Style";
 
 const Home = () => {
-
-  /* useEffect(()=> {
-    onAuthStateChanged(auth, (user)=> {
-      if (user) {
-        window.sessionStorage.setItem("accessToken", user.accessToken);
-      } else {
-        window.sessionStorage.removeItem("accessToken");
-      }
-    })
-  },[]) */
   
-
   return (
     <Base>
     <Top>
