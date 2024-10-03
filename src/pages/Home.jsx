@@ -14,12 +14,12 @@ const Home = () => {
       }
     })
   },[]) */
-  
+
 
   return (
     <Base>
       <h1>
-     Aplicação React Base
+      Primeiro React 
       </h1>
     </Base>
   )
