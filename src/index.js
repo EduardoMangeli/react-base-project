@@ -10,6 +10,7 @@ import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
+import Nova from "./pages/Nova";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -31,6 +32,7 @@ root.render(
         <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
+        <Route path="/nova-pagina" element={<Nova/>} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
