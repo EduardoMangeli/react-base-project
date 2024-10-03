@@ -1,14 +1,14 @@
 {
   "name": "um-react",
-  "homepage": "https://ibmec-tec.github.io/react-base-github-pages",
+  "homepage": "/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
+    "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 8000",
     "start-linux": "PUBLIC_URL=/ webpack serve --config ./webpack.config.js --mode development --port 3000",
     "build": "webpack --mode production"
   },
@@ -28,7 +28,7 @@
     "@babel/preset-react": "^7.23.3",
     "babel-loader": "^9.1.3",
     "copy-webpack-plugin": "^11.0.0",
-    "webpack": "^5.89.0",
+    "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   }
