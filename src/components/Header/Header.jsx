@@ -7,6 +7,7 @@ const Header = () => (
     <Link to="/fotos">Fotos</Link>
     <Link to="/atletas">Atletas</Link>
     <Link to="/Nova-pagina">Nova pag.</Link>
+    <Link to ="/SobreNos">SobreNos</Link>
     
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout">Logout</Link>
