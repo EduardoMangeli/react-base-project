@@ -3,18 +3,26 @@ import FotoCard from "../components/FotoCard/FotoCard";
 import ListContainer from "../components/ListContainer/ListContainer";
 import dados from "../data/computadores.json";
 import Protegida from "./Protegida";
+import { useEffect, useState} from "react";
+import Base from "./Base";
+import brutos from "../data/computadores.json";
 
 const Fotos = () => {
-  const { id } = useParams();
+  const [dados, setDados] = useState(brutos);
 
-  const dadosFiltrados = dados.filter(
-    (ele) => ele.id === parseInt(id) || !id
-  )
+const filtro = (entradas) => {
+    setDados(brutos.filter(
+            (ele) => ele.nome.includes(entradas) || ele.link_original.includes(entradas)
+           ))
+}
  
   return (
-      <Protegida>
+      <Base>
+      <input type="text"
+        onChange={(e) => filtro(e.target.value)}
+      />
         <ListContainer>
-          {dadosFiltrados.map(
+          {dados.map(
             (el, index) => (
               <FotoCard 
                 key={index}
@@ -26,7 +34,7 @@ const Fotos = () => {
               )
           )}
           </ListContainer>
-      </Protegida>      
+      </Base>      
  )
 };
 
