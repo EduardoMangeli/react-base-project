@@ -11,7 +11,7 @@ const Atletas = () => {
   
   useEffect(() => {
     const getDados = async () => {
-      const dados = await getElenco();
+      const dados = await getElenco('feminino');
       
       if (dados.code === 400) {
         setErro(dados);

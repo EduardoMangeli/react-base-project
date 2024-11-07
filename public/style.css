@@ -6,8 +6,8 @@
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: rgb(253, 254, 254);
-  --background: rgb(9, 10, 6);
+  --primaria:blue;
+  --background: white;
   --secundaria: rgb(255, 0, 0);
   --destaque: rgb(55, 230, 72);
   --detalhe: hsla(9, 63%, 45%, 1);
