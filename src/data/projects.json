@@ -1,0 +1,252 @@
+[   {
+        "id": 1,
+        "title": "Biblioteca Digital",
+        "description": "Plataforma centralizada para gerenciar livros digitais, permitindo aos usuários pegar emprestado, ler e devolver livros virtualmente.",
+        "text": "Plataforma para gerenciar livros digitais, com[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Sophia Mendes, João Silva",
+        "date": "02/04/2023",
+        "tech": "React, Firebase"
+    },
+    {
+        "id": 2,
+        "title": "Rastreador Fitness Inteligente",
+        "description": "Aplicativo de fitness que monitora a atividade física diária, calcula calorias queimadas e sugere treinos com base no progresso.",
+        "text": "App que monitora atividade física e sugere[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "Lucas Almeida",
+        "date": "15/06/2023",
+        "tech": "React Native, Node.js"
+    },
+    {
+        "id": 3,
+        "title": "Ferramenta Financeira Pessoal",
+        "description": "Ferramenta para gerenciar finanças pessoais, permitindo aos usuários fazer orçamento, acompanhar despesas e analisar a saúde financeira.",
+        "text": "Ferramenta para orçamento, acompanhamento de[...]",
+        "image": "https://th.bing.com/th/id/OIP.T_I-RpLCWjN3hIGEJ0z4XAHaEJ?rs=1&pid=ImgDetMain",
+        "members": "Ana Nunes, Pedro Torres, Rita Souza",
+        "date": "20/08/2023",
+        "tech": "Vue.js, PostgreSQL"
+    },
+    {
+        "id": 4,
+        "title": "Planejador de Eventos",
+        "description": "App para organizar eventos com recursos para agendamento, gerenciamento de convidados e acompanhamento de atividades.",
+        "text": "App para agendamento e gerenciamento de eventos[...]",
+        "image": "data:image/jpeg;base64,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",
+        "members": "Beatriz Campos, Marcelo Gomes, Carla Oliveira",
+        "date": "12/09/2023",
+        "tech": "Python, MongoDB, Angular"
+    },
+    {
+        "id": 5,
+        "title": "Rede de Receitas",
+        "description": "Plataforma social onde os usuários podem compartilhar e descobrir receitas, com opções de avaliação e comentários.",
+        "text": "Plataforma social para compartilhar e descobrir[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Gabriela Costa",
+        "date": "10/10/2023",
+        "tech": "Django, Bootstrap"
+    },
+    {
+        "id": 6,
+        "title": "Amigo de Aprendizado de Idiomas",
+        "description": "Aplicativo interativo que auxilia os usuários na aprendizagem de idiomas com lições, quizzes e prática de conversação ao vivo.",
+        "text": "App para aprendizado interativo de idiomas[...]",
+        "image": "https://th.bing.com/th/id/OIP.i3VF_VimXOvCqpECrXqINAHaE7?rs=1&pid=ImgDetMain",
+        "members": "Tiago Fernandes, Clara Martins",
+        "date": "24/11/2023",
+        "tech": "Express, Vue.js"
+    },
+    {
+        "id": 7,
+        "title": "Compras Sustentáveis",
+        "description": "App de e-commerce focado em produtos ecológicos, com um rastreador de pegada de carbono para cada item.",
+        "text": "App de e-commerce para produtos ecológicos[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "André Ribeiro, Paula Santos",
+        "date": "05/07/2023",
+        "tech": "PHP, MySQL"
+    },
+    {
+        "id": 8,
+        "title": "Grupo de Estudo Online",
+        "description": "Plataforma onde os alunos podem entrar em grupos de estudo, agendar sessões em grupo e compartilhar recursos.",
+        "text": "Plataforma para entrar e organizar grupos de[...]",
+        "image": "https://th.bing.com/th/id/OIP.i3VF_VimXOvCqpECrXqINAHaE7?rs=1&pid=ImgDetMain",
+        "members": "Renata Melo, Lucas Silva, Marina Costa",
+        "date": "18/10/2023",
+        "tech": "Node.js, MongoDB"
+    },
+    {
+        "id": 9,
+        "title": "Buscador de Imóveis",
+        "description": "Plataforma de imóveis para navegar e comparar propriedades, com opções de filtragem por localização e preço.",
+        "text": "Plataforma para navegar e comparar imóveis[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Bruno Oliveira",
+        "date": "12/09/2023",
+        "tech": "Laravel, PostgreSQL, Vue.js"
+    },
+    {
+        "id": 10,
+        "title": "Rastreador de Saúde Mental",
+        "description": "Aplicativo móvel que rastreia o humor e o bem-estar mental, oferecendo reflexões diárias e recursos de apoio.",
+        "text": "App para rastrear humor e bem-estar mental[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "Fernanda Souza",
+        "date": "30/10/2023",
+        "tech": "React Native, Firebase"
+    },
+    {
+        "id": 11,
+        "title": "Controle de Casa Inteligente",
+        "description": "App de IoT para controlar dispositivos domésticos inteligentes, permitindo aos usuários gerenciar luzes, fechaduras e configurações de segurança remotamente.",
+        "text": "App para controlar dispositivos domésticos[...]",
+        "image": "https://th.bing.com/th/id/OIP.T_I-RpLCWjN3hIGEJ0z4XAHaEJ?rs=1&pid=ImgDetMain",
+        "members": "Ricardo Lopes, Amanda Silva",
+        "date": "03/06/2022",
+        "tech": "MQTT, Python, JavaScript"
+    },
+    {
+        "id": 12,
+        "title": "Lousa Colaborativa",
+        "description": "Lousa digital para colaboração remota, com suporte para desenhos, anotações e compartilhamento em tempo real.",
+        "text": "Lousa digital para trabalho colaborativo[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "Mariana Lopes, Thiago Ferreira",
+        "date": "25/11/2023",
+        "tech": "Node.js, Express, React"
+    },
+    {
+        "id": 13,
+        "title": "Rastreador de Cuidados com Pets",
+        "description": "Aplicativo móvel que auxilia donos de pets com horários de alimentação, consultas veterinárias e acompanhamento da saúde.",
+        "text": "App para cuidado e acompanhamento de saúde de[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Gabriel Souza, Livia Mendes",
+        "date": "16/11/2023",
+        "tech": "Flutter, Firebase"
+    },
+    {
+        "id": 14,
+        "title": "Definidor de Metas Diárias",
+        "description": "Aplicativo de produtividade que permite aos usuários definir, acompanhar e alcançar metas pessoais e profissionais.",
+        "text": "App de produtividade para definição de metas[...]",
+        "image": "https://th.bing.com/th/id/OIP.i3VF_VimXOvCqpECrXqINAHaE7?rs=1&pid=ImgDetMain",
+        "members": "Marcelo Tavares",
+        "date": "23/04/2021",
+        "tech": "Python, Vue.js"
+    },
+    {
+        "id": 15,
+        "title": "Portfólio Digital",
+        "description": "Plataforma onde os usuários podem criar portfólios pessoais exibindo projetos, habilidades e experiências.",
+        "text": "Plataforma para criar portfólios pessoais[...]",
+        "image": "https://th.bing.com/th/id/OIP.i3VF_VimXOvCqpECrXqINAHaE7?rs=1&pid=ImgDetMain",
+        "members": "Eduarda Lima",
+        "date": "04/01/2024",
+        "tech": "React, Node.js"
+    },
+    {
+        "id": 16,
+        "title": "Portal de Trabalho Remoto",
+        "description": "Plataforma de empregos focada em trabalho remoto, com filtros para tipo de emprego, empresa e preferências de localização.",
+        "text": "Plataforma para encontrar empregos remotos[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Rafael Borges, Júlia Marques",
+        "date": "15/03/2024",
+        "tech": "Ruby on Rails, PostgreSQL"
+    },
+    {
+        "id": 17,
+        "title": "Guia de Treino em Casa",
+        "description": "App com treinos guiados para casa, tutoriais de exercícios e acompanhamento de progresso para entusiastas de fitness.",
+        "text": "App com treinos guiados e acompanhamento[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "Carla Ribeiro",
+        "date": "22/07/2023",
+        "tech": "Flutter"
+    },
+    {
+        "id": 18,
+        "title": "Conexão Freelancer",
+        "description": "Plataforma que conecta freelancers com clientes, permitindo postagem de projetos, lances e acompanhamento de trabalho.",
+        "text": "Plataforma que conecta freelancers com clientes[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Vitor Amaral",
+        "date": "08/12/2023",
+        "tech": "Stripe API, MongoDB"
+    },
+    {
+        "id": 19,
+        "title": "App de Meditação Diária",
+        "description": "Aplicativo de meditação com sessões guiadas, desafios de mindfulness e acompanhamento de progresso.",
+        "text": "App com meditação guiada e mindfulness[...]",
+        "image": "https://th.bing.com/th/id/OIP.T_I-RpLCWjN3hIGEJ0z4XAHaEJ?rs=1&pid=ImgDetMain",
+        "members": "Teresa Rodrigues, Roberto Souza",
+        "date": "19/01/2024",
+        "tech": "React Native, AWS"
+    },
+    {
+        "id": 20,
+        "title": "Rede de Fotografia",
+        "description": "Plataforma social para fotógrafos compartilharem, discutirem e exibirem seu trabalho.",
+        "text": "Plataforma para fotógrafos exibirem e discutirem[...]",
+        "image": "https://th.bing.com/th/id/OIP.i3VF_VimXOvCqpECrXqINAHaE7?rs=1&pid=ImgDetMain",
+        "members": "Eduardo Pereira",
+        "date": "05/02/2024",
+        "tech": "JavaScript, Firebase"
+    },
+    {
+        "id": 21,
+        "title": "Planner de Tarefas",
+        "description": "Aplicativo de produtividade para organizar tarefas diárias e listas de afazeres, com lembretes e acompanhamento de progresso.",
+        "text": "App para organizar tarefas e listas de afazeres[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Mariana Rocha, Felipe Santos",
+        "date": "12/02/2024",
+        "tech": "React, MongoDB"
+    },
+    {
+        "id": 22,
+        "title": "Rede de Doações",
+        "description": "Plataforma para conectar doadores e ONGs, permitindo cadastro e busca de campanhas de doação por região.",
+        "text": "Conexão entre doadores e ONGs[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "Gabriel Lima, Carolina Oliveira",
+        "date": "28/03/2023",
+        "tech": "Laravel, Vue.js"
+    },
+    {
+        "id": 23,
+        "title": "Companheiro de Estudo",
+        "description": "Aplicativo que auxilia estudantes com um banco de questões, simulados e sugestões de estudo baseado no desempenho.",
+        "text": "App com banco de questões e simulados[...]",
+        "image": "https://th.bing.com/th/id/OIP.T_I-RpLCWjN3hIGEJ0z4XAHaEJ?rs=1&pid=ImgDetMain",
+        "members": "Lucas Martins",
+        "date": "15/06/2023",
+        "tech": "Flutter, Firebase"
+    },
+    {
+        "id": 24,
+        "title": "Controle de Finanças Pessoais",
+        "description": "Ferramenta que ajuda usuários a controlar receitas e despesas, com gráficos e relatórios para análise financeira.",
+        "text": "Ferramenta para controle de receitas e despesas[...]",
+        "image": "https://th.bing.com/th/id/OIP.Ls8SAHEQtes_yr_nF1-TDAHaE8?rs=1&pid=ImgDetMain",
+        "members": "Isabela Castro, Bruno Oliveira",
+        "date": "05/08/2023",
+        "tech": "Node.js, PostgreSQL"
+    },
+    {
+        "id": 25,
+        "title": "Guia de Viagens",
+        "description": "Aplicativo para planejar viagens, com sugestões de itinerários, reservas e recomendações de atividades locais.",
+        "text": "Planejamento de viagens e sugestões de itinerários[...]",
+        "image": "https://th.bing.com/th/id/OIP.bCHUNqJ_8Hj6nyqUOpNQAgHaC2?rs=1&pid=ImgDetMain",
+        "members": "Fernanda Duarte, Marcelo Cardoso",
+        "date": "22/11/2023",
+        "tech": "Express, MongoDB"
+    }    
+]
+
