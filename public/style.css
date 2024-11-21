@@ -13,11 +13,11 @@
   --detalhe: hsla(9, 63%, 45%, 1);
 */
 
-  --primaria: hsla(0, 1%, 20%, 1);
-  --background: hsla(81, 21%, 74%, 1);
-  --secundaria: hsla(135, 7%, 64%, 1);
-  --destaque: hsla(8, 34%, 54%, 1);
-  --detalhe:hsla(241, 96%, 72%, 1);
+  --primaria: rgb(255, 13, 13);
+  --background: rgb(255, 255, 255);
+  --secundaria: rgb(0, 0, 0);
+  --destaque: rgb(255, 0, 0);
+  --detalhe:rgb(255, 1, 1);
 }
 
 /* borda vermelha em todos os elementos para debug */
